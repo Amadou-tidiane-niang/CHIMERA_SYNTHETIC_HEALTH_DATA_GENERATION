@@ -3,16 +3,16 @@
 This repository contains the code and workflow for the paper "CHIMERA generates synthetic health data with balanced
 fidelity, utility and privacy" by Amadou Tidiane Niang (University of Lille).
 
-## 🔧 Getting Started
+##  Getting Started
 
 The repository is designed to run the analysis workflow in a highly automated manner. To ensure proper execution after cloning:
 
 1.  **Install all required packages**.\
-    Each script attempts to install missing packages automatically. Note that **R-INLA** must be installed manually (see instructions below).
+    Each script attempts to install missing packages automatically.
 
-2.  **Download and place all datasets** in the `data/` folder. Datasets are not included in the repository due to privacy.
+2.  **Download and place all datasets** in the `data/` folder. the real REIN registry dataset are not included in the repository due to privacy.
 
-3.  **Run the scripts sequentially** from `00_Functions.R` to `09_Sensitivity_Analyses.R`.\
+3.  **Run the scripts sequentially** from `0_functions.R` to `7_Figures.R`.\
     Each script depends on outputs from the previous one, so maintaining this order is essential.
 
 ## 1. 📦 Installing Required Packages
