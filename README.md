@@ -1,4 +1,4 @@
-## \# CHIMERA generates synthetic health data with balanced fidelity, utility and privacy
+## CHIMERA generates synthetic health data with balanced fidelity, utility and privacy
 
 This repository contains the code and workflow for the paper "CHIMERA generates synthetic health data with balanced
 fidelity, utility and privacy" by Amadou Tidiane Niang (University of Lille).
@@ -15,29 +15,32 @@ The repository is designed to run the analysis workflow in a highly automated ma
 3.  **Run the scripts sequentially** from `0_functions.R` to `7_Figures.R`.\
     Each script depends on outputs from the previous one, so maintaining this order is essential.
 
-## 1. 📦 Installing Required Packages
+---
 
-Each `.R` script automatically installs or loads missing packages.\
-👉However, one special package,**R-INLA**,is not on CRAN and must be installed manually.
+## Overview
 
-#### Installation de R-INLA
+CHIMERA is an imputation-based framework for generating fully synthetic tabular health data. It extends the Multiple Imputation by Chained Equations (MICE) framework to address a key limitation of standard conditional imputation: the tendency to generate individually plausible values that are less coherent in the joint multivariate space.
 
-``` r
-if (!require('INLA')) {
-  install.packages(
-    'INLA',
-    repos = c(getOption('repos'), INLA = 'https://inla.r-inla-download.org/R/testing'),
-    dependencies = TRUE
-  )
-}
-```
+The method combines four sequential components:
 
-If you encounter installation issues, please refer to the [R-INLA Download & Install guide](https://www.r-inla.org/download-install).
+1. **Iterative MCAR masking** — progressive, controlled introduction of artificial missing values.
+2. **Conditional MICE imputation** — variable-type-specific imputation (predictive mean matching, logistic regression, multinomial logistic regression).
+3. **Mahalanobis-distance realignment** — post-imputation one-to-one matching to anchor synthetic profiles in realistic multivariate neighbourhoods of the real data.
+4. **Survival data support** — Nelson–Aalen cumulative hazard integration and spline-based reconstruction of survival times.
 
-## 2. 📥 Essential Data for Reproducing the Analysis
+The objective is to generate synthetic datasets that simultaneously preserve statistical fidelity, analytical and predictive utility, and privacy protection — three dimensions evaluated jointly using nine complementary metrics.
 
-To successfully run the analysis and reproduce the results, all input datasets must be available locally. Create a folder named `data/` in the same directory as the `scripts/` folder, and place all required datasets inside it.\
-These datasets include `municipal boundaries`, `ESKD incidence`, `social deprivation indices`, `clinical covariates`, `healthcare access`, and `air pollution measurements`.
+---
+##  Essential Data for Reproducing the Analysis
+
+To successfully run the analysis and reproduce the results, all input datasets must be available locally. Create a folder named `data/` in the same directory as the `scripts/` folder, and place all required datasets inside it.
+
+| Dataset | N | Variables | Outcome | Access |
+|---|---|---|---|---|
+| [PIMA](https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database) | 768 | 8 continuous | Binary (diabetes) | Public |
+| AIDS (Hammer et al., 1996) | 2,139 | 26 mixed | Survival | Public |
+| REIN (French national registry) | 42,176 | 16 mixed | Survival (3-month mortality) | Restricted |
+
 
 #### 2.1 🗺️ `Shapefile` – Administrative Boundaries of French Municipalities
 
