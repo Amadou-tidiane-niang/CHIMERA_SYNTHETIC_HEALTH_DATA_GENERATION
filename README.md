@@ -92,6 +92,18 @@ Agreement with the real-data reference model is quantified using sensitivity, sp
 
 ## R Scripts Overview
 
+#### `0_functions.R`
+
+This script contains all custom functions used throughout the CHIMERA pipeline, organized into four functional blocks.
+
+**Data preparation.** `prepare_survival_data_time()` converts raw date columns into numeric follow-up times in days, applies administrative censoring, and optionally computes a censoring indicator. `fd_bins()` implements the Freedman–Diaconis rule for histogram binning of continuous variables. `JSD()` computes the Jensen–Shannon divergence between two discrete probability distributions.
+
+**Synthetic data generation.** `CHIMERA_generate()` is the core generation function. It implements the full iterative MCAR masking, MICE imputation, and Mahalanobis-distance realignment pipeline, with optional support for censored survival outcomes via Nelson–Aalen estimation and spline-based time reconstruction. `Ablation_Analysis_generate_synthetic_data()` implements two simplified MICE-based synthesis strategies — direct synthesis and iterative masking without realignment — used in the complementary ablation analysis to isolate the contribution of the matching step. `predictive_utility_surv_curve()` computes time-dependent AUC with bootstrap confidence intervals for Cox models.
+
+**Fidelity, utility, and privacy evaluation.** `Assessment_function_unified()` computes the full set of nine benchmarking metrics (T1–T9) for a given real–synthetic dataset pair, supporting both logistic and Cox model settings and three synthesizer types (CHIMERA, SYNTHPOP, CTGAN). `Assessment_function_unified_Ablation_Analysis()` provides the same evaluation pipeline adapted to the ablation synthesis strategies. `privacy_AIR()` implements the attribute inference risk metric using a 1-nearest-neighbour attack based on Gower distance.
+
+**REIN prognostic score workflow.** `preprocessing()` prepares the REIN survival dataset for multiple imputation, including variable selection, renaming, and construction of the 90-day mortality endpoint. `Imputed_data_function()` performs multiple imputation using MICE with Nelson–Aalen cumulative hazard as an auxiliary predictor, then reattaches survival outcomes to each completed dataset. `bootstrap_model()` fits a logistic regression model on a bootstrap resample and returns Wald-test p-values for all coefficients. `Score()` applies this bootstrap procedure across all imputed datasets, aggregates p-values using Fisher's method for multi-level categorical predictors, and computes variable selection frequencies across the 5,000 resulting models. `compute_selection_metrics()` quantifies agreement between real- and synthetic-data variable selection using sensitivity, specificity, and Cohen's kappa. `clean_variable_names()` maps coefficient names from model output back to original column names in the dataset. `compute_calibration()` and compute_calibration_synth() evaluate model calibration on an external test set using restricted cubic spline calibration curves, Brier score, calibration intercept, and calibration slope, for real imputed datasets and synthetic datasets respectively.
+
 ---
 
 ## Reproducibility
