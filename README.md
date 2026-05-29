@@ -164,6 +164,22 @@ This script implements the full REIN prognostic score development and validation
 
 **Calibration.** `compute_calibration()` produces restricted cubic spline calibration curves, Brier scores, calibration intercepts, and calibration slopes for the real imputed datasets on the test set. `compute_calibration_synth()` replicates this evaluation for each of the 50 synthetic datasets from CHIMERA, SYNTHPOP, and CTGAN, enabling method-level comparison of calibration variability.
 
+#### `7_Figures.R`
+
+This script produces all publication-ready figures reported in the main manuscript and supplementary materials.
+
+**Metric distribution boxplots (Supplementary Figs. S2–S4 and S5–S7).** For the main benchmark, T1–T9 metrics are reshaped into long format and displayed as grouped boxplots across the 50 runs for each method–dataset combination, with a gold diamond marking the best-of-M run and a dashed line indicating the ideal target value. The same layout is reproduced for the ablation analysis, replacing SYNTHPOP and CTGAN with CHIMERA without matching and direct MICE synthesis.
+
+**Univariate distribution comparison (Fig. 1).** For each dataset, continuous variables are displayed as kernel density estimates and categorical variables as grouped bar charts of empirical proportions.
+
+**PIMA — ROC curve and forest plot (Fig. 2).** A ROC curve panel shows AUC values with 95% confidence intervals for the real dataset and each synthetic method. A multi-row forest plot displays odds ratios with 95% confidence intervals from logistic regression, along with standardized differences (SDiff) between synthetic and real-data estimates. The two panels are combined vertically.
+
+**AIDS and REIN — Kaplan–Meier, time-dependent AUC, and forest plot (Figs. 3–4).** Kaplan–Meier survival curves and time-dependent AUC curves (with integrated AUC annotations) are placed side by side in the upper panel. A multi-row Cox model forest plot displaying hazard ratios and SDiff values occupies the lower panel.
+
+**REIN score — selection performance boxplots (Supplementary Fig. S8).** Sensitivity, specificity, Cohen's kappa, and AUC across the 50 synthetic datasets are displayed as boxplots for each method, with the best-of-M run highlighted.
+
+**REIN score — ROC and calibration curves (Figs. 5 and S9).** The final model ROC curve is plotted for all four datasets. Restricted cubic spline calibration curves are shown for the best synthetic run of each method alongside the real-data reference. The supplementary version additionally overlays all 50 synthetic calibration curves per method in light grey to characterize between-run variability.
+
 ---
 
 ## Reproducibility
