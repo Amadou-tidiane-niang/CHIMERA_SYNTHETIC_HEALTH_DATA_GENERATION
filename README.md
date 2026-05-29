@@ -124,6 +124,24 @@ This script generates and evaluates the 50 synthetic datasets produced by each m
 
 **Best-of-M selection.** For each method–dataset combination, the composite objective function is computed by normalizing each metric relative to its ideal target vector, grouping metrics into three families (fidelity, utility, privacy), and combining the family-level losses with equal weights (1/3 each). The resulting ranked metric tables are saved for downstream selection of the representative synthetic dataset reported in the paper.
 
+#### `3_BestOf_M_Utility.R`
+
+This script selects the representative synthetic dataset for each method–dataset combination and computes the analytical utility outputs used in the paper.
+
+**Best-of-M selection.** For each dataset (PIMA, AIDS, REIN) and each method (CHIMERA, SYNTHPOP, CTGAN), the composite loss score computed in `2_BestOf_M_DatasetGenerator.R` is used to identify the synthetic dataset minimizing `L_total`. The corresponding dataset is extracted from the 50-run list and saved for downstream analyses.
+
+**Analytical utility — PIMA.** Continuous variables are rescaled for interpretability before fitting logistic regression models on the real dataset and each selected synthetic dataset. Odds ratios, 95% confidence intervals, and standard errors are extracted for all predictors. Standardized differences (SDiff) between log odds ratios are computed for each synthetic method relative to the real-data estimates. ROC curves are computed and saved for each dataset.
+
+**Analytical utility — AIDS and REIN.** The same workflow is applied using Cox proportional hazards models, producing hazard ratios, 95% confidence intervals, standard errors, and SDiff values. Kaplan–Meier survival curves are fitted across all four datasets (real, CHIMERA, SYNTHPOP, CTGAN) and saved. Time-dependent AUC curves with 200-bootstrap confidence intervals are computed using `predictive_utility_surv_curve()` over a predefined grid of time points, for both within-dataset discrimination (70/30 split) and cross-dataset transfer scenarios.
+
+#### `4_BestOf_M_Dataset_Generator_Ablation_Analysis.R`
+
+This script implements the complementary ablation analysis designed to isolate the contribution of the Mahalanobis-distance matching step in CHIMERA.
+
+**Synthetic data generation.** For each of the three benchmark datasets, 50 independent synthetic datasets are generated under two simplified MICE-based strategies using `Ablation_Analysis_generate_synthetic_data() `: direct MICE synthesis (iterative_masking = FALSE), which applies a single full-dataset imputation without masking or matching; and CHIMERA without matching (iterative_masking = TRUE), which applies the iterative MCAR masking and progressive reconstruction but omits the post-imputation Mahalanobis realignment step. The same seeds, masking rates, and survival settings as in the main benchmark are used throughout.
+
+**Evaluation.** For each strategy and dataset, `Assessment_function_unified_Ablation_Analysis()` computes the nine fidelity–utility–privacy metrics (T1–T9). The attribute inference risk scenarios are constructed identically to those in `2_BestOf_M_DatasetGenerator.R`. The composite loss score is then computed using the same target vector, family grouping, and equal weighting scheme, producing ranked metric tables for each strategy–dataset combination. All results are saved for downstream best-of-M selection and comparison with full CHIMERA.
+
 ---
 
 ## Reproducibility
