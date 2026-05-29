@@ -73,54 +73,43 @@ CHIMERA is evaluated using nine complementary metrics covering three dimensions.
 
 ---
 
-### R Scripts Overview
+## REIN Prognostic Workflow
 
-This section provides a brief description of each R script in the repository and its role in the analysis pipeline.
+Beyond distributional metrics, CHIMERA is evaluated through the full replication of a published clinical prognostic score for 3-month mortality in dialysis patients aged 75 years or older (Couchoud et al., 2015).
 
-#### 3.1 `00_functions.R`
+The workflow implemented in `6_Score.R` includes:
 
-This script contains all the custom functions used throughout the analysis. These functions are primarily focused on post-processing outputs from the Bayesian hierarchical spatiotemporal models fitted using INLA.
+- 50 multiple imputations
+- 100 bootstrap resamples per imputation → 5,000 logistic regression models
+- Variable selection: retained if statistically significant in ≥ 70% of models (Wald test, *p* < 0.05)
+- Fisher's method for p-value aggregation across dummy variables of multi-level categorical predictors
+- Coefficient pooling using Rubin's rules
+- Discrimination (AUC) and calibration (restricted cubic splines) on an independent test set (30%)
 
-#### 3.2 `01_Models_selection.R`
+Agreement with the real-data reference model is quantified using sensitivity, specificity, and Cohen's kappa.
 
-This script fits a series of candidate spatio-temporal Poisson BYM2 models to the ESKD incidence data and performs model selection based on fit criteria such as `DIC`, `WAIC`, and `log-CPO`.
+---
 
-#### 3.3 `02_Disease_mapping.R`
+## R Scripts Overview
 
-This script fits the core spatio-temporal BYM2 model (with a Type I space-time interaction and an unstructured temporal effect) to the ESKD data. It extracts area-specific and temporal relative risks, including posterior estimates, credible intervals, and exceedance probabilities, which are saved for subsequent mapping and analysis.
+---
 
-#### 3.4 `03_NonLinear_Analysis.R`
+## Reproducibility
 
-This script fits non-linear ecological regressions using spatio-temporal BYM2 models with RW2 (second-order random walk) splines for key covariates, including `deprivation (EDI)`, `diabetes and hypertension` prevalence, and `PM2.5 exposure (lagged)`. The output consists of posterior relative risks and credible intervals for each covariate, which are visualized in combined plots to illustrate potential non-linear associations.
+All analyses were performed using:
 
-#### 3.5 `04_EcoReg_Multivariable.R`
+| Software | Version |
+|---|---|
+| R | 4.4.1 |
+| Python | 3.10.12 |
+| SDV (CTGAN) | 1.20.0 |
+| synthpop | 1.8-0 |
 
-This script fits multivariable spatio-temporal BYM2 models including key covariates such as `deprivation (EDI)`, `diabetes prevalence`, `healthcare access`, and `PM2.5 exposure`. It extracts adjusted temporal and spatial relative risks, as well as posterior probabilities for space–time interactions. Additionally, the script evaluates the proportion of spatial variance explained by each covariate through ablation models and produces forest plots for visualizing adjusted effects.
+All evaluation metrics, the best-of-*M* selection procedure, and the REIN prognostic workflow are fully described in the paper (Supplementary Materials, Sections S2–S5) and implemented in this repository.
 
-#### 3.6 `05_Interactions_Analysis.R`
+---
 
-This script evaluates space-time ecological interactions in the multivariable BYM2 framework. It fits models testing interactions between deprivation (EDI) and key covariates, including PM2.5 exposure (quartiles), healthcare access (binary), and diabetes prevalence (continuous and quartiles). Posterior estimates and relative risks for each interaction term are extracted and tabulated, allowing assessment of effect modification across subgroups.
+## Contact
 
-#### 3.7 `06_Mediation_Analysis.R`
-
-This script performs a Bayesian mediation analysis using the spatio-temporal BYM2 model. It evaluates the indirect effect of social deprivation (EDI) on ESKD incidence mediated through diabetes prevalence, adjusting for PM2.5 exposure and healthcare access. Posterior samples are drawn from the mediator and outcome models to compute total, direct, and indirect effects, as well as the proportion mediated. Results are tabulated and visualized on an annotated DAG for intuitive interpretation.
-
-#### 3.8 `07_Maps.R`
-
-This script implements the full mapping workflow for end-stage kidney disease (ESKD) and ecological covariates. It produces spatial relative risk maps, exceedance probability maps, and space-time interaction visualizations. Additionally, it generates maps and density plots for ecological covariates (diabetes, PM2.5, deprivation index) and healthcare access. All maps include embedded bar or density insets for improved interpretability, and outputs are saved as high-resolution images.
-
-#### 3.9 `08_PAF.R`
-
-This script computes population attributable fractions (PAFs) and attributable numbers for end-stage kidney disease (ESKD) associated with multiple exposures, including PM2.5, diabetes prevalence, deprivation index (EDI), and healthcare access. Using the multivariable INLA spatio-temporal model, it calculates PAFs relative to various reference levels, accounting for uncertainty bounds. Results are compiled into a unified table with confidence intervals and exported in LaTeX format.
-
-#### 3.10 `09_Sensitivity_Analyses.R`
-
-This script performs multiple sensitivity analyses for the multivariable spatio-temporal INLA models of end-stage kidney disease. Analyses include:\
-- Using alternative priors for BYM and IID components.\
-- Multivariable ecological regressions with different covariates (diabetes, PM2.5, deprivation, healthcare access).\
-- Estimation of temporal and spatial random slopes for deprivation (French-EDI) to assess variation in effects across time and space.\
-- Visualization of model results via forest plots, spatial maps, and density plots with exceedance probabilities.
-
-Outputs include forest plots for adjusted relative risks, temporal random slope plots, and spatial random slope maps, all saved in the `results/` folder.
-
-To ensure proper execution and reproducibility, all scripts should be run sequentially, beginning with `00_Functions.R` and proceeding in order through `09_Sensitivity_Analyses.R`. Each script builds upon the outputs of the previous scripts, so maintaining this sequence is essential for correct results
+**Amadou Tidiane Niang** — `amadou-tidiane.niang@univ-lille.fr`  
+Univ Lille · CHU Lille · ULR 2694 – METRICS · F-59000 Lille, France
