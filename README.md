@@ -41,101 +41,39 @@ To successfully run the analysis and reproduce the results, all input datasets m
 | AIDS (Hammer et al., 1996) | 2,139 | 26 mixed | Survival | Public |
 | REIN (French national registry) | 42,176 | 16 mixed | Survival (3-month mortality) | Restricted |
 
+---
 
-#### 2.1 🗺️ `Shapefile` – Administrative Boundaries of French Municipalities
+## Evaluation Framework
 
--   **Description:** This dataset provides the administrative boundaries of all French municipalities in 2021, covering a total of `34,969 communes`.For the purpose of this project, we restrict the analysis to metropolitan France. After excluding the `overseas territories (DOMs/TOMs)` and performing data management procedures, the final dataset includes `34,830 municipalities`, which are used in the analyses.
+CHIMERA is evaluated using nine complementary metrics covering three dimensions. All metrics are implemented in `R/assessment.R`.
 
--   **Source:** [Administrative boundaries of French municipalities from OpenStreetMap (data.gouv.fr)](https://www.data.gouv.fr/datasets/decoupage-administratif-communal-francais-issu-d-openstreetmap/)
+#### Fidelity
 
--   **Format:** Shapefile (.shp)
+| Metric | Symbol | Description | Optimal value |
+|---|---|---|---|
+| Jensen–Shannon divergence | T1 — JSD | Mean marginal distributional similarity (Freedman–Diaconis binning) | → 0 |
+| Correlation Frobenius Distance | T2 — CFD | Bivariate structure preservation (Pearson + Cramer's V) | → 0 |
+| Discriminative performance | T3 — DiscPred | AUC of a real-vs-synthetic logistic classifier (5-fold CV) | → 0.5 |
 
--   **Naming Convention:** `shape_commune_2021ssDOMTOM.RData`
+#### Utility
 
--   **Coordinate Reference System (CRS):** Projection **WGS 84** (latitude/longitude in degrees)
+| Metric | Symbol | Description | Optimal value |
+|---|---|---|---|
+| Standardized effect difference | T4 — SDiff | Discrepancy in regression coefficients (OR or HR) | → 0 |
+| TSTR AUC gap | T5 | Train on synthetic, test on real vs. train on real | → 0 |
+| TSRTR AUC gap | T6 | Train on synthetic + real, test on real vs. train on real | → 0 |
 
-#### 2.2 🏚️ `Covariate Data` – Social Deprivation (EDI)
+#### Privacy
 
--   **Description:** Social deprivation was measured using the `French European Deprivation Index (EDI)`, an ecological index reflecting material and social disadvantage at the `municipal level`. The EDI is a weighted composite of census-based indicators such as housing conditions, household structure, education, employment, and nationality. `Higher EDI values indicate greater deprivation.` Municipal-level EDI data were available for `2011, 2015, and 2017`. For intermediate years (2012–2014 and 2016), values were interpolated using interannual averages, while values from `2018–2021` were assumed constant based on 2017 estimates.
+| Metric | Symbol | Description | Optimal value |
+|---|---|---|---|
+| Record-matching risk | T7 — MIR-RM | Mean Gower distance: real to nearest synthetic record | → 1 |
+| Holdout membership inference | T8 — MIR-Holdout | P(synthetic closer to training than to holdout) | → 0.5 |
+| Attribute inference risk | T9 — AIR (F1) | F1 score of a 1-NN attribute reconstruction attack | → 0 |
 
--   **Source:** [MapInMed](https://mapinmed.unicaen.fr/)
+---
 
--   **Format:** Municipality-level index (period: 2011–2021, interpolated where necessary)
-
--   **Naming Convention:** `EDI_scale`
-
-#### 2.3 🩺 `Covariate Data` – Diabetes and Hypertension Prevalence
-
--   **Description:** Annual municipal-level prevalences of `diabetes` and `hypertension` were estimated using the `pathology and expenditure mapping system` of the French `National Health Data System (SNDS)`, which covers \~99% of the French population.
-
-    -   `Diabetes prevalence`: based on individuals receiving diabetes care (any type).\
-    -   `Hypertension prevalence`: based on individuals with at least three antihypertensive drug deliveries within the same year.
-
--   **Source:** [SNDS – French National Health Data System](https://snds.gouv.fr)
-
--   **Format:** Annual prevalence rates at the municipality level (latest version: G10).
-
--   **Naming Convention:** `prevalence_Diab_scale`
-
-#### 2.4 🏥 `Covariate Data` – Dialysis Center Accessibility
-
--   **Description:** Healthcare access was assessed for each municipality and year (2012–2021) by measuring the presence of at least one `dialysis center` within a `30-minute drive` from the municipality center. This measure included all types of dialysis units, such as `in-center dialysis` and `self-care facilities`.
-
--   **Source:** National REIN Registry & geospatial accessibility analysis.
-
--   **Format:** Annual binary indicator (accessible / not accessible) at the municipality level.
-
--   **Naming Convention:** `accSoins_binaire`
-
-#### 2.5 🌍 `Covariate Data` – PM2.5 Exposure
-
--   **Description:** Long-term air pollution data were obtained from the `National Institute for the Industrial Environment and Risks (INERIS)`. Using the `CHIMERE Chemistry Transport Model` combined with `kriging techniques` and meteorological parameters (temperature, humidity, precipitation), mean annual `PM2.5 concentrations (μg/m³)` were reconstructed over France.
-
--   **Time Coverage:** 21 years of modeled data.
-
--   **Metric:** Municipality-level `3-year lagged average` of PM2.5, weighted by population density and adjusted for municipal area.
-
--   **Spatial Resolution:** \~4 km grid.
-
--   **Source:** [INERIS](https://www.ineris.fr/fr)
-
--   **Naming Convention:** `PM25_lag3`
-
-#### 2.6 💉 `Outcome Data` – Incidence of End-Stage Kidney Disease (ESKD)
-
--   **Description:** Data on the incidence of `End-Stage Kidney Disease (ESKD)` were obtained from the `national REIN registry`, which is the official database monitoring all patients under `Kidney Replacement Therapy (KRT)` in France. The registry records detailed patient-level information at the initiation of dialysis or transplantation and comprehensively covers the entire French population. For this study, we included `all individuals who initiated maintenance KRT between January 1, 2012, and December 31, 2021`. Based on the patient’s `place of residence` at the time of KRT initiation, the `annual number of incident ESKD cases` was aggregated at the `municipality level` for the period `2012–2021`.
-
-    In the final dataset, we include:
-
-    -   All previously presented **covariates** (Social Deprivation (EDI),Diabetes and Hypertension Prevalence, Healthcare Access,Air Pollution, etc.).\
-    -   The **number of observed incident ESKD cases**.\
-    -   The **number of expected cases** (based on standardization procedures).\
-    -   Spatial, temporal, and spatio-temporal indices for modeling:
-        -   `ID.space` (municipality identifier)\
-        -   `ID.time`, `ID.time2` (temporal identifiers)\
-        -   `ID.space.time` (spatio-temporal identifier)
-
--   **Source:** REIN Registry (Réseau Epidémiologie et Information en Néphrologie) – [Official Website](https://www.agence-biomedecine.fr/fr/observatoire-de-la-maladie-renale-chronique/le-registre-rein)
-
--   **Format:** Aggregated data (municipality-level counts, annual time series 2012–2021)
-
--   **Naming Convention:** `REIN_DATA_ST_2012_2021.RData`
-
-Although raw ESKD incidence data cannot be shared for confidentiality reasons, we provide spatial relative risks (RRs) for every municipality in metropolitan France. Municipalities are identified by `SP_ID` , corresponding to the official INSEE geographic codes (2021 administrative boundaries).
-
-Spatial RRs are calculated as the posterior median of the exponentiated spatially structured random effect estimated using a BYM2 model within a spatio-temporal disease-mapping framework without covariates (see the publication’s supplementary materials for methodological details).
-
-In addition to the continuous estimates (`resRR_unadjust`), we include:
-
--   A categorized version of the spatial RRs (`resRRcat_unadjust`), based on the thresholds defined in the publication.
-
--   The 95% credible interval bounds for each RR (`resRR_unadjust_low` and `resRR_unadjust_high`).
-
--   The exceedance probability (`PP_unadjust`: probability that the estimated random effect exceeds zero), provided both as raw values and as a categorized variable (`PPcat_unadjust`) using thresholds of 0.2 and 0.8 (see supplementary materials for details).
-
--   All data are stored in the file `ESKD_spatialRR.RData` (an `sf` object), located in the `data/` directory.
-
-### 3. 📂 R Scripts Overview
+### R Scripts Overview
 
 This section provides a brief description of each R script in the repository and its role in the analysis pipeline.
 
