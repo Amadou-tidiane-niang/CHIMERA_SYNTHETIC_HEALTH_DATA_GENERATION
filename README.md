@@ -106,6 +106,24 @@ This script contains all custom functions used throughout the CHIMERA pipeline, 
 
 #### `1_preprocessing.R`
 
+This script handles data loading, preprocessing, and splitting for the three benchmark datasets used in the study.
+
+**PIMA.** The raw CSV is imported, columns are renamed, and the binary outcome is converted to a labelled factor. The dataset is split 50/50 into training and holdout sets for the membership inference privacy evaluation.
+
+**AIDS.** The dataset is imported, identifiers and unused variables are dropped, columns are renamed for readability, and binary variables are converted to labelled factors. The same 50/50 train–holdout split is applied.
+
+**REIN.** Two Excel files are merged and filtered. Raw date columns are converted to numeric follow-up times in days using `prepare_survival_data_time()`, with administrative censoring set to 31 December 2022. Variables with more than 50% missing values are excluded. The remaining variables are renamed, recoded into labelled factors (including ordered categories for heart failure, peripheral artery disease, and walking autonomy), and the cohort is restricted to patients aged 75 years or older. The resulting dataset is saved both with and without missing values. Two separate splits are then produced: a 50/50 train–holdout split for the privacy evaluation, and a 70/30 train–test split for the prognostic score replication workflow. Missing values in the training sets are handled by a single MICE imputation using predictive mean matching for continuous variables.
+
+#### `2_BestOf_M_DatasetGenerator.R`
+
+This script generates and evaluates the 50 synthetic datasets produced by each method (CHIMERA, SYNTHPOP, CTGAN) across the three benchmark datasets (PIMA, AIDS, REIN).
+
+**Synthetic data generation.** For CHIMERA and SYNTHPOP, 50 independent datasets are generated using distinct random seeds, with execution times recorded for each run. PIMA is treated as a standard tabular dataset (logistic setting, masking rate 25%), while AIDS and REIN use the survival extension (Cox setting, masking rates 15% and 30% respectively). CTGAN datasets are pre-generated externally in Python and imported from CSV files; two sets are loaded for each dataset — one generated on the full dataset, one on the training set only, for use in the holdout-based privacy metric.
+
+**Evaluation.** For each synthetic dataset, `Assessment_function_unified()` computes the nine fidelity–utility–privacy metrics (T1–T9). The attribute inference risk scenarios are constructed by incrementally adding the top five predictors (ranked by |z-value| from a logistic regression on the real data) to the attacker's information set.
+
+**Best-of-M selection.** For each method–dataset combination, the composite objective function is computed by normalizing each metric relative to its ideal target vector, grouping metrics into three families (fidelity, utility, privacy), and combining the family-level losses with equal weights (1/3 each). The resulting ranked metric tables are saved for downstream selection of the representative synthetic dataset reported in the paper.
+
 ---
 
 ## Reproducibility
