@@ -27,16 +27,14 @@ library(vcd)          # Cramer's V
 # -----------------------------------------------------------------------------------------------
 # PATH CONFIGURATION
 # -----------------------------------------------------------------------------------------------
-project_path <- "Bureau/CHIMERA_SYNTHETIC_HEALTH_DATA_GENERATION"
-
 # Load custom functions
-source(here(file.path(project_path, "scripts", "0_functions.R")))
+source(here("scripts", "0_functions.R"))
 
 
 # ===============================================================================================
 # DATA LOADING : REIN SCORE
 # ===============================================================================================
-df_rein <- read.csv(here(file.path(project_path, "data", "df_rein_train_with_na_score.csv")))
+df_rein <- read.csv(here("data", "df_rein_train_with_na_score.csv"))
 df_rein <- df_rein |>mutate_if(is.character,as.factor)
 
 
@@ -77,7 +75,7 @@ execution_time_lower <- execution_time_mean - sd(execution_times) # 507.765
 
 # Save synthetic datasets
 save(rein_synthetic_list_data_chimera_score,
-     file = here(file.path(project_path, "data", "rein_synthetic_list_data_chimera_score.Rdata"))
+     file = here("results", "rein_synthetic_list_data_chimera_score.Rdata")
 )
 
 
@@ -103,16 +101,14 @@ execution_time_lower <- execution_time_mean - sd(execution_times) # 56.530
 
 # Save synthetic datasets
 save(rein_synthetic_list_data_synthpop_score,
-     file = here(file.path(project_path, "data", "rein_synthetic_list_data_synthpop_score.Rdata"))
+     file = here("results", "rein_synthetic_list_data_synthpop_score.Rdata")
 )
 
 
 # CTGAN
-data_dir <- "~/Bureau/ARTICLE_GENERATION_DONNEES_SYNTHETIQUES_CHIMERA/data/rein_synthetic_datasets_ctgan_score"
-
 files <- sprintf(
   "%s/REIN_CTGAN_%02d.csv",
-  data_dir,
+  here("data","rein_synthetic_datasets_ctgan_score"),
   1:n_synth
 )
 
@@ -127,18 +123,18 @@ rein_synthetic_list_data_ctgan_score <- lapply(
 
 # Save synthetic datasets
 save(rein_synthetic_list_data_ctgan_score,
-     file = here(file.path(project_path, "data", "rein_synthetic_list_data_ctgan_score.Rdata"))
+     file = here("results", "rein_synthetic_list_data_ctgan_score.Rdata")
 )
 
 
 #================================================================================================
 # Select the best dataset use for downstream analyses
 #================================================================================================
-X_real <- read.csv(here(file.path(project_path, "data", "df_rein_train_without_na_score.csv")))
+X_real <- read.csv(here("data", "df_rein_train_without_na_score.csv"))
 
-trn <- read.csv(here(file.path(project_path, "data", "REIN_trn_score.csv")))
+trn <- read.csv(here("data", "REIN_trn_score.csv"))
 trn <- trn|> mutate_if(is.character,as.factor)
-val <- read.csv(here(file.path(project_path, "data", "REIN_hol_score.csv")))
+val <- read.csv(here("data", "REIN_hol_score.csv"))
 val <- val|> mutate_if(is.character,as.factor)
 
 # Fit logistic regression
@@ -165,7 +161,7 @@ feature_associate <- c(list(character(0)), feature_associate)
 
 
 # chimera
-load(here(file.path(project_path, "data", "rein_synthetic_list_data_chimera_score.Rdata")))
+load(here("results", "rein_synthetic_list_data_chimera_score.Rdata"))
 results_all <- lapply(seq_along(rein_synthetic_list_data_chimera_score), function(i) {
   Assessment_function_unified(
     X_real = X_real,
@@ -192,7 +188,7 @@ rein_results_all_chimera <- results_all |>
 
 # Save synthetic datasets
 save(rein_results_all_chimera,
-     file = here(file.path(project_path, "data", "rein_results_all_chimera_score_min_max.Rdata"))
+     file = here("results", "rein_results_all_chimera_score_min_max.Rdata")
 )
 
 
@@ -242,12 +238,12 @@ PIMA_Metrics_T1_T9_chimera$dataset <- paste0("syn_", seq_len(n_synth))
 
 # Save synthetic datasets
 save(REIN_Metrics_T1_T9_chimera,
-     file = here(file.path(project_path, "data", "REIN_Metrics_T1_T9_chimera_score.Rdata"))
+     file = here("results", "REIN_Metrics_T1_T9_chimera_score.Rdata")
 )
 
 
 # synthpop
-load(here(file.path(project_path, "data", "rein_synthetic_list_data_synthpop_score.Rdata")))
+load(here("results", "rein_synthetic_list_data_synthpop_score.Rdata"))
 results_all <- lapply(seq_along(rein_synthetic_list_data_synthpop_score), function(i) {
   Assessment_function_unified(
     X_real = X_real,
@@ -274,7 +270,7 @@ rein_results_all_synthpop <- results_all |>
 
 # Save synthetic datasets
 save(rein_results_all_synthpop,
-     file = here(file.path(project_path, "data", "rein_results_all_synthpop_score_min_max.Rdata"))
+     file = here("results", "rein_results_all_synthpop_score_min_max.Rdata")
 )
 
 
@@ -324,18 +320,16 @@ PIMA_Metrics_T1_T9_synthpop$dataset <- paste0("syn_", seq_len(n_synth))
 
 # Save synthetic datasets
 save(REIN_Metrics_T1_T9_synthpop,
-     file = here(file.path(project_path, "data", "REIN_Metrics_T1_T9_synthpop_score.Rdata"))
+     file = here("results", "REIN_Metrics_T1_T9_synthpop_score.Rdata")
 )
 
 
 # ctgan
-load(here(file.path(project_path, "data", "rein_synthetic_list_data_ctgan_score.Rdata")))
-
-data_dir <- "~/Bureau/ARTICLE_GENERATION_DONNEES_SYNTHETIQUES_CHIMERA/data/rein_synthetic_datasets_ctgan_trn_score"
+load(here("results", "rein_synthetic_list_data_ctgan_score.Rdata"))
 
 files <- sprintf(
   "%s/REIN_CTGAN_%02d.csv",
-  data_dir,
+  here("data","rein_synthetic_datasets_ctgan_trn_score"),
   1:n_synth
 )
 
@@ -350,10 +344,10 @@ rein_synthetic_list_data_ctgan_trn_score <- lapply(
 
 # Save synthetic datasets
 save(rein_synthetic_list_data_ctgan_trn_score,
-     file = here(file.path(project_path, "data", "rein_synthetic_list_data_ctgan_trn_score.Rdata"))
+     file = here("results", "rein_synthetic_list_data_ctgan_trn_score.Rdata")
 )
 
-load(here(file.path(project_path, "data", "rein_synthetic_list_data_ctgan_trn_score.Rdata")))
+load(here("results", "rein_synthetic_list_data_ctgan_trn_score.Rdata"))
 
 
 results_all <- lapply(seq_along(rein_synthetic_list_data_ctgan_score), function(i) {
@@ -382,7 +376,7 @@ rein_results_all_ctgan <- results_all |>
 
 # Save synthetic datasets
 save(rein_results_all_ctgan,
-     file = here(file.path(project_path, "data", "rein_results_all_ctgan_min_max.Rdata"))
+     file = here("results", "rein_results_all_ctgan_min_max.Rdata")
 )
 
 
@@ -431,6 +425,6 @@ REIN_Metrics_T1_T9_ctgan$L_total <-
 PIMA_Metrics_T1_T9_ctgan$dataset <- paste0("syn_", seq_len(n_synth))
 # Save synthetic datasets
 save(REIN_Metrics_T1_T9_ctgan,
-     file = here(file.path(project_path, "data", "REIN_Metrics_T1_T9_ctgan_score.Rdata"))
+     file = here("results", "REIN_Metrics_T1_T9_ctgan_score.Rdata")
 )
 

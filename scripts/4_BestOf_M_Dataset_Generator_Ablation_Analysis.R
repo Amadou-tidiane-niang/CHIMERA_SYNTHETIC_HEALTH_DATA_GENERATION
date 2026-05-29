@@ -24,19 +24,14 @@ library(gower)        # Distance metrics
 library(FNN)          # Nearest neighbors
 library(vcd)          # Cramer's V
 
-# -----------------------------------------------------------------------------------------------
-# PATH CONFIGURATION
-# -----------------------------------------------------------------------------------------------
-project_path <- "Bureau/ACHIMERA_SYNTHETIC_HEALTH_DATA_GENERATION"
-
 # Load custom functions
-source(here(file.path(project_path, "scripts", "0_functions.R")))
+source(here("scripts", "0_functions.R"))
 
 
 # ===============================================================================================
 # DATA LOADING : PIMA
 # ===============================================================================================
-PIMA <- read.csv(here(file.path(project_path, "data", "PIMA.csv")))
+PIMA <- read.csv(here("data", "PIMA.csv"))
 PIMA <- PIMA|> mutate_if(is.character,as.factor)
 
 # MICE
@@ -78,7 +73,7 @@ execution_time_lower <- execution_time_mean - sd(execution_times) # 3.478
 
 # Save synthetic datasets
 save(pima_synthetic_list_data_mice,
-     file = here(file.path(project_path, "data", "pima_synthetic_list_data_mice.Rdata"))
+     file = here("results", "pima_synthetic_list_data_mice.Rdata")
 )
 
 
@@ -117,14 +112,14 @@ execution_time_lower <- execution_time_mean - sd(execution_times) # 3.478
 
 # Save synthetic datasets
 save(pima_synthetic_list_data_chimera_no_matching,
-     file = here(file.path(project_path, "data", "pima_synthetic_list_data_chimera_no_matching.Rdata"))
+     file = here("results", "pima_synthetic_list_data_chimera_no_matching.Rdata")
 )
 
 
 # ===============================================================================================
 # DATA LOADING : AIDS
 # ===============================================================================================
-AIDS <- read.csv(here(file.path(project_path, "data", "AIDS.csv")))
+AIDS <- read.csv(here("data", "AIDS.csv"))
 AIDS <- AIDS|> mutate_if(is.character,as.factor)
 
 aids_synthetic_list_data_mice <- vector("list", n_synth)
@@ -161,7 +156,7 @@ execution_time_lower <- execution_time_mean - sd(execution_times) # 3.478
 
 # Save synthetic datasets
 save(aids_synthetic_list_data_mice,
-     file = here(file.path(project_path, "data", "aids_synthetic_list_data_mice.Rdata"))
+     file = here("results", "aids_synthetic_list_data_mice.Rdata")
 )
 
 
@@ -200,14 +195,14 @@ execution_time_lower <- execution_time_mean - sd(execution_times) # 3.478
 
 # Save synthetic datasets
 save(aids_synthetic_list_data_chimera_no_matching,
-     file = here(file.path(project_path, "data", "aids_synthetic_list_data_chimera_no_matching.Rdata"))
+     file = here("results", "aids_synthetic_list_data_chimera_no_matching.Rdata")
 )
 
 
 # ===============================================================================================
 # DATA LOADING : REIN
 # ===============================================================================================
-df_rein <- read.csv(here(file.path(project_path, "data", "df_rein_with_na.csv")))
+df_rein <- read.csv(here("data", "df_rein_with_na.csv"))
 df_rein <- df_rein|> mutate_if(is.character,as.factor)
 
 rein_synthetic_list_data_mice <- vector("list", n_synth)
@@ -244,7 +239,7 @@ execution_time_lower <- execution_time_mean - sd(execution_times) # 3.478
 
 # Save synthetic datasets
 save(rein_synthetic_list_data_mice,
-     file = here(file.path(project_path, "data", "rein_synthetic_list_data_mice.Rdata"))
+     file = here("results", "rein_synthetic_list_data_mice.Rdata")
 )
 
 
@@ -283,7 +278,7 @@ execution_time_lower <- execution_time_mean - sd(execution_times) # 3.478
 
 # Save synthetic datasets
 save(rein_synthetic_list_data_chimera_no_matching,
-     file = here(file.path(project_path, "data", "rein_synthetic_list_data_chimera_no_matching.Rdata"))
+     file = here("results", "rein_synthetic_list_data_chimera_no_matching.Rdata")
 )
 
 
@@ -291,12 +286,12 @@ save(rein_synthetic_list_data_chimera_no_matching,
 #================================================================================================
 # Select the best dataset use for downstream analyses
 #================================================================================================
-X_real <- read.csv(here(file.path(project_path, "data", "PIMA.csv")))
+X_real <- read.csv(here("data", "PIMA.csv"))
 X_real <- X_real|> mutate_if(is.character,as.factor)
 
-trn <- read.csv(here(file.path(project_path, "data", "PIMA_trn.csv")))
+trn <- read.csv(here("data", "PIMA_trn.csv"))
 trn <- trn|> mutate_if(is.character,as.factor)
-val <- read.csv(here(file.path(project_path, "data", "PIMA_hol.csv")))
+val <- read.csv(here("data", "PIMA_hol.csv"))
 val <- val|> mutate_if(is.character,as.factor)
 
 # Fit logistic regression
@@ -323,7 +318,7 @@ feature_associate <- c(list(character(0)), feature_associate)
 
 
 # mice
-load(here(file.path(project_path, "data", "pima_synthetic_list_data_mice.Rdata")))
+load(here("results", "pima_synthetic_list_data_mice.Rdata"))
 results_all <- lapply(seq_along(pima_synthetic_list_data_mice), function(i) {
   Assessment_function_unified_Ablation_Analysis(
     X_real = X_real,
@@ -349,7 +344,7 @@ pima_results_all_mice <- results_all |>
 
 # Save synthetic datasets
 save(pima_results_all_mice,
-     file = here(file.path(project_path, "data", "pima_results_all_mice_min_max.Rdata"))
+     file = here("results", "pima_results_all_mice_min_max.Rdata")
 )
 
 
@@ -400,12 +395,12 @@ PIMA_Metrics_T1_T9_mice$dataset <- paste0("syn_", seq_len(n_synth))
 
 # Save synthetic datasets
 save(PIMA_Metrics_T1_T9_mice,
-     file = here(file.path(project_path, "data", "PIMA_Metrics_T1_T9_mice.Rdata"))
+     file = here("results", "PIMA_Metrics_T1_T9_mice.Rdata")
 )
 
 
 # mice
-load(here(file.path(project_path, "data", "pima_synthetic_list_data_chimera_no_matching.Rdata")))
+load(here("results", "pima_synthetic_list_data_chimera_no_matching.Rdata"))
 results_all <- lapply(seq_along(pima_synthetic_list_data_chimera_no_matching), function(i) {
   Assessment_function_unified_Ablation_Analysis(
     X_real = X_real,
@@ -431,7 +426,7 @@ pima_results_all_chimera_no_matching <- results_all |>
 
 # Save synthetic datasets
 save(pima_results_all_chimera_no_matching,
-     file = here(file.path(project_path, "data", "pima_results_all_chimera_no_matching_min_max.Rdata"))
+     file = here("results", "pima_results_all_chimera_no_matching_min_max.Rdata")
 )
 
 
@@ -481,19 +476,19 @@ PIMA_Metrics_T1_T9_chimera_no_matching$dataset <- paste0("syn_", seq_len(n_synth
 
 # Save synthetic datasets
 save(PIMA_Metrics_T1_T9_chimera_no_matching,
-     file = here(file.path(project_path, "data", "PIMA_Metrics_T1_T9_chimera_no_matching.Rdata"))
+     file = here("results", "PIMA_Metrics_T1_T9_chimera_no_matching.Rdata")
 )
 
 
 #================================================================================================
 # Select the best dataset use for downstream analyses
 #================================================================================================
-X_real <- read.csv(here(file.path(project_path, "data", "AIDS.csv")))
+X_real <- read.csv(here("data", "AIDS.csv"))
 X_real <- X_real|> mutate_if(is.character,as.factor)
 
-trn <- read.csv(here(file.path(project_path, "data", "AIDS_trn.csv")))
+trn <- read.csv(here("data", "AIDS_trn.csv"))
 trn <- trn|> mutate_if(is.character,as.factor)
-val <- read.csv(here(file.path(project_path, "data", "AIDS_hol.csv")))
+val <- read.csv(here("data", "AIDS_hol.csv"))
 val <- val|> mutate_if(is.character,as.factor)
 
 # Fit logistic regression
@@ -520,7 +515,7 @@ feature_associate <- c(list(character(0)), feature_associate)
 
 
 # mice
-load(here(file.path(project_path, "data", "aids_synthetic_list_data_mice.Rdata")))
+load(here("results", "aids_synthetic_list_data_mice.Rdata"))
 results_all <- lapply(seq_along(aids_synthetic_list_data_mice), function(i) {
   Assessment_function_unified_Ablation_Analysis(
     X_real = X_real,
@@ -546,7 +541,7 @@ aids_results_all_mice <- results_all |>
 
 # Save synthetic datasets
 save(aids_results_all_mice,
-     file = here(file.path(project_path, "data", "aids_results_all_mice_min_max.Rdata"))
+     file = here("results", "aids_results_all_mice_min_max.Rdata")
 )
 
 
@@ -596,12 +591,12 @@ AIDS_Metrics_T1_T9_mice$dataset <- paste0("syn_", seq_len(n_synth))
 
 # Save synthetic datasets
 save(AIDS_Metrics_T1_T9_mice,
-     file = here(file.path(project_path, "data", "AIDS_Metrics_T1_T9_mice.Rdata"))
+     file = here("results", "AIDS_Metrics_T1_T9_mice.Rdata")
 )
 
 
 # chimera no matching
-load(here(file.path(project_path, "data", "aids_synthetic_list_data_chimera_no_matching.Rdata")))
+load(here("results", "aids_synthetic_list_data_chimera_no_matching.Rdata"))
 results_all <- lapply(seq_along(aids_synthetic_list_data_chimera_no_matching), function(i) {
   Assessment_function_unified_Ablation_Analysis(
     X_real = X_real,
@@ -627,7 +622,7 @@ aids_results_all_chimera_no_matching <- results_all |>
 
 # Save synthetic datasets
 save(aids_results_all_chimera_no_matching,
-     file = here(file.path(project_path, "data", "aids_results_all_chimera_no_matching_min_max.Rdata"))
+     file = here("results", "aids_results_all_chimera_no_matching_min_max.Rdata")
 )
 
 
@@ -678,19 +673,19 @@ AIDS_Metrics_T1_T9_chimera_no_matching$dataset <- paste0("syn_", seq_len(n_synth
 
 # Save synthetic datasets
 save(AIDS_Metrics_T1_T9_chimera_no_matching,
-     file = here(file.path(project_path, "data", "AIDS_Metrics_T1_T9_chimera_no_matching.Rdata"))
+     file = here("results", "AIDS_Metrics_T1_T9_chimera_no_matching.Rdata")
 )
 
 
 #================================================================================================
 # Select the best dataset use for downstream analyses
 #================================================================================================
-X_real <- read.csv(here(file.path(project_path, "data", "df_rein_without_na.csv")))
+X_real <- read.csv(here("data", "df_rein_without_na.csv"))
 X_real <- X_real|> mutate_if(is.character,as.factor)
 
-trn <- read.csv(here(file.path(project_path, "data", "REIN_trn.csv")))
+trn <- read.csv(here("data", "REIN_trn.csv"))
 trn <- trn|> mutate_if(is.character,as.factor)
-val <- read.csv(here(file.path(project_path, "data", "REIN_hol.csv")))
+val <- read.csv(here("data", "REIN_hol.csv"))
 val <- val|> mutate_if(is.character,as.factor)
 
 # Fit logistic regression
@@ -719,7 +714,7 @@ feature_associate <- c(list(character(0)), feature_associate)
 
 
 # mice
-load(here(file.path(project_path, "data", "rein_synthetic_list_data_mice.Rdata")))
+load(here("results", "rein_synthetic_list_data_mice.Rdata"))
 results_all <- lapply(seq_along(rein_synthetic_list_data_mice), function(i) {
   Assessment_function_unified_Ablation_Analysis(
     X_real = X_real,
@@ -745,7 +740,7 @@ rein_results_all_mice <- results_all |>
 
 # Save synthetic datasets
 save(rein_results_all_mice,
-     file = here(file.path(project_path, "data", "rein_results_all_mice_min_max.Rdata"))
+     file = here("results", "rein_results_all_mice_min_max.Rdata")
 )
 
 
@@ -795,12 +790,12 @@ REIN_Metrics_T1_T9_mice$dataset <- paste0("syn_", seq_len(n_synth))
 
 # Save synthetic datasets
 save(REIN_Metrics_T1_T9_mice,
-     file = here(file.path(project_path, "data", "REIN_Metrics_T1_T9_mice.Rdata"))
+     file = here("results", "REIN_Metrics_T1_T9_mice.Rdata")
 )
 
 
 # chimera no matching
-load(here(file.path(project_path, "data", "rein_synthetic_list_data_chimera_no_matching.Rdata")))
+load(here("results", "rein_synthetic_list_data_chimera_no_matching.Rdata"))
 results_all <- lapply(seq_along(rein_synthetic_list_data_chimera_no_matching), function(i) {
   Assessment_function_unified_Ablation_Analysis(
     X_real = X_real,
@@ -826,7 +821,7 @@ rein_results_all_chimera_no_matching <- results_all |>
 
 # Save synthetic datasets
 save(rein_results_all_chimera_no_matching,
-     file = here(file.path(project_path, "data", "rein_results_all_chimera_no_matching_min_max.Rdata"))
+     file = here("results", "rein_results_all_chimera_no_matching_min_max.Rdata")
 )
 
 
@@ -875,5 +870,5 @@ REIN_Metrics_T1_T9_chimera_no_matching$dataset <- paste0("syn_", seq_len(n_synth
 
 # Save synthetic datasets
 save(REIN_Metrics_T1_T9_chimera_no_matching,
-     file = here(file.path(project_path, "data", "REIN_Metrics_T1_T9_chimera_no_matching.Rdata"))
+     file = here("results", "REIN_Metrics_T1_T9_chimera_no_matching.Rdata")
 )

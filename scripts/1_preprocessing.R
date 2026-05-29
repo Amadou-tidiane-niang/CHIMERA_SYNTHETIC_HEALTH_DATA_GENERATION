@@ -13,16 +13,12 @@ library(tidyverse)    # Data manipulation
 library(mice)         # Multiple imputation
 library(readxl)       # Excel import
 
-# -----------------------------------------------------------------------------------------------
-# PATH CONFIGURATION
-# -----------------------------------------------------------------------------------------------
-project_path <- "Bureau/CHIMERA_SYNTHETIC_HEALTH_DATA_GENERATION"
 
 # Load custom functions
-source(here(file.path(project_path, "scripts", "0_functions.R")))
+source(here("scripts", "0_functions.R"))
 
 # DATA LOADING | Pima  ------------------------------------------------------------
-pima_indians_diabetes <- read.csv(here(file.path(project_path, "data", "pima-indians-diabetes.csv")))
+pima_indians_diabetes <- read.csv(here("data", "pima-indians-diabetes.csv"))
 
 # Rename columns
 names(pima_indians_diabetes) <- c("Number_of_pregnancies",
@@ -45,7 +41,7 @@ levels(pima_indians_diabetes$Diabetes_diagnosis)<-c("No","Yes")
 PIMA <- pima_indians_diabetes
 
 # Save original dataset
-write.csv(PIMA, here(file.path(project_path,"data", "PIMA.csv")), row.names = FALSE)
+write.csv(PIMA, here("data", "PIMA.csv"), row.names = FALSE)
 
 # HoldoutSet : train and holdout set 
 set.seed(123)
@@ -58,14 +54,14 @@ PIMA_hol  <- PIMA[-idx_train, ]
 row.names(PIMA_trn) <- NULL
 row.names(PIMA_hol) <- NULL
 
-write.csv(PIMA_trn, here(file.path(project_path,"data", "PIMA_trn.csv")), row.names = FALSE)
-write.csv(PIMA_hol, here(file.path(project_path,"data", "PIMA_hol.csv")), row.names = FALSE)
+write.csv(PIMA_trn, here("data", "PIMA_trn.csv"), row.names = FALSE)
+write.csv(PIMA_hol, here("data", "PIMA_hol.csv"), row.names = FALSE)
 
 
 # ============================================================
 # DATA LOADING | AIDS 
 # ============================================================
-AIDS <- read_delim(here(file.path(project_path, "data", "aids_original_data.csv")), delim = ";", escape_double = FALSE, trim_ws = TRUE)|> as.data.frame()
+AIDS <- read_delim(here("data", "aids_original_data.csv"), delim = ";", escape_double = FALSE, trim_ws = TRUE)|> as.data.frame()
 
 # Drop identifiers and variables that will not be used
 AIDS <- AIDS|> dplyr::select(-c(pidnum,zprior,cd420,cd496,cd820,arms,strat))
@@ -115,7 +111,7 @@ AIDS <- AIDS %>%
 
 
 # Save dataset
-write.csv(AIDS, here(file.path(project_path,"data", "AIDS.csv")), row.names = FALSE)
+write.csv(AIDS, here("data", "AIDS.csv"), row.names = FALSE)
 
 
 # HoldoutSet : train and holdout set 
@@ -128,15 +124,15 @@ AIDS_hol  <- AIDS[-idx_train, ]
 row.names(AIDS_trn) <- NULL
 row.names(AIDS_hol) <- NULL
 
-write.csv(AIDS_trn, here(file.path(project_path,"data", "AIDS_trn.csv")), row.names = FALSE)
-write.csv(AIDS_hol, here(file.path(project_path,"data", "AIDS_hol.csv")), row.names = FALSE)
+write.csv(AIDS_trn, here("data", "AIDS_trn.csv"), row.names = FALSE)
+write.csv(AIDS_hol, here("data", "AIDS_hol.csv"), row.names = FALSE)
 
 
 # ============================================================
 # DATA LOADING | REIN 
 # ============================================================
-data <- read_excel(here(file.path(project_path, "data", "cohorte_incident_2012-2021.xlsx")))
-data_comp <- read_excel(here(file.path(project_path, "data", "complement_janv2025.xlsx")))
+data <- read_excel(here("data", "cohorte_incident_2012-2021.xlsx"))
+data_comp <- read_excel(here("data", "complement_janv2025.xlsx"))
 
 # merge
 data <- merge(data,data_comp,by="id_ano",all.x="TRUE")
@@ -251,7 +247,7 @@ row.names(df) <- NULL
 df_rein_with_na <- df
 
 # Save dataset
-write.csv(df_rein_with_na, here(file.path(project_path,"data", "df_rein_with_na.csv")), row.names = FALSE)
+write.csv(df_rein_with_na, here("data", "df_rein_with_na.csv"), row.names = FALSE)
 
 # --- Initial MICE setup
 ini <- mice(df, maxit = 0)
@@ -263,7 +259,7 @@ meth[names(df)[sapply(df, is.numeric)]] <- "pmm"
 df_rein_without_na <- complete(mice(df, m = 1, maxit = 5, seed = 123,method = meth, predictorMatrix = pred, printFlag = TRUE))
 
 # Save dataset
-write.csv(df_rein_without_na, here(file.path(project_path,"data", "df_rein_without_na.csv")), row.names = FALSE)
+write.csv(df_rein_without_na, here("data", "df_rein_without_na.csv"), row.names = FALSE)
 
 # HoldoutSet : train and holdout set 
 n <- nrow(df_rein_without_na)
@@ -275,8 +271,8 @@ REIN_hol  <- df_rein_without_na[-idx_train, ]
 row.names(REIN_trn) <- NULL
 row.names(REIN_hol) <- NULL
 
-write.csv(REIN_trn, here(file.path(project_path,"data", "REIN_trn.csv")), row.names = FALSE)
-write.csv(REIN_hol, here(file.path(project_path,"data", "REIN_hol.csv")), row.names = FALSE)
+write.csv(REIN_trn, here("data", "REIN_trn.csv"), row.names = FALSE)
+write.csv(REIN_hol, here("data", "REIN_hol.csv"), row.names = FALSE)
 
 
 # create train-test set
@@ -290,8 +286,8 @@ df_rein_test_with_na_score  <- df_rein_with_na[-idx_train, ]
 row.names(df_rein_train_with_na_score) <- NULL
 row.names(df_rein_test_with_na_score) <- NULL
 
-write.csv(df_rein_train_with_na_score, here(file.path(project_path,"data", "df_rein_train_with_na_score.csv")), row.names = FALSE)
-write.csv(df_rein_test_with_na_score, here(file.path(project_path,"data", "df_rein_test_with_na_score.csv")), row.names = FALSE)
+write.csv(df_rein_train_with_na_score, here("data", "df_rein_train_with_na_score.csv"), row.names = FALSE)
+write.csv(df_rein_test_with_na_score, here("data", "df_rein_test_with_na_score.csv"), row.names = FALSE)
 
 # --- Initial MICE setup
 ini <- mice(df_rein_train_with_na_score, maxit = 0)
@@ -303,7 +299,7 @@ meth[names(df_rein_train_with_na_score)[sapply(df_rein_train_with_na_score, is.n
 df_rein_train_without_na_score <- complete(mice(df_rein_train_with_na_score, m = 1, maxit = 5, seed = 123,method = meth, predictorMatrix = pred, printFlag = TRUE))
 
 # Save dataset
-write.csv(df_rein_train_without_na_score, here(file.path(project_path,"data", "df_rein_train_without_na_score.csv")), row.names = FALSE)
+write.csv(df_rein_train_without_na_score, here("data", "df_rein_train_without_na_score.csv"), row.names = FALSE)
 
 # HoldoutSet : train and holdout set 
 n <- nrow(df_rein_train_without_na_score)
@@ -315,5 +311,5 @@ REIN_hol_score  <- df_rein_train_without_na_score[-idx_train, ]
 row.names(REIN_trn_score) <- NULL
 row.names(REIN_hol_score) <- NULL
 
-write.csv(REIN_trn_score, here(file.path(project_path,"data", "REIN_trn_score.csv")), row.names = FALSE)
-write.csv(REIN_hol_score, here(file.path(project_path,"data", "REIN_hol_score.csv")), row.names = FALSE)
+write.csv(REIN_trn_score, here("data", "REIN_trn_score.csv"), row.names = FALSE)
+write.csv(REIN_hol_score, here("data", "REIN_hol_score.csv"), row.names = FALSE)

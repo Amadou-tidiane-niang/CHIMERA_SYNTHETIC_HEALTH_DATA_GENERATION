@@ -18,29 +18,25 @@ library(forestplot)
 library(patchwork)
 library(cowplot)
 
-# ---------------------------------------------------------------
-# PROJECT PATH CONFIGURATION
-# ---------------------------------------------------------------
-project_path <- "Bureau/CHIMERA_SYNTHETIC_HEALTH_DATA_GENERATION"
 
 # Load custom utility functions
-source(here(file.path(project_path, "scripts", "0_functions.R")))
+source(here("scripts", "0_functions.R"))
 
 
 # =========================================================
 # 1. Load datasets
 # =========================================================
-load(here(file.path(project_path, "data", "PIMA_Metrics_T1_T9_chimera.Rdata")))
-load(here(file.path(project_path, "data", "PIMA_Metrics_T1_T9_synthpop.Rdata")))
-load(here(file.path(project_path, "data", "PIMA_Metrics_T1_T9_ctgan.Rdata")))
+load(here("results", "PIMA_Metrics_T1_T9_chimera.Rdata"))
+load(here("results", "PIMA_Metrics_T1_T9_synthpop.Rdata"))
+load(here("results", "PIMA_Metrics_T1_T9_ctgan.Rdata"))
 
-load(here(file.path(project_path, "data", "AIDS_Metrics_T1_T9_chimera.Rdata")))
-load(here(file.path(project_path, "data", "AIDS_Metrics_T1_T9_synthpop.Rdata")))
-load(here(file.path(project_path, "data", "AIDS_Metrics_T1_T9_ctgan.Rdata")))
+load(here("results", "AIDS_Metrics_T1_T9_chimera.Rdata"))
+load(here("results", "AIDS_Metrics_T1_T9_synthpop.Rdata"))
+load(here("results", "AIDS_Metrics_T1_T9_ctgan.Rdata"))
 
-load(here(file.path(project_path, "data", "REIN_Metrics_T1_T9_chimera.Rdata")))
-load(here(file.path(project_path, "data", "REIN_Metrics_T1_T9_synthpop.Rdata")))
-load(here(file.path(project_path, "data", "REIN_Metrics_T1_T9_ctgan.Rdata")))
+load(here("results", "REIN_Metrics_T1_T9_chimera.Rdata"))
+load(here("results", "REIN_Metrics_T1_T9_synthpop.Rdata"))
+load(here("results", "REIN_Metrics_T1_T9_ctgan.Rdata"))
 
 
 # =========================================================
@@ -329,13 +325,13 @@ p_REIN
 fig_width_in  <- 300 / 25.4
 fig_height_in <- 200 / 25.4
 
-ggsave(here(project_path, "figures", "FigS2_DistrBestofM_PIMA.pdf"), p_PIMA,
+ggsave(here("figures", "FigS2_DistrBestofM_PIMA.pdf"), p_PIMA,
        width = fig_width_in, height = fig_height_in, device = cairo_pdf, bg = "white")
 
-ggsave(here(project_path, "figures", "FigS3_DistrBestofM_AIDS.pdf"), p_AIDS,
+ggsave(here("figures", "FigS3_DistrBestofM_AIDS.pdf"), p_AIDS,
        width = fig_width_in, height = fig_height_in, device = cairo_pdf, bg = "white")
 
-ggsave(here(project_path, "figures", "FigS4_DistrBestofM_REIN.pdf"), p_REIN,
+ggsave(here("figures", "FigS4_DistrBestofM_REIN.pdf"), p_REIN,
        width = fig_width_in, height = fig_height_in, device = cairo_pdf, bg = "white")
 
 
@@ -346,17 +342,17 @@ ggsave(here(project_path, "figures", "FigS4_DistrBestofM_REIN.pdf"), p_REIN,
 # =========================================================
 # 1. Load datasets
 # =========================================================
-load(here(file.path(project_path, "data", "PIMA_Metrics_T1_T9_chimera.Rdata")))
-load(here(file.path(project_path, "data", "PIMA_Metrics_T1_T9_chimera_no_matching.Rdata")))
-load(here(file.path(project_path, "data", "PIMA_Metrics_T1_T9_mice.Rdata")))
+load(here("results", "PIMA_Metrics_T1_T9_chimera.Rdata"))
+load(here("results", "PIMA_Metrics_T1_T9_chimera_no_matching.Rdata"))
+load(here("results", "PIMA_Metrics_T1_T9_mice.Rdata"))
 
-load(here(file.path(project_path, "data", "AIDS_Metrics_T1_T9_chimera.Rdata")))
-load(here(file.path(project_path, "data", "AIDS_Metrics_T1_T9_chimera_no_matching.Rdata")))
-load(here(file.path(project_path, "data", "AIDS_Metrics_T1_T9_mice.Rdata")))
+load(here("results", "AIDS_Metrics_T1_T9_chimera.Rdata"))
+load(here("results", "AIDS_Metrics_T1_T9_chimera_no_matching.Rdata"))
+load(here("results", "AIDS_Metrics_T1_T9_mice.Rdata"))
 
-load(here(file.path(project_path, "data", "REIN_Metrics_T1_T9_chimera.Rdata")))
-load(here(file.path(project_path, "data", "REIN_Metrics_T1_T9_chimera_no_matching.Rdata")))
-load(here(file.path(project_path, "data", "REIN_Metrics_T1_T9_mice.Rdata")))
+load(here("results", "REIN_Metrics_T1_T9_chimera.Rdata"))
+load(here("results", "REIN_Metrics_T1_T9_chimera_no_matching.Rdata"))
+load(here("results", "REIN_Metrics_T1_T9_mice.Rdata"))
 
 
 # =========================================================
@@ -458,65 +454,6 @@ ref_lines <- metric_info |>
   )
 
 
-# =========================================================
-# 9–11. Theme, row plot, and full figure (same structure as above)
-# =========================================================
-theme_npj_box <- function(base_size = 11, base_family = "Helvetica") {
-  theme_minimal(base_size = base_size, base_family = base_family) +
-    theme(
-      text          = element_text(colour = text_colour),
-      plot.title    = element_text(face = "bold", size = rel(1.2), hjust = 0),
-      plot.subtitle = element_text(size = rel(0.95), hjust = 0, margin = margin(b = 8)),
-      axis.title.x  = element_blank(),
-      axis.title.y  = element_text(size = rel(1.0), margin = margin(r = 8)),
-      axis.text.x   = element_text(face = "bold", size = rel(0.9), colour = text_colour),
-      axis.text.y   = element_text(size = rel(0.85), colour = text_colour),
-      panel.grid.major.x = element_blank(),
-      panel.grid.minor   = element_blank(),
-      panel.grid.major.y = element_line(colour = grid_colour, linewidth = 0.3),
-      strip.background   = element_rect(fill = strip_fill, colour = NA),
-      strip.text         = element_text(face = "bold", size = rel(0.9), colour = text_colour),
-      panel.border       = element_rect(fill = NA, colour = border_colour, linewidth = 0.5),
-      panel.spacing      = unit(0.8, "lines"),
-      legend.position    = "none",
-      plot.margin        = margin(8, 10, 8, 10)
-    )
-}
-
-make_metric_row <- function(data, dataset_selected, group_selected, y_lab) {
-  df_plot       <- data |> filter(dataset_name == dataset_selected, metric_group == group_selected)
-  ref_lines_row <- ref_lines |> filter(metric_group == group_selected)
-  
-  ggplot(df_plot, aes(x = synthesizer, y = value, fill = synthesizer)) +
-    geom_hline(
-      data = ref_lines_row, aes(yintercept = target),
-      inherit.aes = FALSE, linewidth = 0.35, linetype = "22", colour = ref_line_colour
-    ) +
-    geom_boxplot(width = 0.62, outlier.shape = NA, linewidth = 0.45, colour = "#3A3A3A", alpha = 0.95) +
-    geom_point(
-      data = df_plot |> filter(is_best), aes(x = synthesizer, y = value),
-      inherit.aes = FALSE, shape = 23, size = 2.8, stroke = 0.45,
-      fill = best_point_fill, colour = best_point_colour
-    ) +
-    facet_wrap(~ metric_label, scales = "free_y", ncol = 3) +
-    scale_fill_manual(values = npj_palette) +
-    scale_x_discrete(limits = SYNTH_ORDER) +
-    labs(y = y_lab) +
-    coord_cartesian(clip = "off") +
-    theme_npj_box() +
-    theme(plot.title = element_blank())
-}
-
-make_metric_boxplot <- function(data, dataset_selected) {
-  p1 <- make_metric_row(data, dataset_selected, "Fidelity", "Fidelity")
-  p2 <- make_metric_row(data, dataset_selected, "Utility",  "Utility")
-  p3 <- make_metric_row(data, dataset_selected, "Privacy",  "Privacy")
-  (p1 / p2 / p3) +
-    plot_annotation(theme = theme(
-      plot.title = element_text(face = "bold", size = 13, hjust = 0, colour = text_colour)
-    ))
-}
-
 
 # =========================================================
 # 12. Generate figures (ablation study)
@@ -536,22 +473,22 @@ p_REIN
 fig_width_in  <- 300 / 25.4
 fig_height_in <- 200 / 25.4
 
-ggsave(here(project_path, "figures", "FigS5_AblationStudy_PIMA.pdf"),
+ggsave(here("figures", "FigS5_AblationStudy_PIMA.pdf"),
        p_PIMA, width = fig_width_in, height = fig_height_in, device = cairo_pdf, bg = "white")
 
-ggsave(here(project_path, "figures", "FigS6_AblationStudy_AIDS.pdf"),
+ggsave(here("figures", "FigS6_AblationStudy_AIDS.pdf"),
        p_AIDS, width = fig_width_in, height = fig_height_in, device = cairo_pdf, bg = "white")
 
-ggsave(here(project_path, "figures", "FigS7_AblationStudy_REIN.pdf"),
+ggsave(here("figures", "FigS7_AblationStudy_REIN.pdf"),
        p_REIN, width = fig_width_in, height = fig_height_in, device = cairo_pdf, bg = "white")
 
-ggsave(here(project_path, "figures", "FigS5_AblationStudy_PIMA.png"),
+ggsave(here("figures", "FigS5_AblationStudy_PIMA.png"),
        p_PIMA, width = fig_width_in, height = fig_height_in, dpi = 350, bg = "white")
 
-ggsave(here(project_path, "figures", "FigS6_AblationStudy_AIDS.png"),
+ggsave(here("figures", "FigS6_AblationStudy_AIDS.png"),
        p_AIDS, width = fig_width_in, height = fig_height_in, dpi = 350, bg = "white")
 
-ggsave(here(project_path, "figures", "FigS7_AblationStudy_REIN.png"),
+ggsave(here("figures", "FigS7_AblationStudy_REIN.png"),
        p_REIN, width = fig_width_in, height = fig_height_in, dpi = 350, bg = "white")
 
 
@@ -562,10 +499,10 @@ ggsave(here(project_path, "figures", "FigS7_AblationStudy_REIN.png"),
 # =========================================================
 # PIMA — Load data
 # =========================================================
-load(here(project_path, "PIMA", "PIMA.Rdata"))
-load(here(project_path, "PIMA", "PIMA_CHIMERA.Rdata"))
-load(here(project_path, "PIMA", "PIMA_SYNTHPOP.Rdata"))
-load(here(project_path, "PIMA", "PIMA_CTGAN.Rdata"))
+load(here("data", "PIMA.Rdata"))
+load(here("data", "PIMA_CHIMERA.Rdata"))
+load(here("data", "PIMA_SYNTHPOP.Rdata"))
+load(here("data", "PIMA_CTGAN.Rdata"))
 
 
 # =========================================================
@@ -755,12 +692,12 @@ w_in <- 180 / 25.4   # 7.087 in
 h_in <- 220 / 25.4   # 8.661 in
 
 ggsave(
-  filename = file.path(here(project_path, "figures"), "Fig1_UnivariateDistr_PIMA.pdf"),
+  filename = here("figures", "Fig1_UnivariateDistr_PIMA.pdf"),
   plot = p_final, width = w_in, height = h_in, units = "in", device = cairo_pdf, bg = "white"
 )
 
 ggsave(
-  filename = file.path(here(project_path, "figures"), "Fig1_UnivariateDistr_PIMA.png"),
+  filename = here("figures", "Fig1_UnivariateDistr_PIMA.png"),
   plot = p_final, width = w_in, height = h_in, units = "in", dpi = 350, bg = "white"
 )
 
@@ -772,15 +709,15 @@ ggsave(
 # =========================================================
 # Load data
 # =========================================================
-load(here(project_path, "AIDS", "AIDS.Rdata"))
-load(here(project_path, "AIDS", "AIDS_CHIMERA.Rdata"))
-load(here(project_path, "AIDS", "AIDS_SYNTHPOP.Rdata"))
-load(here(project_path, "AIDS", "AIDS_CTGAN.Rdata"))
+load(here("data", "AIDS.Rdata"))
+load(here("data", "AIDS_CHIMERA.Rdata"))
+load(here("data", "AIDS_SYNTHPOP.Rdata"))
+load(here("data", "AIDS_CTGAN.Rdata"))
 
 # Recode Censorship as a labeled factor (0 = Censored, 1 = Observed)
 for (df_name in c("AIDS", "AIDS_CHIMERA", "AIDS_SYNTHPOP", "AIDS_CTGAN")) {
   df <- get(df_name)
-  df$Censorship <- factor(df$Censorship, levels = c(0, 1), labels = c("Censored", "Observed"))
+  df$Censored <- factor(df$Censored, levels = c(0, 1), labels = c("Censored", "Observed"))
   assign(df_name, df)
 }
 
@@ -803,7 +740,7 @@ df_aids <- bind_rows(
   mutate(Dataset = factor(Dataset, levels = c("REAL", "CHIMERA", "SYNTHPOP", "CTGAN")))
 
 # Exclude time-to-event variables from distribution panels
-df_aids_bis <- df_aids |> select(-c("Censorship", "Follow_up_time"))
+df_aids_bis <- df_aids |> select(-c("Censored", "times"))
 
 # Panel A — Numeric distributions
 df_long_num <- df_aids_bis |>
@@ -858,10 +795,10 @@ height_ratio <- c(ceiling(n_num / ncol_A), ceiling(n_cat / ncol_B))
 p_final <- p_num / p_cat + plot_layout(heights = height_ratio, guides = "collect") & theme(legend.position = "bottom")
 p_final
 
-ggsave(file.path(here(project_path, "figures"), "Fig1_UnivariateDistr_AIDS.pdf"),
+ggsave(filename=here("figures", "Fig1_UnivariateDistr_AIDS.pdf"),
        p_final, width = w_in, height = h_in, units = "in", device = cairo_pdf, bg = "white")
 
-ggsave(file.path(here(project_path, "figures"), "Fig1_UnivariateDistr_AIDS.png"),
+ggsave(filename=here("figures", "Fig1_UnivariateDistr_AIDS.png"),
        p_final, width = w_in, height = h_in, units = "in", dpi = 350, bg = "white")
 
 
@@ -870,10 +807,10 @@ ggsave(file.path(here(project_path, "figures"), "Fig1_UnivariateDistr_AIDS.png")
 # ============================================================
 
 # Load data
-load(here(project_path, "REIN", "REIN.Rdata"))
-load(here(project_path, "REIN", "REIN_CHIMERA.Rdata"))
-load(here(project_path, "REIN", "REIN_SYNTHPOP.Rdata"))
-load(here(project_path, "REIN", "REIN_CTGAN.Rdata"))
+load(here("data", "REIN.Rdata"))
+load(here("data", "REIN_CHIMERA.Rdata"))
+load(here("data", "REIN_SYNTHPOP.Rdata"))
+load(here("data", "REIN_CTGAN.Rdata"))
 
 # Units of measurement for REIN numeric variables
 variable_units <- list(
@@ -893,7 +830,7 @@ df_rein <- bind_rows(
   mutate(Dataset = factor(Dataset, levels = c("REAL", "CHIMERA", "SYNTHPOP", "CTGAN")))
 
 # Exclude time-to-event variables from distribution panels
-df_rein_bis <- df_rein |> select(-c("Censorship", "Follow_up_time"))
+df_rein_bis <- df_rein |> select(-c("Censored", "times"))
 
 # Panel A — Numeric distributions
 df_long_num <- df_rein_bis |>
@@ -948,10 +885,10 @@ height_ratio <- c(ceiling(n_num / ncol_A), ceiling(n_cat / ncol_B))
 p_final <- p_num / p_cat + plot_layout(heights = height_ratio, guides = "collect") & theme(legend.position = "bottom")
 p_final
 
-ggsave(file.path(here(project_path, "figures"), "Fig1_UnivariateDistr.pdf"),
+ggsave(filename=here("figures", "Fig1_UnivariateDistr.pdf"),
        p_final, width = w_in, height = h_in, units = "in", device = cairo_pdf, bg = "white")
 
-ggsave(file.path(here(project_path, "figures"), "Fig1_UnivariateDistr.png"),
+ggsave(filename=here("figures", "Fig1_UnivariateDistr.png"),
        p_final, width = w_in, height = h_in, units = "in", dpi = 350, bg = "white")
 
 
@@ -1007,11 +944,11 @@ theme_npj <- function(base_size = 12) {
 # =========================================================
 # ROC curve — PIMA
 # =========================================================
-load(here(project_path, "PIMA", "PIMA_tbl_OR.Rdata"))
-load(here(project_path, "PIMA", "pima.roc.original.Rdata"))
-load(here(project_path, "PIMA", "pima.roc.chimera.Rdata"))
-load(here(project_path, "PIMA", "pima.roc.synthpop.Rdata"))
-load(here(project_path, "PIMA", "pima.roc.ctgan.Rdata"))
+load(here("results", "PIMA_tbl_OR.Rdata"))
+load(here("results", "pima.roc.original.Rdata"))
+load(here("results", "pima.roc.chimera.Rdata"))
+load(here("results", "pima.roc.synthpop.Rdata"))
+load(here("results", "pima.roc.ctgan.Rdata"))
 
 # Helper: compute AUC and 95% CI for one ROC object
 compute_auc_label <- function(roc_obj, name) {
@@ -1073,6 +1010,7 @@ plt_roc <- ggplot(df_roc, aes(x = FPR, y = Sensitivity, colour = Dataset, linety
   annotate("text", x = 0.70, y = 0.196, label = "AUC: 0.712 [95% CI: 0.676\u20130.748]", hjust = 0, size = 5)
 
 
+plt_roc
 # =========================================================
 # Forest plot — odds ratios from logistic regression (PIMA)
 # =========================================================
@@ -1082,86 +1020,158 @@ tbl_df <- PIMA_tbl_OR
 fmt <- function(est, lo, hi) sprintf("%.3f [%.3f; %.3f]", est, lo, hi)
 
 # Build the matrix of point estimates and confidence intervals
+# DATA
 RRforest_combined <- cbind.data.frame(
-  OR_original = c(NA, tbl_df$OR_original), lower_original = c(NA, tbl_df$IC95_low_original), upper_original = c(NA, tbl_df$IC95_high_original),
-  OR_chimera  = c(NA, tbl_df$OR_chimera),  lower_chimera  = c(NA, tbl_df$IC95_low_chimera),  upper_chimera  = c(NA, tbl_df$IC95_high_chimera),
-  OR_synthpop = c(NA, tbl_df$OR_synthpop), lower_synthpop = c(NA, tbl_df$IC95_low_synthpop), upper_synthpop = c(NA, tbl_df$IC95_high_synthpop),
-  OR_ctgan    = c(NA, tbl_df$OR_ctgan),    lower_ctgan    = c(NA, tbl_df$IC95_low_ctgan),    upper_ctgan    = c(NA, tbl_df$IC95_high_ctgan)
+  OR_original    = c(NA, tbl_df$OR_original),
+  lower_original = c(NA, tbl_df$IC95_low_original),
+  upper_original = c(NA, tbl_df$IC95_high_original),
+  
+  OR_chimera     = c(NA, tbl_df$OR_chimera),
+  lower_chimera  = c(NA, tbl_df$IC95_low_chimera),
+  upper_chimera  = c(NA, tbl_df$IC95_high_chimera),
+  
+  OR_synthpop    = c(NA, tbl_df$OR_synthpop),
+  lower_synthpop = c(NA, tbl_df$IC95_low_synthpop),
+  upper_synthpop = c(NA, tbl_df$IC95_high_synthpop),
+  
+  OR_ctgan       = c(NA, tbl_df$OR_ctgan),
+  lower_ctgan    = c(NA, tbl_df$IC95_low_ctgan),
+  upper_ctgan    = c(NA, tbl_df$IC95_high_ctgan)
 )
 
+# COVARIATES
 covariates_text <- c(
   "Covariate",
-  "Age (10 years)", "Body mass index", "Diabetes pedigree function",
-  "Diastolic blood pressure", "Number of pregnancies", "Plasma glucose",
-  "Triceps skinfold thickness", "Two hour serum insulin"
+  "Age (10 years)",
+  "Body mass index",
+  "Diabetes pedigree function",
+  "Diastolic blood pressure",
+  "Number of pregnancies",
+  "Plasma glucose",
+  "Triceps skinfold thickness",
+  "Two hour serum insulin"
 )
 
-# Multi-line OR text column (one line per synthesizer)
+# OR TEXT 
 OR_text <- c(
   "Odds Ratio [95% CI]",
   paste(
-    sprintf("%-14s : %s", "REAL",     fmt(tbl_df$OR_original, tbl_df$IC95_low_original, tbl_df$IC95_high_original)),
-    sprintf("%-10s : %s", "CHIMERA",  fmt(tbl_df$OR_chimera,  tbl_df$IC95_low_chimera,  tbl_df$IC95_high_chimera)),
-    sprintf("%-1s : %s",  "SYNTHPOP", fmt(tbl_df$OR_synthpop, tbl_df$IC95_low_synthpop, tbl_df$IC95_high_synthpop)),
-    sprintf("%-12s : %s", "CTGAN",    fmt(tbl_df$OR_ctgan,    tbl_df$IC95_low_ctgan,    tbl_df$IC95_high_ctgan)),
+    sprintf("%-14s : %s", "REAL",
+            fmt(tbl_df$OR_original,
+                tbl_df$IC95_low_original,
+                tbl_df$IC95_high_original)),
+    
+    sprintf("%-10s : %s", "CHIMERA",
+            fmt(tbl_df$OR_chimera,
+                tbl_df$IC95_low_chimera,
+                tbl_df$IC95_high_chimera)),
+    
+    sprintf("%-1s : %s", "SYNTHPOP",
+            fmt(tbl_df$OR_synthpop,
+                tbl_df$IC95_low_synthpop,
+                tbl_df$IC95_high_synthpop)),
+    
+    sprintf("%-12s : %s", "CTGAN",
+            fmt(tbl_df$OR_ctgan,
+                tbl_df$IC95_low_ctgan,
+                tbl_df$IC95_high_ctgan)),
+    
     sep = "\n"
   )
 )
 
-# Standardized difference column
+# SDIFF TEXT (même format)
 SD_text <- c(
   "SDiff",
   paste(
-    sprintf("%s %s",   "", ""),                          # Empty header row for alignment
-    sprintf("%s %.3f", "", tbl_df$SMD_log1),             # CHIMERA vs REAL
-    sprintf("%s %.3f", "", tbl_df$SMD_log2),             # SYNTHPOP vs REAL
-    sprintf("%s %.3f", "", tbl_df$SMD_log3),             # CTGAN vs REAL
+    sprintf("%s %s", "",""),  # ✔ ligne vide pour alignement
+    sprintf("%s %.3f", "",  tbl_df$SMD_log1),
+    sprintf("%s %.3f", "", tbl_df$SMD_log2),
+    sprintf("%s %.3f", "",    tbl_df$SMD_log3),
     sep = "\n"
   )
 )
 
+# TABLE TEXT
 tabletext <- cbind.data.frame(covariates_text, OR_text, SD_text)
 
+
+# FOREST PLOT
 FP.plot <- forestplot(
   tabletext,
-  mean  = cbind(RRforest_combined$OR_original, RRforest_combined$OR_chimera,
-                RRforest_combined$OR_synthpop,  RRforest_combined$OR_ctgan),
-  lower = cbind(RRforest_combined$lower_original, RRforest_combined$lower_chimera,
-                RRforest_combined$lower_synthpop,  RRforest_combined$lower_ctgan),
-  upper = cbind(RRforest_combined$upper_original, RRforest_combined$upper_chimera,
-                RRforest_combined$upper_synthpop,  RRforest_combined$upper_ctgan),
-  zero       = 1,
-  Xlog       = TRUE,
-  xticks     = c(0.75, 1, 1.25, 1.5, 1.75, 2),
-  graph.pos  = 2,
-  align      = c("l", "l", "r"),
-  is.summary = c(TRUE, rep(FALSE, nrow(RRforest_combined) - 1)),
-  graphwidth = unit(14.5, "cm"),
-  boxsize    = 0.1,
-  lwd.ci     = 1.5,
-  colgap     = unit(2, "mm"),
-  line.margin = unit(2.5, "mm"),
-  txt_gp = fpTxtGp(
-    label   = gpar(fontfamily = "sans", cex = 1, lineheight = 1, fontface = "plain"),
-    ticks   = gpar(cex = 1, fontface = "plain"),
-    xlab    = gpar(cex = 1, fontface = "plain"),
-    summary = gpar(fontface = "plain")
+  
+  mean = cbind(
+    RRforest_combined$OR_original,
+    RRforest_combined$OR_chimera,
+    RRforest_combined$OR_synthpop,
+    RRforest_combined$OR_ctgan
   ),
+  
+  lower = cbind(
+    RRforest_combined$lower_original,
+    RRforest_combined$lower_chimera,
+    RRforest_combined$lower_synthpop,
+    RRforest_combined$lower_ctgan
+  ),
+  
+  upper = cbind(
+    RRforest_combined$upper_original,
+    RRforest_combined$upper_chimera,
+    RRforest_combined$upper_synthpop,
+    RRforest_combined$upper_ctgan
+  ),
+  
+  zero = 1,
+  Xlog = TRUE,
+  xticks = c(0.75, 1, 1.25, 1.5, 1.75, 2),
+  graph.pos = 2,
+  align = c("l", "l", "r"),
+  
+  is.summary = c(TRUE, rep(FALSE, nrow(RRforest_combined) - 1)),
+  
+  graphwidth = unit(14.5, "cm"),
+  boxsize = 0.1,
+  lwd.ci=1.5,
+  
+  colgap = unit(2, "mm"),
+  line.margin = unit(2.5, "mm"),
+  
+  txt_gp = fpTxtGp(
+    label = gpar(
+      fontfamily = "sans",
+      cex = 1,
+      lineheight = 1,
+      fontface = "plain"
+    ),
+    ticks = gpar(
+      cex = 1,
+      fontface = "plain"
+    ),
+    xlab = gpar(
+      cex = 1,
+      fontface = "plain"
+    ),
+    summary = gpar(
+      fontface = "plain"
+    )
+  ),
+  
   xlab = "Odds Ratio [95% CI]",
-  col  = fpColors(
-    box     = c("#000000", "#00A087", "#E64B35", "#4DBBD5"),
-    line    = c("#000000", "#00A087", "#E64B35", "#4DBBD5"),
+  
+  col = fpColors(
+    box = c("#000000","#00A087","#E64B35","#4DBBD5"),
+    line = c("#000000","#00A087","#E64B35","#4DBBD5"),
     summary = "#000000"
   )
 ) |>
-  fp_add_lines(h_2 = gpar(col = "#000000", lwd = 1)) |>
+  fp_add_lines(
+    h_2 = gpar(col = "#000000", lwd = 1)
+  ) |>
   fp_set_zebra_style("#E3EDF5")
 
 FP.plot
 
-# =========================================================
-# Combine ROC curve and forest plot — PIMA
-# =========================================================
+## Combine AUC + Forestplot ----
 g_forest <- grid.grabExpr(print(FP.plot))
 
 plotAUC_forest_PIMA <- plt_roc / wrap_elements(full = g_forest) +
@@ -1171,7 +1181,7 @@ plotAUC_forest_PIMA <- plt_roc / wrap_elements(full = g_forest) +
         plot.tag.position = c(0.01, 0.99))
 
 ggsave(
-  filename = here(project_path, "figures", "Fig2_AUC_Forest_PIMA.pdf"),
+  filename = here("figures", "Fig2_AUC_Forest_PIMA.pdf"),
   plot     = plotAUC_forest_PIMA,
   width    = 300 / 25.4,
   height   = (200 / 25.4) * 2,
@@ -1184,7 +1194,7 @@ ggsave(
 # ============================================================
 
 # ── Kaplan–Meier curves ──────────────────────────────────────
-load(here(project_path, "AIDS", "km_aids.Rdata"))
+load(here("results", "km_aids.Rdata"))
 
 p_km <- ggplot(km_aids, aes(x = time, y = estimate, colour = group, linetype = group, fill = group)) +
   geom_step(linewidth = 1) +
@@ -1204,7 +1214,7 @@ p_km <- ggplot(km_aids, aes(x = time, y = estimate, colour = group, linetype = g
 
 
 # ── Time-dependent AUC ───────────────────────────────────────
-load(here(project_path, "AIDS", "auc_all_aids.Rdata"))
+load(here("results", "auc_all_aids.Rdata"))
 
 auc_all <- auc_all_aids |>
   mutate(source = factor(source, levels = c("REAL", "CHIMERA", "SYNTHPOP", "CTGAN")))
@@ -1241,12 +1251,13 @@ p_auc <- ggplot(auc_all, aes(x = time, y = auc, colour = source, linetype = sour
 
 
 # ── Forest plot — hazard ratios from Cox model (AIDS) ────────
-load(here(project_path, "AIDS", "tbl_AIDS_HR.Rdata"))
+load(here("results", "tbl_AIDS_HR.Rdata"))
 
 # Reorder covariates for the forest plot
 order_cov <- c("Treatment_discontinuationYes", "Treatment_indicatorZDV only",
                "SexMale", "Age", "Karnofsky_score",
                "Intravenous_drug_useYes", "Prior_opportunistic_infectionsYes", "CD4_baseline")
+
 tbl_df <- tbl_AIDS_HR[match(order_cov, tbl_AIDS_HR$Covariates), ]
 
 RRforest_combined <- cbind.data.frame(
@@ -1323,7 +1334,7 @@ plot_KM_AUC_forest_AIDS <- (p_km | p_auc) / wrap_elements(full = g_forest) +
         plot.tag.position = c(0.01, 0.99))
 
 ggsave(
-  filename = here(project_path, "figures", "Fig3_KM_AUC_Forest_AIDS.pdf"),
+  filename = here("figures", "Fig3_KM_AUC_Forest_AIDS.pdf"),
   plot     = plot_KM_AUC_forest_AIDS,
   width    = 300 / 25.4, height = (200 / 25.4) * 2, units = "in", scale = 1
 )
@@ -1334,7 +1345,7 @@ ggsave(
 # ============================================================
 
 # ── Kaplan–Meier ────────────────────────────────────────────
-load(here(project_path, "REIN", "km_rein.Rdata"))
+load(here("results", "km_rein.Rdata"))
 
 p_km <- ggplot(km_rein, aes(x = time, y = estimate, colour = group, linetype = group, fill = group)) +
   geom_step(linewidth = 1) +
@@ -1352,7 +1363,7 @@ p_km <- ggplot(km_rein, aes(x = time, y = estimate, colour = group, linetype = g
 
 
 # ── Time-dependent AUC ───────────────────────────────────────
-load(here(project_path, "REIN", "auc_all_rein.Rdata"))
+load(here("results", "auc_all_rein.Rdata"))
 
 auc_all <- auc_all_rein |>
   mutate(source = factor(source, levels = c("REAL", "CHIMERA", "SYNTHPOP", "CTGAN")))
@@ -1387,7 +1398,7 @@ p_auc <- ggplot(auc_all, aes(x = time, y = auc, colour = source, linetype = sour
 
 
 # ── Forest plot — hazard ratios from Cox model (REIN) ────────
-load(here(project_path, "REIN", "tbl_REIN_HR.Rdata"))
+load(here("results", "tbl_REIN_HR.Rdata"))
 tbl_df <- tbl_REIN_HR[1:9, ]
 
 RRforest_combined <- cbind.data.frame(
@@ -1465,7 +1476,7 @@ plot_KM_AUC_forest_REIN <- (p_km | p_auc) / wrap_elements(full = g_forest) +
         plot.tag.position = c(0.01, 0.99))
 
 ggsave(
-  filename = here(project_path, "figures", "Fig4_KM_AUC_Forest_REIN.pdf"),
+  filename = here( "figures", "Fig4_KM_AUC_Forest_REIN.pdf"),
   plot     = plot_KM_AUC_forest_REIN,
   width    = 300 / 25.4, height = (200 / 25.4) * 2, units = "in", scale = 1
 )
@@ -1476,10 +1487,10 @@ ggsave(
 # ============================================================
 
 # Load selection metrics (sensitivity, specificity, kappa) and final-model AUC
-load(here(paste(project_path, "SCORE_REIN", sep = "/"), "chimera_selection_metrics_df.Rdata"))
-load(here(paste(project_path, "SCORE_REIN", sep = "/"), "synthpop_selection_metrics_df.Rdata"))
-load(here(paste(project_path, "SCORE_REIN", sep = "/"), "ctgan_selection_metrics_df.Rdata"))
-load(here(paste(project_path, "SCORE_REIN", sep = "/"), "auc_final_model_rein_syn.Rdata"))
+load(here("results", "chimera_selection_metrics_df.Rdata"))
+load(here("results", "synthpop_selection_metrics_df.Rdata"))
+load(here("results", "ctgan_selection_metrics_df.Rdata"))
+load(here("results", "auc_final_model_rein_syn.Rdata"))
 
 # Append final-model AUC as metric T4
 chimera_selection_metrics_df$T4  <- auc_final_model_rein_syn |> filter(source == "CHIMERA")  |> pull(auc)
@@ -1589,10 +1600,10 @@ make_metric_row <- function(data, dataset_selected, y_lab) {
 p_REIN <- make_metric_row(plot_df, "REIN", "")
 p_REIN
 
-ggsave(here(project_path, "figures", "FigS8_ScoreDistrBestofM_REIN.pdf"),
+ggsave(filename=here("figures", "FigS8_ScoreDistrBestofM_REIN.pdf"),
        p_REIN, width = 300 / 25.4, height = (200 / 25.4) / 1.5, device = cairo_pdf, bg = "white")
 
-ggsave(here(project_path, "figures", "FigS8_ScoreDistrBestofM_REIN.png"),
+ggsave(filename=here("figures", "FigS8_ScoreDistrBestofM_REIN.png"),
        p_REIN, width = 300 / 25.4, height = (200 / 25.4) / 1.5, dpi = 350, bg = "white")
 
 
@@ -1608,10 +1619,10 @@ npj_palette <- c(
 )
 
 # ── ROC curve — REIN final model ─────────────────────────────
-load(here(project_path, "SCORE_REIN", "rein.roc.original.Rdata"))
-load(here(project_path, "SCORE_REIN", "rein.roc.chimera.Rdata"))
-load(here(project_path, "SCORE_REIN", "rein.roc.synthpop.Rdata"))
-load(here(project_path, "SCORE_REIN", "rein.roc.ctgan.Rdata"))
+load(here("results", "rein.roc.original.Rdata"))
+load(here("results", "rein.roc.chimera.Rdata"))
+load(here("results", "rein.roc.synthpop.Rdata"))
+load(here("results", "rein.roc.ctgan.Rdata"))
 
 roc_list <- list(
   REAL     = rein.roc.original,
@@ -1649,10 +1660,10 @@ plt_roc <- ggplot(df_roc, aes(x = FPR, y = Sensitivity, colour = Dataset, linety
 
 
 # ── Calibration curves ────────────────────────────────────────
-load(here(project_path, "SCORE_REIN", "res.original.cal.Rdata"))
-load(here(project_path, "SCORE_REIN", "res.chimera.cal.Rdata"))
-load(here(project_path, "SCORE_REIN", "res.synthpop.cal.Rdata"))
-load(here(project_path, "SCORE_REIN", "res.ctgan.cal.Rdata"))
+load(here("results", "res.original.cal.Rdata"))
+load(here("results", "res.chimera.cal.Rdata"))
+load(here("results", "res.synthpop.cal.Rdata"))
+load(here("results", "res.ctgan.cal.Rdata"))
 
 # Reference: calibration curve from real data (imputation = 0)
 res.original.cal.curve <- res.original.cal$calibration_curve
@@ -1695,7 +1706,7 @@ plot_ROCFinalModel_Cal_REIN <- (plt_roc | plt_chimera) / (plt_synthpop | plt_ctg
         plot.tag.position = c(0.01, 0.99))
 
 ggsave(
-  filename = here(project_path, "figures", "Fig5_AUC_Calib_REIN.pdf"),
+  filename = here("figures", "Fig5_AUC_Calib_REIN.pdf"),
   plot     = plot_ROCFinalModel_Cal_REIN,
   width    = 300 / 25.4, height = (150 / 25.4) * 2, units = "in", scale = 1
 )
@@ -1736,7 +1747,7 @@ plot_ROCFinalModel_Cal_REIN_supp <- (plt_chimera | plt_synthpop | plt_ctgan) +
         plot.tag.position = c(0.01, 0.99))
 
 ggsave(
-  filename = here(project_path, "figures", "FigS9_AUC_Calib_REIN.pdf"),
+  filename = here("figures", "FigS9_AUC_Calib_REIN.pdf"),
   plot     = plot_ROCFinalModel_Cal_REIN_supp,
   width    = 300 / 25.4, height = 130 / 25.4, units = "in", scale = 1
 )

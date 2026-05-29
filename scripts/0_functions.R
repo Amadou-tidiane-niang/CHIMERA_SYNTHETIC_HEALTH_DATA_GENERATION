@@ -313,7 +313,60 @@ CHIMERA_generate <-function(df,missing_rate = 0.10,is_survival = TRUE,timevar = 
   
 }
 
-
+# Function to compute time-dependent AUC with 95% bootstrap CI
+predictive_utility_surv_curve <- function(train, test, time_points = seq(0, 1000, by = 100), n_boot = 200, conf_level = 0.95) {
+  
+  # Fit Cox proportional hazards model on training and testing data
+  cox_model <- coxph(Surv(times, Censored) ~ ., data = train)
+  
+  # Predict linear predictors on train/test
+  lp_train <- predict(cox_model, newdata = train)
+  lp_test  <- predict(cox_model, newdata = test)
+  
+  # Create survival objects
+  Surv_train <- Surv(train$times, train$Censored)
+  Surv_test  <- Surv(test$times, test$Censored)
+  
+  # Original AUC values
+  auc_cd <- AUC.cd(Surv.rsp = Surv_train,
+                   Surv.rsp.new = Surv_test,
+                   lp = lp_train,
+                   lpnew = lp_test,
+                   times = time_points)$auc
+  
+  # Bootstrap to estimate CI
+  auc_boot <- matrix(NA, nrow = n_boot, ncol = length(time_points))
+  
+  for (b in seq_len(n_boot)) {
+    # Resample test set (with replacement)
+    boot_idx <- sample(seq_len(nrow(test)), replace = TRUE)
+    test_boot <- test[boot_idx, ]
+    
+    # Predict on bootstrap sample
+    lp_test_boot <- predict(cox_model, newdata = test_boot)
+    Surv_test_boot <- Surv(test_boot$times, test_boot$Censored)
+    
+    # Compute AUC for bootstrap sample
+    auc_boot[b, ] <- AUC.cd(Surv.rsp = Surv_train,
+                            Surv.rsp.new = Surv_test_boot,
+                            lp = lp_train,
+                            lpnew = lp_test_boot,
+                            times = time_points)$auc
+  }
+  
+  # Confidence intervals from bootstrap distribution
+  alpha <- 1 - conf_level
+  ci_lower <- apply(auc_boot, 2, quantile, probs = alpha / 2, na.rm = TRUE)
+  ci_upper <- apply(auc_boot, 2, quantile, probs = 1 - alpha / 2, na.rm = TRUE)
+  
+  # Return results as a data frame
+  return(data.frame(
+    time  = time_points,
+    auc   = auc_cd,
+    lower = ci_lower,
+    upper = ci_upper
+  ))
+}
 
 # ============================================================
 # Privacy Metrics : AIR
@@ -2381,3 +2434,5 @@ compute_calibration <- function(
     stats_per_imputation = do.call(rbind, all_stats)
   ))
 }
+
+

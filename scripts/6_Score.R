@@ -33,14 +33,9 @@ library(boot)
 library(knitr)
 library(CalibrationCurves)
 
-# -----------------------------------------------------------------------------------------------
-# PROJECT PATH CONFIGURATION
-# -----------------------------------------------------------------------------------------------
-
-project_path <- "Bureau/CHIMERA_SYNTHETIC_HEALTH_DATA_GENERATION"
 
 # Load custom utility functions
-source(here(file.path(project_path, "scripts", "0_functions.R")))
+source(here("scripts", "0_functions.R"))
 
 ###############################################################################################
 ## REIN DATASET
@@ -49,8 +44,8 @@ source(here(file.path(project_path, "scripts", "0_functions.R")))
 # -----------------------------------------------------------------------------------------------
 # LOAD ORIGINAL TRAINING AND TEST DATASETS
 # -----------------------------------------------------------------------------------------------
-REIN_train <- read.csv(here(file.path(project_path, "data", "df_rein_train_with_na_score.csv")))
-REIN_test <- read.csv(here(file.path(project_path, "data", "df_rein_test_with_na_score.csv")))
+REIN_train <- read.csv(here("data", "df_rein_train_with_na_score.csv"))
+REIN_test <- read.csv(here("data", "df_rein_test_with_na_score.csv"))
 
 # Store the original missing-value positions
 # These indices will later be reapplied to synthetic datasets
@@ -62,31 +57,14 @@ na_indices_initial <- which(is.na(REIN_train), arr.ind = TRUE)
 # -----------------------------------------------------------------------------------------------
 
 # CHIMERA synthetic datasets
-load(
-  here(file.path(
-    project_path,
-    "data",
-    "rein_synthetic_list_data_chimera_score.Rdata"
-  ))
-)
+load(here("results","rein_synthetic_list_data_chimera_score.Rdata"))
 
 # SYNTHPOP synthetic datasets
-load(
-  here(file.path(
-    project_path,
-    "data",
-    "rein_synthetic_list_data_synthpop_score.Rdata"
-  ))
-)
+load(here("results","rein_synthetic_list_data_synthpop_score.Rdata"))
 
 # CTGAN synthetic datasets
-load(
-  here(file.path(
-    project_path,
-    "data",
-    "rein_synthetic_list_data_ctgan_score.Rdata"
-  ))
-)
+load(here("results","rein_synthetic_list_data_ctgan_score.Rdata"))
+
 
 # -----------------------------------------------------------------------------------------------
 # REINTRODUCE ORIGINAL MISSING-DATA PATTERN
@@ -119,11 +97,10 @@ results.original.imp <- preprocessing(
 # Save imputed datasets
 save(
   results.original.imp,
-  file = here(file.path(
-    project_path,
-    "data",
+  file = here(
+    "results",
     "results.original.imp.Rdata"
-  ))
+  )
 )
 
 # -----------------------------------------------------------------------------------------------
@@ -140,11 +117,10 @@ results.chimera.imp <- lapply(
 # Save results
 save(
   results.chimera.imp,
-  file = here(file.path(
-    project_path,
-    "data",
+  file = here(
+    "results",
     "results.chimera.imp.Rdata"
-  ))
+  )
 )
 
 # -----------------------------------------------------------------------------------------------
@@ -161,11 +137,10 @@ results.synthpop.imp <- lapply(
 # Save results
 save(
   results.synthpop.imp,
-  file = here(file.path(
-    project_path,
-    "data",
+  file = here(
+    "results",
     "results.synthpop.imp.Rdata"
-  ))
+  )
 )
 
 # -----------------------------------------------------------------------------------------------
@@ -182,11 +157,10 @@ results.ctgan.imp <- lapply(
 # Save results
 save(
   results.ctgan.imp,
-  file = here(file.path(
-    project_path,
-    "data",
+  file = here(
+    "results",
     "results.ctgan.imp.Rdata"
-  ))
+  )
 )
 
 ###############################################################################################
@@ -205,20 +179,18 @@ results.original <- Score(results.original.imp)
 # Save results
 save(
   results.original,
-  file = here(file.path(
-    project_path,
-    "data",
+  file = here(
+    "results",
     "results.original.Rdata"
-  ))
+  )
 )
 
 # Reload original imputed datasets if needed
 load(
-  here(file.path(
-    project_path,
-    "data",
+  here(
+    "results",
     "results.original.imp.Rdata"
-  ))
+  )
 )
 
 # -----------------------------------------------------------------------------------------------
@@ -227,11 +199,10 @@ load(
 
 # Load imputed CHIMERA datasets
 load(
-  here(file.path(
-    project_path,
-    "data",
+  here(
+    "results",
     "results.chimera.imp.Rdata"
-  ))
+  )
 )
 
 # Initialize result container
@@ -248,11 +219,10 @@ for (i in seq_along(results.chimera.imp)) {
 # Save results
 save(
   results.chimera,
-  file = here(file.path(
-    project_path,
-    "data",
+  file = here(
+    "results",
     "results.chimera.Rdata"
-  ))
+  )
 )
 
 # -----------------------------------------------------------------------------------------------
@@ -261,11 +231,10 @@ save(
 
 # Load imputed SYNTHPOP datasets
 load(
-  here(file.path(
-    project_path,
-    "data",
+  here(
+    "results",
     "results.synthpop.imp.Rdata"
-  ))
+  )
 )
 
 # Initialize result container
@@ -282,11 +251,10 @@ for (i in seq_along(results.synthpop.imp)) {
 # Save results
 save(
   results.synthpop,
-  file = here(file.path(
-    project_path,
-    "data",
+  file = here(
+    "results",
     "results.synthpop.Rdata"
-  ))
+  )
 )
 
 # -----------------------------------------------------------------------------------------------
@@ -295,11 +263,10 @@ save(
 
 # Load imputed CTGAN datasets
 load(
-  here(file.path(
-    project_path,
-    "data",
+  here(
+    "results",
     "results.ctgan.imp.Rdata"
-  ))
+  )
 )
 
 # Initialize result container
@@ -316,11 +283,10 @@ for (i in seq_along(results.ctgan.imp)) {
 # Save results
 save(
   results.ctgan,
-  file = here(file.path(
-    project_path,
-    "data",
+  file = here(
+    "results",
     "results.ctgan.Rdata"
-  ))
+  )
 )
 
 ###############################################################################################
@@ -329,38 +295,34 @@ save(
 
 # Load original results
 load(
-  here(file.path(
-    project_path,
-    "data",
+  here(
+    "results",
     "results.original.Rdata"
-  ))
+  )
 )
 
 # Load CHIMERA results
 load(
-  here(file.path(
-    project_path,
-    "data",
+  here(
+    "results",
     "results.chimera.Rdata"
-  ))
+  )
 )
 
 # Load SYNTHPOP results
 load(
-  here(file.path(
-    project_path,
-    "data",
+  here(
+    "results",
     "results.synthpop.Rdata"
-  ))
+  )
 )
 
 # Load CTGAN results
 load(
-  here(file.path(
-    project_path,
-    "data",
+  here(
+    "results",
     "results.ctgan.Rdata"
-  ))
+  )
 )
 
 
@@ -398,11 +360,10 @@ chimera_selection_metrics_df <- do.call(
 # Save results
 save(
   chimera_selection_metrics_df,
-  file = here(file.path(
-    project_path,
-    "data",
+  file = here(
+    "results",
     "chimera_selection_metrics_df.Rdata"
-  ))
+  )
 )
 
 # -----------------------------------------------------------------------------------------------
@@ -432,11 +393,10 @@ synthpop_selection_metrics_df <- do.call(
 # Save results
 save(
   synthpop_selection_metrics_df,
-  file = here(file.path(
-    project_path,
-    "data",
+  file = here(
+    "results",
     "synthpop_selection_metrics_df.Rdata"
-  ))
+  )
 )
 
 # -----------------------------------------------------------------------------------------------
@@ -481,27 +441,24 @@ save(
 # LOAD GLOBAL FIDELITY SCORES
 # -----------------------------------------------------------------------------------------------
 load(
-  here(file.path(
-    project_path,
-    "data",
+  here(
+    "results",
     "rein_results_chimera_score.Rdata"
-  ))
+  )
 )
 
 load(
-  here(file.path(
-    project_path,
-    "data",
+  here(
+    "results",
     "rein_results_synthpop_score.Rdata"
-  ))
+  )
 )
 
 load(
-  here(file.path(
-    project_path,
-    "data",
+  here(
+    "results",
     "rein_results_ctgan_score.Rdata"
-  ))
+  )
 )
 
 
@@ -517,11 +474,10 @@ chimera_selection_metrics_df$distance <-
 
 save(
   chimera_selection_metrics_df,
-  file = here(file.path(
-    project_path,
-    "data",
+  file = here(
+    "results",
     "chimera_selection_metrics_df.Rdata"
-  ))
+  )
 )
 
 synthpop_selection_metrics_df$distance <-
@@ -529,11 +485,10 @@ synthpop_selection_metrics_df$distance <-
 
 save(
   synthpop_selection_metrics_df,
-  file = here(file.path(
-    project_path,
-    "data",
+  file = here(
+    "results",
     "synthpop_selection_metrics_df.Rdata"
-  ))
+  )
 )
 
 
@@ -542,11 +497,10 @@ ctgan_selection_metrics_df$distance <-
 
 save(
   ctgan_selection_metrics_df,
-  file = here(file.path(
-    project_path,
-    "data",
+  file = here(
+    "results",
     "ctgan_selection_metrics_df.Rdata"
-  ))
+  )
 )
 
 
@@ -712,11 +666,10 @@ auc_final_model_rein <- auc_all
 # Save results
 save(
   auc_final_model_rein,
-  file = here(file.path(
-    project_path,
-    "data",
+  file = here(
+    "results",
     "auc_final_model_rein.Rdata"
-  ))
+  )
 )
 
 ###############################################################################################
@@ -767,11 +720,10 @@ rein.roc.original <- roc(df_test$death, predictions_pooled)
 # Save ROC object
 save(
   rein.roc.original,
-  file = here(file.path(
-    project_path,
-    "data",
+  file = here(
+    "results",
     "rein.roc.original.Rdata"
-  ))
+  )
 )
 
 # -----------------------------------------------------------------------------------------------
@@ -806,11 +758,10 @@ rein.roc.chimera <- roc(df_test$death, predictions_pooled)
 
 save(
   rein.roc.chimera,
-  file = here(file.path(
-    project_path,
-    "data",
+  file = here(
+    "results",
     "rein.roc.chimera.Rdata"
-  ))
+  )
 )
 
 # -----------------------------------------------------------------------------------------------
@@ -845,11 +796,10 @@ rein.roc.synthpop <- roc(df_test$death, predictions_pooled)
 
 save(
   rein.roc.synthpop,
-  file = here(file.path(
-    project_path,
-    "data",
+  file = here(
+    "results",
     "rein.roc.synthpop.Rdata"
-  ))
+  )
 )
 
 # -----------------------------------------------------------------------------------------------
@@ -884,11 +834,10 @@ rein.roc.ctgan <- roc(df_test$death, predictions_pooled)
 
 save(
   rein.roc.ctgan,
-  file = here(file.path(
-    project_path,
-    "data",
+  file = here(
+    "results",
     "rein.roc.ctgan.Rdata"
-  ))
+  )
 )
 
 ###############################################################################################
@@ -999,11 +948,10 @@ auc_final_model_rein_syn <- auc_all
 # Save results
 save(
   auc_final_model_rein_syn,
-  file = here(file.path(
-    project_path,
-    "data",
+  file = here(
+    "results",
     "auc_final_model_rein_syn.Rdata"
-  ))
+  )
 )
 
 
@@ -1012,11 +960,10 @@ res.chimera.cal <- compute_calibration_synth(results.chimera, df_test, "death", 
 # Save results
 save(
   res.chimera.cal,
-  file = here(file.path(
-    project_path,
-    "data",
+  file = here(
+    "results",
     "res.chimera.cal.Rdata"
-  ))
+  )
 )
 
 # synthpop
@@ -1025,11 +972,10 @@ res.synthpop.cal <- compute_calibration_synth(results.synthpop, df_test, "death"
 # Save results
 save(
   res.synthpop.cal,
-  file = here(file.path(
-    project_path,
-    "data",
+  file = here(
+    "results",
     "res.synthpop.cal.Rdata"
-  ))
+  )
 )
 # ctgan
 synthetic_data_list <- rein_synthetic_list_data_ctgan_score
@@ -1037,11 +983,10 @@ res.ctgan.cal <- compute_calibration_synth(results.ctgan, df_test, "death", synt
 # Save results
 save(
   res.ctgan.cal,
-  file = here(file.path(
-    project_path,
-    "data",
+  file = here(
+    "results",
     "res.ctgan.cal.Rdata"
-  ))
+  )
 )
 
 
@@ -1051,11 +996,10 @@ res.original.cal <- res
 # Save results
 save(
   res.original.cal,
-  file = here(file.path(
-    project_path,
-    "data",
+  file = here(
+    "results",
     "res.original.cal.Rdata"
-  ))
+  )
 )
 
 
