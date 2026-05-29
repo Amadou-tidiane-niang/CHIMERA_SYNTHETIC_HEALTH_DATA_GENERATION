@@ -24,19 +24,15 @@ library(gower)        # Distance metrics
 library(FNN)          # Nearest neighbors
 library(vcd)          # Cramer's V
 
-# -----------------------------------------------------------------------------------------------
-# PATH CONFIGURATION
-# -----------------------------------------------------------------------------------------------
-project_path <- "Bureau/CHIMERA_SYNTHETIC_HEALTH_DATA_GENERATION"
 
 # Load custom functions
-source(here(file.path(project_path, "scripts", "0_functions.R")))
+source(here("scripts", "0_functions.R"))
 
 #CHIMERA ========================================================================================
 # ===============================================================================================
 # DATA LOADING : PIMA
 # ===============================================================================================
-PIMA <- read.csv(here(file.path(project_path, "data", "PIMA.csv")))
+PIMA <- read.csv(here("data", "PIMA.csv"))
 PIMA <- PIMA|> mutate_if(is.character,as.factor)
 
 n_synth <- 50
@@ -76,7 +72,7 @@ execution_time_lower <- execution_time_mean - sd(execution_times) # 3.478
 
 # Save synthetic datasets
 save(pima_synthetic_list_data_chimera,
-     file = here(file.path(project_path, "data", "pima_synthetic_list_data_chimera.Rdata"))
+     file = here("results", "pima_synthetic_list_data_chimera.Rdata")
 )
 
 
@@ -84,7 +80,7 @@ save(pima_synthetic_list_data_chimera,
 # ===============================================================================================
 # DATA LOADING : AIDS
 # ===============================================================================================
-AIDS <- read.csv(here(file.path(project_path, "data", "AIDS.csv")))
+AIDS <- read.csv(here("data", "AIDS.csv"))
 AIDS <- AIDS|> mutate_if(is.character,as.factor)
 
 aids_synthetic_list_data_chimera <- vector("list", n_synth)
@@ -119,14 +115,14 @@ execution_time_lower <- execution_time_mean - sd(execution_times) # 32.661
 
 # Save synthetic datasets
 save(aids_synthetic_list_data_chimera,
-     file = here(file.path(project_path, "data", "aids_synthetic_list_data_chimera.Rdata"))
+     file = here("results", "aids_synthetic_list_data_chimera.Rdata")
 )
 
 
 # ===============================================================================================
 # DATA LOADING : REIN
 # ===============================================================================================
-df_rein <- read.csv(here(file.path(project_path, "data", "df_rein_with_na.csv")))
+df_rein <- read.csv(here("data", "df_rein_with_na.csv"))
 df_rein <- df_rein|> mutate_if(is.character,as.factor)
 
 rein_synthetic_list_data_chimera <- vector("list", n_synth)
@@ -161,7 +157,7 @@ execution_time_lower <- execution_time_mean - sd(execution_times) # 507.765
 
 # Save synthetic datasets
 save(rein_synthetic_list_data_chimera,
-     file = here(file.path(project_path, "data", "rein_synthetic_list_data_chimera.Rdata"))
+     file = here("results", "rein_synthetic_list_data_chimera.Rdata")
 )
 
 
@@ -188,7 +184,7 @@ execution_time_lower <- execution_time_mean - sd(execution_times) # 0.070s
 
 # Save synthetic datasets
 save(pima_synthetic_list_data_synthpop,
-     file = here(file.path(project_path, "data", "pima_synthetic_list_data_synthpop.Rdata"))
+     file = here("results", "pima_synthetic_list_data_synthpop.Rdata")
 )
 
 # ===============================================================================================
@@ -212,7 +208,7 @@ execution_time_lower <- execution_time_mean - sd(execution_times) # 1.029
 
 # Save synthetic datasets
 save(aids_synthetic_list_data_synthpop,
-     file = here(file.path(project_path, "data", "aids_synthetic_list_data_synthpop.Rdata"))
+     file = here("results", "aids_synthetic_list_data_synthpop.Rdata")
 )
 
 
@@ -238,17 +234,15 @@ execution_time_lower <- execution_time_mean - sd(execution_times) # 56.530
 
 # Save synthetic datasets
 save(rein_synthetic_list_data_synthpop,
-     file = here(file.path(project_path, "data", "rein_synthetic_list_data_synthpop.Rdata"))
+     file = here("reuslts", "rein_synthetic_list_data_synthpop.Rdata")
 )
 
 
 # CTGAN =========================================================================================
 # PIMA
-data_dir <- "~/Bureau/ARTICLE_GENERATION_DONNEES_SYNTHETIQUES_CHIMERA/data/pima_synthetic_datasets_ctgan"
-
 files <- sprintf(
   "%s/PIMA_CTGAN_%02d.csv",
-  data_dir,
+  here("data","pima_synthetic_datasets_ctgan"),
   1:n_synth
 )
 
@@ -262,7 +256,7 @@ pima_synthetic_list_data_ctgan <- lapply(
 
 # Save synthetic datasets
 save(pima_synthetic_list_data_ctgan,
-     file = here(file.path(project_path, "data", "pima_synthetic_list_data_ctgan.Rdata"))
+     file = here("results", "pima_synthetic_list_data_ctgan.Rdata")
 )
 
 #execution_time_mean  = 8.34 sec
@@ -270,11 +264,9 @@ save(pima_synthetic_list_data_ctgan,
 #execution_time_lower = 7.81 sec
 
 # AIDS
-data_dir <- "~/Bureau/ARTICLE_GENERATION_DONNEES_SYNTHETIQUES_CHIMERA/data/aids_synthetic_datasets_ctgan"
-
 files <- sprintf(
   "%s/AIDS_CTGAN_%02d.csv",
-  data_dir,
+  here("data","aids_synthetic_datasets_ctgan"),
   1:n_synth
 )
 
@@ -288,7 +280,7 @@ aids_synthetic_list_data_ctgan <- lapply(
 
 # Save synthetic datasets
 save(aids_synthetic_list_data_ctgan,
-     file = here(file.path(project_path, "data", "aids_synthetic_list_data_ctgan.Rdata"))
+     file = here("results", "aids_synthetic_list_data_ctgan.Rdata")
 )
 
 #execution_time_mean  = 39.79 sec
@@ -296,11 +288,9 @@ save(aids_synthetic_list_data_ctgan,
 #execution_time_lower = 39.37 sec
 
 # REIN
-data_dir <- "~/Bureau/ARTICLE_GENERATION_DONNEES_SYNTHETIQUES_CHIMERA/data/rein_synthetic_datasets_ctgan"
-
 files <- sprintf(
   "%s/REIN_CTGAN_%02d.csv",
-  data_dir,
+  here("data","rein_synthetic_datasets_ctgan"),
   1:n_synth
 )
 
@@ -316,7 +306,7 @@ rein_synthetic_list_data_ctgan <- lapply(
 
 # Save synthetic datasets
 save(rein_synthetic_list_data_ctgan,
-     file = here(file.path(project_path, "data", "rein_synthetic_list_data_ctgan.Rdata"))
+     file = here("results", "rein_synthetic_list_data_ctgan.Rdata")
 )
 
 #execution_time_mean  = 786.21 sec
@@ -326,11 +316,9 @@ save(rein_synthetic_list_data_ctgan,
 
 # CTGAN tain for holdout set =========================================================================================
 # PIMA
-data_dir <- "~/Bureau/ARTICLE_GENERATION_DONNEES_SYNTHETIQUES_CHIMERA/data/pima_synthetic_datasets_ctgan_trn"
-
 files <- sprintf(
   "%s/PIMA_CTGAN_%02d.csv",
-  data_dir,
+  here("data","pima_synthetic_datasets_ctgan_trn"),
   1:n_synth
 )
 
@@ -344,15 +332,13 @@ pima_synthetic_list_data_ctgan_trn <- lapply(
 
 # Save synthetic datasets
 save(pima_synthetic_list_data_ctgan_trn,
-     file = here(file.path(project_path, "data", "pima_synthetic_list_data_ctgan_trn.Rdata"))
+     file = here("results", "pima_synthetic_list_data_ctgan_trn.Rdata")
 )
 
 # AIDS
-data_dir <- "~/Bureau/ARTICLE_GENERATION_DONNEES_SYNTHETIQUES_CHIMERA/data/aids_synthetic_datasets_ctgan_trn"
-
 files <- sprintf(
   "%s/AIDS_CTGAN_%02d.csv",
-  data_dir,
+  here("data","aids_synthetic_datasets_ctgan_trn"),
   1:n_synth
 )
 
@@ -366,15 +352,13 @@ aids_synthetic_list_data_ctgan_trn <- lapply(
 
 # Save synthetic datasets
 save(aids_synthetic_list_data_ctgan_trn,
-     file = here(file.path(project_path, "data", "aids_synthetic_list_data_ctgan_trn.Rdata"))
+     file = here("results", "aids_synthetic_list_data_ctgan_trn.Rdata")
 )
 
 # REIN
-data_dir <- "~/Bureau/ARTICLE_GENERATION_DONNEES_SYNTHETIQUES_CHIMERA/data/rein_synthetic_datasets_ctgan_trn"
-
 files <- sprintf(
   "%s/REIN_CTGAN_%02d.csv",
-  data_dir,
+  here("data","rein_synthetic_datasets_ctgan_trn"),
   1:n_synth
 )
 
@@ -389,18 +373,18 @@ rein_synthetic_list_data_ctgan_trn <- lapply(
 
 # Save synthetic datasets
 save(rein_synthetic_list_data_ctgan_trn,
-     file = here(file.path(project_path, "data", "rein_synthetic_list_data_ctgan_trn.Rdata"))
+     file = here("results", "rein_synthetic_list_data_ctgan_trn.Rdata")
 )
 
 #================================================================================================
 # Select the best dataset use for downstream analyses
 #================================================================================================
-X_real <- read.csv(here(file.path(project_path, "data", "PIMA.csv")))
+X_real <- read.csv(here("data", "PIMA.csv"))
 X_real <- X_real|> mutate_if(is.character,as.factor)
 
-trn <- read.csv(here(file.path(project_path, "data", "PIMA_trn.csv")))
+trn <- read.csv(here("data", "PIMA_trn.csv"))
 trn <- trn|> mutate_if(is.character,as.factor)
-val <- read.csv(here(file.path(project_path, "data", "PIMA_hol.csv")))
+val <- read.csv(here("data", "PIMA_hol.csv"))
 val <- val|> mutate_if(is.character,as.factor)
 
 # Fit logistic regression
@@ -427,7 +411,7 @@ feature_associate <- c(list(character(0)), feature_associate)
 
 
 # chimera
-load(here(file.path(project_path, "data", "pima_synthetic_list_data_chimera.Rdata")))
+load(here("results", "pima_synthetic_list_data_chimera.Rdata"))
 results_all <- lapply(seq_along(pima_synthetic_list_data_chimera), function(i) {
   Assessment_function_unified(
     X_real = X_real,
@@ -454,7 +438,7 @@ pima_results_all_chimera <- results_all |>
 
 # Save synthetic datasets
 save(pima_results_all_chimera,
-     file = here(file.path(project_path, "data", "pima_results_all_chimera_min_max.Rdata"))
+     file = here("results", "pima_results_all_chimera_min_max.Rdata")
 )
 
 
@@ -504,12 +488,12 @@ PIMA_Metrics_T1_T9_chimera$dataset <- paste0("syn_", seq_len(n_synth))
 
 # Save synthetic datasets
 save(PIMA_Metrics_T1_T9_chimera,
-     file = here(file.path(project_path, "data", "PIMA_Metrics_T1_T9_chimera.Rdata"))
+     file = here("results", "PIMA_Metrics_T1_T9_chimera.Rdata")
 )
 
 
 # synthpop
-load(here(file.path(project_path, "data", "pima_synthetic_list_data_synthpop.Rdata")))
+load(here("results", "pima_synthetic_list_data_synthpop.Rdata"))
 results_all <- lapply(seq_along(pima_synthetic_list_data_synthpop), function(i) {
   Assessment_function_unified(
     X_real = X_real,
@@ -536,7 +520,7 @@ pima_results_all_synthpop <- results_all |>
 
 # Save synthetic datasets
 save(pima_results_all_synthpop,
-     file = here(file.path(project_path, "data", "pima_results_all_synthpop_min_max.Rdata"))
+     file = here("results", "pima_results_all_synthpop_min_max.Rdata")
 )
 
 
@@ -586,13 +570,13 @@ PIMA_Metrics_T1_T9_synthpop$dataset <- paste0("syn_", seq_len(n_synth))
 
 # Save synthetic datasets
 save(PIMA_Metrics_T1_T9_synthpop,
-     file = here(file.path(project_path, "data", "PIMA_Metrics_T1_T9_synthpop.Rdata"))
+     file = here("results", "PIMA_Metrics_T1_T9_synthpop.Rdata")
 )
 
 
 # CTGAN =========================================================================================
-load(here(file.path(project_path, "data", "pima_synthetic_list_data_ctgan.Rdata")))
-load(here(file.path(project_path, "data", "pima_synthetic_list_data_ctgan_trn.Rdata")))
+load(here("results", "pima_synthetic_list_data_ctgan.Rdata"))
+load(here("results", "pima_synthetic_list_data_ctgan_trn.Rdata"))
 
 results_all <- lapply(seq_along(pima_synthetic_list_data_ctgan), function(i) {
   Assessment_function_unified(
@@ -620,7 +604,7 @@ pima_results_all_ctgan <- results_all |>
 
 # Save synthetic datasets
 save(pima_results_all_ctgan,
-     file = here(file.path(project_path, "data", "pima_results_all_ctgan_min_max.Rdata"))
+     file = here("results", "pima_results_all_ctgan_min_max.Rdata")
 )
 
 
@@ -670,20 +654,20 @@ PIMA_Metrics_T1_T9_ctgan$dataset <- paste0("syn_", seq_len(n_synth))
 
 # Save synthetic datasets
 save(PIMA_Metrics_T1_T9_ctgan,
-     file = here(file.path(project_path, "data", "PIMA_Metrics_T1_T9_ctgan.Rdata"))
+     file = here("results", "PIMA_Metrics_T1_T9_ctgan.Rdata")
 )
 
 
 #================================================================================================
 # Select the best dataset use for downstream analyses
 #================================================================================================
-X_real <- read.csv(here(file.path(project_path, "data", "AIDS.csv")))
+X_real <- read.csv(here("data", "AIDS.csv"))
 X_real <- X_real|> mutate_if(is.character,as.factor)
 #X_real$Censored <- as.factor(X_real$Censored)
 
-trn <- read.csv(here(file.path(project_path, "data", "AIDS_trn.csv")))
+trn <- read.csv(here("data", "AIDS_trn.csv"))
 trn <- trn|> mutate_if(is.character,as.factor)
-val <- read.csv(here(file.path(project_path, "data", "AIDS_hol.csv")))
+val <- read.csv(here("data", "AIDS_hol.csv"))
 val <- val|> mutate_if(is.character,as.factor)
 
 # Fit logistic regression
@@ -710,7 +694,7 @@ feature_associate <- lapply(seq_along(top_features), function(i) {
 feature_associate <- c(list(character(0)), feature_associate)
 
 # chimera
-load(here(file.path(project_path, "data", "aids_synthetic_list_data_chimera.Rdata")))
+load(here("results", "aids_synthetic_list_data_chimera.Rdata"))
 results_all <- lapply(seq_along(aids_synthetic_list_data_chimera), function(i) {
   Assessment_function_unified(
     X_real = X_real,
@@ -737,7 +721,7 @@ aids_results_all_chimera <- results_all |>
 
 # Save synthetic datasets
 save(aids_results_all_chimera,
-     file = here(file.path(project_path, "data", "aids_results_all_chimera_min_max.Rdata"))
+     file = here("results", "aids_results_all_chimera_min_max.Rdata")
 )
 
 
@@ -787,12 +771,12 @@ AIDS_Metrics_T1_T9_chimera$dataset <- paste0("syn_", seq_len(n_synth))
 
 # Save synthetic datasets
 save(AIDS_Metrics_T1_T9_chimera,
-     file = here(file.path(project_path, "data", "AIDS_Metrics_T1_T9_chimera.Rdata"))
+     file = here("results", "AIDS_Metrics_T1_T9_chimera.Rdata")
 )
 
 
 # synthpop
-load(here(file.path(project_path, "data", "aids_synthetic_list_data_synthpop.Rdata")))
+load(here("results", "aids_synthetic_list_data_synthpop.Rdata"))
 results_all <- lapply(seq_along(aids_synthetic_list_data_synthpop), function(i) {
   Assessment_function_unified(
     X_real = X_real,
@@ -819,7 +803,7 @@ aids_results_all_synthpop <- results_all |>
 
 # Save synthetic datasets
 save(aids_results_all_synthpop,
-     file = here(file.path(project_path, "data", "aids_results_all_synthpop_min_max.Rdata"))
+     file = here("results", "aids_results_all_synthpop_min_max.Rdata")
 )
 
 
@@ -869,13 +853,13 @@ AIDS_Metrics_T1_T9_synthpop$dataset <- paste0("syn_", seq_len(n_synth))
 
 # Save synthetic datasets
 save(AIDS_Metrics_T1_T9_synthpop,
-     file = here(file.path(project_path, "data", "AIDS_Metrics_T1_T9_synthpop.Rdata"))
+     file = here("results", "AIDS_Metrics_T1_T9_synthpop.Rdata")
 )
 
 
 # ctgan
-load(here(file.path(project_path, "data", "aids_synthetic_list_data_ctgan.Rdata")))
-load(here(file.path(project_path, "data", "aids_synthetic_list_data_ctgan_trn.Rdata")))
+load(here("results", "aids_synthetic_list_data_ctgan.Rdata"))
+load(here("results", "aids_synthetic_list_data_ctgan_trn.Rdata"))
 
 results_all <- lapply(seq_along(aids_synthetic_list_data_ctgan), function(i) {
   Assessment_function_unified(
@@ -903,7 +887,7 @@ aids_results_all_ctgan <- results_all |>
 
 # Save synthetic datasets
 save(aids_results_all_ctgan,
-     file = here(file.path(project_path, "data", "aids_results_all_ctgan_min_max.Rdata"))
+     file = here("results", "aids_results_all_ctgan_min_max.Rdata")
 )
 
 
@@ -953,7 +937,7 @@ AIDS_Metrics_T1_T9_ctgan$dataset <- paste0("syn_", seq_len(n_synth))
 
 # Save synthetic datasets
 save(AIDS_Metrics_T1_T9_ctgan,
-     file = here(file.path(project_path, "data", "AIDS_Metrics_T1_T9_ctgan.Rdata"))
+     file = here("results", "AIDS_Metrics_T1_T9_ctgan.Rdata")
 )
 
 
@@ -961,12 +945,12 @@ save(AIDS_Metrics_T1_T9_ctgan,
 #================================================================================================
 # Select the best dataset use for downstream analyses
 #================================================================================================
-X_real <- read.csv(here(file.path(project_path, "data", "df_rein_without_na.csv")))
+X_real <- read.csv(here("data", "df_rein_without_na.csv"))
 X_real <- X_real|> mutate_if(is.character,as.factor)
 
-trn <- read.csv(here(file.path(project_path, "data", "REIN_trn.csv")))
+trn <- read.csv(here("data", "REIN_trn.csv"))
 trn <- trn|> mutate_if(is.character,as.factor)
-val <- read.csv(here(file.path(project_path, "data", "REIN_hol.csv")))
+val <- read.csv(here("data", "REIN_hol.csv"))
 val <- val|> mutate_if(is.character,as.factor)
 
 # Fit logistic regression
@@ -994,7 +978,7 @@ feature_associate <- c(list(character(0)), feature_associate)
 
 
 # chimera
-load(here(file.path(project_path, "data", "rein_synthetic_list_data_chimera.Rdata")))
+load(here("results", "rein_synthetic_list_data_chimera.Rdata"))
 results_all <- lapply(seq_along(rein_synthetic_list_data_chimera), function(i) {
   Assessment_function_unified(
     X_real = X_real,
@@ -1021,7 +1005,7 @@ rein_results_all_chimera <- results_all |>
 
 # Save synthetic datasets
 save(rein_results_all_chimera,
-     file = here(file.path(project_path, "data", "rein_results_all_chimera_min_max.Rdata"))
+     file = here("results", "rein_results_all_chimera_min_max.Rdata")
 )
 
 
@@ -1071,12 +1055,12 @@ REIN_Metrics_T1_T9_chimera$dataset <- paste0("syn_", seq_len(n_synth))
 
 # Save synthetic datasets
 save(REIN_Metrics_T1_T9_chimera,
-     file = here(file.path(project_path, "data", "REIN_Metrics_T1_T9_chimera.Rdata"))
+     file = here("results", "REIN_Metrics_T1_T9_chimera.Rdata")
 )
 
 
 # synthpop
-load(here(file.path(project_path, "data", "rein_synthetic_list_data_synthpop.Rdata")))
+load(here("results", "rein_synthetic_list_data_synthpop.Rdata"))
 results_all <- lapply(seq_along(rein_synthetic_list_data_synthpop), function(i) {
   Assessment_function_unified(
     X_real = X_real,
@@ -1103,7 +1087,7 @@ rein_results_all_synthpop <- results_all |>
 
 # Save synthetic datasets
 save(rein_results_all_synthpop,
-     file = here(file.path(project_path, "data", "rein_results_all_synthpop_min_max.Rdata"))
+     file = here("results", "rein_results_all_synthpop_min_max.Rdata")
 )
 
 
@@ -1153,13 +1137,13 @@ REIN_Metrics_T1_T9_synthpop$dataset <- paste0("syn_", seq_len(n_synth))
 
 # Save synthetic datasets
 save(REIN_Metrics_T1_T9_synthpop,
-     file = here(file.path(project_path, "data", "REIN_Metrics_T1_T9_synthpop.Rdata"))
+     file = here("results", "REIN_Metrics_T1_T9_synthpop.Rdata")
 )
 
 
 # ctgan
-load(here(file.path(project_path, "data", "rein_synthetic_list_data_ctgan.Rdata")))
-load(here(file.path(project_path, "data", "rein_synthetic_list_data_ctgan_trn.Rdata")))
+load(here("results", "rein_synthetic_list_data_ctgan.Rdata"))
+load(here("results", "rein_synthetic_list_data_ctgan_trn.Rdata"))
 
 
 results_all <- lapply(seq_along(rein_synthetic_list_data_ctgan), function(i) {
@@ -1188,7 +1172,7 @@ rein_results_all_ctgan <- results_all |>
 
 # Save synthetic datasets
 save(rein_results_all_ctgan,
-     file = here(file.path(project_path, "data", "rein_results_all_ctgan_min_max.Rdata"))
+     file = here("results", "rein_results_all_ctgan_min_max.Rdata")
 )
 
 
@@ -1238,13 +1222,8 @@ REIN_Metrics_T1_T9_ctgan$dataset <- paste0("syn_", seq_len(n_synth))
 
 # Save synthetic datasets
 save(REIN_Metrics_T1_T9_ctgan,
-     file = here(file.path(project_path, "data", "REIN_Metrics_T1_T9_ctgan.Rdata"))
+     file = here("results", "REIN_Metrics_T1_T9_ctgan.Rdata")
 )
-
-
-
-
-
 
 
 
