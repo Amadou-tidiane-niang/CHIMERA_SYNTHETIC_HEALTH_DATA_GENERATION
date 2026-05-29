@@ -244,8 +244,11 @@ df <- df|>
 df <- df[which(df$Age>=75),]
 row.names(df) <- NULL
 
-df_rein_with_na <- df
+na_indices_initial <- which(is.na(df), arr.ind = TRUE)
+REIN_CHIMERA[na_indices_initial] <- NA
+df_rein_with_na <- REIN_CHIMERA
 
+df <- REIN_CHIMERA
 # Save dataset
 write.csv(df_rein_with_na, here("data", "df_rein_with_na.csv"), row.names = FALSE)
 
