@@ -142,6 +142,28 @@ This script implements the complementary ablation analysis designed to isolate t
 
 **Evaluation.** For each strategy and dataset, `Assessment_function_unified_Ablation_Analysis()` computes the nine fidelity–utility–privacy metrics (T1–T9). The attribute inference risk scenarios are constructed identically to those in `2_BestOf_M_DatasetGenerator.R`. The composite loss score is then computed using the same target vector, family grouping, and equal weighting scheme, producing ranked metric tables for each strategy–dataset combination. All results are saved for downstream best-of-M selection and comparison with full CHIMERA.
 
+#### `5_BestOf_M_Dataset_Generator_Score_Analysis.R`
+
+This script replicates the synthetic data generation and best-of-M selection pipeline specifically for the REIN prognostic score workflow, using the 70% training split of the REIN registry rather than the full dataset.
+
+**Synthetic data generation.** Fifty independent synthetic datasets are generated from the REIN training set `df_rein_train_with_na_score.csv` using CHIMERA (masking rate 30%, survival mode) and SYNTHPOP (default settings). CTGAN datasets are pre-generated externally and imported from CSV, with a separate set of training-only CTGAN datasets also loaded for the holdout-based privacy metric.
+
+**Evaluation and best-of-M selection.** For each method, `Assessment_function_unified()` computes the nine fidelity–utility–privacy metrics (T1–T9) on the training split, using the same Cox model formula, attribute inference scenarios, and composite loss function as in the main benchmark. The resulting ranked metric tables are saved and used downstream to select the representative synthetic dataset for the prognostic score replication workflow.
+
+#### `6_Score.R`
+
+This script implements the full REIN prognostic score development and validation pipeline on the real and selected synthetic datasets.
+
+**Preprocessing and multiple imputation.** The original REIN training and test sets are loaded and the positions of real missing values are recorded. These positions are reintroduced into the CHIMERA and CTGAN synthetic datasets to reproduce the original missingness structure before analysis. The `preprocessing()` function is then applied to the real training set and to each of the 50 synthetic datasets from all three methods, generating 50 multiply imputed datasets per source.
+
+**Bootstrap-based variable selection.** `Score()` is applied to each set of imputed datasets, yielding bootstrap selection frequencies for all candidate predictors across the 5,000 logistic regression models (50 imputations × 100 bootstrap resamples). Results are saved for the real data and for every synthetic dataset from each method.
+
+**Best-of-M selection.** For each method, the composite fidelity–utility–privacy loss computed in `5_BestOf_M_Dataset_Generator_Score_Analysis.R` is attached to the variable-selection agreement metrics (sensitivity, specificity, Cohen's kappa). The synthetic dataset minimizing `L_total` is selected as the representative dataset for downstream reporting.
+
+**Discrimination.** Pooled ROC curves and AUC values are computed for the real data and each selected synthetic dataset by averaging predicted probabilities across the 50 imputed datasets and evaluating discrimination on the independent test set. AUC results are also computed across all 50 synthetic datasets per method to characterize run-to-run variability.
+
+**Calibration.** `compute_calibration()` produces restricted cubic spline calibration curves, Brier scores, calibration intercepts, and calibration slopes for the real imputed datasets on the test set. `compute_calibration_synth()` replicates this evaluation for each of the 50 synthetic datasets from CHIMERA, SYNTHPOP, and CTGAN, enabling method-level comparison of calibration variability.
+
 ---
 
 ## Reproducibility
