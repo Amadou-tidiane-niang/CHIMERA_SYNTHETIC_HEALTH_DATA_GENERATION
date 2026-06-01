@@ -1,6 +1,52 @@
 # ============================================================
 # 0. Useful function 
 # ============================================================
+prepare_survival_data_time <- function(data_time,
+                                       date_cens_adminis,
+                                       ddir_col,
+                                       event_cols,
+                                       censored_compute = FALSE) {
+  
+  # Convert dates
+  data_time[[ddir_col]] <- as.POSIXct(data_time[[ddir_col]], tz = "UTC")
+  data_time[event_cols] <- lapply(data_time[event_cols], as.POSIXct, tz = "UTC")
+  
+  # Administrative censoring
+  censor_date <- as.POSIXct(date_cens_adminis, tz = "UTC")
+  
+  data_time <- data_time %>%
+    mutate(across(all_of(event_cols), ~pmin(.x, censor_date)))
+  
+  # Earliest event
+  min_event_time <- do.call(
+    pmin,
+    c(data_time[event_cols], na.rm = TRUE)
+  )
+  
+  data_time$times <- as.POSIXct(min_event_time, tz = "UTC")
+  data_time$times[is.na(data_time$times)] <- censor_date
+  
+  # Convert to time (days)
+  data_time$times <- as.numeric(
+    difftime(data_time$times, data_time[[ddir_col]], units = "days")
+  )
+  
+  # Optional censoring indicator
+  if (censored_compute) {
+    data_time$censored <- with(data_time, ifelse(
+      !is.na(ddc) &
+        (is.na(dgrf) | ddc < dgrf) &
+        (is.na(dsvr) | ddc < dsvr) &
+        (is.na(dpdv) | ddc < dpdv),
+      1, 0
+    ))
+    
+    data_time$censored <- as.integer(data_time$censored)
+  }
+  
+  return(data_time)
+}
+
 
 # Freedman- Draconis
 fd_bins <- function(x) {
@@ -21,6 +67,7 @@ JSD <- function(p, q) {
 # ============================================================
 # 1. CHIMERA: Synthetic Data Generation Function
 # ============================================================
+#missing_rate = 0.10;is_survival = TRUE;timevar = NULL; statusvar = NULL;nb_imput = 1;nb_max_it = 10;seed = 123;method_conti = "pmm";verbose = TRUE
 CHIMERA_generate <-function(df,missing_rate = 0.10,is_survival = TRUE,timevar = NULL, statusvar = NULL,nb_imput = 1,nb_max_it = 10,seed = 123,method_conti = "pmm",verbose = TRUE){
   
   # ============================================================
@@ -1529,7 +1576,7 @@ Imputed_data_function <- function(
 
 preprocessing <- function(
     df,
-    nb_imputations = 50,
+    nb_imputations = nb_imputations,
     seed = 123
 ) {
   
@@ -1622,6 +1669,67 @@ preprocessing <- function(
   # ---------------------------------------------------------------------------------------------
   
   return(results.imp)
+}
+
+
+preprocessing_auc <- function(
+    df,
+    nb_imputations = 1,
+    seed = 123
+) {
+  
+  # ---------------------------------------------------------------------------------------------
+  # Convert character variables into factors
+  # ---------------------------------------------------------------------------------------------
+  
+  df <- df |>
+    mutate(
+      across(
+        where(is.character),
+        as.factor
+      )
+    )
+  
+  
+  # ---------------------------------------------------------------------------------------------
+  # Rename survival variables
+  # ---------------------------------------------------------------------------------------------
+  
+  df <- df %>%
+    rename(
+      Censorship    = Censored,
+      Follow_up_time = times
+    )
+  
+  
+  df$death <- as.factor(
+    ifelse(
+      df$Follow_up_time < 90 &
+        df$Censorship == 1,
+      "Yes",
+      "No"
+    )
+  )
+  
+  
+  # ---------------------------------------------------------------------------------------------
+  # Generate multiple imputed datasets
+  # ---------------------------------------------------------------------------------------------
+  # --- Initial MICE setup
+  ini <- mice(df, maxit = 0)
+  meth <- ini$method
+  pred <- ini$predictorMatrix
+  meth[names(df)[sapply(df, is.numeric)]] <- "pmm"
+  
+  # --- Impute missing data
+  df <- complete(mice(df, m = nb_imputations, maxit = 5, seed = 123,method = meth, predictorMatrix = pred, printFlag = TRUE))
+  
+  
+  # ---------------------------------------------------------------------------------------------
+  # Return imputed datasets
+  # ---------------------------------------------------------------------------------------------
+  
+  return(df)
 }
 
 # ===============================================================================================
@@ -2027,6 +2135,49 @@ clean_variable_names <- function(variable_names, data) {
 }
 
 
+compute_auc_ci <- function(df_list,df_complete,outcome,drop_vars = c("Censorship", "Follow_up_time"),method_name = "METHOD",name_variable = NULL) {
+  
+  
+  res_list <- lapply(seq_along(df_list), function(i) {
+    
+    # Fit a logistic regression model on the i-th dataset
+    reg.log <- glm(
+      formula = as.formula(
+        paste(outcome, " ~ ", paste(name_variable, collapse = " + "))
+      ),
+      data = df_list[[i]] |> dplyr::select(-all_of(drop_vars)),
+      family = "binomial"
+    )
+    
+    # Generate predicted probabilities on the test dataset
+    preds <- predict(reg.log, newdata = df_test, type = "response")
+    
+    # Compute ROC curve and Area Under the Curve (AUC)
+    # using the outcome from the complete (reference) dataset
+    roc_obj <- roc(df_complete[[outcome]], preds, quiet = TRUE)
+    
+    # Extract AUC value
+    auc_val <- auc(roc_obj)
+    
+    # Compute confidence interval for the AUC
+    ci_vals <- ci.auc(roc_obj)
+    
+    # Store results in a data frame
+    data.frame(
+      imputation = i,          # Index of the dataset
+      source = method_name,    # Name of the method used
+      auc = as.numeric(auc_val),
+      ci_lower = ci_vals[1],   # Lower bound of AUC CI
+      ci_upper = ci_vals[3]    # Upper bound of AUC CI
+    )
+  })
+  
+  # Combine results from all datasets into a single data frame
+  bind_rows(res_list)
+}
+
+
+
 
 ########################################################################################
 # Calibration curve functions
@@ -2075,7 +2226,8 @@ compute_calibration_synth <- function(
     outcome,
     synthetic_data_list,
     grid = seq(0, 1, by = 0.01),
-    seed = 123
+    seed = 123,
+    threshold=70
 ) {
   
   M <- length(synthetic_data_list)
@@ -2091,7 +2243,7 @@ compute_calibration_synth <- function(
     # Variable selection based on bootstrap stability
     # ------------------------------------------------------------------------------
     df.nbSignCoef.synth <- results.synth[[m]] |>
-      filter(nb_significative_coef > 70)
+      filter(nb_significative_coef > threshold)
     
     name_variable <- clean_variable_names(
       df.nbSignCoef.synth$facteur_risque,
@@ -2118,7 +2270,7 @@ compute_calibration_synth <- function(
     df <- synthetic_data_list[[m]] |>
       mutate(across(where(is.character), as.factor)) |>
       rename(
-        Censorship   = censored,
+        Censorship   = Censored,
         Follow_up_time = times
       ) |>
       mutate(
@@ -2257,7 +2409,8 @@ compute_calibration <- function(
     outcome,
     df.imp.original,
     grid = seq(0, 1, by = 0.01),
-    seed = 123
+    seed = 123,
+    threshold = 70
 ) {
   
   M <- length(df.imp.original)
@@ -2273,7 +2426,7 @@ compute_calibration <- function(
     # Variable selection based on bootstrap stability
     # ------------------------------------------------------------------------------
     df.nbSignCoef <- results.original |>
-      filter(nb_significative_coef > 70)
+      filter(nb_significative_coef > threshold)
     
     name_variable <- clean_variable_names(
       df.nbSignCoef$facteur_risque,
