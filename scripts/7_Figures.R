@@ -1,22 +1,27 @@
-# =========================================================
-# Publication-ready boxplots of T1–T9 metrics
-# Highlighting the best-of-50 run (minimum L_total)
-# =========================================================
+#===============================================================================================
+# INITIAL SETUP
+# ===============================================================================================
+
+# Clear environment
 rm(list = ls())
 
-library(here)
-library(dplyr)
-library(tidyr)
-library(ggplot2)
-library(tibble)
-library(grid)
-library(pROC)
-library(survival)
-library(scales)
-library(ggtext)
-library(forestplot)
-library(patchwork)
-library(cowplot)
+suppressPackageStartupMessages({
+  library(here)
+  library(dplyr)
+  library(tidyr)
+  library(ggplot2)
+  library(tibble)
+  library(grid)
+  library(pROC)
+  library(survival)
+  library(scales)
+  library(ggtext)
+  library(forestplot)
+  library(patchwork)
+  library(cowplot)
+  
+})
+
 
 
 # Load custom utility functions
@@ -333,6 +338,16 @@ ggsave(here("figures", "FigS3_DistrBestofM_AIDS.pdf"), p_AIDS,
 
 ggsave(here("figures", "FigS4_DistrBestofM_REIN.pdf"), p_REIN,
        width = fig_width_in, height = fig_height_in, device = cairo_pdf, bg = "white")
+
+
+ggsave(here("figures", "FigS2_DistrBestofM_PIMA.png"), p_PIMA,
+       width = fig_width_in, height = fig_height_in, dpi=350, bg = "white")
+
+ggsave(here("figures", "FigS3_DistrBestofM_AIDS.png"), p_AIDS,
+       width = fig_width_in, height = fig_height_in, dpi=350, bg = "white")
+
+ggsave(here("figures", "FigS4_DistrBestofM_REIN.png"), p_REIN,
+       width = fig_width_in, height = fig_height_in, dpi=350, bg = "white")
 
 
 # ============================================================
@@ -1011,6 +1026,7 @@ plt_roc <- ggplot(df_roc, aes(x = FPR, y = Sensitivity, colour = Dataset, linety
 
 
 plt_roc
+
 # =========================================================
 # Forest plot — odds ratios from logistic regression (PIMA)
 # =========================================================
@@ -1196,7 +1212,7 @@ ggsave(
 # ── Kaplan–Meier curves ──────────────────────────────────────
 load(here("results", "km_aids.Rdata"))
 
-p_km <- ggplot(km_aids, aes(x = time, y = estimate, colour = group, linetype = group, fill = group)) +
+p_km <- ggplot(km_aids, aes(x = time, y = surv, colour = group, linetype = group, fill = group)) +
   geom_step(linewidth = 1) +
   scale_colour_manual(values = npj_palette, name = "Dataset") +
   scale_linetype_manual(values = npj_linetypes, name = "Dataset") +
@@ -1211,6 +1227,7 @@ p_km <- ggplot(km_aids, aes(x = time, y = estimate, colour = group, linetype = g
   guides(colour = "none", linetype = "none") +
   theme_npj() +
   theme(legend.key.width = unit(1.4, "cm"), legend.key.height = unit(0.5, "cm"))
+
 
 
 # ── Time-dependent AUC ───────────────────────────────────────
@@ -1269,9 +1286,13 @@ RRforest_combined <- cbind.data.frame(
 
 covariates_text <- c(
   "Covariate",
-  "Treatment discontinuation (Yes)", "Treatment indicator (ZDV only)",
-  "Sex (Male)", "Age (10 years)", "Karnofsky score (5 %)",
-  "Intravenous drug use (Yes)", "Prior opportunistic infections (Yes)", "CD4 baseline (100 Cells/mm³)"
+  "Treatment discontinuation (Yes)",
+  "Treatment indicator (ZDV only)",
+  "Sex (Male)", "Age (10 years)", 
+  "Karnofsky score (5 %)",
+  "Intravenous drug use (Yes)", 
+  "Prior opportunistic infections (Yes)", 
+  "CD4 baseline (100 Cells/mm³)"
 )
 
 HR_text <- c(
@@ -1347,7 +1368,7 @@ ggsave(
 # ── Kaplan–Meier ────────────────────────────────────────────
 load(here("results", "km_rein.Rdata"))
 
-p_km <- ggplot(km_rein, aes(x = time, y = estimate, colour = group, linetype = group, fill = group)) +
+p_km <- ggplot(km_rein, aes(x = time, y = surv, colour = group, linetype = group, fill = group)) +
   geom_step(linewidth = 1) +
   scale_colour_manual(values = npj_palette, name = "Dataset") +
   scale_linetype_manual(values = npj_linetypes, name = "Dataset") +
@@ -1410,10 +1431,15 @@ RRforest_combined <- cbind.data.frame(
 
 covariates_text <- c(
   "Covariate",
-  "Age (10 years)", "Body mass index (kg/m\u00b2)",
-  "Cardiac arrhythmia (Yes)", "Chronic respiratory failure (Yes)",
-  "Cirrhosis (Yes)", "Coronary artery disease (Yes)",
-  "Diabetes (Yes)", "Heart failure (NYHA I\u2013II)", "Heart failure (NYHA III\u2013IV)"
+  "Age (10 years)", 
+  "Body mass index (kg/m\u00b2)",
+  "Cardiac arrhythmia (Yes)", 
+  "Chronic respiratory failure (Yes)",
+  "Cirrhosis (Yes)", 
+  "Coronary artery disease (Yes)",
+  "Diabetes (Yes)", 
+  "Heart failure (NYHA I\u2013II)", 
+  "Heart failure (NYHA III\u2013IV)"
 )
 
 HR_text <- c(
