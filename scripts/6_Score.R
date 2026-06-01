@@ -8,30 +8,32 @@ rm(list = ls())
 # -----------------------------------------------------------------------------------------------
 # LOAD REQUIRED LIBRARIES
 # -----------------------------------------------------------------------------------------------
+suppressPackageStartupMessages({
+  library(here)
+  library(tidyverse)
+  library(mice)
+  library(gtsummary)
+  library(pROC)
+  library(survival)
+  library(survminer)
+  library(vcd)
+  library(cluster)
+  library(summarytools)
+  library(readxl)
+  library(dplyr)
+  library(forestplot)
+  library(grid)
+  library(gridExtra)
+  library(FNN)
+  library(caret)
+  library(fastDummies)
+  library(stringr)
+  library(boot)
+  library(knitr)
+  library(CalibrationCurves)
+  
+})
 
-library(here)
-library(tidyverse)
-library(mice)
-library(missMethods)
-library(gtsummary)
-library(pROC)
-library(survival)
-library(survminer)
-library(vcd)
-library(cluster)
-library(summarytools)
-library(readxl)
-library(dplyr)
-library(forestplot)
-library(grid)
-library(gridExtra)
-library(FNN)
-library(caret)
-library(fastDummies)
-library(stringr)
-library(boot)
-library(knitr)
-library(CalibrationCurves)
 
 
 # Load custom utility functions
@@ -45,7 +47,6 @@ source(here("scripts", "0_functions.R"))
 # LOAD ORIGINAL TRAINING AND TEST DATASETS
 # -----------------------------------------------------------------------------------------------
 REIN_train <- read.csv(here("data", "df_rein_train_with_na_score.csv"))
-REIN_test <- read.csv(here("data", "df_rein_test_with_na_score.csv"))
 
 # Store the original missing-value positions
 # These indices will later be reapplied to synthetic datasets
@@ -88,10 +89,12 @@ for (i in seq_along(rein_synthetic_list_data_ctgan_score)) {
 # ORIGINAL DATASET
 # -----------------------------------------------------------------------------------------------
 
+nb_imputations <- 50
+
 # Generate multiple imputed datasets from the original REIN dataset
 results.original.imp <- preprocessing(
   REIN_train,
-  nb_imputations = 50
+  nb_imputations = nb_imputations
 )
 
 # Save imputed datasets
@@ -111,7 +114,7 @@ save(
 results.chimera.imp <- lapply(
   rein_synthetic_list_data_chimera_score,
   preprocessing,
-  nb_imputations = 50
+  nb_imputations = nb_imputations
 )
 
 # Save results
@@ -131,7 +134,7 @@ save(
 results.synthpop.imp <- lapply(
   rein_synthetic_list_data_synthpop_score,
   preprocessing,
-  nb_imputations = 50
+  nb_imputations = nb_imputations
 )
 
 # Save results
@@ -151,7 +154,7 @@ save(
 results.ctgan.imp <- lapply(
   rein_synthetic_list_data_ctgan_score,
   preprocessing,
-  nb_imputations = 50
+  nb_imputations = nb_imputations
 )
 
 # Save results
@@ -182,14 +185,6 @@ save(
   file = here(
     "results",
     "results.original.Rdata"
-  )
-)
-
-# Reload original imputed datasets if needed
-load(
-  here(
-    "results",
-    "results.original.imp.Rdata"
   )
 )
 
@@ -229,14 +224,6 @@ save(
 # SYNTHPOP SYNTHETIC DATASETS
 # -----------------------------------------------------------------------------------------------
 
-# Load imputed SYNTHPOP datasets
-load(
-  here(
-    "results",
-    "results.synthpop.imp.Rdata"
-  )
-)
-
 # Initialize result container
 results.synthpop <- list()
 
@@ -261,14 +248,6 @@ save(
 # CTGAN SYNTHETIC DATASETS
 # -----------------------------------------------------------------------------------------------
 
-# Load imputed CTGAN datasets
-load(
-  here(
-    "results",
-    "results.ctgan.imp.Rdata"
-  )
-)
-
 # Initialize result container
 results.ctgan <- list()
 
@@ -289,43 +268,6 @@ save(
   )
 )
 
-###############################################################################################
-## LOAD FINAL RESULTS
-###############################################################################################
-
-# Load original results
-load(
-  here(
-    "results",
-    "results.original.Rdata"
-  )
-)
-
-# Load CHIMERA results
-load(
-  here(
-    "results",
-    "results.chimera.Rdata"
-  )
-)
-
-# Load SYNTHPOP results
-load(
-  here(
-    "results",
-    "results.synthpop.Rdata"
-  )
-)
-
-# Load CTGAN results
-load(
-  here(
-    "results",
-    "results.ctgan.Rdata"
-  )
-)
-
-
 
 ###############################################################################################
 ## VARIABLE SELECTION PERFORMANCE METRICS
@@ -338,6 +280,7 @@ load(
 
 # Reference results from the original dataset
 tbl_df_real <- results.original
+threshold <- 70
 
 # Compute selection metrics for each CHIMERA synthetic dataset
 chimera_results <- lapply(results.chimera, function(df_synth) {
@@ -347,7 +290,7 @@ chimera_results <- lapply(results.chimera, function(df_synth) {
     df_synth,
     real_col  = "nb_significative_coef.x",
     synth_col = "nb_significative_coef.y",
-    threshold = 70
+    threshold = threshold
   )
 })
 
@@ -370,8 +313,6 @@ save(
 # SYNTHPOP
 # -----------------------------------------------------------------------------------------------
 
-tbl_df_real <- results.original
-
 # Compute selection metrics for each SYNTHPOP synthetic dataset
 synthpop_results <- lapply(results.synthpop, function(df_synth) {
   
@@ -380,7 +321,7 @@ synthpop_results <- lapply(results.synthpop, function(df_synth) {
     df_synth,
     real_col  = "nb_significative_coef.x",
     synth_col = "nb_significative_coef.y",
-    threshold = 70
+    threshold = threshold
   )
 })
 
@@ -403,8 +344,6 @@ save(
 # CTGAN
 # -----------------------------------------------------------------------------------------------
 
-tbl_df_real <- results.original
-
 # Compute selection metrics for each CTGAN synthetic dataset
 ctgan_results <- lapply(results.ctgan, function(df_synth) {
   
@@ -413,7 +352,7 @@ ctgan_results <- lapply(results.ctgan, function(df_synth) {
     df_synth,
     real_col  = "nb_significative_coef.x",
     synth_col = "nb_significative_coef.y",
-    threshold = 70
+    threshold = threshold
   )
 })
 
@@ -426,11 +365,10 @@ ctgan_selection_metrics_df <- do.call(
 # Save results
 save(
   ctgan_selection_metrics_df,
-  file = here(file.path(
-    project_path,
+  file = here(
     "data",
     "ctgan_selection_metrics_df.Rdata"
-  ))
+  )
 )
 
 ###############################################################################################
@@ -443,21 +381,21 @@ save(
 load(
   here(
     "results",
-    "rein_results_chimera_score.Rdata"
+    "REIN_Metrics_T1_T9_chimera_score.Rdata"
   )
 )
 
 load(
   here(
     "results",
-    "rein_results_synthpop_score.Rdata"
+    "REIN_Metrics_T1_T9_synthpop_score.Rdata"
   )
 )
 
 load(
   here(
     "results",
-    "rein_results_ctgan_score.Rdata"
+    "REIN_Metrics_T1_T9_ctgan_score.Rdata"
   )
 )
 
@@ -470,7 +408,7 @@ load(
 # based on the aggregated fidelity / utility / privacy score.
 
 chimera_selection_metrics_df$distance <-
-  rein_results_chimera_score$L_total
+  REIN_Metrics_T1_T9_chimera$L_total
 
 save(
   chimera_selection_metrics_df,
@@ -481,7 +419,7 @@ save(
 )
 
 synthpop_selection_metrics_df$distance <-
-  rein_results_synthpop_score$L_total
+  REIN_Metrics_T1_T9_synthpop$L_total
 
 save(
   synthpop_selection_metrics_df,
@@ -493,7 +431,7 @@ save(
 
 
 ctgan_selection_metrics_df$distance <-
-  rein_results_ctgan_score$L_total
+  REIN_Metrics_T1_T9_ctgan$L_total
 
 save(
   ctgan_selection_metrics_df,
@@ -554,11 +492,29 @@ df.imp.ctgan <- results.synthpop.imp[[best_row_ctgan]]
 # -----------------------------------------------------------------------------------------------
 # ORIGINAL DATASET
 # -----------------------------------------------------------------------------------------------
+df_test <- read.csv(here("data", "df_rein_test_with_na_score.csv"))
+df_test <- df_test|>mutate_if(is.character,as.factor)
+
+# --- Initial MICE setup
+ini <- mice(df_test, maxit = 0)
+meth <- ini$method
+pred <- ini$predictorMatrix
+meth[names(df_test)[sapply(df_test, is.numeric)]] <- "pmm"
+
+# --- Impute missing data
+df_test <- complete(mice(df_test, m = 1, maxit = 5, seed = 123,method = meth, predictorMatrix = pred, printFlag = TRUE))
+df_test <- df_test|>
+  rename(
+    Censorship    = Censored,
+    Follow_up_time = times
+  )
+
+df_test$death <- as.factor(ifelse(df_test$Follow_up_time < 90 & df_test$Censorship == 1, "Yes", "No"))
 
 # Select variables identified in more than 70% of bootstrap samples
 df.nbSignCoef.original <-
   results.original |>
-  filter(nb_significative_coef > 70)
+  filter(nb_significative_coef > threshold)
 
 # Clean variable names for model fitting
 name_variable_original <-
@@ -582,7 +538,7 @@ auc_original <- compute_auc_ci(
 
 df.nbSignCoef.chimera <-
   results.chimera[[best_row_chimera]] |>
-  filter(nb_significative_coef > 70)
+  filter(nb_significative_coef > threshold)
 
 name_variable_chimera <-
   clean_variable_names(
@@ -604,7 +560,7 @@ auc_chimera <- compute_auc_ci(
 
 df.nbSignCoef.synthpop <-
   results.synthpop[[best_row_synthpop]] |>
-  filter(nb_significative_coef > 70)
+  filter(nb_significative_coef > threshold)
 
 name_variable_synthpop <-
   clean_variable_names(
@@ -626,7 +582,7 @@ auc_synthpop <- compute_auc_ci(
 
 df.nbSignCoef.ctgan <-
   results.ctgan[[best_row_ctgan]] |>
-  filter(nb_significative_coef > 70)
+  filter(nb_significative_coef > threshold)
 
 name_variable_ctgan <-
   clean_variable_names(
@@ -679,17 +635,11 @@ save(
 # -----------------------------------------------------------------------------------------------
 # ORIGINAL DATASET
 # -----------------------------------------------------------------------------------------------
-res <- preprocessing(
-  REIN_test,
-  nb_imputations = 1
-)
-
-df_test <- res[["1"]]
 
 # Initialize pooled predictions
 predictions_pooled <- rep(0, nrow(df_test))
 
-for (i in 1:50) {
+for (i in 1:nb_imputations) {
   
   # Logistic regression model
   formula <- as.formula(
@@ -712,7 +662,7 @@ for (i in 1:50) {
 }
 
 # Average predictions across imputations
-predictions_pooled <- predictions_pooled / 50
+predictions_pooled <- predictions_pooled / nb_imputations
 
 # Compute pooled ROC curve
 rein.roc.original <- roc(df_test$death, predictions_pooled)
@@ -732,7 +682,7 @@ save(
 
 predictions_pooled <- rep(0, nrow(df_test))
 
-for (i in 1:50) {
+for (i in 1:nb_imputations) {
   
   formula <- as.formula(
     paste(
@@ -752,7 +702,7 @@ for (i in 1:50) {
     predict(reg.log, newdata = df_test, type = "response")
 }
 
-predictions_pooled <- predictions_pooled / 50
+predictions_pooled <- predictions_pooled / nb_imputations
 
 rein.roc.chimera <- roc(df_test$death, predictions_pooled)
 
@@ -770,7 +720,7 @@ save(
 
 predictions_pooled <- rep(0, nrow(df_test))
 
-for (i in 1:50) {
+for (i in 1:nb_imputations) {
   
   formula <- as.formula(
     paste(
@@ -790,7 +740,7 @@ for (i in 1:50) {
     predict(reg.log, newdata = df_test, type = "response")
 }
 
-predictions_pooled <- predictions_pooled / 50
+predictions_pooled <- predictions_pooled / nb_imputations
 
 rein.roc.synthpop <- roc(df_test$death, predictions_pooled)
 
@@ -808,7 +758,7 @@ save(
 
 predictions_pooled <- rep(0, nrow(df_test))
 
-for (i in 1:50) {
+for (i in 1:nb_imputations) {
   
   formula <- as.formula(
     paste(
@@ -828,7 +778,7 @@ for (i in 1:50) {
     predict(reg.log, newdata = df_test, type = "response")
 }
 
-predictions_pooled <- predictions_pooled / 50
+predictions_pooled <- predictions_pooled / nb_imputations
 
 rein.roc.ctgan <- roc(df_test$death, predictions_pooled)
 
@@ -849,13 +799,13 @@ save(
 # -----------------------------------------------------------------------------------------------
 
 synthetic_data_list <- lapply(
-  synthetic_data_list_chimera,
+  rein_synthetic_list_data_chimera_score,
   preprocessing
 )
 
 df.nbSignCoef.chimera <-
   results.chimera[[best_row_chimera]] |>
-  filter(nb_significative_coef > 70)
+  filter(nb_significative_coef > threshold)
 
 name_variable_chimera <-
   clean_variable_names(
@@ -876,13 +826,13 @@ auc_chimera <- compute_auc_ci(
 # -----------------------------------------------------------------------------------------------
 
 synthetic_data_list <- lapply(
-  synthetic_data_list_synthpop,
+  rein_synthetic_list_data_synthpop_score,
   preprocessing
 )
 
 df.nbSignCoef.synthpop <-
   results.synthpop[[best_row_synthpop]] |>
-  filter(nb_significative_coef > 70)
+  filter(nb_significative_coef > threshold)
 
 name_variable_synthpop <-
   clean_variable_names(
@@ -903,13 +853,13 @@ auc_synthpop <- compute_auc_ci(
 # -----------------------------------------------------------------------------------------------
 
 synthetic_data_list <- lapply(
-  synthetic_data_list_ctgan,
+  rein_synthetic_list_data_ctgan_score,
   preprocessing
 )
 
 df.nbSignCoef.ctgan <-
   results.ctgan[[best_row_ctgan]] |>
-  filter(nb_significative_coef > 70)
+  filter(nb_significative_coef > threshold)
 
 name_variable_ctgan <-
   clean_variable_names(
@@ -957,6 +907,7 @@ save(
 
 synthetic_data_list <- rein_synthetic_list_data_chimera_score
 res.chimera.cal <- compute_calibration_synth(results.chimera, df_test, "death", synthetic_data_list)
+
 # Save results
 save(
   res.chimera.cal,
