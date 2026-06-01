@@ -131,7 +131,7 @@ save(rein_synthetic_list_data_ctgan_score,
 # Select the best dataset use for downstream analyses
 #================================================================================================
 X_real <- read.csv(here("data", "df_rein_train_without_na_score.csv"))
-
+X_real <- X_real|>mutate_if(is.character,as.factor)
 trn <- read.csv(here("data", "REIN_trn_score.csv"))
 trn <- trn|> mutate_if(is.character,as.factor)
 val <- read.csv(here("data", "REIN_hol_score.csv"))
@@ -234,7 +234,7 @@ REIN_Metrics_T1_T9_chimera$L_total <-
   w_util * REIN_Metrics_T1_T9_chimera$L_util +
   w_conf * REIN_Metrics_T1_T9_chimera$L_conf
 
-PIMA_Metrics_T1_T9_chimera$dataset <- paste0("syn_", seq_len(n_synth))
+REIN_Metrics_T1_T9_chimera$dataset <- paste0("syn_", seq_len(n_synth))
 
 # Save synthetic datasets
 save(REIN_Metrics_T1_T9_chimera,
@@ -316,7 +316,7 @@ REIN_Metrics_T1_T9_synthpop$L_total <-
   w_util * REIN_Metrics_T1_T9_synthpop$L_util +
   w_conf * REIN_Metrics_T1_T9_synthpop$L_conf
 
-PIMA_Metrics_T1_T9_synthpop$dataset <- paste0("syn_", seq_len(n_synth))
+REIN_Metrics_T1_T9_synthpop$dataset <- paste0("syn_", seq_len(n_synth))
 
 # Save synthetic datasets
 save(REIN_Metrics_T1_T9_synthpop,
@@ -367,7 +367,7 @@ results_all <- lapply(seq_along(rein_synthetic_list_data_ctgan_score), function(
     generator= "ctgan",
     trn = trn,
     val = val,
-    syn_ctgan = rein_synthetic_list_data_ctgan_trn[[i]]
+    syn_ctgan = rein_synthetic_list_data_ctgan_trn_score[[i]]
   )
 })
 
@@ -422,7 +422,8 @@ REIN_Metrics_T1_T9_ctgan$L_total <-
   w_util * REIN_Metrics_T1_T9_ctgan$L_util +
   w_conf * REIN_Metrics_T1_T9_ctgan$L_conf
 
-PIMA_Metrics_T1_T9_ctgan$dataset <- paste0("syn_", seq_len(n_synth))
+REIN_Metrics_T1_T9_ctgan$dataset <- paste0("syn_", seq_len(n_synth))
+
 # Save synthetic datasets
 save(REIN_Metrics_T1_T9_ctgan,
      file = here("results", "REIN_Metrics_T1_T9_ctgan_score.Rdata")
