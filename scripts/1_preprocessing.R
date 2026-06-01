@@ -8,11 +8,13 @@ rm(list = ls())
 # -----------------------------------------------------------------------------------------------
 # LOAD LIBRARIES
 # -----------------------------------------------------------------------------------------------
-library(here)         # File path management
-library(tidyverse)    # Data manipulation
-library(mice)         # Multiple imputation
-library(readxl)       # Excel import
-
+suppressPackageStartupMessages({
+  library(here)         # File path management
+  library(tidyverse)    # Data manipulation
+  library(mice)         # Multiple imputation
+  library(readxl)       # Excel import
+  
+})
 
 # Load custom functions
 source(here("scripts", "0_functions.R"))
