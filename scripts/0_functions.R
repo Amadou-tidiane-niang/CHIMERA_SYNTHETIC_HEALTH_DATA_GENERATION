@@ -1,52 +1,6 @@
 # ============================================================
 # 0. Useful function 
 # ============================================================
-prepare_survival_data_time <- function(data_time,
-                                       date_cens_adminis,
-                                       ddir_col,
-                                       event_cols,
-                                       censored_compute = FALSE) {
-  
-  # Convert dates
-  data_time[[ddir_col]] <- as.POSIXct(data_time[[ddir_col]], tz = "UTC")
-  data_time[event_cols] <- lapply(data_time[event_cols], as.POSIXct, tz = "UTC")
-  
-  # Administrative censoring
-  censor_date <- as.POSIXct(date_cens_adminis, tz = "UTC")
-  
-  data_time <- data_time %>%
-    mutate(across(all_of(event_cols), ~pmin(.x, censor_date)))
-  
-  # Earliest event
-  min_event_time <- do.call(
-    pmin,
-    c(data_time[event_cols], na.rm = TRUE)
-  )
-  
-  data_time$times <- as.POSIXct(min_event_time, tz = "UTC")
-  data_time$times[is.na(data_time$times)] <- censor_date
-  
-  # Convert to time (days)
-  data_time$times <- as.numeric(
-    difftime(data_time$times, data_time[[ddir_col]], units = "days")
-  )
-  
-  # Optional censoring indicator
-  if (censored_compute) {
-    data_time$censored <- with(data_time, ifelse(
-      !is.na(ddc) &
-        (is.na(dgrf) | ddc < dgrf) &
-        (is.na(dsvr) | ddc < dsvr) &
-        (is.na(dpdv) | ddc < dpdv),
-      1, 0
-    ))
-    
-    data_time$censored <- as.integer(data_time$censored)
-  }
-  
-  return(data_time)
-}
-
 
 # Freedman- Draconis
 fd_bins <- function(x) {
@@ -67,7 +21,6 @@ JSD <- function(p, q) {
 # ============================================================
 # 1. CHIMERA: Synthetic Data Generation Function
 # ============================================================
-#missing_rate = 0.10;is_survival = TRUE;timevar = NULL; statusvar = NULL;nb_imput = 1;nb_max_it = 10;seed = 123;method_conti = "pmm";verbose = TRUE
 CHIMERA_generate <-function(df,missing_rate = 0.10,is_survival = TRUE,timevar = NULL, statusvar = NULL,nb_imput = 1,nb_max_it = 10,seed = 123,method_conti = "pmm",verbose = TRUE){
   
   # ============================================================
