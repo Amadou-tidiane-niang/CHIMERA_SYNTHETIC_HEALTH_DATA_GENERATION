@@ -8,32 +8,30 @@ rm(list = ls())
 # -----------------------------------------------------------------------------------------------
 # LOAD REQUIRED LIBRARIES
 # -----------------------------------------------------------------------------------------------
-suppressPackageStartupMessages({
-  library(here)
-  library(tidyverse)
-  library(mice)
-  library(gtsummary)
-  library(pROC)
-  library(survival)
-  library(survminer)
-  library(vcd)
-  library(cluster)
-  library(summarytools)
-  library(readxl)
-  library(dplyr)
-  library(forestplot)
-  library(grid)
-  library(gridExtra)
-  library(FNN)
-  library(caret)
-  library(fastDummies)
-  library(stringr)
-  library(boot)
-  library(knitr)
-  library(CalibrationCurves)
-  
-})
 
+library(here)
+library(tidyverse)
+library(mice)
+library(missMethods)
+library(gtsummary)
+library(pROC)
+library(survival)
+library(survminer)
+library(vcd)
+library(cluster)
+library(summarytools)
+library(readxl)
+library(dplyr)
+library(forestplot)
+library(grid)
+library(gridExtra)
+library(FNN)
+library(caret)
+library(fastDummies)
+library(stringr)
+library(boot)
+library(knitr)
+library(CalibrationCurves)
 
 
 # Load custom utility functions
@@ -798,10 +796,7 @@ save(
 # CHIMERA
 # -----------------------------------------------------------------------------------------------
 
-synthetic_data_list <- lapply(
-  rein_synthetic_list_data_chimera_score,
-  preprocessing
-)
+synthetic_data_list <- lapply(rein_synthetic_list_data_chimera_score,function(df) preprocessing_auc(df,nb_imputations = 1,seed = 123))
 
 df.nbSignCoef.chimera <-
   results.chimera[[best_row_chimera]] |>
@@ -825,10 +820,7 @@ auc_chimera <- compute_auc_ci(
 # SYNTHPOP
 # -----------------------------------------------------------------------------------------------
 
-synthetic_data_list <- lapply(
-  rein_synthetic_list_data_synthpop_score,
-  preprocessing
-)
+synthetic_data_list <- lapply(rein_synthetic_list_data_synthpop_score,function(df) preprocessing_auc(df,nb_imputations = 1,seed = 123))
 
 df.nbSignCoef.synthpop <-
   results.synthpop[[best_row_synthpop]] |>
@@ -852,10 +844,7 @@ auc_synthpop <- compute_auc_ci(
 # CTGAN
 # -----------------------------------------------------------------------------------------------
 
-synthetic_data_list <- lapply(
-  rein_synthetic_list_data_ctgan_score,
-  preprocessing
-)
+synthetic_data_list <- lapply(rein_synthetic_list_data_ctgan_score,function(df) preprocessing_auc(df,nb_imputations = 1,seed = 123))
 
 df.nbSignCoef.ctgan <-
   results.ctgan[[best_row_ctgan]] |>
@@ -906,7 +895,7 @@ save(
 
 
 synthetic_data_list <- rein_synthetic_list_data_chimera_score
-res.chimera.cal <- compute_calibration_synth(results.chimera, df_test, "death", synthetic_data_list)
+res.chimera.cal <- compute_calibration_synth(results.chimera, df_test, "death", synthetic_data_list,threshold = threshold)
 
 # Save results
 save(
@@ -919,7 +908,8 @@ save(
 
 # synthpop
 synthetic_data_list <- rein_synthetic_list_data_synthpop_score
-res.synthpop.cal <- compute_calibration_synth(results.synthpop, df_test, "death", synthetic_data_list)
+res.synthpop.cal <- compute_calibration_synth(results.synthpop, df_test, "death", synthetic_data_list,threshold = threshold)
+
 # Save results
 save(
   res.synthpop.cal,
@@ -930,7 +920,8 @@ save(
 )
 # ctgan
 synthetic_data_list <- rein_synthetic_list_data_ctgan_score
-res.ctgan.cal <- compute_calibration_synth(results.ctgan, df_test, "death", synthetic_data_list)
+res.ctgan.cal <- compute_calibration_synth(results.ctgan, df_test, "death", synthetic_data_list,threshold = threshold)
+
 # Save results
 save(
   res.ctgan.cal,
@@ -942,8 +933,8 @@ save(
 
 
 # Original
-res <- compute_calibration(results.original, df_test, "death",df.imp.original)
-res.original.cal <- res
+res.original.cal <- compute_calibration(results.original, df_test, "death",df.imp.original,threshold = threshold)
+
 # Save results
 save(
   res.original.cal,
