@@ -35,7 +35,7 @@ PIMA <- read.csv(here("data", "PIMA.csv"))
 PIMA <- PIMA|> mutate_if(is.character,as.factor)
 
 # MICE
-n_synth <- 5
+n_synth <- 50
 set.seed(123)
 seeds <- sample(1:1000, n_synth)
 
