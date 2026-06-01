@@ -8,22 +8,26 @@ rm(list = ls())
 # -----------------------------------------------------------------------------------------------
 # LOAD LIBRARIES
 # -----------------------------------------------------------------------------------------------
-library(here)         # File path management
-library(tidyverse)    # Data manipulation
-library(mice)         # Multiple imputation (CHIMERA)
-library(missMethods)  # Missing data simulation
-library(MatchIt)      # Matching (not directly used)
-library(readxl)       # Excel import (not directly used)
-library(synthpop)     # Synthetic data generation
-library(pROC)         # ROC / AUC
-library(fitdistrplus) # Distribution fitting
-library(caret)        # ML utilities
-library(survivalROC)  # Survival AUC
-library(survAUC)      # Time-dependent AUC
-library(gower)        # Distance metrics
-library(FNN)          # Nearest neighbors
-library(vcd)          # Cramer's V
-library(gtsummary)
+suppressPackageStartupMessages({
+  library(here)         # File path management
+  library(tidyverse)    # Data manipulation
+  library(mice)         # Multiple imputation (CHIMERA)
+  library(missMethods)  # Missing data simulation
+  library(MatchIt)      # Matching (not directly used)
+  library(readxl)       # Excel import (not directly used)
+  library(synthpop)     # Synthetic data generation
+  library(pROC)         # ROC / AUC
+  library(fitdistrplus) # Distribution fitting
+  library(caret)        # ML utilities
+  library(survivalROC)  # Survival AUC
+  library(survAUC)      # Time-dependent AUC
+  library(gower)        # Distance metrics
+  library(FNN)          # Nearest neighbors
+  library(vcd)          # Cramer's V
+  library(gtsummary)
+  
+})
+
 
 # Load custom functions
 source(here("scripts", "0_functions.R"))                   
