@@ -23,7 +23,7 @@ library(survAUC)      # Time-dependent AUC
 library(gower)        # Distance metrics
 library(FNN)          # Nearest neighbors
 library(vcd)          # Cramer's V
-
+library(gtsummary)
 
 # Load custom functions
 source(here("scripts", "0_functions.R"))                   
@@ -99,7 +99,7 @@ PIMA_CTGAN$Two_hour_serum_insulin <- PIMA_CTGAN$Two_hour_serum_insulin/5
 PIMA_CTGAN$Diabetes_pedigree_function <- as.numeric(scale(PIMA_CTGAN$Diabetes_pedigree_function))
 
 # Logistic Regression ---------------------------------------------------------------------
-Variables_num <- PIMA |> select(where(is.numeric)) |> names()
+Variables_num <- PIMA |> dplyr::select(where(is.numeric)) |> names()
 
 # --- Logistic regression on original data ---
 # Create formula for logistic regression with Outcome as response and all numeric variables as predictors
