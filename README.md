@@ -70,8 +70,7 @@ CHIMERA is evaluated using nine complementary metrics covering three dimensions.
 | Record-matching risk | T7 — MIR-RM | Mean Gower distance: real to nearest synthetic record | → 1 |
 | Holdout membership inference | T8 — MIR-Holdout | P(synthetic closer to training than to holdout) | → 0.5 |
 | Attribute inference risk | T9 — AIR (F1) | F1 score of a 1-NN attribute reconstruction attack | → 0 |
-| Distance to the Closest Record | T10 - (DCR)| the proximity of synthetic records to real records by comparing the synthetic-to-real distance (SRD) with
-the real-to-real distance (RRD)  | → 1 |
+| Distance to the Closest Record | T10 - (DCR)| the proximity of synthetic records to real records | → 1 |
 
 ---
 
