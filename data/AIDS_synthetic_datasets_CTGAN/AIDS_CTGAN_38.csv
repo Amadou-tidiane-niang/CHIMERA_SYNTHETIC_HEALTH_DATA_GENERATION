@@ -1,0 +1,1498 @@
+Age,Weight,Hemophilia,Homosexuality,Intravenous_drug_use,Karnofsky_score,Prior_opportunistic_infections,Zidovudine_30mg,Previous_antiretroviral_days,Race,Sex,Antiretroviral_history,Symptomatic_indicator,Treatment_indicator,Treatment_discontinuation,CD4_baseline,Clinical_progression_observed,CD8_baseline,Censored,times
+35.0,112.85555,No,Yes,No,90.0,No,Yes,608.0,White,Male,Experienced,Yes,ZDV only,Yes,336.0,No,574.0,1.0,282.0
+32.0,57.63189,No,Yes,No,90.0,No,Yes,1250.0,White,Male,Experienced,No,Others,No,438.0,Yes,974.0,0.0,1174.0
+31.0,61.88501,Yes,No,Yes,100.0,No,Yes,353.0,Others,Female,Experienced,No,Others,No,407.0,Yes,105.0,0.0,1136.0
+36.0,61.02652,Yes,Yes,No,100.0,No,Yes,1577.0,White,Male,Experienced,Yes,Others,No,72.0,No,384.0,0.0,1098.0
+49.0,90.66966,No,Yes,No,100.0,No,No,245.0,White,Male,Experienced,No,Others,No,578.0,Yes,627.0,0.0,920.0
+26.0,99.65958,Yes,Yes,No,90.0,No,No,46.0,White,Male,Naive,No,Others,No,279.0,Yes,464.0,0.0,1231.0
+53.0,81.51365,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,Yes,Others,Yes,444.0,No,105.0,0.0,1006.0
+19.0,70.65789,No,Yes,Yes,100.0,No,No,1373.0,White,Male,Experienced,Yes,Others,Yes,399.0,Yes,490.0,0.0,1231.0
+32.0,75.46868,No,No,No,90.0,No,No,67.0,White,Male,Naive,Yes,Others,Yes,263.0,No,1141.0,1.0,299.0
+36.0,80.84991,Yes,No,No,100.0,No,Yes,414.0,White,Female,Experienced,No,Others,No,482.0,Yes,120.0,0.0,1069.0
+28.0,77.14585,No,Yes,No,100.0,No,No,6.0,White,Female,Naive,Yes,Others,No,274.0,No,720.0,0.0,1165.0
+67.0,97.953,No,No,Yes,90.0,No,Yes,2.0,Others,Male,Experienced,Yes,ZDV only,Yes,392.0,No,611.0,1.0,561.0
+31.0,43.98366,No,No,No,100.0,No,Yes,221.0,White,Male,Experienced,No,Others,No,486.0,No,440.0,0.0,1125.0
+39.0,93.47496,No,Yes,No,90.0,No,Yes,897.0,White,Male,Experienced,Yes,ZDV only,Yes,344.0,Yes,1166.0,1.0,403.0
+29.0,80.90637,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,No,ZDV only,Yes,286.0,No,736.0,1.0,978.0
+27.0,86.53564,No,Yes,No,90.0,No,Yes,1591.0,White,Male,Experienced,No,ZDV only,Yes,224.0,Yes,551.0,1.0,1107.0
+43.0,71.68739,No,No,No,90.0,No,Yes,855.0,Others,Female,Experienced,Yes,ZDV only,Yes,164.0,Yes,305.0,0.0,1007.0
+44.0,56.76554,No,No,No,100.0,No,Yes,470.0,Others,Female,Experienced,No,Others,No,431.0,Yes,370.0,0.0,1043.0
+45.0,80.5721,No,Yes,No,100.0,No,Yes,1078.0,White,Male,Experienced,No,Others,No,176.0,Yes,530.0,1.0,1074.0
+42.0,69.13831,No,Yes,No,100.0,No,No,1310.0,White,Male,Experienced,No,Others,No,371.0,Yes,105.0,0.0,1188.0
+44.0,67.52492,No,Yes,No,100.0,No,No,0.0,White,Male,Experienced,No,Others,No,447.0,Yes,945.0,0.0,845.0
+43.0,58.9248,Yes,No,Yes,90.0,No,Yes,1143.0,Others,Male,Experienced,No,ZDV only,No,251.0,Yes,388.0,0.0,1087.0
+21.0,148.74327,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,No,ZDV only,No,592.0,Yes,209.0,1.0,1157.0
+12.0,61.23346,No,No,Yes,90.0,No,Yes,0.0,White,Male,Naive,No,Others,Yes,270.0,Yes,771.0,0.0,463.0
+45.0,71.24054,No,No,No,90.0,No,Yes,727.0,White,Male,Experienced,No,Others,No,310.0,No,304.0,0.0,1102.0
+32.0,93.00825,No,Yes,Yes,100.0,No,No,38.0,White,Male,Experienced,No,ZDV only,Yes,303.0,Yes,394.0,0.0,674.0
+29.0,75.79941,No,Yes,Yes,80.0,No,No,46.0,White,Male,Naive,No,ZDV only,Yes,504.0,No,720.0,1.0,818.0
+30.0,67.31946,No,No,No,90.0,No,No,0.0,White,Male,Naive,Yes,Others,No,599.0,Yes,657.0,0.0,1023.0
+35.0,74.44191,Yes,No,Yes,100.0,No,No,0.0,Others,Female,Naive,No,ZDV only,No,157.0,Yes,733.0,0.0,1047.0
+36.0,58.80964,No,Yes,No,90.0,No,Yes,1035.0,White,Female,Experienced,No,ZDV only,Yes,181.0,Yes,2221.0,0.0,1092.0
+12.0,78.68601,No,No,No,100.0,No,No,52.0,Others,Male,Naive,No,ZDV only,Yes,484.0,Yes,654.0,0.0,1230.0
+31.0,89.1426,No,Yes,Yes,90.0,Yes,Yes,286.0,Others,Male,Experienced,No,ZDV only,Yes,312.0,No,641.0,0.0,724.0
+22.0,77.63326,No,Yes,No,90.0,No,Yes,226.0,White,Male,Experienced,Yes,ZDV only,Yes,187.0,Yes,1667.0,1.0,588.0
+36.0,79.05073,No,No,No,100.0,No,Yes,42.0,Others,Male,Naive,No,Others,No,403.0,No,260.0,0.0,1115.0
+32.0,86.25816,No,No,No,100.0,No,Yes,848.0,Others,Female,Experienced,No,Others,No,330.0,Yes,1048.0,0.0,1221.0
+43.0,82.6915,No,Yes,Yes,100.0,No,Yes,1007.0,White,Male,Experienced,Yes,Others,Yes,258.0,No,660.0,1.0,567.0
+30.0,70.13771,No,Yes,No,80.0,No,Yes,9.0,White,Male,Experienced,Yes,Others,No,184.0,Yes,266.0,0.0,437.0
+35.0,68.90299,No,Yes,No,70.0,No,No,0.0,Others,Male,Naive,No,Others,No,569.0,No,202.0,0.0,1042.0
+45.0,72.77352,No,No,Yes,100.0,No,No,0.0,White,Female,Naive,No,Others,No,720.0,Yes,1218.0,0.0,912.0
+38.0,60.89396,No,No,No,90.0,No,Yes,408.0,White,Male,Experienced,Yes,ZDV only,Yes,230.0,No,1216.0,1.0,1041.0
+33.0,156.75108,No,No,Yes,100.0,No,No,6.0,Others,Male,Naive,No,ZDV only,Yes,300.0,No,354.0,0.0,1117.0
+29.0,79.20699,No,No,Yes,80.0,No,No,16.0,White,Male,Experienced,No,ZDV only,Yes,237.0,No,1702.0,1.0,732.0
+33.0,63.75856,No,No,No,100.0,No,Yes,1055.0,White,Male,Experienced,No,ZDV only,Yes,372.0,Yes,532.0,1.0,640.0
+33.0,84.82304,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,No,ZDV only,No,262.0,Yes,608.0,1.0,1024.0
+21.0,106.39795,No,No,Yes,100.0,No,Yes,0.0,White,Male,Naive,No,ZDV only,Yes,252.0,Yes,699.0,0.0,1042.0
+39.0,76.6244,No,Yes,Yes,90.0,No,Yes,764.0,Others,Male,Experienced,Yes,ZDV only,Yes,213.0,No,669.0,1.0,445.0
+35.0,70.03744,No,Yes,Yes,90.0,No,Yes,914.0,White,Male,Experienced,No,ZDV only,Yes,431.0,No,759.0,0.0,301.0
+51.0,79.67165,No,Yes,No,100.0,No,No,646.0,White,Male,Experienced,No,ZDV only,Yes,404.0,Yes,1307.0,0.0,328.0
+28.0,78.31828,No,No,No,100.0,No,No,0.0,White,Male,Naive,No,Others,No,464.0,No,673.0,0.0,333.0
+37.0,77.33135,No,Yes,No,90.0,No,Yes,1161.0,White,Male,Experienced,Yes,Others,Yes,187.0,No,641.0,1.0,595.0
+30.0,53.75387,No,No,No,100.0,No,No,46.0,Others,Male,Naive,No,Others,Yes,288.0,No,967.0,0.0,710.0
+47.0,94.12814,No,Yes,No,100.0,No,No,891.0,White,Male,Experienced,No,Others,No,328.0,Yes,791.0,0.0,1138.0
+24.0,67.61402,No,No,Yes,90.0,No,Yes,308.0,Others,Female,Experienced,No,Others,No,353.0,Yes,734.0,0.0,1125.0
+22.0,56.1162,No,No,No,90.0,No,No,0.0,White,Male,Naive,No,Others,No,269.0,Yes,1741.0,1.0,1189.0
+32.0,85.79593,No,No,No,100.0,No,No,1.0,White,Male,Naive,No,Others,No,584.0,Yes,337.0,0.0,762.0
+53.0,101.56456,No,No,No,90.0,No,No,37.0,Others,Male,Naive,No,ZDV only,Yes,256.0,Yes,603.0,1.0,904.0
+54.0,72.19879,No,Yes,Yes,100.0,No,Yes,631.0,White,Male,Experienced,No,Others,No,244.0,Yes,1207.0,0.0,822.0
+39.0,89.13731,No,No,Yes,100.0,No,No,51.0,Others,Female,Naive,No,ZDV only,Yes,302.0,No,727.0,0.0,674.0
+29.0,85.52696,No,Yes,No,80.0,No,Yes,643.0,White,Male,Experienced,No,Others,No,217.0,Yes,425.0,0.0,1174.0
+31.0,65.82761,No,No,No,90.0,No,Yes,1158.0,Others,Female,Experienced,No,ZDV only,Yes,140.0,No,1186.0,1.0,1104.0
+28.0,62.96014,No,Yes,No,100.0,No,No,52.0,White,Male,Naive,No,Others,Yes,229.0,No,105.0,1.0,381.0
+38.0,56.22865,No,Yes,Yes,100.0,No,Yes,1528.0,White,Male,Experienced,No,Others,No,276.0,Yes,2387.0,0.0,1086.0
+29.0,66.42965,No,Yes,No,100.0,No,Yes,563.0,White,Male,Naive,Yes,ZDV only,Yes,547.0,Yes,2053.0,0.0,1211.0
+33.0,77.99222,No,Yes,Yes,90.0,No,Yes,307.0,White,Male,Experienced,No,Others,Yes,217.0,Yes,892.0,1.0,871.0
+41.0,112.95935,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,No,Others,No,170.0,No,847.0,0.0,834.0
+31.0,90.8647,No,No,Yes,90.0,No,No,0.0,White,Male,Naive,No,Others,Yes,548.0,Yes,301.0,0.0,113.0
+31.0,78.38328,No,No,Yes,90.0,No,Yes,22.0,White,Male,Experienced,No,Others,No,308.0,Yes,301.0,0.0,979.0
+37.0,47.62965,No,No,No,100.0,No,Yes,1972.0,Others,Male,Experienced,No,ZDV only,Yes,466.0,Yes,791.0,0.0,1131.0
+45.0,74.87963,No,Yes,No,90.0,No,No,0.0,White,Male,Experienced,Yes,ZDV only,Yes,289.0,No,812.0,1.0,148.0
+31.0,72.92555,No,Yes,No,100.0,No,Yes,779.0,White,Male,Experienced,No,ZDV only,Yes,330.0,No,1981.0,0.0,1128.0
+51.0,63.10577,No,No,No,100.0,No,Yes,1044.0,White,Male,Experienced,No,ZDV only,No,356.0,Yes,105.0,1.0,353.0
+45.0,97.36592,No,Yes,No,90.0,No,No,780.0,White,Male,Naive,Yes,Others,Yes,559.0,No,156.0,1.0,942.0
+49.0,66.53006,No,Yes,No,100.0,No,Yes,0.0,White,Male,Experienced,No,Others,Yes,212.0,Yes,860.0,0.0,1157.0
+54.0,76.72303,No,No,No,100.0,No,No,820.0,Others,Female,Experienced,No,Others,No,268.0,Yes,823.0,0.0,1017.0
+26.0,94.38316,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,No,Others,No,466.0,Yes,602.0,1.0,1156.0
+26.0,56.24328,No,Yes,No,80.0,No,Yes,160.0,White,Male,Experienced,No,ZDV only,No,356.0,Yes,689.0,0.0,1196.0
+21.0,81.99705,No,No,No,100.0,No,Yes,396.0,Others,Male,Experienced,No,Others,Yes,364.0,No,329.0,0.0,331.0
+46.0,79.26981,No,Yes,No,90.0,No,No,1243.0,White,Male,Experienced,No,ZDV only,Yes,140.0,No,159.0,1.0,295.0
+39.0,68.7236,No,Yes,No,90.0,No,Yes,1230.0,White,Male,Experienced,No,ZDV only,Yes,428.0,Yes,449.0,0.0,708.0
+26.0,82.07267,No,No,No,80.0,No,Yes,1054.0,White,Male,Experienced,Yes,Others,No,252.0,No,1825.0,1.0,1231.0
+32.0,63.08065,No,No,No,100.0,No,Yes,1512.0,White,Female,Experienced,No,Others,No,604.0,Yes,723.0,0.0,1007.0
+42.0,68.54504,No,Yes,Yes,100.0,No,Yes,737.0,Others,Male,Experienced,No,ZDV only,Yes,271.0,Yes,1118.0,1.0,946.0
+45.0,55.37535,No,No,No,90.0,No,No,0.0,White,Male,Naive,No,Others,No,375.0,Yes,427.0,0.0,681.0
+39.0,68.93223,No,Yes,No,100.0,No,Yes,0.0,White,Male,Experienced,No,Others,Yes,341.0,Yes,2981.0,0.0,1024.0
+14.0,95.82558,No,Yes,No,100.0,No,No,37.0,White,Male,Naive,Yes,Others,Yes,309.0,No,284.0,0.0,1051.0
+43.0,114.72662,No,No,No,100.0,No,Yes,938.0,Others,Male,Experienced,No,ZDV only,No,394.0,Yes,105.0,0.0,1144.0
+32.0,82.06044,No,Yes,No,90.0,No,No,36.0,White,Male,Naive,No,ZDV only,Yes,348.0,No,1206.0,1.0,92.0
+53.0,89.69699,No,Yes,No,100.0,No,Yes,892.0,White,Male,Experienced,No,Others,No,250.0,Yes,1783.0,0.0,1032.0
+37.0,88.19701,Yes,No,Yes,100.0,No,Yes,911.0,White,Male,Experienced,No,Others,No,472.0,Yes,622.0,0.0,1081.0
+32.0,71.61951,No,Yes,Yes,100.0,No,No,0.0,White,Male,Naive,Yes,ZDV only,No,129.0,No,918.0,1.0,1044.0
+27.0,66.78851,No,No,Yes,100.0,No,No,67.0,Others,Female,Experienced,No,Others,No,386.0,Yes,657.0,0.0,1058.0
+33.0,80.55301,No,Yes,No,80.0,No,Yes,268.0,White,Male,Experienced,No,ZDV only,Yes,621.0,No,417.0,0.0,720.0
+49.0,81.03074,No,No,No,90.0,No,No,6.0,Others,Female,Naive,No,Others,No,411.0,Yes,421.0,0.0,1009.0
+50.0,95.64667,No,No,No,100.0,No,No,4.0,White,Male,Naive,No,Others,No,260.0,Yes,1025.0,0.0,1111.0
+47.0,96.2943,No,Yes,No,90.0,No,No,49.0,White,Male,Experienced,No,ZDV only,No,278.0,Yes,2325.0,0.0,1213.0
+51.0,94.38809,No,Yes,No,80.0,No,No,6.0,White,Male,Naive,No,ZDV only,No,347.0,Yes,1274.0,0.0,1231.0
+45.0,77.571,No,Yes,No,100.0,Yes,No,21.0,White,Male,Experienced,No,ZDV only,No,278.0,Yes,298.0,1.0,1179.0
+29.0,68.85487,No,Yes,Yes,100.0,Yes,No,27.0,White,Male,Naive,No,ZDV only,No,202.0,Yes,1112.0,1.0,697.0
+27.0,44.39892,No,No,No,90.0,No,Yes,821.0,White,Male,Experienced,No,ZDV only,Yes,297.0,Yes,497.0,1.0,937.0
+50.0,111.67735,No,No,No,100.0,No,Yes,698.0,White,Male,Experienced,No,Others,Yes,307.0,Yes,613.0,0.0,1219.0
+25.0,54.21561,No,Yes,No,100.0,No,No,4.0,White,Male,Naive,Yes,Others,Yes,253.0,No,1106.0,0.0,729.0
+43.0,72.36235,No,No,Yes,90.0,No,No,1135.0,Others,Female,Experienced,No,Others,No,510.0,Yes,412.0,0.0,1138.0
+51.0,98.15963,No,Yes,No,80.0,No,Yes,840.0,White,Male,Experienced,No,ZDV only,Yes,163.0,Yes,244.0,1.0,157.0
+14.0,59.57117,No,No,No,90.0,No,Yes,1789.0,White,Male,Experienced,No,Others,No,245.0,Yes,741.0,0.0,976.0
+42.0,82.12084,No,Yes,No,90.0,No,Yes,1032.0,White,Male,Naive,Yes,Others,No,227.0,Yes,743.0,0.0,1030.0
+51.0,65.70764,No,No,No,90.0,No,No,0.0,White,Male,Naive,Yes,Others,Yes,319.0,Yes,729.0,0.0,676.0
+37.0,83.02981,Yes,No,No,90.0,No,No,733.0,White,Male,Naive,Yes,Others,Yes,347.0,No,1180.0,0.0,661.0
+46.0,76.98607,No,Yes,No,90.0,No,No,44.0,White,Male,Naive,No,Others,Yes,214.0,No,685.0,1.0,919.0
+41.0,94.88799,No,No,No,100.0,No,No,66.0,Others,Female,Experienced,No,Others,Yes,252.0,Yes,563.0,0.0,930.0
+48.0,65.25421,Yes,Yes,No,90.0,No,Yes,1086.0,White,Male,Experienced,No,Others,No,165.0,Yes,967.0,0.0,1040.0
+25.0,78.6104,Yes,No,No,70.0,No,Yes,9.0,White,Male,Experienced,No,ZDV only,No,347.0,Yes,394.0,0.0,1080.0
+27.0,84.70666,No,No,No,100.0,No,Yes,873.0,Others,Female,Experienced,No,Others,No,311.0,Yes,142.0,0.0,154.0
+24.0,76.30877,Yes,No,No,90.0,No,No,675.0,Others,Male,Naive,No,Others,No,380.0,Yes,457.0,0.0,390.0
+33.0,98.94372,No,No,No,100.0,No,No,0.0,Others,Male,Naive,No,Others,Yes,694.0,No,3058.0,0.0,1087.0
+20.0,45.02423,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,No,ZDV only,Yes,440.0,No,1560.0,1.0,942.0
+18.0,62.73881,No,Yes,No,100.0,No,No,853.0,White,Male,Experienced,Yes,ZDV only,Yes,359.0,Yes,2374.0,0.0,1208.0
+38.0,66.6762,No,Yes,No,90.0,No,Yes,39.0,White,Male,Naive,No,Others,No,512.0,Yes,501.0,0.0,1184.0
+38.0,78.08182,No,No,No,90.0,No,No,35.0,White,Male,Naive,No,Others,Yes,224.0,Yes,351.0,0.0,672.0
+30.0,61.40889,No,Yes,No,90.0,No,No,35.0,White,Male,Naive,No,ZDV only,Yes,354.0,Yes,877.0,0.0,697.0
+54.0,116.79335,Yes,No,No,100.0,No,Yes,1166.0,White,Female,Experienced,No,Others,No,363.0,Yes,900.0,0.0,1226.0
+33.0,71.19615,No,No,Yes,100.0,No,No,0.0,Others,Female,Naive,No,Others,No,396.0,Yes,615.0,0.0,1110.0
+37.0,80.11416,No,Yes,No,100.0,No,Yes,568.0,White,Male,Experienced,No,Others,No,509.0,Yes,3115.0,0.0,1183.0
+32.0,88.32589,No,No,No,80.0,No,Yes,341.0,White,Male,Experienced,No,Others,No,337.0,Yes,362.0,0.0,1229.0
+36.0,120.01807,No,Yes,No,90.0,No,Yes,1614.0,White,Male,Experienced,No,ZDV only,No,460.0,Yes,1123.0,0.0,1151.0
+23.0,112.51471,No,No,No,100.0,No,No,0.0,White,Male,Naive,No,ZDV only,No,522.0,Yes,617.0,0.0,1166.0
+37.0,85.12067,No,No,No,100.0,No,No,40.0,Others,Male,Naive,No,Others,No,201.0,No,133.0,0.0,1190.0
+40.0,64.73803,No,No,Yes,100.0,No,No,0.0,Others,Female,Naive,No,Others,No,349.0,Yes,706.0,0.0,1074.0
+45.0,110.55008,No,Yes,No,90.0,No,Yes,1250.0,White,Male,Experienced,Yes,ZDV only,Yes,172.0,Yes,799.0,1.0,510.0
+42.0,42.36597,Yes,No,No,90.0,No,Yes,1866.0,Others,Male,Experienced,No,Others,No,186.0,Yes,1442.0,0.0,1096.0
+23.0,40.18175,No,No,No,100.0,No,Yes,854.0,White,Male,Experienced,No,ZDV only,No,327.0,Yes,533.0,0.0,1197.0
+36.0,84.98978,No,No,Yes,90.0,No,Yes,297.0,White,Male,Experienced,No,Others,Yes,476.0,No,1187.0,0.0,1231.0
+24.0,56.36465,No,Yes,No,80.0,No,Yes,381.0,Others,Female,Experienced,No,ZDV only,Yes,457.0,Yes,1229.0,0.0,1154.0
+27.0,77.73243,No,No,No,100.0,No,No,1191.0,Others,Male,Experienced,No,Others,No,238.0,Yes,741.0,0.0,1130.0
+28.0,71.8958,No,No,No,100.0,No,Yes,648.0,Others,Male,Experienced,No,Others,No,537.0,Yes,1306.0,0.0,1231.0
+44.0,85.63558,No,Yes,No,90.0,No,No,19.0,White,Male,Naive,No,ZDV only,Yes,357.0,No,1244.0,0.0,835.0
+38.0,69.6143,No,Yes,Yes,90.0,No,No,64.0,White,Male,Naive,No,ZDV only,Yes,274.0,No,439.0,1.0,987.0
+26.0,42.85427,No,Yes,No,90.0,No,Yes,829.0,White,Male,Experienced,Yes,ZDV only,Yes,505.0,No,2967.0,1.0,151.0
+41.0,78.09994,No,No,No,100.0,Yes,No,0.0,White,Male,Naive,No,Others,No,406.0,Yes,606.0,0.0,490.0
+39.0,80.74858,No,No,No,90.0,No,Yes,1768.0,White,Female,Experienced,No,Others,Yes,287.0,No,380.0,1.0,1231.0
+62.0,88.7251,No,No,Yes,100.0,No,Yes,920.0,White,Male,Experienced,No,Others,No,366.0,Yes,899.0,0.0,1097.0
+37.0,97.65299,No,No,Yes,90.0,No,Yes,440.0,Others,Female,Experienced,No,Others,No,419.0,Yes,355.0,0.0,680.0
+34.0,113.36266,No,No,Yes,90.0,No,Yes,666.0,Others,Female,Experienced,No,ZDV only,Yes,358.0,No,105.0,0.0,1070.0
+47.0,99.12707,No,No,No,90.0,No,Yes,884.0,Others,Female,Experienced,No,Others,Yes,398.0,No,1069.0,1.0,539.0
+33.0,88.7022,No,No,No,100.0,No,No,11.0,White,Male,Experienced,No,Others,Yes,304.0,No,178.0,0.0,905.0
+48.0,92.78972,No,Yes,No,90.0,No,No,12.0,White,Male,Naive,Yes,ZDV only,Yes,228.0,No,810.0,1.0,1134.0
+31.0,88.59472,No,No,No,90.0,No,Yes,49.0,White,Male,Experienced,No,Others,Yes,350.0,Yes,647.0,0.0,1029.0
+21.0,57.89617,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,No,ZDV only,Yes,387.0,No,868.0,0.0,1170.0
+29.0,71.72576,No,Yes,No,90.0,No,Yes,1044.0,White,Male,Experienced,Yes,ZDV only,Yes,499.0,Yes,900.0,1.0,1061.0
+47.0,61.79148,No,No,Yes,80.0,No,No,534.0,Others,Male,Experienced,No,ZDV only,Yes,328.0,No,714.0,0.0,781.0
+46.0,70.97716,No,No,Yes,90.0,No,No,0.0,White,Female,Naive,Yes,ZDV only,Yes,382.0,Yes,644.0,0.0,875.0
+30.0,104.95098,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,No,Others,No,666.0,No,272.0,0.0,967.0
+51.0,62.9318,No,No,No,100.0,No,No,984.0,Others,Male,Experienced,No,Others,Yes,298.0,Yes,742.0,0.0,1128.0
+38.0,88.54948,No,Yes,No,80.0,No,No,1.0,White,Male,Naive,Yes,Others,No,267.0,Yes,949.0,1.0,812.0
+41.0,59.52181,No,Yes,No,100.0,No,No,0.0,White,Male,Experienced,No,ZDV only,Yes,262.0,Yes,1168.0,0.0,1086.0
+39.0,96.73499,No,Yes,No,90.0,Yes,No,650.0,White,Male,Naive,Yes,ZDV only,No,410.0,Yes,4220.0,0.0,1090.0
+36.0,107.34427,No,No,Yes,90.0,No,No,15.0,White,Male,Naive,No,Others,Yes,510.0,Yes,900.0,0.0,1202.0
+22.0,93.75142,No,No,Yes,100.0,No,No,38.0,Others,Male,Naive,No,ZDV only,Yes,353.0,No,1020.0,0.0,790.0
+41.0,65.0885,No,Yes,No,90.0,No,No,453.0,White,Male,Naive,Yes,Others,No,350.0,Yes,1014.0,1.0,1051.0
+30.0,40.37149,No,No,No,100.0,No,Yes,662.0,Others,Female,Experienced,No,Others,No,526.0,Yes,889.0,0.0,856.0
+38.0,113.2802,No,Yes,No,100.0,No,No,18.0,White,Female,Naive,No,ZDV only,Yes,523.0,No,176.0,1.0,432.0
+34.0,146.14554,No,Yes,No,100.0,No,No,48.0,Others,Male,Naive,No,Others,Yes,376.0,No,267.0,0.0,1138.0
+40.0,115.43736,No,Yes,No,90.0,No,No,4.0,White,Male,Naive,No,ZDV only,Yes,609.0,Yes,1115.0,0.0,423.0
+45.0,99.82439,No,No,No,90.0,No,Yes,959.0,Others,Male,Experienced,No,Others,No,172.0,Yes,177.0,1.0,1082.0
+45.0,95.10877,No,Yes,No,90.0,No,No,42.0,White,Male,Naive,No,ZDV only,No,69.0,Yes,386.0,0.0,1171.0
+50.0,64.11437,No,Yes,No,90.0,No,Yes,1490.0,White,Male,Experienced,No,Others,No,328.0,Yes,840.0,0.0,540.0
+24.0,64.61418,Yes,Yes,No,100.0,No,No,0.0,White,Male,Naive,No,Others,Yes,282.0,No,958.0,0.0,646.0
+45.0,86.32178,No,Yes,No,90.0,No,Yes,1072.0,White,Male,Experienced,No,Others,No,392.0,Yes,294.0,0.0,1167.0
+26.0,67.64708,Yes,No,No,90.0,No,Yes,998.0,Others,Female,Experienced,No,Others,Yes,419.0,No,686.0,0.0,1231.0
+29.0,67.49052,No,No,No,90.0,No,No,50.0,White,Male,Naive,No,ZDV only,Yes,169.0,No,872.0,1.0,386.0
+25.0,105.78587,No,No,No,100.0,No,Yes,1442.0,White,Male,Experienced,No,Others,No,272.0,Yes,268.0,0.0,584.0
+37.0,102.25392,Yes,Yes,No,90.0,No,Yes,52.0,White,Male,Experienced,Yes,Others,No,179.0,No,1815.0,0.0,1213.0
+35.0,92.86566,No,Yes,No,90.0,No,No,16.0,Others,Male,Experienced,Yes,ZDV only,No,274.0,Yes,1745.0,0.0,1167.0
+35.0,84.59986,No,Yes,No,100.0,Yes,No,727.0,White,Male,Naive,No,Others,No,446.0,No,287.0,0.0,402.0
+39.0,90.33125,No,Yes,Yes,90.0,No,No,37.0,White,Male,Naive,No,ZDV only,Yes,388.0,No,2461.0,0.0,1016.0
+23.0,74.33287,Yes,Yes,No,100.0,Yes,Yes,452.0,White,Male,Experienced,No,ZDV only,No,579.0,No,619.0,1.0,1045.0
+33.0,89.3472,No,Yes,No,90.0,No,No,19.0,Others,Male,Naive,No,Others,Yes,407.0,No,1003.0,1.0,33.0
+47.0,80.54674,No,Yes,No,90.0,No,No,27.0,White,Male,Naive,No,Others,No,164.0,Yes,462.0,0.0,1002.0
+40.0,75.66819,No,Yes,No,100.0,Yes,Yes,253.0,White,Male,Experienced,No,Others,No,354.0,Yes,1313.0,0.0,1089.0
+38.0,88.87158,No,No,No,100.0,No,Yes,847.0,Others,Female,Experienced,No,Others,Yes,424.0,No,484.0,0.0,1136.0
+36.0,76.30353,No,No,No,100.0,Yes,Yes,1654.0,White,Male,Experienced,No,ZDV only,No,114.0,Yes,1304.0,0.0,1061.0
+17.0,101.69475,No,No,No,100.0,No,No,26.0,White,Male,Naive,No,Others,No,567.0,Yes,306.0,0.0,541.0
+45.0,85.82514,No,Yes,No,90.0,No,Yes,995.0,White,Male,Experienced,No,Others,Yes,175.0,No,1146.0,1.0,1075.0
+54.0,71.93698,No,No,Yes,90.0,No,Yes,148.0,Others,Male,Experienced,No,ZDV only,Yes,324.0,No,619.0,1.0,310.0
+21.0,51.62208,No,No,Yes,100.0,No,No,466.0,Others,Male,Experienced,No,Others,Yes,133.0,No,989.0,0.0,1227.0
+43.0,73.42939,No,No,No,100.0,No,Yes,1879.0,White,Female,Experienced,No,ZDV only,No,227.0,Yes,386.0,0.0,944.0
+38.0,112.34391,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,Yes,Others,No,553.0,Yes,657.0,0.0,1001.0
+61.0,85.17095,No,Yes,No,100.0,No,Yes,94.0,White,Male,Experienced,Yes,Others,No,540.0,Yes,1273.0,0.0,970.0
+43.0,80.27845,No,No,Yes,80.0,Yes,Yes,928.0,Others,Male,Experienced,No,ZDV only,Yes,138.0,No,1080.0,0.0,1118.0
+30.0,69.37331,No,Yes,No,90.0,Yes,Yes,217.0,Others,Male,Experienced,No,Others,No,450.0,Yes,318.0,0.0,1132.0
+24.0,76.56778,No,No,No,100.0,No,Yes,1032.0,White,Male,Experienced,No,Others,No,358.0,Yes,434.0,0.0,1139.0
+38.0,56.36515,No,No,No,90.0,No,Yes,458.0,White,Male,Experienced,Yes,ZDV only,Yes,239.0,Yes,1000.0,1.0,1013.0
+39.0,86.54207,No,No,No,90.0,No,Yes,1366.0,White,Male,Experienced,No,Others,Yes,341.0,Yes,1277.0,0.0,1223.0
+56.0,86.1625,Yes,Yes,No,100.0,No,Yes,24.0,White,Male,Experienced,No,ZDV only,No,390.0,Yes,1464.0,0.0,1094.0
+31.0,44.99471,No,No,No,100.0,No,No,286.0,White,Male,Experienced,No,ZDV only,Yes,132.0,Yes,1096.0,0.0,852.0
+38.0,57.78973,No,Yes,No,100.0,Yes,Yes,23.0,Others,Male,Naive,No,ZDV only,No,485.0,Yes,1130.0,1.0,1224.0
+40.0,95.5817,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,No,Others,No,651.0,Yes,806.0,0.0,1070.0
+27.0,86.60856,No,No,No,100.0,No,Yes,983.0,White,Female,Experienced,No,Others,No,276.0,Yes,738.0,0.0,1231.0
+26.0,85.2308,No,Yes,No,90.0,No,No,14.0,White,Male,Naive,No,Others,Yes,614.0,Yes,1048.0,1.0,1007.0
+26.0,90.9584,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,No,Others,Yes,279.0,No,376.0,0.0,1002.0
+36.0,75.93544,No,No,No,90.0,No,No,0.0,Others,Female,Naive,No,Others,No,620.0,Yes,418.0,0.0,1116.0
+31.0,56.56981,No,No,Yes,100.0,No,Yes,1073.0,Others,Female,Experienced,No,ZDV only,No,462.0,Yes,641.0,0.0,1130.0
+28.0,66.15815,No,Yes,No,90.0,No,Yes,424.0,White,Male,Experienced,No,Others,No,295.0,Yes,396.0,1.0,1064.0
+39.0,64.3125,No,Yes,No,90.0,No,No,1.0,White,Male,Naive,Yes,ZDV only,No,212.0,Yes,443.0,0.0,1066.0
+44.0,79.7732,No,Yes,No,90.0,No,Yes,818.0,White,Male,Experienced,Yes,Others,Yes,182.0,Yes,1618.0,1.0,1028.0
+19.0,62.6282,No,No,No,100.0,No,No,1190.0,Others,Male,Naive,No,Others,No,508.0,No,490.0,0.0,526.0
+31.0,74.32752,No,No,Yes,90.0,No,No,43.0,White,Male,Naive,Yes,Others,Yes,264.0,No,814.0,0.0,1148.0
+40.0,85.9241,No,No,Yes,100.0,No,Yes,275.0,Others,Female,Experienced,No,Others,No,256.0,Yes,540.0,0.0,821.0
+35.0,66.47411,No,No,Yes,90.0,No,No,12.0,White,Male,Naive,No,Others,Yes,210.0,Yes,539.0,0.0,344.0
+46.0,70.2703,No,Yes,No,100.0,No,Yes,989.0,White,Male,Experienced,No,Others,No,457.0,Yes,259.0,0.0,996.0
+43.0,67.38894,Yes,No,Yes,90.0,No,No,18.0,White,Female,Naive,No,Others,Yes,178.0,No,423.0,0.0,923.0
+30.0,90.52849,No,Yes,No,100.0,No,No,0.0,Others,Male,Naive,No,ZDV only,No,554.0,No,693.0,0.0,1076.0
+46.0,89.54743,No,Yes,No,90.0,No,No,2.0,White,Male,Naive,Yes,ZDV only,Yes,228.0,No,315.0,0.0,66.0
+37.0,82.24039,Yes,No,No,100.0,No,Yes,240.0,White,Female,Experienced,No,ZDV only,Yes,390.0,No,1515.0,0.0,935.0
+27.0,91.41497,No,Yes,No,100.0,No,Yes,547.0,White,Male,Experienced,No,ZDV only,No,530.0,Yes,2042.0,0.0,1187.0
+50.0,87.00361,No,No,No,90.0,No,Yes,946.0,White,Male,Experienced,Yes,Others,Yes,119.0,No,526.0,0.0,1204.0
+70.0,68.0002,No,No,Yes,90.0,No,No,1408.0,Others,Female,Experienced,No,Others,Yes,224.0,No,105.0,1.0,103.0
+31.0,78.40716,Yes,No,No,100.0,No,Yes,465.0,Others,Male,Experienced,No,Others,No,235.0,Yes,1281.0,1.0,1129.0
+45.0,53.93839,No,No,No,100.0,No,No,0.0,White,Male,Experienced,No,Others,No,351.0,Yes,1607.0,1.0,232.0
+32.0,81.55222,Yes,No,Yes,100.0,No,Yes,385.0,White,Female,Experienced,No,Others,No,252.0,Yes,105.0,0.0,997.0
+32.0,47.24243,No,Yes,No,100.0,No,Yes,194.0,White,Male,Experienced,No,Others,Yes,402.0,Yes,1201.0,0.0,541.0
+55.0,84.28354,Yes,Yes,No,80.0,No,Yes,900.0,White,Male,Experienced,No,ZDV only,Yes,284.0,No,105.0,1.0,1071.0
+39.0,33.80176,Yes,No,No,90.0,No,No,12.0,White,Male,Naive,No,ZDV only,Yes,202.0,No,1105.0,0.0,1028.0
+48.0,87.2671,No,Yes,Yes,100.0,No,No,0.0,White,Male,Naive,Yes,ZDV only,Yes,329.0,No,1304.0,1.0,692.0
+37.0,75.89904,No,Yes,No,90.0,No,Yes,13.0,White,Male,Experienced,Yes,Others,No,491.0,Yes,870.0,0.0,1066.0
+41.0,75.96003,No,Yes,No,90.0,No,No,18.0,White,Male,Naive,No,ZDV only,Yes,483.0,Yes,1384.0,1.0,950.0
+31.0,91.61206,No,No,No,90.0,No,Yes,57.0,White,Male,Experienced,Yes,Others,Yes,171.0,Yes,762.0,1.0,580.0
+35.0,100.83145,No,No,No,100.0,No,No,30.0,White,Male,Naive,No,ZDV only,No,582.0,Yes,553.0,0.0,1173.0
+31.0,55.29813,No,No,No,90.0,No,Yes,331.0,White,Female,Experienced,No,Others,Yes,217.0,No,393.0,0.0,1032.0
+55.0,96.85982,No,No,No,90.0,No,No,0.0,White,Male,Naive,No,ZDV only,Yes,232.0,No,798.0,1.0,155.0
+12.0,69.89293,No,No,Yes,90.0,No,No,0.0,Others,Female,Naive,No,Others,Yes,462.0,No,296.0,1.0,775.0
+28.0,69.15876,No,No,No,100.0,No,No,2.0,Others,Female,Naive,No,Others,Yes,261.0,Yes,1616.0,0.0,1203.0
+23.0,72.66171,No,No,No,90.0,No,Yes,1132.0,White,Female,Experienced,No,ZDV only,No,259.0,No,1352.0,1.0,1231.0
+37.0,60.27137,No,No,No,100.0,No,Yes,527.0,Others,Female,Experienced,No,ZDV only,No,287.0,Yes,1070.0,0.0,1047.0
+24.0,46.99038,No,No,No,100.0,No,Yes,1158.0,Others,Male,Experienced,No,ZDV only,No,334.0,Yes,1344.0,0.0,950.0
+43.0,78.03129,No,Yes,No,100.0,No,No,4.0,White,Male,Naive,No,Others,No,189.0,Yes,855.0,0.0,1148.0
+42.0,70.127,No,No,Yes,90.0,No,Yes,840.0,Others,Female,Experienced,No,ZDV only,Yes,229.0,No,346.0,1.0,1125.0
+25.0,79.5594,No,No,No,80.0,No,Yes,682.0,White,Male,Experienced,No,Others,Yes,324.0,No,267.0,1.0,605.0
+47.0,103.34348,No,Yes,No,90.0,No,Yes,358.0,White,Male,Naive,Yes,ZDV only,No,113.0,Yes,898.0,1.0,1231.0
+34.0,89.69006,No,Yes,No,100.0,No,Yes,723.0,White,Male,Experienced,Yes,ZDV only,No,363.0,No,993.0,1.0,1119.0
+21.0,58.98732,No,No,No,90.0,No,No,12.0,White,Male,Naive,No,ZDV only,No,294.0,Yes,869.0,0.0,1117.0
+30.0,64.70845,No,Yes,No,100.0,No,Yes,927.0,White,Male,Experienced,No,Others,No,406.0,Yes,1060.0,0.0,1144.0
+19.0,67.10159,Yes,No,No,100.0,No,Yes,2431.0,White,Male,Experienced,Yes,Others,Yes,313.0,Yes,741.0,0.0,855.0
+38.0,77.04671,No,Yes,No,100.0,No,Yes,725.0,White,Male,Experienced,No,Others,No,376.0,Yes,807.0,1.0,1042.0
+32.0,65.23303,Yes,No,No,100.0,No,Yes,1338.0,Others,Female,Experienced,No,Others,No,425.0,Yes,647.0,0.0,1178.0
+49.0,61.94768,No,No,Yes,100.0,No,Yes,306.0,Others,Female,Naive,No,ZDV only,No,719.0,Yes,112.0,0.0,1021.0
+48.0,79.25394,No,No,No,90.0,No,Yes,745.0,Others,Male,Experienced,Yes,Others,Yes,96.0,Yes,611.0,1.0,1163.0
+27.0,74.45305,Yes,Yes,No,90.0,No,No,1605.0,White,Male,Experienced,Yes,ZDV only,Yes,656.0,No,1392.0,1.0,293.0
+50.0,82.78467,No,No,No,100.0,No,Yes,1047.0,White,Female,Experienced,No,Others,No,246.0,Yes,142.0,1.0,1006.0
+35.0,71.48982,No,No,No,100.0,No,No,0.0,Others,Male,Naive,No,ZDV only,Yes,240.0,No,1001.0,0.0,272.0
+40.0,86.75992,No,Yes,Yes,100.0,No,No,35.0,White,Male,Experienced,No,ZDV only,No,375.0,Yes,1830.0,0.0,1105.0
+34.0,85.00183,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,No,ZDV only,Yes,290.0,Yes,418.0,0.0,1231.0
+51.0,90.8733,No,No,No,90.0,No,Yes,247.0,Others,Female,Naive,No,Others,Yes,298.0,Yes,393.0,1.0,1134.0
+53.0,94.8577,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,No,Others,No,192.0,Yes,1117.0,1.0,597.0
+32.0,73.09936,No,Yes,No,100.0,No,Yes,1100.0,White,Male,Experienced,No,Others,No,370.0,Yes,539.0,0.0,1197.0
+51.0,62.07554,No,Yes,No,80.0,No,Yes,865.0,White,Male,Experienced,No,ZDV only,No,266.0,No,587.0,0.0,916.0
+27.0,59.89122,No,No,No,90.0,No,No,23.0,White,Male,Naive,No,ZDV only,Yes,276.0,Yes,596.0,1.0,317.0
+47.0,101.38545,No,Yes,No,100.0,No,Yes,1176.0,White,Male,Experienced,Yes,Others,No,175.0,No,1413.0,0.0,1222.0
+31.0,95.24634,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,No,ZDV only,No,334.0,Yes,450.0,0.0,1024.0
+45.0,98.68944,No,Yes,Yes,80.0,Yes,No,0.0,White,Male,Experienced,No,Others,No,471.0,Yes,238.0,0.0,1073.0
+32.0,89.17005,No,Yes,No,100.0,No,Yes,762.0,White,Male,Experienced,No,ZDV only,No,383.0,Yes,854.0,0.0,1208.0
+27.0,94.44102,No,Yes,No,90.0,No,Yes,98.0,White,Male,Experienced,No,Others,No,511.0,Yes,314.0,1.0,1099.0
+38.0,88.25976,No,Yes,No,90.0,No,Yes,859.0,White,Male,Experienced,Yes,ZDV only,Yes,275.0,Yes,822.0,1.0,900.0
+38.0,82.93121,No,No,No,100.0,No,No,33.0,Others,Male,Naive,No,ZDV only,No,239.0,Yes,611.0,0.0,1042.0
+61.0,78.06277,No,Yes,No,90.0,No,Yes,223.0,White,Male,Experienced,Yes,ZDV only,Yes,310.0,Yes,1033.0,1.0,1143.0
+43.0,84.2056,No,No,No,100.0,No,No,27.0,Others,Male,Naive,No,Others,Yes,229.0,No,716.0,0.0,1060.0
+38.0,67.83038,No,Yes,No,100.0,No,Yes,1956.0,White,Male,Experienced,No,Others,No,325.0,Yes,911.0,0.0,987.0
+32.0,81.37258,No,Yes,No,90.0,Yes,No,0.0,White,Male,Naive,No,ZDV only,Yes,320.0,Yes,1593.0,0.0,1231.0
+46.0,74.03347,No,Yes,No,100.0,No,Yes,781.0,White,Male,Experienced,No,Others,No,435.0,Yes,1444.0,0.0,1067.0
+32.0,82.64561,No,Yes,Yes,100.0,Yes,Yes,755.0,White,Male,Experienced,No,ZDV only,No,274.0,Yes,531.0,0.0,1095.0
+46.0,65.86461,No,No,Yes,100.0,No,Yes,1375.0,White,Male,Experienced,No,ZDV only,No,371.0,Yes,1024.0,0.0,753.0
+19.0,63.25345,Yes,No,No,100.0,No,Yes,1663.0,White,Male,Experienced,No,Others,No,407.0,Yes,710.0,0.0,1231.0
+29.0,97.09647,Yes,No,No,100.0,No,Yes,335.0,Others,Male,Experienced,No,Others,No,359.0,Yes,234.0,0.0,1101.0
+31.0,81.48017,No,No,Yes,100.0,No,No,18.0,White,Female,Naive,No,ZDV only,No,379.0,Yes,626.0,0.0,1231.0
+32.0,72.21197,No,No,No,100.0,No,Yes,198.0,Others,Female,Experienced,No,ZDV only,Yes,279.0,No,304.0,0.0,416.0
+39.0,95.28754,No,Yes,Yes,100.0,Yes,Yes,947.0,White,Male,Experienced,No,ZDV only,No,370.0,Yes,636.0,0.0,863.0
+54.0,93.6339,No,Yes,Yes,90.0,Yes,Yes,1109.0,White,Male,Experienced,Yes,ZDV only,Yes,245.0,No,1542.0,1.0,1059.0
+46.0,68.41189,No,Yes,No,90.0,No,No,7.0,White,Male,Naive,No,Others,Yes,220.0,Yes,717.0,1.0,824.0
+47.0,39.36477,No,Yes,No,70.0,Yes,No,989.0,Others,Male,Experienced,No,ZDV only,Yes,206.0,No,973.0,1.0,1120.0
+42.0,93.7219,No,No,No,100.0,No,Yes,344.0,White,Male,Experienced,No,Others,No,295.0,Yes,618.0,0.0,1191.0
+51.0,89.77731,No,No,Yes,80.0,No,No,0.0,White,Female,Experienced,No,ZDV only,Yes,382.0,No,425.0,0.0,515.0
+40.0,65.6105,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,No,Others,Yes,152.0,No,841.0,1.0,498.0
+28.0,82.90768,No,Yes,No,90.0,No,Yes,1053.0,White,Male,Experienced,No,ZDV only,No,539.0,Yes,1757.0,1.0,1034.0
+42.0,76.63396,No,No,No,100.0,Yes,Yes,1018.0,White,Male,Experienced,No,Others,No,426.0,Yes,1751.0,0.0,1074.0
+36.0,85.60148,No,No,No,100.0,No,Yes,40.0,White,Male,Experienced,No,ZDV only,Yes,385.0,Yes,1511.0,1.0,241.0
+28.0,81.38344,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,Yes,Others,No,371.0,Yes,2332.0,0.0,1220.0
+42.0,52.44077,No,No,No,100.0,No,Yes,1413.0,Others,Male,Experienced,Yes,Others,No,351.0,Yes,325.0,0.0,1031.0
+43.0,86.08907,No,Yes,No,90.0,No,Yes,975.0,White,Male,Experienced,No,Others,Yes,214.0,Yes,1638.0,1.0,919.0
+30.0,66.68875,No,Yes,No,100.0,Yes,Yes,280.0,White,Male,Experienced,No,ZDV only,No,327.0,Yes,1101.0,0.0,1166.0
+41.0,102.57452,No,Yes,No,90.0,No,No,44.0,White,Male,Naive,Yes,ZDV only,No,310.0,Yes,164.0,0.0,975.0
+37.0,87.8973,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,No,Others,Yes,357.0,No,1020.0,1.0,1156.0
+42.0,100.84634,No,No,No,100.0,No,Yes,3.0,White,Male,Naive,Yes,Others,Yes,339.0,Yes,899.0,1.0,1037.0
+46.0,80.04868,No,No,No,90.0,Yes,Yes,16.0,White,Male,Naive,Yes,Others,Yes,279.0,No,808.0,0.0,1152.0
+29.0,76.07958,Yes,No,No,100.0,Yes,Yes,910.0,Others,Female,Experienced,No,Others,No,471.0,Yes,1086.0,0.0,1116.0
+46.0,87.17488,No,Yes,No,90.0,No,Yes,26.0,White,Male,Experienced,No,ZDV only,Yes,466.0,Yes,707.0,1.0,1118.0
+42.0,96.29387,No,Yes,No,100.0,No,No,3.0,Others,Male,Naive,No,Others,No,406.0,Yes,511.0,0.0,298.0
+56.0,119.12591,No,No,No,100.0,No,No,0.0,White,Female,Naive,Yes,ZDV only,No,127.0,Yes,486.0,0.0,1205.0
+53.0,93.52186,No,No,No,100.0,No,No,40.0,White,Female,Naive,No,Others,No,472.0,Yes,432.0,0.0,474.0
+28.0,59.99723,No,Yes,No,90.0,No,No,39.0,White,Male,Naive,Yes,Others,No,265.0,Yes,1139.0,0.0,1002.0
+32.0,81.44421,No,No,Yes,90.0,No,Yes,217.0,White,Female,Experienced,No,Others,No,328.0,Yes,864.0,0.0,1199.0
+30.0,81.48253,Yes,Yes,No,90.0,No,Yes,1061.0,White,Male,Experienced,No,Others,No,212.0,No,191.0,0.0,685.0
+18.0,74.69967,No,No,Yes,100.0,No,Yes,256.0,Others,Female,Experienced,No,ZDV only,No,456.0,Yes,775.0,1.0,1188.0
+43.0,96.36867,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,No,Others,No,348.0,Yes,1165.0,1.0,1131.0
+28.0,98.91299,No,No,No,90.0,No,Yes,1117.0,White,Male,Experienced,Yes,Others,Yes,390.0,No,547.0,1.0,520.0
+34.0,72.13453,No,Yes,No,100.0,No,Yes,181.0,White,Male,Experienced,No,ZDV only,No,345.0,Yes,600.0,0.0,1162.0
+28.0,62.56735,No,Yes,No,90.0,No,No,22.0,White,Male,Naive,Yes,Others,Yes,433.0,Yes,1442.0,1.0,86.0
+29.0,94.01449,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,Yes,Others,Yes,302.0,Yes,2550.0,1.0,790.0
+23.0,60.8083,No,Yes,No,90.0,No,Yes,1624.0,White,Male,Experienced,No,Others,No,329.0,Yes,3325.0,1.0,1001.0
+39.0,134.40837,No,Yes,No,90.0,No,No,15.0,Others,Male,Naive,No,Others,No,518.0,Yes,467.0,0.0,1231.0
+18.0,85.35914,Yes,Yes,No,100.0,No,Yes,768.0,White,Male,Experienced,No,Others,No,368.0,Yes,401.0,0.0,1076.0
+32.0,70.23447,No,No,No,100.0,No,Yes,439.0,Others,Female,Experienced,No,Others,No,314.0,Yes,296.0,0.0,1059.0
+27.0,88.56589,No,Yes,No,90.0,No,No,2172.0,Others,Male,Experienced,No,ZDV only,No,208.0,Yes,904.0,0.0,1065.0
+19.0,79.49396,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,No,ZDV only,No,350.0,Yes,375.0,0.0,1190.0
+23.0,80.26536,No,No,No,90.0,No,No,0.0,Others,Female,Naive,No,Others,Yes,546.0,No,373.0,1.0,1231.0
+59.0,95.85601,No,No,Yes,90.0,No,Yes,7.0,White,Male,Experienced,No,Others,Yes,431.0,No,251.0,0.0,952.0
+14.0,65.72162,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,Yes,ZDV only,Yes,297.0,No,1236.0,0.0,1068.0
+33.0,74.66621,No,Yes,No,80.0,No,No,0.0,White,Male,Experienced,No,Others,Yes,213.0,Yes,3454.0,0.0,1229.0
+21.0,55.81454,No,No,No,100.0,No,Yes,188.0,Others,Male,Experienced,No,Others,No,324.0,Yes,1632.0,0.0,1228.0
+26.0,88.99667,No,No,No,90.0,No,No,10.0,White,Male,Naive,No,ZDV only,No,500.0,Yes,829.0,0.0,1062.0
+26.0,34.30647,No,Yes,No,90.0,Yes,Yes,1399.0,White,Male,Experienced,Yes,ZDV only,Yes,273.0,Yes,698.0,0.0,224.0
+27.0,122.8255,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,Yes,ZDV only,No,403.0,Yes,707.0,0.0,669.0
+28.0,75.21522,No,No,No,100.0,No,Yes,790.0,Others,Female,Experienced,No,Others,No,469.0,Yes,938.0,0.0,1160.0
+27.0,80.17996,No,Yes,Yes,90.0,No,Yes,352.0,White,Male,Experienced,No,ZDV only,No,507.0,No,175.0,1.0,537.0
+57.0,76.53551,No,No,No,100.0,No,Yes,66.0,White,Male,Experienced,No,Others,Yes,316.0,Yes,1682.0,0.0,911.0
+45.0,90.45141,No,Yes,No,70.0,No,Yes,53.0,White,Female,Experienced,No,Others,No,502.0,Yes,515.0,0.0,754.0
+31.0,80.13159,No,No,No,90.0,No,No,58.0,White,Male,Naive,No,Others,Yes,288.0,Yes,869.0,0.0,874.0
+29.0,58.95245,No,Yes,No,100.0,No,No,0.0,White,Male,Experienced,Yes,Others,No,411.0,Yes,660.0,0.0,1037.0
+31.0,70.47536,Yes,No,No,100.0,No,Yes,1211.0,Others,Female,Experienced,No,ZDV only,Yes,209.0,No,794.0,0.0,828.0
+37.0,63.17605,No,Yes,No,80.0,No,Yes,840.0,White,Male,Experienced,Yes,ZDV only,No,45.0,Yes,575.0,0.0,1186.0
+20.0,91.0606,No,Yes,No,100.0,No,No,16.0,White,Male,Naive,No,ZDV only,Yes,401.0,Yes,1167.0,0.0,1012.0
+34.0,100.3633,No,No,Yes,100.0,No,Yes,1422.0,Others,Male,Experienced,No,ZDV only,No,217.0,Yes,609.0,0.0,1196.0
+45.0,86.15993,No,Yes,No,100.0,No,Yes,891.0,White,Female,Experienced,No,Others,No,502.0,Yes,517.0,0.0,1218.0
+52.0,94.96754,No,No,Yes,100.0,No,No,0.0,White,Female,Naive,No,Others,No,196.0,Yes,440.0,0.0,1002.0
+44.0,88.55233,Yes,No,No,100.0,No,Yes,343.0,White,Female,Experienced,No,Others,No,257.0,Yes,264.0,0.0,1231.0
+26.0,62.53515,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,No,ZDV only,No,271.0,Yes,750.0,0.0,1147.0
+29.0,99.43721,No,Yes,No,100.0,No,No,49.0,White,Male,Naive,No,Others,No,412.0,Yes,380.0,0.0,1025.0
+35.0,60.93331,Yes,No,Yes,100.0,No,Yes,926.0,Others,Female,Experienced,No,Others,No,253.0,No,301.0,0.0,1042.0
+47.0,75.76281,No,Yes,No,100.0,No,Yes,542.0,White,Male,Experienced,No,Others,No,341.0,Yes,854.0,0.0,1121.0
+58.0,104.80749,No,No,Yes,90.0,No,Yes,788.0,Others,Female,Experienced,No,ZDV only,No,296.0,Yes,249.0,0.0,1118.0
+33.0,89.66952,No,Yes,Yes,90.0,No,No,40.0,White,Male,Naive,No,ZDV only,Yes,408.0,Yes,230.0,0.0,1088.0
+23.0,36.74937,Yes,No,No,100.0,No,Yes,924.0,Others,Male,Experienced,No,ZDV only,No,517.0,Yes,387.0,0.0,1057.0
+38.0,82.94254,No,Yes,No,100.0,No,No,6.0,White,Male,Naive,Yes,Others,Yes,170.0,No,391.0,0.0,571.0
+25.0,71.9482,No,Yes,No,100.0,No,No,2.0,Others,Male,Naive,No,ZDV only,No,339.0,Yes,1105.0,0.0,1231.0
+33.0,75.63853,No,Yes,No,100.0,No,Yes,702.0,White,Male,Experienced,Yes,ZDV only,No,108.0,Yes,1364.0,1.0,1201.0
+12.0,71.5604,No,No,Yes,100.0,No,No,177.0,Others,Female,Naive,No,Others,Yes,746.0,No,435.0,0.0,496.0
+28.0,92.69157,Yes,No,No,100.0,No,Yes,907.0,Others,Male,Experienced,No,Others,No,288.0,Yes,723.0,0.0,1231.0
+55.0,98.81714,No,Yes,No,90.0,No,Yes,842.0,White,Male,Experienced,No,ZDV only,No,382.0,Yes,2144.0,0.0,1125.0
+37.0,93.63433,No,Yes,Yes,90.0,No,Yes,1055.0,White,Male,Experienced,No,Others,No,283.0,Yes,643.0,0.0,1121.0
+32.0,60.21854,Yes,Yes,No,100.0,No,Yes,564.0,Others,Female,Experienced,No,Others,No,230.0,Yes,969.0,0.0,1018.0
+42.0,77.95323,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,No,ZDV only,Yes,265.0,No,716.0,0.0,934.0
+25.0,68.89421,Yes,Yes,No,100.0,No,Yes,590.0,Others,Male,Experienced,No,Others,No,217.0,No,407.0,1.0,563.0
+36.0,95.02717,No,No,No,100.0,No,No,29.0,Others,Female,Naive,No,ZDV only,Yes,274.0,No,179.0,1.0,122.0
+37.0,124.80717,No,No,No,100.0,No,No,24.0,White,Male,Naive,No,ZDV only,No,204.0,No,762.0,0.0,894.0
+31.0,77.46025,No,Yes,No,100.0,No,Yes,652.0,White,Female,Experienced,No,ZDV only,No,384.0,Yes,419.0,1.0,1033.0
+45.0,88.94932,No,No,No,90.0,No,Yes,2257.0,White,Male,Experienced,Yes,Others,Yes,460.0,No,790.0,1.0,33.0
+20.0,60.65896,No,Yes,No,90.0,No,Yes,513.0,White,Male,Experienced,No,ZDV only,Yes,269.0,No,3285.0,1.0,410.0
+27.0,96.55656,No,Yes,No,90.0,No,Yes,1109.0,White,Female,Experienced,Yes,ZDV only,No,305.0,Yes,628.0,0.0,1158.0
+59.0,77.26541,No,No,Yes,70.0,No,Yes,1078.0,Others,Male,Experienced,Yes,Others,No,293.0,Yes,671.0,0.0,971.0
+25.0,77.59964,No,Yes,No,90.0,No,No,19.0,White,Male,Naive,Yes,Others,Yes,213.0,No,957.0,1.0,139.0
+28.0,68.51701,No,No,No,70.0,No,No,0.0,White,Male,Experienced,No,Others,Yes,647.0,Yes,2662.0,0.0,1099.0
+36.0,81.28188,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,No,ZDV only,Yes,189.0,No,984.0,1.0,641.0
+50.0,79.45324,No,No,No,100.0,No,Yes,1180.0,White,Female,Experienced,Yes,Others,No,212.0,No,326.0,1.0,1067.0
+46.0,75.87623,No,No,Yes,100.0,No,Yes,522.0,White,Male,Experienced,No,Others,Yes,368.0,Yes,555.0,0.0,1204.0
+41.0,83.02462,No,Yes,No,100.0,No,No,15.0,White,Male,Naive,Yes,ZDV only,No,317.0,Yes,948.0,0.0,707.0
+29.0,71.52435,No,Yes,No,100.0,No,Yes,12.0,Others,Male,Experienced,No,ZDV only,Yes,257.0,No,1588.0,0.0,153.0
+31.0,84.75857,No,Yes,No,90.0,No,Yes,692.0,White,Male,Experienced,Yes,Others,Yes,271.0,Yes,1335.0,1.0,455.0
+35.0,65.90027,No,No,Yes,90.0,No,No,9.0,Others,Male,Naive,No,ZDV only,Yes,291.0,No,1153.0,0.0,614.0
+24.0,88.75701,No,No,No,90.0,No,No,70.0,Others,Male,Experienced,No,ZDV only,No,537.0,No,339.0,0.0,876.0
+36.0,71.8394,No,No,No,90.0,No,Yes,743.0,White,Male,Experienced,No,ZDV only,No,453.0,Yes,1455.0,0.0,1203.0
+49.0,65.89208,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,No,Others,No,179.0,Yes,254.0,0.0,1092.0
+44.0,76.53104,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,Yes,ZDV only,Yes,331.0,No,1238.0,0.0,1049.0
+33.0,116.37282,No,Yes,No,100.0,No,No,76.0,White,Male,Naive,No,ZDV only,No,422.0,Yes,357.0,0.0,1116.0
+55.0,83.28348,No,Yes,No,100.0,No,Yes,918.0,White,Male,Experienced,No,ZDV only,No,190.0,Yes,1264.0,0.0,1163.0
+36.0,102.84767,No,No,No,90.0,No,Yes,1488.0,White,Male,Experienced,No,Others,Yes,306.0,No,653.0,1.0,1062.0
+37.0,96.9214,No,No,No,100.0,No,Yes,1636.0,White,Male,Experienced,Yes,ZDV only,Yes,507.0,Yes,358.0,0.0,1108.0
+34.0,63.04723,No,No,No,100.0,No,Yes,4.0,Others,Female,Experienced,No,ZDV only,Yes,259.0,Yes,853.0,0.0,755.0
+35.0,77.63108,No,Yes,Yes,100.0,No,No,0.0,White,Male,Experienced,No,Others,Yes,613.0,No,441.0,0.0,239.0
+25.0,78.97509,No,Yes,No,80.0,No,No,5.0,White,Male,Naive,No,ZDV only,Yes,728.0,Yes,743.0,0.0,33.0
+26.0,86.8842,No,No,No,100.0,No,Yes,1150.0,White,Male,Experienced,No,ZDV only,Yes,348.0,No,431.0,1.0,459.0
+40.0,65.69801,No,Yes,No,100.0,No,No,0.0,Others,Male,Naive,Yes,Others,Yes,166.0,No,1068.0,0.0,902.0
+47.0,78.25806,No,Yes,No,80.0,No,Yes,1039.0,White,Female,Experienced,No,Others,No,298.0,Yes,408.0,0.0,1173.0
+35.0,67.69664,No,Yes,No,100.0,No,Yes,0.0,White,Male,Experienced,Yes,Others,No,220.0,Yes,761.0,0.0,1169.0
+22.0,75.33587,Yes,No,Yes,90.0,No,Yes,568.0,White,Male,Experienced,No,Others,No,348.0,Yes,842.0,0.0,1231.0
+36.0,89.16708,Yes,Yes,Yes,100.0,No,Yes,663.0,White,Male,Naive,No,ZDV only,No,751.0,Yes,443.0,0.0,1018.0
+26.0,146.04278,No,No,No,90.0,No,No,0.0,White,Male,Naive,Yes,ZDV only,Yes,307.0,No,614.0,0.0,147.0
+34.0,122.93331,No,Yes,No,100.0,No,Yes,803.0,Others,Male,Experienced,Yes,Others,No,227.0,Yes,431.0,0.0,963.0
+43.0,78.51049,No,No,Yes,100.0,No,Yes,16.0,Others,Male,Naive,No,Others,Yes,254.0,No,1409.0,0.0,934.0
+33.0,118.5711,No,Yes,No,100.0,No,No,1265.0,Others,Male,Experienced,No,Others,No,622.0,Yes,231.0,0.0,911.0
+27.0,41.02822,No,Yes,No,90.0,No,Yes,481.0,White,Male,Experienced,No,Others,No,497.0,Yes,572.0,1.0,903.0
+21.0,55.74331,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,No,Others,Yes,438.0,No,595.0,0.0,969.0
+41.0,94.49915,No,Yes,No,100.0,No,Yes,3.0,Others,Male,Experienced,Yes,ZDV only,No,127.0,Yes,1057.0,0.0,1101.0
+19.0,68.81117,No,Yes,No,100.0,No,Yes,271.0,White,Male,Experienced,No,ZDV only,Yes,299.0,No,1060.0,0.0,486.0
+37.0,61.61343,No,No,Yes,100.0,No,Yes,810.0,Others,Female,Experienced,No,ZDV only,Yes,541.0,Yes,304.0,0.0,204.0
+29.0,108.31084,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,No,Others,No,354.0,Yes,292.0,0.0,830.0
+29.0,74.32599,No,No,No,90.0,No,Yes,1879.0,Others,Male,Experienced,No,Others,No,614.0,Yes,1128.0,0.0,1175.0
+33.0,63.45865,No,Yes,No,90.0,No,No,9.0,White,Male,Naive,Yes,ZDV only,Yes,227.0,Yes,757.0,1.0,732.0
+46.0,63.14189,No,Yes,No,90.0,Yes,Yes,1199.0,White,Male,Experienced,Yes,ZDV only,Yes,122.0,No,610.0,1.0,270.0
+37.0,98.22495,No,Yes,No,100.0,No,No,8.0,Others,Male,Naive,No,ZDV only,Yes,287.0,No,508.0,0.0,1017.0
+48.0,76.25888,No,No,No,90.0,No,Yes,1161.0,White,Male,Experienced,No,ZDV only,Yes,171.0,No,417.0,0.0,1124.0
+28.0,61.89633,No,Yes,Yes,100.0,No,No,0.0,White,Male,Naive,No,Others,Yes,299.0,No,711.0,1.0,901.0
+40.0,94.41212,No,No,Yes,90.0,No,No,0.0,White,Male,Naive,No,Others,No,390.0,No,217.0,1.0,798.0
+57.0,76.56894,No,No,No,80.0,No,Yes,936.0,White,Male,Experienced,No,Others,No,344.0,Yes,292.0,0.0,1070.0
+52.0,98.68905,No,Yes,No,100.0,Yes,No,511.0,White,Male,Naive,No,ZDV only,No,485.0,Yes,1946.0,0.0,1158.0
+38.0,83.45653,No,Yes,No,100.0,No,Yes,8.0,White,Male,Experienced,No,Others,Yes,232.0,Yes,453.0,0.0,914.0
+34.0,90.86886,No,Yes,No,100.0,No,Yes,766.0,White,Male,Experienced,No,ZDV only,No,264.0,Yes,544.0,0.0,1231.0
+25.0,69.28929,No,No,Yes,90.0,No,Yes,1719.0,White,Male,Experienced,Yes,ZDV only,Yes,166.0,No,754.0,1.0,417.0
+41.0,54.47972,No,Yes,No,100.0,No,No,0.0,White,Male,Experienced,No,ZDV only,No,518.0,Yes,1386.0,0.0,933.0
+37.0,101.9215,No,Yes,No,100.0,No,Yes,779.0,White,Male,Experienced,Yes,ZDV only,No,175.0,Yes,1181.0,1.0,866.0
+31.0,56.60976,No,No,No,100.0,No,Yes,1948.0,Others,Male,Experienced,No,ZDV only,Yes,241.0,Yes,230.0,0.0,432.0
+30.0,66.55072,No,Yes,No,100.0,No,Yes,0.0,White,Male,Naive,No,ZDV only,No,524.0,Yes,630.0,0.0,1180.0
+44.0,104.36859,No,Yes,No,100.0,No,No,53.0,White,Male,Naive,Yes,ZDV only,Yes,275.0,Yes,1479.0,0.0,644.0
+38.0,44.37775,Yes,No,Yes,100.0,No,Yes,1461.0,Others,Female,Experienced,No,Others,Yes,419.0,No,105.0,0.0,671.0
+51.0,88.1135,No,No,No,100.0,No,No,818.0,White,Male,Experienced,No,Others,No,404.0,No,827.0,0.0,1231.0
+31.0,73.2792,No,Yes,No,100.0,No,Yes,1046.0,White,Male,Experienced,Yes,ZDV only,Yes,489.0,Yes,187.0,0.0,987.0
+31.0,85.01807,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,Yes,Others,No,449.0,Yes,625.0,0.0,1000.0
+30.0,76.14953,No,No,No,100.0,No,No,789.0,Others,Female,Experienced,No,Others,Yes,237.0,No,869.0,1.0,1136.0
+44.0,80.21599,No,Yes,No,100.0,No,Yes,985.0,White,Male,Experienced,No,ZDV only,No,186.0,No,2418.0,0.0,1190.0
+37.0,77.54846,No,No,No,90.0,No,No,0.0,White,Male,Naive,No,ZDV only,No,327.0,Yes,616.0,0.0,1052.0
+40.0,83.54091,No,Yes,Yes,100.0,No,Yes,859.0,White,Male,Experienced,Yes,ZDV only,Yes,382.0,Yes,1393.0,1.0,600.0
+45.0,84.36582,No,Yes,No,90.0,No,No,29.0,White,Female,Naive,No,Others,Yes,387.0,No,476.0,0.0,807.0
+51.0,59.136,No,Yes,No,80.0,No,Yes,1421.0,White,Male,Experienced,No,Others,Yes,264.0,No,1251.0,0.0,793.0
+35.0,87.7822,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,Yes,Others,No,198.0,No,260.0,0.0,169.0
+45.0,106.77039,No,Yes,No,90.0,No,Yes,889.0,White,Male,Experienced,No,ZDV only,No,275.0,Yes,238.0,1.0,1166.0
+45.0,75.70714,No,Yes,No,100.0,No,No,5.0,White,Male,Naive,No,ZDV only,No,471.0,Yes,953.0,0.0,1053.0
+38.0,86.88876,No,No,Yes,100.0,No,Yes,29.0,White,Female,Experienced,No,ZDV only,No,253.0,Yes,260.0,0.0,996.0
+39.0,95.6478,No,Yes,Yes,90.0,No,Yes,767.0,White,Male,Experienced,No,ZDV only,Yes,263.0,No,622.0,1.0,564.0
+22.0,74.6339,No,No,No,90.0,No,No,0.0,White,Female,Naive,No,ZDV only,No,494.0,Yes,753.0,0.0,1042.0
+37.0,87.59154,No,No,No,100.0,No,Yes,124.0,White,Male,Naive,No,Others,No,383.0,Yes,764.0,0.0,851.0
+30.0,96.25107,No,No,No,90.0,No,Yes,10.0,White,Male,Experienced,No,Others,Yes,233.0,No,1654.0,0.0,1009.0
+27.0,47.60576,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,No,Others,Yes,292.0,No,683.0,0.0,1231.0
+36.0,65.65206,No,No,No,90.0,No,No,36.0,White,Male,Experienced,No,Others,Yes,291.0,No,517.0,0.0,588.0
+18.0,75.4493,No,No,No,100.0,Yes,Yes,312.0,Others,Female,Experienced,Yes,Others,No,602.0,Yes,445.0,0.0,1231.0
+43.0,34.89887,No,No,Yes,100.0,No,Yes,956.0,Others,Female,Experienced,No,Others,No,295.0,Yes,651.0,0.0,1220.0
+31.0,67.71692,No,Yes,No,90.0,No,Yes,61.0,White,Male,Naive,Yes,Others,No,212.0,Yes,512.0,1.0,1128.0
+22.0,40.50116,No,Yes,No,90.0,No,Yes,427.0,White,Male,Experienced,Yes,Others,Yes,301.0,No,875.0,1.0,553.0
+38.0,78.60536,Yes,No,Yes,90.0,No,Yes,901.0,White,Male,Experienced,No,Others,No,286.0,Yes,823.0,0.0,1231.0
+53.0,79.44069,Yes,No,Yes,100.0,No,Yes,1039.0,White,Male,Experienced,No,Others,No,259.0,No,987.0,0.0,1039.0
+53.0,118.33466,No,Yes,No,90.0,No,Yes,1427.0,White,Male,Experienced,Yes,Others,No,89.0,Yes,1001.0,1.0,793.0
+32.0,72.79214,No,Yes,No,90.0,No,No,0.0,White,Male,Experienced,No,Others,No,690.0,Yes,1850.0,0.0,1063.0
+39.0,79.51072,No,No,Yes,90.0,No,No,23.0,Others,Male,Experienced,Yes,ZDV only,Yes,268.0,No,1061.0,0.0,409.0
+36.0,94.40615,No,No,Yes,80.0,No,Yes,356.0,Others,Male,Experienced,No,Others,No,297.0,Yes,718.0,0.0,1231.0
+36.0,84.66828,No,No,Yes,100.0,No,Yes,799.0,White,Female,Experienced,No,ZDV only,Yes,303.0,Yes,1329.0,0.0,724.0
+50.0,136.76814,No,Yes,No,90.0,No,No,60.0,White,Male,Naive,No,Others,Yes,180.0,No,591.0,1.0,800.0
+34.0,59.69237,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,Yes,Others,Yes,273.0,Yes,1515.0,1.0,705.0
+31.0,65.44452,No,No,No,100.0,No,No,62.0,White,Male,Naive,No,Others,No,518.0,Yes,463.0,0.0,847.0
+35.0,66.9326,No,Yes,No,100.0,No,No,36.0,White,Male,Naive,No,Others,No,131.0,Yes,1180.0,0.0,1231.0
+28.0,72.89514,No,No,No,90.0,No,No,0.0,White,Male,Naive,No,ZDV only,Yes,630.0,No,740.0,0.0,711.0
+37.0,53.39496,No,No,Yes,100.0,No,No,9.0,White,Male,Naive,No,Others,Yes,193.0,No,735.0,1.0,916.0
+37.0,78.8843,No,No,No,90.0,No,Yes,532.0,White,Male,Experienced,No,Others,Yes,333.0,Yes,1071.0,1.0,343.0
+32.0,82.54967,No,No,Yes,90.0,No,Yes,727.0,White,Male,Experienced,No,ZDV only,No,532.0,Yes,1240.0,1.0,1094.0
+47.0,91.56937,No,No,No,90.0,No,No,27.0,White,Male,Naive,No,Others,No,315.0,Yes,693.0,0.0,1161.0
+31.0,57.86374,No,No,No,100.0,No,No,0.0,Others,Female,Naive,No,Others,No,369.0,No,522.0,0.0,1049.0
+48.0,101.94655,No,No,No,100.0,No,No,0.0,Others,Male,Naive,No,ZDV only,Yes,368.0,Yes,416.0,0.0,307.0
+44.0,59.80276,No,No,Yes,100.0,No,Yes,190.0,White,Female,Experienced,No,ZDV only,No,565.0,Yes,393.0,0.0,978.0
+41.0,81.33722,No,No,No,100.0,No,Yes,916.0,Others,Female,Experienced,No,ZDV only,Yes,232.0,Yes,889.0,0.0,1104.0
+36.0,84.80206,No,No,No,80.0,No,Yes,282.0,White,Male,Experienced,No,ZDV only,Yes,405.0,No,653.0,1.0,506.0
+30.0,85.98532,No,No,No,100.0,No,No,0.0,Others,Male,Naive,No,Others,No,486.0,Yes,558.0,0.0,1142.0
+23.0,58.02551,No,Yes,No,90.0,No,No,164.0,White,Male,Experienced,No,ZDV only,Yes,252.0,Yes,446.0,0.0,983.0
+28.0,64.95727,No,No,Yes,90.0,No,Yes,1247.0,White,Male,Experienced,No,ZDV only,Yes,231.0,No,152.0,0.0,1181.0
+44.0,77.47417,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,No,Others,Yes,132.0,No,891.0,1.0,384.0
+48.0,81.9671,No,Yes,No,80.0,No,No,2.0,White,Male,Naive,No,Others,No,476.0,Yes,662.0,0.0,1070.0
+42.0,63.05178,Yes,No,No,70.0,No,Yes,723.0,Others,Female,Experienced,No,Others,No,233.0,Yes,764.0,0.0,1109.0
+25.0,81.93421,No,No,No,100.0,No,No,23.0,Others,Male,Naive,No,ZDV only,No,419.0,Yes,814.0,0.0,1153.0
+54.0,122.12943,No,Yes,No,100.0,Yes,Yes,892.0,White,Male,Experienced,Yes,ZDV only,Yes,481.0,Yes,435.0,1.0,1103.0
+44.0,67.20349,No,No,No,90.0,No,Yes,669.0,White,Male,Experienced,Yes,Others,No,242.0,No,1404.0,0.0,1153.0
+17.0,57.82663,No,No,Yes,100.0,No,No,2.0,Others,Male,Naive,No,Others,Yes,326.0,No,833.0,1.0,1174.0
+28.0,75.25873,No,Yes,No,100.0,No,No,32.0,White,Female,Naive,No,Others,No,221.0,Yes,781.0,0.0,1140.0
+29.0,74.76686,No,No,No,90.0,No,No,43.0,White,Male,Naive,No,ZDV only,Yes,134.0,No,180.0,1.0,982.0
+20.0,89.90274,Yes,No,No,100.0,No,Yes,863.0,Others,Female,Experienced,No,Others,No,354.0,Yes,867.0,0.0,1184.0
+41.0,92.11502,No,Yes,No,90.0,No,Yes,980.0,White,Male,Experienced,No,ZDV only,No,560.0,Yes,1205.0,1.0,1050.0
+36.0,58.09207,No,No,No,100.0,No,No,474.0,Others,Female,Experienced,No,ZDV only,Yes,421.0,Yes,656.0,0.0,744.0
+35.0,98.73911,No,Yes,No,100.0,No,No,36.0,White,Male,Naive,No,Others,No,409.0,Yes,1172.0,0.0,988.0
+28.0,83.04618,No,No,Yes,80.0,No,Yes,370.0,Others,Male,Experienced,No,ZDV only,Yes,396.0,Yes,719.0,0.0,378.0
+46.0,92.30203,No,Yes,No,100.0,No,Yes,545.0,White,Male,Experienced,Yes,Others,Yes,322.0,No,3018.0,0.0,655.0
+31.0,83.56161,No,No,Yes,100.0,No,No,1284.0,Others,Male,Naive,No,ZDV only,Yes,139.0,No,150.0,1.0,637.0
+16.0,91.06528,No,No,Yes,90.0,No,No,0.0,White,Male,Naive,No,ZDV only,Yes,521.0,No,798.0,0.0,940.0
+36.0,46.47752,No,Yes,No,100.0,No,Yes,5.0,Others,Female,Naive,No,Others,No,358.0,No,517.0,0.0,1072.0
+27.0,94.05091,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,No,ZDV only,No,448.0,Yes,1063.0,1.0,631.0
+33.0,69.83564,No,Yes,No,100.0,No,No,3.0,White,Male,Naive,Yes,ZDV only,Yes,176.0,No,671.0,1.0,41.0
+46.0,81.04485,No,Yes,Yes,90.0,No,No,7.0,Others,Male,Naive,No,Others,Yes,376.0,No,1793.0,1.0,1173.0
+32.0,37.73715,No,Yes,No,90.0,No,No,25.0,White,Male,Naive,Yes,ZDV only,No,177.0,Yes,962.0,0.0,1035.0
+53.0,77.95883,No,No,No,100.0,No,No,42.0,Others,Male,Naive,No,Others,No,380.0,No,524.0,0.0,872.0
+37.0,77.93198,No,Yes,No,100.0,No,No,0.0,White,Male,Experienced,No,Others,No,323.0,Yes,331.0,0.0,1099.0
+32.0,56.93552,No,No,Yes,100.0,No,Yes,1027.0,Others,Female,Experienced,No,ZDV only,Yes,301.0,No,382.0,0.0,1074.0
+46.0,74.98454,No,No,No,80.0,No,Yes,1271.0,White,Male,Naive,Yes,Others,Yes,144.0,No,640.0,1.0,944.0
+40.0,120.67164,No,No,No,100.0,No,No,659.0,Others,Female,Experienced,Yes,Others,No,303.0,Yes,372.0,0.0,1132.0
+22.0,90.96736,Yes,Yes,No,100.0,No,Yes,1066.0,White,Male,Experienced,No,Others,No,588.0,Yes,356.0,0.0,1231.0
+52.0,95.86692,No,Yes,No,90.0,No,Yes,1718.0,White,Male,Experienced,Yes,ZDV only,No,438.0,Yes,2442.0,1.0,801.0
+42.0,69.09624,No,No,No,80.0,No,Yes,1840.0,Others,Male,Experienced,No,Others,No,248.0,Yes,1510.0,0.0,1022.0
+33.0,66.23236,No,No,No,90.0,No,Yes,597.0,Others,Male,Experienced,No,Others,No,467.0,Yes,193.0,0.0,1038.0
+38.0,82.67049,No,Yes,No,90.0,No,No,25.0,White,Male,Naive,No,Others,No,211.0,Yes,724.0,0.0,1060.0
+35.0,76.06518,No,No,No,100.0,No,No,547.0,Others,Female,Naive,Yes,ZDV only,Yes,290.0,No,233.0,1.0,1010.0
+25.0,67.4018,No,No,No,100.0,No,No,4.0,White,Female,Naive,No,ZDV only,No,374.0,Yes,447.0,0.0,545.0
+28.0,66.32133,No,No,No,100.0,No,Yes,530.0,White,Female,Experienced,No,ZDV only,No,503.0,Yes,1126.0,0.0,1112.0
+25.0,68.53475,No,No,No,100.0,No,Yes,244.0,Others,Female,Experienced,No,Others,No,332.0,Yes,1558.0,0.0,1103.0
+51.0,128.53518,No,No,Yes,90.0,No,No,0.0,White,Female,Naive,No,ZDV only,Yes,304.0,Yes,220.0,0.0,881.0
+43.0,69.5003,Yes,Yes,No,100.0,No,No,0.0,Others,Male,Naive,No,Others,No,295.0,No,998.0,0.0,1159.0
+48.0,94.74684,No,No,Yes,100.0,No,No,0.0,White,Female,Naive,Yes,Others,Yes,248.0,No,160.0,0.0,717.0
+31.0,98.42303,No,No,Yes,90.0,No,No,10.0,White,Male,Naive,No,ZDV only,Yes,304.0,Yes,368.0,0.0,1191.0
+23.0,78.93652,Yes,Yes,No,100.0,No,No,0.0,Others,Male,Naive,No,Others,Yes,305.0,Yes,1489.0,0.0,1129.0
+33.0,79.44446,No,Yes,No,100.0,No,Yes,203.0,Others,Female,Experienced,No,Others,Yes,278.0,Yes,105.0,0.0,1139.0
+45.0,103.45806,No,Yes,No,100.0,No,No,31.0,White,Male,Naive,No,Others,No,510.0,Yes,603.0,0.0,1099.0
+29.0,97.17807,Yes,No,Yes,100.0,No,Yes,753.0,White,Female,Experienced,No,ZDV only,Yes,347.0,No,1627.0,1.0,268.0
+29.0,87.33401,No,No,No,90.0,No,No,1978.0,Others,Male,Experienced,No,Others,No,394.0,Yes,623.0,0.0,1231.0
+39.0,94.58081,No,Yes,No,90.0,No,Yes,0.0,White,Male,Naive,Yes,ZDV only,Yes,164.0,No,1715.0,1.0,435.0
+33.0,65.57222,Yes,Yes,No,100.0,No,Yes,1962.0,Others,Male,Experienced,No,ZDV only,Yes,512.0,No,398.0,0.0,1167.0
+33.0,71.71421,No,Yes,No,100.0,No,No,51.0,White,Male,Naive,No,Others,No,440.0,No,1474.0,0.0,325.0
+25.0,57.52782,No,No,Yes,90.0,No,Yes,1006.0,White,Female,Experienced,No,Others,No,323.0,Yes,1856.0,0.0,1165.0
+22.0,59.48259,Yes,No,No,100.0,No,Yes,20.0,White,Male,Naive,No,Others,No,218.0,No,1149.0,0.0,1231.0
+34.0,51.38309,No,No,Yes,100.0,Yes,Yes,22.0,Others,Male,Experienced,No,Others,Yes,209.0,No,523.0,0.0,607.0
+16.0,50.72693,No,Yes,No,100.0,No,Yes,2021.0,Others,Male,Experienced,No,Others,No,258.0,Yes,3771.0,1.0,1044.0
+37.0,77.29483,Yes,Yes,No,90.0,No,No,40.0,White,Male,Naive,Yes,ZDV only,Yes,379.0,Yes,463.0,1.0,847.0
+47.0,97.94701,No,No,No,100.0,No,No,0.0,Others,Male,Naive,No,Others,No,338.0,Yes,669.0,0.0,1151.0
+44.0,90.40282,No,No,Yes,90.0,No,No,0.0,Others,Male,Naive,No,Others,Yes,334.0,No,441.0,1.0,495.0
+37.0,62.23265,No,Yes,Yes,100.0,No,No,18.0,White,Male,Naive,Yes,ZDV only,Yes,369.0,No,899.0,1.0,383.0
+33.0,81.58128,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,Yes,Others,Yes,474.0,Yes,1379.0,1.0,277.0
+22.0,77.29031,No,Yes,Yes,100.0,No,No,3.0,White,Male,Naive,Yes,Others,No,391.0,Yes,490.0,0.0,601.0
+36.0,79.46076,No,No,Yes,90.0,No,No,0.0,Others,Male,Naive,No,Others,Yes,382.0,No,816.0,0.0,1054.0
+35.0,58.23956,Yes,Yes,No,100.0,No,Yes,258.0,White,Male,Experienced,No,ZDV only,No,370.0,Yes,624.0,0.0,1070.0
+23.0,114.95964,No,No,Yes,90.0,No,No,0.0,Others,Male,Naive,No,ZDV only,Yes,328.0,No,1280.0,1.0,328.0
+45.0,92.00555,No,Yes,No,90.0,No,No,46.0,White,Male,Naive,No,Others,Yes,567.0,Yes,736.0,0.0,640.0
+31.0,71.49542,No,Yes,Yes,90.0,No,No,766.0,White,Male,Experienced,No,ZDV only,No,379.0,Yes,1848.0,0.0,1029.0
+21.0,69.5881,No,Yes,No,90.0,Yes,Yes,688.0,White,Male,Experienced,No,ZDV only,No,448.0,Yes,1137.0,0.0,1028.0
+32.0,78.34951,No,No,No,100.0,No,No,826.0,Others,Male,Naive,No,Others,No,495.0,No,506.0,0.0,1231.0
+24.0,63.80341,No,Yes,No,100.0,No,Yes,1258.0,White,Male,Experienced,No,Others,No,496.0,Yes,2594.0,0.0,1212.0
+42.0,80.46705,No,Yes,No,90.0,No,Yes,996.0,White,Male,Experienced,Yes,Others,Yes,238.0,Yes,960.0,1.0,1085.0
+27.0,83.33723,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,No,Others,No,453.0,Yes,368.0,0.0,1149.0
+28.0,57.63553,No,No,No,80.0,No,Yes,321.0,White,Female,Experienced,No,Others,No,330.0,No,211.0,0.0,1032.0
+31.0,59.77859,No,No,No,100.0,No,No,0.0,Others,Male,Naive,Yes,ZDV only,Yes,538.0,No,290.0,0.0,803.0
+18.0,78.20747,No,Yes,No,100.0,Yes,Yes,581.0,White,Male,Experienced,No,ZDV only,No,380.0,No,450.0,1.0,1099.0
+70.0,75.21008,No,No,Yes,100.0,No,No,0.0,Others,Male,Experienced,Yes,Others,Yes,387.0,Yes,688.0,0.0,910.0
+36.0,117.09167,No,Yes,No,90.0,No,No,67.0,White,Male,Naive,No,Others,No,447.0,Yes,672.0,0.0,1110.0
+23.0,63.29186,No,Yes,No,90.0,No,Yes,0.0,White,Male,Experienced,No,ZDV only,Yes,403.0,No,1026.0,1.0,33.0
+44.0,64.71015,Yes,Yes,No,90.0,No,Yes,948.0,White,Male,Experienced,Yes,Others,No,434.0,Yes,3032.0,0.0,1131.0
+15.0,50.8075,No,No,No,100.0,No,No,0.0,Others,Female,Naive,No,Others,No,282.0,Yes,1033.0,0.0,1089.0
+70.0,82.94521,No,No,Yes,100.0,No,No,29.0,Others,Female,Naive,No,ZDV only,No,413.0,Yes,105.0,0.0,904.0
+32.0,89.20323,No,No,No,90.0,No,Yes,399.0,White,Female,Experienced,No,Others,No,446.0,Yes,524.0,0.0,1189.0
+35.0,75.86111,No,Yes,No,90.0,No,No,826.0,White,Male,Naive,No,Others,Yes,373.0,Yes,613.0,1.0,1083.0
+37.0,96.30378,No,Yes,No,100.0,No,Yes,874.0,White,Male,Experienced,No,Others,Yes,320.0,Yes,632.0,0.0,1066.0
+43.0,93.92332,No,Yes,No,100.0,No,Yes,2284.0,White,Male,Experienced,No,Others,No,415.0,Yes,452.0,0.0,1196.0
+41.0,58.52381,No,No,No,100.0,No,Yes,154.0,White,Male,Experienced,No,Others,No,403.0,Yes,1372.0,0.0,1149.0
+22.0,66.43804,Yes,No,Yes,100.0,No,Yes,1112.0,Others,Male,Experienced,No,Others,Yes,508.0,Yes,367.0,0.0,1034.0
+33.0,62.04115,No,Yes,No,100.0,No,Yes,0.0,Others,Male,Naive,No,Others,No,291.0,No,1542.0,1.0,896.0
+18.0,86.06259,No,Yes,No,100.0,No,No,332.0,White,Male,Experienced,No,Others,Yes,525.0,Yes,489.0,0.0,1231.0
+37.0,76.30393,No,No,No,90.0,No,No,14.0,Others,Male,Experienced,No,Others,Yes,392.0,Yes,488.0,0.0,1117.0
+59.0,89.25626,No,No,No,90.0,No,Yes,1131.0,Others,Male,Experienced,No,ZDV only,No,305.0,Yes,599.0,0.0,1184.0
+30.0,80.88468,Yes,No,Yes,100.0,Yes,Yes,817.0,Others,Female,Experienced,No,ZDV only,Yes,386.0,Yes,658.0,1.0,310.0
+39.0,84.46713,No,Yes,Yes,100.0,No,Yes,170.0,White,Male,Experienced,No,ZDV only,No,235.0,Yes,1616.0,1.0,1112.0
+39.0,91.54662,No,Yes,No,100.0,No,Yes,785.0,White,Male,Experienced,Yes,Others,Yes,288.0,Yes,588.0,0.0,425.0
+60.0,79.28644,No,No,No,100.0,Yes,No,623.0,White,Male,Naive,No,ZDV only,No,126.0,Yes,1751.0,0.0,395.0
+24.0,66.13331,No,Yes,No,80.0,No,Yes,0.0,White,Male,Experienced,No,ZDV only,Yes,246.0,No,1422.0,1.0,637.0
+34.0,81.40454,No,No,No,90.0,No,Yes,1149.0,White,Female,Experienced,No,Others,No,485.0,Yes,811.0,0.0,996.0
+29.0,66.07362,No,Yes,No,90.0,No,Yes,1002.0,White,Male,Experienced,No,ZDV only,No,290.0,Yes,1470.0,0.0,1170.0
+31.0,126.58881,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,No,Others,Yes,344.0,Yes,1882.0,0.0,1023.0
+46.0,78.59478,No,Yes,No,90.0,Yes,Yes,164.0,White,Male,Experienced,Yes,Others,No,395.0,Yes,691.0,0.0,981.0
+33.0,41.00618,No,No,No,100.0,No,Yes,905.0,White,Male,Experienced,No,Others,No,472.0,Yes,648.0,0.0,1216.0
+50.0,81.76247,No,No,No,100.0,No,No,211.0,Others,Male,Naive,No,ZDV only,Yes,352.0,No,1714.0,1.0,865.0
+28.0,56.88862,Yes,Yes,No,100.0,No,No,26.0,Others,Male,Experienced,No,Others,Yes,238.0,Yes,1317.0,0.0,1231.0
+58.0,86.38203,Yes,No,No,100.0,No,Yes,73.0,Others,Female,Experienced,No,ZDV only,No,324.0,Yes,792.0,0.0,1211.0
+47.0,103.46588,No,No,Yes,90.0,No,No,26.0,Others,Male,Naive,No,ZDV only,Yes,309.0,No,331.0,1.0,1036.0
+43.0,61.22958,No,No,No,90.0,No,Yes,1959.0,White,Female,Experienced,No,Others,No,194.0,Yes,872.0,0.0,850.0
+52.0,108.4631,No,Yes,No,90.0,No,Yes,682.0,White,Male,Experienced,Yes,ZDV only,Yes,111.0,No,1050.0,1.0,463.0
+43.0,94.80851,No,Yes,No,90.0,No,No,32.0,White,Male,Naive,No,Others,No,149.0,Yes,689.0,0.0,1165.0
+44.0,75.54449,No,No,No,100.0,No,Yes,0.0,Others,Female,Experienced,No,ZDV only,Yes,192.0,No,555.0,1.0,392.0
+29.0,98.18709,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,No,Others,No,206.0,Yes,2498.0,0.0,1231.0
+45.0,54.68033,No,No,No,90.0,No,Yes,983.0,Others,Female,Experienced,No,ZDV only,No,304.0,Yes,769.0,0.0,1100.0
+25.0,73.55041,No,No,Yes,100.0,Yes,Yes,299.0,White,Female,Experienced,No,Others,Yes,359.0,No,137.0,0.0,772.0
+26.0,78.68431,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,Yes,Others,No,458.0,Yes,1029.0,1.0,1136.0
+39.0,67.61519,No,No,Yes,100.0,No,Yes,1081.0,White,Female,Experienced,No,Others,No,188.0,Yes,105.0,0.0,1231.0
+21.0,69.43842,Yes,No,No,100.0,No,Yes,998.0,Others,Female,Experienced,No,Others,Yes,414.0,No,1270.0,0.0,1160.0
+50.0,71.17586,Yes,No,No,100.0,No,Yes,1326.0,White,Female,Experienced,Yes,Others,No,154.0,Yes,311.0,0.0,757.0
+33.0,127.99065,No,Yes,Yes,100.0,Yes,No,0.0,White,Male,Naive,No,ZDV only,Yes,193.0,Yes,1790.0,1.0,1138.0
+50.0,91.05384,No,No,No,90.0,No,Yes,926.0,Others,Male,Experienced,No,ZDV only,No,164.0,Yes,758.0,0.0,1020.0
+29.0,61.92016,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,No,ZDV only,No,406.0,Yes,637.0,0.0,33.0
+36.0,61.85031,No,No,No,100.0,No,No,1407.0,Others,Female,Naive,No,Others,No,187.0,Yes,363.0,0.0,1171.0
+28.0,46.68019,No,No,Yes,90.0,No,Yes,1008.0,Others,Female,Experienced,No,Others,No,304.0,Yes,892.0,0.0,1090.0
+37.0,66.59977,No,No,No,100.0,No,No,0.0,White,Male,Naive,No,Others,No,668.0,Yes,323.0,0.0,1025.0
+26.0,67.89266,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,No,ZDV only,Yes,421.0,No,729.0,0.0,996.0
+33.0,70.83989,No,No,Yes,90.0,No,No,0.0,Others,Male,Naive,No,ZDV only,No,350.0,No,1933.0,1.0,528.0
+25.0,47.64215,No,Yes,No,100.0,No,Yes,1576.0,White,Male,Experienced,No,ZDV only,No,311.0,Yes,1251.0,0.0,747.0
+26.0,63.58658,No,Yes,No,90.0,No,No,58.0,White,Male,Naive,Yes,ZDV only,Yes,337.0,No,535.0,1.0,433.0
+39.0,67.67477,No,Yes,Yes,90.0,No,Yes,1825.0,White,Male,Experienced,No,ZDV only,No,370.0,Yes,261.0,1.0,1189.0
+31.0,68.74048,No,No,No,100.0,No,Yes,1670.0,White,Male,Experienced,Yes,Others,No,384.0,Yes,172.0,0.0,1062.0
+41.0,67.04253,No,Yes,No,100.0,No,Yes,792.0,White,Male,Experienced,No,Others,Yes,349.0,Yes,970.0,1.0,1056.0
+35.0,97.05174,No,No,No,90.0,No,Yes,144.0,White,Male,Experienced,No,Others,No,305.0,Yes,1214.0,1.0,1207.0
+19.0,54.59943,Yes,Yes,No,70.0,No,Yes,0.0,White,Male,Experienced,No,Others,No,496.0,Yes,825.0,1.0,982.0
+38.0,68.54508,No,No,Yes,100.0,No,No,1020.0,Others,Female,Experienced,No,ZDV only,Yes,545.0,No,791.0,0.0,1231.0
+45.0,78.27676,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,No,Others,No,315.0,Yes,726.0,0.0,666.0
+23.0,71.76404,No,Yes,No,100.0,No,No,0.0,Others,Male,Naive,Yes,ZDV only,No,323.0,No,1507.0,0.0,1141.0
+58.0,77.49877,No,Yes,No,80.0,No,Yes,918.0,White,Male,Experienced,No,Others,No,163.0,Yes,1009.0,0.0,1054.0
+51.0,72.93491,No,Yes,No,100.0,No,No,19.0,White,Male,Naive,No,Others,No,313.0,Yes,577.0,0.0,710.0
+35.0,91.77941,No,Yes,No,100.0,No,No,23.0,White,Male,Experienced,No,Others,No,363.0,No,152.0,0.0,1029.0
+37.0,89.46275,Yes,Yes,No,100.0,No,No,7.0,White,Male,Experienced,No,ZDV only,No,341.0,No,1194.0,0.0,251.0
+32.0,64.65719,No,Yes,No,100.0,No,No,38.0,White,Male,Naive,No,ZDV only,No,431.0,Yes,1026.0,0.0,1018.0
+59.0,81.85971,Yes,No,No,90.0,No,Yes,47.0,White,Male,Naive,No,Others,Yes,170.0,No,566.0,0.0,1211.0
+35.0,97.81021,Yes,Yes,No,90.0,Yes,Yes,1295.0,White,Male,Experienced,Yes,ZDV only,Yes,143.0,No,491.0,1.0,351.0
+34.0,67.63307,No,No,No,100.0,No,Yes,821.0,White,Male,Naive,Yes,Others,No,470.0,Yes,1045.0,0.0,1180.0
+25.0,80.95631,No,Yes,No,100.0,No,No,61.0,White,Male,Experienced,No,Others,Yes,465.0,Yes,562.0,0.0,1231.0
+27.0,64.18697,No,Yes,No,90.0,No,Yes,1754.0,White,Male,Experienced,Yes,Others,No,384.0,Yes,850.0,1.0,411.0
+37.0,97.26351,Yes,Yes,No,100.0,No,Yes,712.0,White,Male,Experienced,No,Others,No,339.0,Yes,377.0,0.0,1225.0
+42.0,104.81924,No,Yes,No,90.0,Yes,No,1382.0,White,Male,Experienced,Yes,ZDV only,No,384.0,Yes,506.0,1.0,599.0
+36.0,87.54357,No,No,No,90.0,No,Yes,788.0,White,Male,Experienced,No,ZDV only,Yes,233.0,No,355.0,1.0,1117.0
+32.0,90.23252,No,Yes,No,90.0,No,No,15.0,White,Male,Naive,Yes,ZDV only,No,291.0,Yes,880.0,0.0,1153.0
+42.0,85.77276,No,No,Yes,100.0,No,No,19.0,White,Female,Naive,Yes,ZDV only,Yes,290.0,No,808.0,0.0,1115.0
+28.0,64.13719,No,No,No,100.0,No,No,8.0,White,Female,Naive,No,ZDV only,Yes,272.0,Yes,1481.0,1.0,1231.0
+46.0,88.64806,No,Yes,No,100.0,No,No,8.0,White,Male,Experienced,Yes,ZDV only,Yes,371.0,No,413.0,1.0,323.0
+52.0,77.96658,No,Yes,Yes,100.0,No,No,0.0,Others,Female,Naive,Yes,ZDV only,No,187.0,Yes,329.0,0.0,447.0
+24.0,85.36667,No,Yes,No,90.0,No,No,6.0,White,Male,Naive,No,Others,No,412.0,Yes,570.0,1.0,1096.0
+19.0,72.53418,No,Yes,No,90.0,No,Yes,525.0,White,Female,Experienced,Yes,ZDV only,No,762.0,No,556.0,1.0,1231.0
+43.0,78.17066,No,No,No,100.0,No,Yes,401.0,Others,Female,Experienced,No,Others,No,465.0,Yes,561.0,0.0,994.0
+35.0,61.7807,Yes,No,Yes,100.0,No,Yes,546.0,White,Male,Experienced,Yes,Others,Yes,465.0,Yes,387.0,1.0,1161.0
+27.0,98.03347,No,Yes,No,100.0,No,Yes,595.0,White,Male,Experienced,No,ZDV only,No,377.0,Yes,894.0,0.0,948.0
+51.0,84.22811,No,Yes,No,90.0,No,Yes,1101.0,White,Male,Naive,Yes,Others,Yes,345.0,No,2071.0,1.0,143.0
+32.0,101.89901,No,No,Yes,100.0,No,Yes,708.0,Others,Female,Experienced,No,Others,No,344.0,Yes,1824.0,0.0,1067.0
+29.0,71.42951,No,No,No,70.0,No,No,2.0,Others,Male,Experienced,No,ZDV only,Yes,534.0,Yes,713.0,0.0,467.0
+42.0,90.66881,No,Yes,Yes,90.0,No,No,204.0,White,Female,Naive,No,Others,Yes,425.0,Yes,495.0,1.0,890.0
+18.0,101.98817,No,Yes,Yes,100.0,No,No,7.0,White,Male,Naive,No,Others,Yes,625.0,No,853.0,0.0,1111.0
+44.0,96.41333,Yes,No,No,100.0,No,Yes,497.0,White,Male,Experienced,No,Others,No,196.0,Yes,413.0,0.0,1075.0
+53.0,82.40988,No,No,No,100.0,No,No,932.0,White,Male,Experienced,No,Others,No,491.0,Yes,530.0,0.0,1189.0
+35.0,72.46989,No,No,No,100.0,No,No,31.0,White,Male,Naive,No,ZDV only,Yes,256.0,No,381.0,0.0,1059.0
+48.0,91.42569,No,No,No,100.0,No,No,40.0,White,Male,Naive,No,Others,No,255.0,Yes,267.0,0.0,938.0
+41.0,76.91784,No,No,No,100.0,No,No,47.0,White,Male,Naive,No,ZDV only,Yes,270.0,Yes,1473.0,1.0,75.0
+42.0,83.48645,Yes,No,No,90.0,No,Yes,1201.0,Others,Male,Experienced,No,Others,No,558.0,Yes,711.0,0.0,932.0
+42.0,99.59896,No,Yes,No,90.0,No,No,13.0,White,Male,Naive,Yes,Others,Yes,133.0,No,792.0,0.0,573.0
+33.0,68.28323,No,No,Yes,80.0,No,Yes,1078.0,Others,Female,Experienced,No,Others,Yes,266.0,Yes,1302.0,0.0,1036.0
+38.0,66.28372,No,Yes,No,100.0,No,Yes,1057.0,White,Male,Experienced,No,Others,Yes,83.0,Yes,404.0,1.0,785.0
+24.0,64.27933,No,Yes,No,100.0,No,Yes,1713.0,White,Male,Experienced,No,Others,Yes,261.0,Yes,311.0,1.0,214.0
+50.0,88.58525,No,Yes,No,100.0,No,Yes,1162.0,White,Male,Experienced,No,Others,No,436.0,Yes,237.0,0.0,1187.0
+25.0,98.68437,No,Yes,No,100.0,No,Yes,0.0,White,Male,Naive,Yes,ZDV only,Yes,227.0,No,746.0,1.0,305.0
+32.0,72.85244,Yes,Yes,No,100.0,No,No,0.0,White,Male,Naive,No,Others,No,578.0,Yes,1113.0,0.0,1189.0
+37.0,65.93477,No,Yes,Yes,90.0,No,Yes,657.0,White,Male,Experienced,No,Others,Yes,214.0,Yes,813.0,0.0,1123.0
+19.0,65.17547,No,No,Yes,80.0,No,Yes,779.0,Others,Male,Experienced,No,ZDV only,Yes,406.0,No,815.0,0.0,1231.0
+30.0,62.46893,No,Yes,No,100.0,No,Yes,201.0,White,Male,Naive,No,ZDV only,Yes,394.0,Yes,1311.0,1.0,912.0
+45.0,91.48153,No,Yes,No,90.0,No,No,36.0,White,Male,Experienced,Yes,ZDV only,Yes,311.0,Yes,537.0,0.0,186.0
+23.0,66.7664,No,No,No,90.0,No,No,679.0,White,Male,Experienced,No,ZDV only,Yes,295.0,No,645.0,0.0,512.0
+41.0,107.80578,No,No,No,90.0,No,Yes,323.0,White,Male,Experienced,Yes,ZDV only,Yes,334.0,Yes,1689.0,1.0,75.0
+35.0,73.34294,No,No,Yes,100.0,No,Yes,110.0,Others,Male,Experienced,No,ZDV only,Yes,74.0,No,1447.0,0.0,1170.0
+36.0,91.76726,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,No,ZDV only,Yes,191.0,No,164.0,1.0,647.0
+21.0,73.43439,No,Yes,No,100.0,No,Yes,1291.0,White,Male,Experienced,Yes,ZDV only,Yes,342.0,No,1784.0,1.0,920.0
+12.0,56.90741,No,No,No,100.0,No,No,29.0,White,Male,Naive,No,ZDV only,Yes,286.0,No,556.0,0.0,608.0
+45.0,123.47242,No,Yes,No,90.0,No,No,3.0,White,Male,Naive,Yes,ZDV only,Yes,262.0,Yes,910.0,0.0,1102.0
+24.0,85.6918,No,Yes,Yes,100.0,No,No,59.0,White,Male,Experienced,No,Others,Yes,421.0,Yes,287.0,0.0,1111.0
+30.0,94.56184,Yes,Yes,No,90.0,No,Yes,953.0,White,Male,Experienced,No,ZDV only,No,368.0,Yes,137.0,1.0,652.0
+57.0,108.66509,No,No,No,90.0,No,Yes,870.0,White,Male,Experienced,No,Others,No,204.0,No,231.0,1.0,126.0
+49.0,62.65575,No,No,No,100.0,No,Yes,1196.0,Others,Male,Experienced,No,Others,No,179.0,Yes,105.0,0.0,1014.0
+30.0,66.21354,No,No,Yes,100.0,No,No,33.0,Others,Male,Naive,No,ZDV only,Yes,463.0,No,1311.0,0.0,567.0
+32.0,72.76974,Yes,No,No,100.0,No,Yes,189.0,White,Male,Experienced,No,Others,Yes,439.0,Yes,1123.0,0.0,1184.0
+40.0,68.88572,No,Yes,No,100.0,No,Yes,980.0,White,Female,Experienced,No,ZDV only,No,367.0,Yes,1482.0,0.0,859.0
+37.0,87.36461,No,No,No,90.0,No,No,57.0,White,Female,Naive,No,Others,Yes,462.0,No,530.0,0.0,1097.0
+40.0,125.07865,No,Yes,No,100.0,No,No,14.0,White,Male,Naive,No,Others,No,220.0,Yes,338.0,0.0,1173.0
+30.0,71.47362,No,Yes,No,100.0,No,Yes,818.0,White,Male,Experienced,Yes,ZDV only,Yes,316.0,No,692.0,0.0,802.0
+45.0,103.40098,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,Yes,ZDV only,No,414.0,Yes,1165.0,0.0,1192.0
+25.0,57.77984,No,No,No,100.0,No,Yes,321.0,Others,Male,Experienced,No,Others,No,397.0,Yes,1266.0,0.0,1231.0
+16.0,80.4054,No,Yes,Yes,100.0,No,Yes,14.0,Others,Male,Naive,No,Others,Yes,146.0,No,1069.0,0.0,1198.0
+52.0,80.99876,Yes,No,No,100.0,No,Yes,780.0,Others,Male,Experienced,No,Others,No,109.0,Yes,581.0,0.0,1212.0
+25.0,67.12425,No,No,Yes,90.0,No,Yes,445.0,Others,Female,Experienced,No,Others,No,341.0,Yes,363.0,0.0,1108.0
+27.0,64.4165,Yes,Yes,No,70.0,No,Yes,170.0,Others,Male,Experienced,No,Others,No,447.0,No,757.0,0.0,1231.0
+21.0,99.6757,No,Yes,Yes,90.0,No,No,31.0,White,Male,Naive,Yes,ZDV only,Yes,393.0,No,594.0,1.0,573.0
+32.0,68.69104,No,No,Yes,90.0,No,Yes,1503.0,White,Male,Experienced,No,Others,Yes,310.0,Yes,307.0,1.0,961.0
+23.0,72.2047,No,Yes,No,100.0,No,Yes,759.0,White,Male,Experienced,No,Others,No,437.0,Yes,886.0,0.0,1137.0
+31.0,68.41932,No,No,No,90.0,No,Yes,340.0,White,Female,Experienced,Yes,ZDV only,Yes,163.0,Yes,1119.0,0.0,1151.0
+33.0,51.81949,Yes,No,Yes,100.0,No,Yes,834.0,Others,Female,Experienced,No,Others,Yes,325.0,No,539.0,0.0,1231.0
+39.0,64.49863,Yes,No,No,100.0,No,Yes,1127.0,White,Male,Experienced,No,Others,No,135.0,No,494.0,1.0,1150.0
+38.0,69.34835,No,No,No,100.0,No,Yes,1075.0,Others,Male,Experienced,No,ZDV only,No,376.0,Yes,345.0,0.0,1223.0
+46.0,63.00118,No,Yes,No,90.0,No,No,4.0,Others,Male,Naive,Yes,ZDV only,No,173.0,No,805.0,0.0,782.0
+64.0,63.43851,No,Yes,No,90.0,No,Yes,992.0,White,Male,Experienced,No,Others,No,218.0,Yes,1197.0,1.0,954.0
+29.0,47.6059,No,No,No,90.0,No,Yes,884.0,Others,Male,Experienced,No,ZDV only,No,280.0,No,1495.0,0.0,978.0
+37.0,69.38607,No,No,No,100.0,No,Yes,701.0,White,Female,Naive,No,Others,No,391.0,Yes,627.0,0.0,1185.0
+31.0,86.40501,No,Yes,No,90.0,No,No,61.0,White,Male,Naive,No,ZDV only,Yes,425.0,Yes,717.0,0.0,902.0
+32.0,86.15888,No,No,No,90.0,No,No,0.0,Others,Male,Naive,Yes,ZDV only,Yes,476.0,Yes,1010.0,0.0,307.0
+35.0,60.38671,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,No,Others,No,436.0,No,348.0,0.0,596.0
+23.0,98.25461,No,No,Yes,80.0,No,No,400.0,Others,Female,Experienced,No,ZDV only,No,537.0,Yes,382.0,0.0,890.0
+31.0,75.54216,No,No,Yes,100.0,No,No,798.0,White,Female,Experienced,No,ZDV only,No,245.0,No,562.0,0.0,1087.0
+20.0,59.02444,No,Yes,No,90.0,No,Yes,642.0,White,Male,Experienced,No,ZDV only,Yes,300.0,No,578.0,1.0,510.0
+32.0,78.64061,Yes,No,No,70.0,No,Yes,611.0,Others,Female,Naive,No,ZDV only,No,524.0,No,374.0,0.0,1136.0
+46.0,85.22765,No,Yes,No,90.0,Yes,No,0.0,White,Male,Naive,Yes,ZDV only,No,396.0,Yes,805.0,0.0,1231.0
+38.0,106.85872,No,Yes,Yes,100.0,No,Yes,1135.0,White,Male,Experienced,No,Others,No,327.0,Yes,1478.0,0.0,1129.0
+26.0,75.07874,No,Yes,No,90.0,No,Yes,48.0,White,Male,Experienced,No,Others,No,519.0,Yes,459.0,0.0,1174.0
+38.0,59.61757,No,Yes,No,90.0,No,Yes,1171.0,White,Male,Experienced,Yes,Others,Yes,321.0,No,576.0,1.0,817.0
+50.0,88.05004,No,No,No,100.0,No,Yes,53.0,White,Male,Experienced,No,Others,Yes,137.0,No,285.0,0.0,812.0
+29.0,79.4801,No,Yes,Yes,100.0,No,Yes,1049.0,White,Male,Naive,No,Others,Yes,196.0,Yes,424.0,0.0,402.0
+31.0,91.04147,No,Yes,Yes,90.0,Yes,Yes,925.0,White,Male,Experienced,No,ZDV only,No,441.0,Yes,328.0,0.0,1118.0
+41.0,97.81724,No,Yes,No,100.0,Yes,Yes,0.0,White,Male,Experienced,No,ZDV only,No,484.0,Yes,735.0,0.0,1058.0
+47.0,91.0655,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,Yes,ZDV only,No,259.0,Yes,833.0,0.0,1013.0
+37.0,72.53091,No,Yes,No,80.0,No,Yes,258.0,White,Male,Experienced,Yes,ZDV only,Yes,376.0,No,177.0,0.0,396.0
+34.0,75.70716,No,Yes,No,80.0,No,Yes,939.0,White,Male,Experienced,No,Others,No,288.0,Yes,840.0,0.0,894.0
+26.0,51.57499,No,No,No,100.0,No,Yes,2500.0,White,Female,Experienced,No,Others,No,325.0,Yes,249.0,0.0,1221.0
+33.0,75.65223,No,Yes,Yes,90.0,No,No,30.0,White,Female,Naive,No,ZDV only,Yes,231.0,No,829.0,0.0,1213.0
+51.0,159.93936,No,Yes,Yes,100.0,No,Yes,195.0,White,Male,Experienced,No,Others,No,240.0,Yes,755.0,0.0,1161.0
+39.0,63.89522,No,Yes,No,100.0,No,Yes,254.0,White,Male,Experienced,Yes,ZDV only,No,534.0,Yes,917.0,0.0,1095.0
+35.0,54.05809,No,Yes,No,100.0,No,Yes,955.0,White,Male,Experienced,No,Others,No,237.0,Yes,1007.0,0.0,978.0
+31.0,65.6769,No,Yes,No,90.0,No,Yes,1240.0,White,Male,Experienced,Yes,ZDV only,Yes,133.0,No,1031.0,1.0,606.0
+24.0,40.55803,No,No,No,90.0,No,Yes,810.0,White,Male,Naive,No,Others,Yes,431.0,No,812.0,0.0,1160.0
+28.0,79.89883,No,No,No,90.0,No,Yes,736.0,Others,Male,Experienced,No,Others,No,405.0,Yes,327.0,0.0,1093.0
+30.0,62.19089,No,No,No,90.0,No,Yes,20.0,White,Male,Naive,No,ZDV only,Yes,112.0,No,513.0,0.0,916.0
+35.0,73.35749,No,Yes,No,90.0,No,Yes,1792.0,White,Male,Experienced,No,Others,Yes,78.0,No,676.0,0.0,1231.0
+38.0,89.38411,No,Yes,No,90.0,No,Yes,1259.0,White,Male,Experienced,No,ZDV only,Yes,145.0,No,714.0,1.0,181.0
+30.0,90.10039,No,Yes,No,100.0,No,Yes,44.0,Others,Female,Naive,No,ZDV only,Yes,425.0,No,105.0,1.0,1168.0
+38.0,107.0248,No,Yes,No,100.0,No,No,1188.0,White,Male,Experienced,Yes,ZDV only,Yes,268.0,Yes,1983.0,1.0,297.0
+48.0,87.72139,No,No,No,100.0,No,No,0.0,White,Male,Naive,No,Others,No,305.0,Yes,679.0,0.0,1086.0
+35.0,77.3813,No,No,No,100.0,No,Yes,1159.0,White,Male,Experienced,No,Others,No,451.0,No,759.0,0.0,296.0
+32.0,93.90372,No,Yes,No,90.0,No,No,8.0,White,Male,Naive,No,ZDV only,Yes,561.0,Yes,696.0,0.0,1088.0
+37.0,123.18469,No,Yes,Yes,90.0,No,No,0.0,White,Male,Naive,No,Others,Yes,165.0,No,559.0,0.0,1036.0
+44.0,77.02837,No,No,No,90.0,No,No,9.0,White,Male,Naive,No,Others,No,147.0,Yes,262.0,0.0,1013.0
+32.0,78.63376,No,No,No,100.0,No,Yes,1329.0,White,Male,Experienced,No,Others,No,384.0,Yes,599.0,0.0,1144.0
+55.0,69.21732,No,Yes,No,100.0,No,Yes,241.0,White,Female,Experienced,Yes,Others,Yes,409.0,No,899.0,0.0,1127.0
+31.0,124.40823,No,No,No,100.0,No,Yes,476.0,White,Male,Experienced,No,ZDV only,Yes,615.0,No,368.0,0.0,999.0
+46.0,92.98186,No,Yes,Yes,90.0,No,Yes,574.0,White,Male,Experienced,No,Others,Yes,128.0,No,822.0,1.0,966.0
+21.0,62.77138,No,No,Yes,70.0,No,Yes,807.0,White,Female,Experienced,No,ZDV only,Yes,402.0,No,1091.0,1.0,814.0
+26.0,45.93935,Yes,No,Yes,90.0,No,Yes,765.0,Others,Male,Experienced,No,ZDV only,Yes,260.0,No,1239.0,1.0,512.0
+45.0,72.7056,No,No,No,100.0,No,Yes,893.0,White,Male,Experienced,No,Others,No,256.0,Yes,2576.0,0.0,1129.0
+26.0,58.35724,No,No,No,90.0,No,No,0.0,Others,Female,Naive,No,ZDV only,No,441.0,Yes,441.0,0.0,968.0
+40.0,36.5422,No,Yes,No,90.0,No,Yes,739.0,White,Male,Experienced,No,Others,No,142.0,No,847.0,0.0,1087.0
+28.0,82.47055,No,Yes,No,90.0,No,Yes,1303.0,White,Male,Experienced,No,ZDV only,Yes,381.0,Yes,879.0,1.0,1129.0
+39.0,108.55824,Yes,No,No,80.0,No,Yes,1297.0,White,Female,Experienced,No,Others,Yes,268.0,No,188.0,0.0,970.0
+34.0,42.33826,No,No,No,70.0,No,Yes,169.0,White,Female,Experienced,No,Others,Yes,258.0,Yes,692.0,0.0,977.0
+51.0,100.31285,No,Yes,No,90.0,No,Yes,991.0,White,Male,Experienced,Yes,ZDV only,Yes,214.0,No,983.0,1.0,542.0
+36.0,84.12983,Yes,No,No,100.0,No,Yes,488.0,White,Male,Experienced,No,Others,No,445.0,Yes,1319.0,0.0,1151.0
+40.0,70.13948,No,No,Yes,90.0,No,No,45.0,Others,Male,Naive,Yes,ZDV only,Yes,394.0,Yes,461.0,0.0,840.0
+19.0,85.14029,No,No,No,100.0,No,No,244.0,Others,Male,Experienced,No,Others,No,394.0,Yes,1682.0,0.0,1231.0
+34.0,134.72286,No,Yes,No,90.0,No,No,9.0,White,Male,Naive,No,ZDV only,No,176.0,Yes,1461.0,0.0,1209.0
+37.0,74.99209,No,No,No,100.0,No,Yes,979.0,White,Male,Experienced,No,Others,Yes,346.0,Yes,418.0,0.0,1014.0
+42.0,104.07358,No,No,No,100.0,No,No,14.0,White,Male,Experienced,No,Others,No,362.0,Yes,419.0,0.0,1026.0
+33.0,112.8224,No,Yes,No,90.0,No,No,11.0,White,Male,Naive,No,Others,No,187.0,Yes,273.0,0.0,1156.0
+33.0,84.06551,No,No,No,100.0,No,Yes,1431.0,White,Male,Experienced,No,Others,No,382.0,Yes,1203.0,0.0,1050.0
+29.0,61.04305,No,No,Yes,90.0,No,No,31.0,Others,Female,Naive,No,Others,Yes,378.0,No,680.0,0.0,1171.0
+42.0,59.4341,Yes,No,No,90.0,No,Yes,866.0,White,Male,Experienced,Yes,ZDV only,Yes,456.0,No,721.0,0.0,1077.0
+43.0,68.07327,No,No,No,100.0,No,No,19.0,Others,Female,Naive,No,Others,No,202.0,Yes,677.0,0.0,1029.0
+34.0,64.18528,No,Yes,No,100.0,No,No,15.0,White,Male,Naive,No,Others,No,294.0,Yes,706.0,0.0,946.0
+33.0,67.36672,No,No,No,90.0,No,No,3.0,White,Female,Naive,No,Others,Yes,460.0,No,621.0,0.0,1084.0
+59.0,103.86894,No,Yes,No,90.0,No,No,12.0,White,Male,Experienced,No,Others,No,372.0,Yes,625.0,0.0,1046.0
+31.0,69.95968,No,Yes,No,90.0,No,Yes,889.0,White,Male,Experienced,Yes,Others,Yes,401.0,Yes,1528.0,0.0,996.0
+39.0,49.00686,No,No,No,90.0,No,Yes,840.0,White,Male,Experienced,No,Others,No,440.0,No,617.0,1.0,916.0
+34.0,65.02382,No,No,No,100.0,No,Yes,902.0,Others,Male,Experienced,No,ZDV only,No,448.0,Yes,1125.0,0.0,1231.0
+45.0,68.86671,No,Yes,No,100.0,No,Yes,847.0,White,Male,Experienced,No,ZDV only,Yes,114.0,No,105.0,0.0,33.0
+34.0,74.41806,No,Yes,No,80.0,No,Yes,812.0,White,Male,Experienced,No,Others,No,211.0,Yes,1713.0,0.0,1100.0
+30.0,73.352,No,No,No,90.0,No,No,0.0,White,Female,Naive,No,Others,Yes,319.0,No,152.0,0.0,922.0
+25.0,65.34641,No,Yes,No,100.0,No,No,37.0,White,Male,Naive,No,Others,No,537.0,No,228.0,0.0,1097.0
+41.0,51.67101,No,No,Yes,100.0,No,No,0.0,White,Female,Naive,No,Others,Yes,224.0,No,932.0,0.0,1059.0
+49.0,100.75071,No,No,No,100.0,No,No,799.0,White,Male,Naive,No,Others,No,776.0,Yes,561.0,0.0,1198.0
+27.0,86.85538,No,Yes,No,90.0,No,No,1.0,White,Male,Naive,Yes,ZDV only,No,373.0,Yes,1474.0,1.0,565.0
+54.0,88.47924,No,Yes,No,100.0,Yes,No,16.0,White,Male,Naive,Yes,Others,No,196.0,Yes,193.0,0.0,1183.0
+40.0,51.6678,No,Yes,No,100.0,No,Yes,1181.0,White,Male,Experienced,No,ZDV only,No,287.0,Yes,1145.0,1.0,993.0
+29.0,74.55655,No,Yes,Yes,100.0,No,No,5.0,White,Male,Naive,No,Others,No,330.0,Yes,592.0,1.0,1105.0
+34.0,66.61058,No,No,Yes,100.0,No,Yes,23.0,Others,Female,Experienced,No,ZDV only,Yes,261.0,No,1606.0,1.0,1147.0
+35.0,98.24911,No,Yes,No,90.0,No,Yes,985.0,White,Male,Experienced,Yes,Others,No,227.0,Yes,1033.0,1.0,899.0
+35.0,86.591,No,Yes,No,100.0,No,No,1241.0,Others,Male,Experienced,No,ZDV only,No,309.0,Yes,1568.0,0.0,1044.0
+31.0,80.03069,No,No,Yes,100.0,No,No,44.0,Others,Male,Naive,No,ZDV only,Yes,374.0,No,697.0,1.0,1065.0
+37.0,80.26685,No,No,No,100.0,No,Yes,762.0,White,Male,Experienced,No,ZDV only,No,553.0,Yes,629.0,1.0,1001.0
+22.0,54.35603,No,No,No,90.0,No,Yes,1350.0,White,Female,Experienced,No,Others,No,463.0,Yes,657.0,0.0,1012.0
+21.0,86.865,No,No,No,100.0,No,Yes,817.0,Others,Male,Experienced,No,ZDV only,Yes,489.0,No,1420.0,1.0,570.0
+23.0,70.81912,No,No,Yes,90.0,No,No,0.0,White,Male,Naive,No,Others,Yes,436.0,No,621.0,1.0,1164.0
+50.0,71.48328,No,No,No,80.0,No,Yes,776.0,White,Male,Experienced,No,Others,No,369.0,Yes,1561.0,0.0,1212.0
+49.0,63.62852,No,No,No,90.0,Yes,Yes,768.0,Others,Male,Experienced,No,ZDV only,Yes,231.0,Yes,372.0,0.0,863.0
+40.0,86.34763,No,No,Yes,90.0,No,Yes,704.0,White,Male,Experienced,No,Others,Yes,220.0,No,1380.0,1.0,964.0
+35.0,96.25106,No,Yes,No,80.0,No,Yes,555.0,White,Male,Experienced,No,Others,No,271.0,Yes,371.0,0.0,1231.0
+44.0,84.05912,No,Yes,No,100.0,No,Yes,0.0,White,Male,Experienced,No,ZDV only,No,514.0,Yes,1566.0,0.0,969.0
+28.0,63.66763,No,No,No,90.0,No,Yes,967.0,White,Male,Experienced,No,Others,Yes,461.0,Yes,1873.0,0.0,1115.0
+70.0,91.17106,Yes,No,No,100.0,No,Yes,359.0,Others,Male,Experienced,No,Others,Yes,367.0,Yes,492.0,0.0,929.0
+29.0,82.65661,No,No,No,100.0,No,Yes,344.0,Others,Female,Experienced,No,Others,No,335.0,Yes,419.0,0.0,1177.0
+23.0,84.50262,No,No,No,90.0,No,No,43.0,White,Male,Naive,No,Others,Yes,188.0,No,913.0,1.0,1152.0
+37.0,72.70629,No,No,No,100.0,No,Yes,674.0,White,Male,Experienced,Yes,Others,Yes,454.0,Yes,245.0,0.0,1083.0
+37.0,91.15355,No,Yes,No,90.0,No,Yes,351.0,White,Male,Experienced,Yes,ZDV only,Yes,321.0,Yes,520.0,1.0,936.0
+28.0,64.28909,Yes,No,No,100.0,No,No,13.0,White,Male,Experienced,Yes,Others,No,308.0,No,473.0,0.0,1209.0
+37.0,72.28209,No,Yes,No,100.0,No,Yes,1137.0,Others,Male,Naive,No,Others,No,155.0,No,920.0,0.0,1231.0
+26.0,70.14714,No,Yes,No,100.0,No,No,48.0,White,Male,Naive,No,ZDV only,No,265.0,Yes,1284.0,0.0,1231.0
+47.0,81.49564,Yes,No,No,100.0,No,Yes,986.0,White,Female,Experienced,No,Others,Yes,211.0,No,927.0,0.0,1207.0
+33.0,101.03931,No,Yes,Yes,90.0,No,Yes,339.0,White,Male,Experienced,No,ZDV only,Yes,427.0,No,370.0,1.0,76.0
+35.0,78.58027,No,Yes,No,100.0,Yes,No,0.0,White,Male,Naive,Yes,ZDV only,No,481.0,Yes,1360.0,0.0,1180.0
+24.0,46.95052,No,No,No,100.0,No,No,19.0,Others,Female,Naive,No,Others,No,489.0,Yes,196.0,0.0,1135.0
+27.0,56.16902,No,Yes,Yes,90.0,No,Yes,1192.0,White,Male,Experienced,No,ZDV only,Yes,227.0,No,1203.0,1.0,270.0
+36.0,80.38693,No,Yes,Yes,90.0,No,No,45.0,White,Male,Naive,Yes,ZDV only,Yes,277.0,Yes,1198.0,1.0,806.0
+43.0,80.88914,No,Yes,No,90.0,No,Yes,479.0,White,Male,Experienced,No,Others,No,109.0,Yes,866.0,0.0,1231.0
+30.0,82.58683,No,No,No,100.0,No,Yes,655.0,White,Female,Experienced,No,ZDV only,Yes,323.0,No,1346.0,1.0,442.0
+43.0,65.69192,Yes,No,No,100.0,No,Yes,1781.0,White,Male,Experienced,No,Others,Yes,260.0,Yes,462.0,0.0,1179.0
+35.0,114.11301,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,No,ZDV only,Yes,174.0,No,762.0,0.0,976.0
+27.0,71.19581,No,No,No,100.0,No,Yes,1715.0,Others,Female,Experienced,No,Others,No,295.0,Yes,517.0,0.0,1227.0
+30.0,64.8632,No,Yes,No,90.0,No,Yes,315.0,White,Male,Experienced,No,Others,Yes,363.0,No,739.0,1.0,959.0
+22.0,69.49713,No,Yes,No,90.0,No,No,27.0,White,Male,Naive,No,Others,No,460.0,Yes,601.0,0.0,1189.0
+51.0,94.92421,No,No,Yes,90.0,No,No,1.0,White,Male,Naive,No,ZDV only,Yes,299.0,No,812.0,1.0,381.0
+42.0,74.23037,No,No,No,90.0,No,No,0.0,White,Male,Naive,No,ZDV only,Yes,126.0,Yes,407.0,1.0,441.0
+27.0,73.01909,No,Yes,No,100.0,No,Yes,792.0,White,Male,Experienced,No,Others,Yes,381.0,Yes,645.0,1.0,386.0
+39.0,68.14948,No,No,No,90.0,No,No,0.0,White,Male,Naive,No,Others,Yes,258.0,Yes,1441.0,1.0,1221.0
+20.0,84.15436,No,Yes,No,90.0,No,No,48.0,White,Male,Naive,No,Others,Yes,208.0,Yes,521.0,1.0,451.0
+51.0,96.94563,No,Yes,Yes,90.0,No,No,329.0,Others,Male,Naive,Yes,ZDV only,No,0.0,No,927.0,1.0,548.0
+68.0,83.86067,No,No,No,90.0,No,No,131.0,Others,Male,Experienced,No,Others,No,492.0,Yes,1693.0,0.0,1100.0
+43.0,82.45307,No,Yes,No,100.0,No,Yes,537.0,White,Male,Naive,No,ZDV only,No,373.0,Yes,830.0,0.0,1231.0
+28.0,67.20506,No,Yes,No,100.0,No,No,68.0,White,Male,Naive,No,Others,Yes,450.0,Yes,892.0,0.0,1037.0
+36.0,69.21018,No,No,Yes,100.0,No,No,0.0,Others,Female,Naive,No,ZDV only,Yes,249.0,No,105.0,0.0,1052.0
+13.0,47.20799,No,Yes,Yes,90.0,No,Yes,1393.0,White,Male,Naive,Yes,ZDV only,Yes,305.0,Yes,1575.0,1.0,865.0
+33.0,76.08614,No,Yes,No,90.0,No,Yes,1483.0,White,Male,Experienced,No,Others,No,459.0,Yes,1593.0,1.0,1094.0
+27.0,68.01026,No,Yes,No,100.0,No,No,13.0,Others,Male,Naive,No,ZDV only,Yes,249.0,Yes,1553.0,0.0,1145.0
+44.0,75.82445,No,Yes,Yes,90.0,No,Yes,1561.0,White,Male,Experienced,No,Others,No,221.0,Yes,241.0,0.0,942.0
+32.0,87.1784,No,Yes,No,90.0,No,No,46.0,White,Male,Naive,No,Others,Yes,167.0,No,650.0,0.0,732.0
+33.0,82.57228,No,Yes,No,90.0,No,No,22.0,White,Male,Naive,No,ZDV only,Yes,430.0,Yes,890.0,0.0,1105.0
+29.0,116.47888,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,No,Others,No,693.0,Yes,789.0,0.0,898.0
+41.0,86.17993,No,Yes,Yes,90.0,No,Yes,979.0,White,Male,Experienced,No,Others,No,253.0,Yes,688.0,0.0,1042.0
+42.0,87.37376,No,Yes,No,80.0,No,Yes,357.0,White,Male,Experienced,Yes,Others,No,322.0,Yes,572.0,0.0,1220.0
+21.0,51.59075,No,No,Yes,90.0,No,No,26.0,Others,Male,Naive,No,ZDV only,Yes,242.0,Yes,1004.0,0.0,751.0
+44.0,81.67306,No,No,No,100.0,No,No,442.0,Others,Female,Experienced,No,Others,No,392.0,Yes,468.0,0.0,1083.0
+34.0,97.20751,No,No,Yes,100.0,No,Yes,103.0,White,Male,Experienced,No,Others,Yes,509.0,Yes,720.0,0.0,1217.0
+49.0,71.65231,No,No,Yes,100.0,No,Yes,0.0,Others,Male,Naive,No,Others,Yes,404.0,Yes,1095.0,0.0,614.0
+33.0,97.9985,No,Yes,No,100.0,No,Yes,1614.0,White,Male,Experienced,No,Others,No,514.0,Yes,1987.0,0.0,961.0
+46.0,79.44749,No,Yes,No,90.0,Yes,No,0.0,Others,Male,Naive,No,ZDV only,Yes,198.0,No,911.0,1.0,1118.0
+42.0,76.43713,No,No,No,100.0,No,No,23.0,White,Male,Naive,No,Others,No,152.0,Yes,1663.0,0.0,1166.0
+39.0,63.47289,No,No,No,90.0,No,Yes,35.0,White,Male,Naive,No,ZDV only,Yes,84.0,No,664.0,1.0,279.0
+46.0,61.07044,No,Yes,Yes,90.0,No,Yes,580.0,Others,Male,Experienced,No,Others,No,276.0,Yes,1786.0,1.0,33.0
+48.0,87.75326,No,Yes,No,100.0,No,Yes,1127.0,White,Male,Experienced,No,Others,No,531.0,Yes,745.0,1.0,947.0
+45.0,108.47939,No,No,Yes,90.0,No,No,28.0,Others,Female,Experienced,Yes,ZDV only,No,167.0,Yes,1419.0,0.0,1231.0
+52.0,81.0365,No,Yes,No,100.0,No,No,57.0,White,Male,Naive,No,ZDV only,Yes,313.0,No,2295.0,1.0,707.0
+52.0,65.22057,No,Yes,No,90.0,No,Yes,1021.0,White,Male,Experienced,No,Others,Yes,255.0,No,1151.0,1.0,117.0
+48.0,53.51217,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,Yes,Others,Yes,164.0,No,2065.0,0.0,903.0
+33.0,103.18509,No,No,No,100.0,No,Yes,560.0,White,Male,Experienced,No,ZDV only,Yes,345.0,No,690.0,1.0,342.0
+44.0,77.25938,No,Yes,Yes,100.0,No,No,28.0,Others,Female,Naive,Yes,Others,No,155.0,Yes,432.0,0.0,965.0
+43.0,85.08779,No,No,No,100.0,No,No,23.0,White,Male,Naive,No,Others,Yes,179.0,Yes,427.0,0.0,1231.0
+22.0,84.0333,No,No,No,100.0,No,Yes,1791.0,Others,Male,Experienced,No,ZDV only,No,540.0,Yes,921.0,0.0,1116.0
+29.0,57.96679,No,No,No,90.0,No,No,393.0,Others,Male,Experienced,Yes,ZDV only,No,549.0,Yes,971.0,0.0,1231.0
+42.0,42.22524,No,No,Yes,90.0,No,No,30.0,White,Male,Naive,No,ZDV only,Yes,349.0,No,1057.0,1.0,660.0
+33.0,72.59272,No,No,No,90.0,No,No,0.0,White,Female,Naive,No,ZDV only,Yes,409.0,Yes,233.0,1.0,913.0
+29.0,71.36401,No,Yes,Yes,100.0,No,No,0.0,White,Male,Naive,No,Others,No,309.0,Yes,1084.0,0.0,1162.0
+63.0,90.65988,No,No,Yes,90.0,No,Yes,1268.0,White,Male,Experienced,No,ZDV only,Yes,241.0,Yes,1221.0,0.0,591.0
+29.0,76.59182,No,Yes,No,90.0,No,Yes,584.0,White,Male,Experienced,Yes,Others,No,365.0,Yes,954.0,0.0,1016.0
+35.0,92.88653,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,Yes,ZDV only,Yes,347.0,No,1768.0,1.0,824.0
+31.0,83.15511,No,Yes,No,100.0,No,Yes,1128.0,White,Male,Experienced,Yes,Others,Yes,173.0,Yes,1376.0,0.0,1231.0
+22.0,53.39446,No,No,No,100.0,No,No,0.0,Others,Female,Naive,No,ZDV only,No,489.0,No,790.0,0.0,399.0
+34.0,102.225,No,No,No,100.0,No,No,13.0,White,Male,Naive,No,Others,Yes,480.0,Yes,1180.0,0.0,938.0
+33.0,58.79171,No,Yes,No,90.0,No,Yes,986.0,White,Male,Experienced,No,ZDV only,No,353.0,Yes,428.0,0.0,1040.0
+22.0,65.18361,No,Yes,No,100.0,No,No,40.0,White,Male,Naive,No,ZDV only,Yes,177.0,No,542.0,1.0,251.0
+26.0,71.51601,No,Yes,No,90.0,No,No,40.0,White,Male,Naive,No,Others,No,230.0,Yes,559.0,0.0,1198.0
+21.0,61.40045,Yes,No,No,100.0,No,Yes,221.0,White,Male,Experienced,No,Others,No,146.0,No,966.0,0.0,1231.0
+33.0,62.38811,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,No,Others,No,538.0,Yes,446.0,0.0,1188.0
+19.0,75.5912,No,No,Yes,100.0,No,No,0.0,Others,Female,Naive,No,Others,Yes,673.0,No,584.0,0.0,1075.0
+63.0,84.82477,No,Yes,No,100.0,No,No,195.0,White,Male,Experienced,No,Others,No,274.0,Yes,1163.0,0.0,935.0
+41.0,73.64577,No,No,Yes,100.0,No,Yes,1466.0,White,Male,Experienced,No,ZDV only,No,254.0,Yes,344.0,1.0,1191.0
+19.0,97.2607,No,Yes,No,90.0,No,Yes,943.0,White,Male,Experienced,Yes,Others,Yes,242.0,Yes,336.0,0.0,1191.0
+37.0,77.5209,No,Yes,No,100.0,No,Yes,1300.0,White,Female,Experienced,No,Others,Yes,371.0,Yes,754.0,0.0,1112.0
+31.0,90.63554,No,Yes,No,90.0,No,No,30.0,White,Male,Naive,No,ZDV only,Yes,378.0,Yes,920.0,1.0,566.0
+21.0,93.2197,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,No,Others,No,493.0,Yes,604.0,0.0,1144.0
+49.0,96.40474,No,Yes,No,90.0,No,No,47.0,White,Male,Experienced,No,ZDV only,Yes,320.0,Yes,1097.0,0.0,73.0
+44.0,93.21932,No,No,No,90.0,No,No,0.0,White,Male,Naive,Yes,Others,Yes,340.0,No,381.0,0.0,771.0
+58.0,73.87614,No,No,Yes,100.0,No,Yes,1056.0,White,Male,Experienced,No,Others,Yes,119.0,Yes,232.0,1.0,1067.0
+22.0,49.66035,Yes,No,No,100.0,No,Yes,316.0,Others,Male,Experienced,No,Others,No,373.0,Yes,1329.0,0.0,1047.0
+40.0,80.45141,No,Yes,Yes,100.0,No,Yes,855.0,Others,Male,Experienced,No,Others,No,142.0,Yes,452.0,0.0,1053.0
+27.0,74.89241,No,Yes,No,100.0,No,No,739.0,White,Male,Experienced,No,Others,Yes,530.0,Yes,1689.0,0.0,1136.0
+25.0,84.06612,No,Yes,No,100.0,No,No,20.0,Others,Male,Naive,No,ZDV only,Yes,764.0,No,856.0,0.0,1169.0
+25.0,88.26828,No,No,No,90.0,No,Yes,1921.0,White,Male,Experienced,No,ZDV only,Yes,300.0,No,379.0,1.0,349.0
+32.0,51.07798,No,No,No,100.0,No,No,723.0,Others,Male,Naive,No,ZDV only,Yes,287.0,No,806.0,0.0,466.0
+28.0,91.3191,No,No,No,100.0,No,Yes,205.0,Others,Female,Experienced,No,Others,No,530.0,Yes,362.0,0.0,1231.0
+34.0,91.13642,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,No,Others,Yes,184.0,No,726.0,0.0,938.0
+30.0,72.89012,No,No,No,100.0,No,Yes,0.0,White,Female,Naive,Yes,Others,Yes,390.0,Yes,719.0,0.0,462.0
+33.0,59.74947,No,Yes,No,90.0,No,Yes,395.0,White,Male,Experienced,No,ZDV only,No,449.0,Yes,715.0,1.0,465.0
+28.0,82.50054,Yes,No,No,100.0,No,Yes,43.0,Others,Female,Naive,No,Others,Yes,119.0,No,893.0,1.0,1181.0
+40.0,74.84019,No,No,Yes,100.0,No,No,46.0,Others,Male,Naive,No,ZDV only,No,252.0,Yes,455.0,0.0,853.0
+55.0,93.26708,No,Yes,No,90.0,No,No,773.0,White,Male,Experienced,No,ZDV only,Yes,276.0,No,1738.0,0.0,606.0
+38.0,105.59205,Yes,Yes,No,100.0,No,No,0.0,White,Male,Experienced,No,Others,No,677.0,No,577.0,0.0,928.0
+15.0,65.07956,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,No,Others,No,435.0,Yes,884.0,0.0,824.0
+33.0,47.44743,No,Yes,No,100.0,No,No,575.0,White,Male,Experienced,No,ZDV only,Yes,176.0,Yes,919.0,1.0,1113.0
+38.0,67.97105,No,No,No,90.0,No,No,12.0,White,Male,Naive,No,Others,No,324.0,Yes,1387.0,0.0,1231.0
+56.0,57.60783,No,Yes,No,70.0,No,Yes,884.0,White,Male,Experienced,Yes,ZDV only,No,323.0,No,635.0,0.0,972.0
+20.0,61.48454,No,Yes,No,100.0,No,No,12.0,White,Male,Naive,No,Others,No,557.0,Yes,794.0,0.0,1104.0
+53.0,68.25214,Yes,No,No,80.0,No,Yes,238.0,White,Female,Experienced,No,Others,No,297.0,Yes,580.0,0.0,831.0
+45.0,94.20126,No,No,Yes,100.0,No,No,15.0,White,Female,Naive,No,Others,Yes,401.0,No,105.0,0.0,1109.0
+34.0,79.73007,No,Yes,No,100.0,No,No,20.0,White,Male,Naive,No,ZDV only,No,798.0,Yes,1400.0,0.0,732.0
+32.0,63.90995,No,Yes,No,100.0,No,Yes,1184.0,White,Male,Experienced,No,ZDV only,No,408.0,Yes,843.0,0.0,1016.0
+25.0,80.68039,No,No,Yes,90.0,No,Yes,335.0,Others,Male,Experienced,No,Others,No,278.0,Yes,275.0,0.0,1122.0
+40.0,89.07933,No,No,No,80.0,No,Yes,300.0,White,Male,Experienced,No,ZDV only,No,379.0,Yes,324.0,0.0,1068.0
+29.0,72.6657,No,No,Yes,100.0,No,No,0.0,White,Male,Naive,No,Others,Yes,330.0,No,887.0,0.0,619.0
+31.0,71.28949,No,No,Yes,90.0,No,Yes,1162.0,White,Male,Experienced,No,ZDV only,No,337.0,Yes,383.0,1.0,1231.0
+21.0,108.86666,No,Yes,No,90.0,No,No,37.0,White,Male,Naive,No,Others,No,554.0,Yes,374.0,0.0,1170.0
+34.0,76.61207,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,Yes,Others,Yes,193.0,No,197.0,0.0,1132.0
+31.0,72.568,No,Yes,No,90.0,No,Yes,1530.0,White,Male,Experienced,No,Others,Yes,179.0,Yes,1150.0,1.0,1084.0
+46.0,73.78167,No,No,Yes,100.0,No,Yes,257.0,Others,Female,Experienced,No,ZDV only,Yes,110.0,Yes,365.0,0.0,566.0
+27.0,91.83299,No,Yes,Yes,90.0,No,Yes,897.0,White,Male,Experienced,No,ZDV only,Yes,351.0,No,1086.0,1.0,874.0
+42.0,54.79525,No,No,No,90.0,No,No,56.0,Others,Female,Naive,No,ZDV only,No,471.0,Yes,731.0,0.0,931.0
+30.0,87.70369,No,No,No,100.0,No,Yes,382.0,Others,Male,Experienced,No,ZDV only,No,344.0,No,401.0,0.0,1231.0
+50.0,82.21763,No,Yes,Yes,90.0,No,Yes,1299.0,White,Male,Experienced,No,Others,No,423.0,Yes,836.0,0.0,1102.0
+25.0,61.16787,Yes,No,No,100.0,No,Yes,1365.0,White,Male,Experienced,No,Others,No,271.0,Yes,402.0,0.0,1070.0
+27.0,70.17159,No,No,Yes,90.0,No,Yes,1691.0,White,Female,Experienced,No,Others,No,488.0,Yes,236.0,0.0,1159.0
+34.0,86.56499,No,Yes,No,100.0,No,No,37.0,White,Male,Naive,No,Others,No,666.0,Yes,318.0,0.0,1080.0
+33.0,72.33714,No,No,Yes,100.0,No,No,63.0,Others,Female,Naive,No,Others,No,286.0,No,194.0,0.0,1122.0
+31.0,74.86638,No,No,No,90.0,No,No,533.0,Others,Female,Experienced,Yes,ZDV only,Yes,242.0,Yes,114.0,1.0,871.0
+46.0,74.05089,No,No,No,90.0,Yes,Yes,475.0,White,Male,Experienced,Yes,Others,No,321.0,No,561.0,1.0,1072.0
+49.0,109.42454,No,No,No,90.0,No,Yes,950.0,White,Male,Experienced,No,Others,No,347.0,Yes,375.0,0.0,735.0
+42.0,159.93936,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,Yes,Others,No,339.0,Yes,466.0,0.0,1048.0
+30.0,82.85177,No,Yes,No,100.0,No,No,30.0,White,Male,Naive,Yes,Others,No,489.0,Yes,213.0,0.0,694.0
+34.0,79.56197,No,Yes,No,90.0,No,Yes,1020.0,White,Male,Experienced,No,Others,No,367.0,Yes,189.0,0.0,1076.0
+22.0,67.78551,No,No,No,90.0,No,No,973.0,Others,Female,Naive,No,ZDV only,Yes,356.0,No,620.0,0.0,195.0
+27.0,72.84629,No,Yes,No,100.0,No,No,39.0,White,Male,Naive,No,ZDV only,No,295.0,No,1008.0,0.0,1131.0
+23.0,66.59162,No,Yes,No,90.0,No,Yes,1096.0,Others,Male,Experienced,No,Others,No,466.0,Yes,785.0,0.0,1231.0
+50.0,75.96275,No,No,No,100.0,No,No,18.0,White,Female,Naive,No,Others,No,245.0,Yes,1212.0,0.0,865.0
+25.0,41.0875,No,No,No,90.0,Yes,Yes,510.0,White,Male,Experienced,Yes,ZDV only,Yes,305.0,No,1331.0,1.0,1214.0
+19.0,78.53442,Yes,No,No,90.0,No,Yes,2.0,Others,Male,Experienced,No,Others,No,551.0,Yes,1441.0,0.0,853.0
+31.0,151.8065,No,Yes,Yes,100.0,No,No,0.0,White,Male,Naive,No,Others,Yes,325.0,Yes,1092.0,0.0,949.0
+41.0,76.84204,No,Yes,Yes,90.0,No,Yes,965.0,White,Male,Experienced,No,Others,No,217.0,Yes,327.0,1.0,960.0
+49.0,114.56942,No,Yes,No,100.0,No,Yes,677.0,White,Male,Experienced,Yes,Others,No,498.0,Yes,875.0,0.0,1007.0
+37.0,84.51267,No,No,Yes,90.0,No,No,44.0,Others,Male,Naive,No,ZDV only,Yes,312.0,No,863.0,1.0,254.0
+40.0,52.79407,No,Yes,No,100.0,Yes,No,40.0,Others,Male,Naive,No,Others,No,399.0,Yes,776.0,0.0,1018.0
+26.0,39.00547,No,Yes,No,100.0,No,Yes,947.0,White,Male,Experienced,No,Others,No,321.0,Yes,2306.0,0.0,1054.0
+35.0,72.02494,No,No,No,80.0,No,Yes,201.0,Others,Male,Experienced,Yes,Others,Yes,492.0,Yes,1256.0,0.0,996.0
+48.0,63.52019,No,No,Yes,70.0,No,Yes,30.0,Others,Male,Naive,Yes,ZDV only,Yes,155.0,No,401.0,0.0,316.0
+32.0,63.63892,No,No,Yes,90.0,No,No,0.0,Others,Female,Naive,Yes,Others,Yes,192.0,No,2174.0,1.0,847.0
+26.0,83.24363,No,No,No,90.0,No,Yes,1121.0,Others,Male,Experienced,Yes,ZDV only,Yes,306.0,No,222.0,1.0,129.0
+48.0,80.61456,No,Yes,No,90.0,No,No,39.0,White,Male,Naive,Yes,ZDV only,No,209.0,Yes,918.0,0.0,916.0
+39.0,91.29733,No,No,No,90.0,No,Yes,883.0,White,Male,Experienced,Yes,ZDV only,Yes,263.0,No,1876.0,1.0,250.0
+44.0,75.29444,No,No,Yes,90.0,No,Yes,1140.0,White,Male,Experienced,No,Others,No,160.0,No,1985.0,1.0,1202.0
+32.0,70.57793,No,Yes,No,90.0,No,No,34.0,White,Male,Naive,Yes,ZDV only,Yes,324.0,Yes,2177.0,0.0,985.0
+30.0,86.79614,No,Yes,No,100.0,No,No,0.0,White,Female,Naive,No,Others,No,839.0,Yes,729.0,0.0,1105.0
+38.0,72.30975,No,Yes,Yes,100.0,No,Yes,2262.0,White,Male,Experienced,No,Others,Yes,156.0,Yes,1031.0,0.0,1213.0
+17.0,66.38487,No,No,No,100.0,No,Yes,1440.0,Others,Male,Experienced,Yes,ZDV only,No,330.0,Yes,831.0,0.0,1211.0
+35.0,70.28655,No,Yes,Yes,90.0,No,No,36.0,White,Male,Naive,No,ZDV only,Yes,436.0,Yes,619.0,0.0,140.0
+47.0,96.67201,No,Yes,No,90.0,No,No,19.0,White,Male,Naive,No,ZDV only,Yes,389.0,No,256.0,1.0,868.0
+28.0,83.19582,No,Yes,No,100.0,No,Yes,404.0,White,Male,Experienced,No,Others,Yes,313.0,Yes,1051.0,1.0,942.0
+52.0,41.225,No,Yes,No,100.0,No,Yes,13.0,White,Male,Naive,No,Others,Yes,598.0,Yes,1427.0,0.0,927.0
+32.0,73.65497,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,No,ZDV only,No,588.0,Yes,362.0,0.0,473.0
+34.0,83.51893,No,Yes,No,100.0,No,Yes,1736.0,Others,Male,Experienced,Yes,Others,No,366.0,Yes,1317.0,0.0,1114.0
+41.0,68.784,No,No,Yes,90.0,No,Yes,891.0,White,Female,Experienced,Yes,Others,Yes,306.0,Yes,887.0,0.0,1147.0
+53.0,87.43033,No,No,No,100.0,No,No,207.0,Others,Male,Experienced,Yes,Others,Yes,412.0,No,270.0,0.0,1053.0
+28.0,78.59929,No,No,No,100.0,No,Yes,44.0,White,Female,Experienced,No,Others,No,482.0,Yes,1980.0,0.0,1156.0
+29.0,79.67105,No,No,Yes,100.0,No,No,15.0,White,Female,Experienced,No,Others,No,272.0,Yes,863.0,0.0,1196.0
+48.0,76.52537,No,Yes,No,100.0,No,Yes,578.0,White,Male,Experienced,No,Others,Yes,474.0,No,690.0,0.0,364.0
+48.0,71.93871,No,Yes,No,100.0,No,No,35.0,White,Male,Naive,Yes,Others,No,176.0,Yes,924.0,0.0,1219.0
+40.0,80.29571,No,Yes,No,90.0,No,No,55.0,White,Male,Naive,No,Others,No,276.0,Yes,458.0,0.0,1023.0
+37.0,155.0605,No,Yes,No,90.0,No,No,56.0,White,Male,Naive,No,ZDV only,Yes,186.0,No,1618.0,1.0,531.0
+37.0,83.05788,No,Yes,No,100.0,No,Yes,37.0,White,Male,Naive,Yes,Others,Yes,277.0,No,1156.0,1.0,485.0
+33.0,97.90578,No,Yes,No,90.0,Yes,No,65.0,White,Male,Naive,No,ZDV only,Yes,205.0,No,672.0,1.0,1158.0
+34.0,86.39684,No,Yes,No,100.0,No,No,9.0,White,Male,Naive,Yes,Others,Yes,418.0,Yes,1107.0,0.0,1231.0
+36.0,96.36534,No,Yes,No,90.0,No,Yes,821.0,White,Male,Experienced,No,ZDV only,Yes,167.0,Yes,1151.0,0.0,1079.0
+36.0,76.83422,No,No,No,90.0,No,Yes,458.0,Others,Female,Experienced,No,Others,Yes,557.0,No,552.0,1.0,690.0
+45.0,63.99649,No,Yes,No,90.0,No,Yes,0.0,White,Male,Naive,No,Others,No,151.0,Yes,1970.0,0.0,1191.0
+42.0,73.71075,No,Yes,No,90.0,No,No,31.0,White,Male,Naive,Yes,ZDV only,Yes,247.0,No,1758.0,1.0,423.0
+33.0,96.23335,No,Yes,No,100.0,No,No,41.0,White,Male,Naive,No,ZDV only,Yes,257.0,No,484.0,0.0,988.0
+33.0,73.92417,No,Yes,No,100.0,No,No,34.0,White,Male,Naive,No,Others,No,471.0,Yes,503.0,0.0,1030.0
+35.0,69.05902,Yes,No,No,90.0,No,Yes,595.0,Others,Male,Experienced,No,Others,No,289.0,Yes,1037.0,0.0,1195.0
+48.0,77.12039,No,No,Yes,100.0,No,No,44.0,Others,Female,Naive,No,Others,Yes,341.0,Yes,192.0,0.0,1021.0
+46.0,59.4958,No,No,No,90.0,No,Yes,800.0,White,Male,Experienced,Yes,ZDV only,Yes,312.0,Yes,697.0,0.0,379.0
+30.0,88.42929,No,Yes,Yes,100.0,No,No,29.0,White,Male,Naive,No,ZDV only,Yes,239.0,No,781.0,0.0,1067.0
+34.0,81.13963,No,Yes,Yes,90.0,No,Yes,9.0,White,Male,Experienced,No,Others,Yes,276.0,No,972.0,0.0,956.0
+34.0,85.51594,No,Yes,No,100.0,No,No,18.0,Others,Male,Experienced,No,Others,No,415.0,Yes,285.0,0.0,774.0
+58.0,68.06578,No,No,No,90.0,No,No,897.0,Others,Male,Experienced,Yes,ZDV only,Yes,293.0,No,338.0,1.0,404.0
+42.0,110.89902,No,No,Yes,100.0,No,No,0.0,White,Male,Naive,No,Others,Yes,242.0,No,666.0,0.0,1082.0
+43.0,60.11251,No,Yes,No,90.0,No,Yes,937.0,White,Male,Experienced,Yes,ZDV only,Yes,119.0,No,1413.0,1.0,617.0
+31.0,73.83665,No,Yes,No,100.0,No,Yes,560.0,Others,Male,Experienced,No,Others,Yes,148.0,No,1122.0,1.0,165.0
+15.0,61.6125,Yes,No,No,100.0,No,Yes,2155.0,White,Female,Experienced,No,Others,Yes,400.0,Yes,940.0,1.0,1162.0
+39.0,75.31028,No,No,Yes,90.0,No,No,0.0,White,Male,Naive,No,Others,Yes,355.0,No,558.0,0.0,1085.0
+27.0,83.94552,No,No,Yes,90.0,No,No,30.0,White,Male,Naive,No,ZDV only,Yes,507.0,No,427.0,1.0,734.0
+31.0,72.66619,No,No,No,100.0,No,Yes,0.0,Others,Female,Naive,No,Others,No,380.0,Yes,1174.0,1.0,1218.0
+38.0,92.18204,No,Yes,No,90.0,No,No,0.0,Others,Male,Naive,No,Others,Yes,492.0,No,1398.0,0.0,526.0
+50.0,77.7045,Yes,No,No,100.0,No,No,988.0,Others,Female,Experienced,No,Others,No,243.0,Yes,319.0,0.0,1119.0
+43.0,93.61034,No,No,No,100.0,No,Yes,977.0,White,Male,Experienced,No,Others,No,363.0,Yes,1618.0,0.0,1061.0
+34.0,87.9599,No,Yes,No,100.0,No,No,1141.0,White,Male,Experienced,No,Others,No,509.0,Yes,589.0,0.0,1021.0
+30.0,101.0752,No,Yes,No,90.0,Yes,Yes,1064.0,Others,Male,Experienced,Yes,ZDV only,No,411.0,No,1045.0,1.0,1228.0
+33.0,121.61418,No,Yes,No,90.0,No,No,5.0,White,Male,Naive,No,ZDV only,Yes,283.0,No,1038.0,1.0,118.0
+28.0,74.3999,No,Yes,No,90.0,No,Yes,799.0,White,Male,Experienced,Yes,Others,No,456.0,Yes,953.0,1.0,1102.0
+27.0,78.19318,Yes,No,No,90.0,No,Yes,751.0,Others,Female,Experienced,No,Others,No,338.0,Yes,1163.0,0.0,1123.0
+43.0,98.10672,No,No,No,100.0,No,No,55.0,White,Male,Naive,Yes,ZDV only,Yes,286.0,No,603.0,1.0,334.0
+51.0,75.63066,No,Yes,No,90.0,No,Yes,850.0,White,Male,Experienced,No,ZDV only,No,207.0,No,1228.0,1.0,1172.0
+26.0,57.22244,Yes,No,No,100.0,No,No,658.0,White,Male,Experienced,No,Others,Yes,418.0,Yes,257.0,0.0,1231.0
+28.0,84.47803,No,No,No,100.0,No,Yes,233.0,White,Male,Experienced,No,Others,No,321.0,Yes,732.0,0.0,1224.0
+29.0,82.75307,No,Yes,No,100.0,No,Yes,1114.0,White,Female,Experienced,No,Others,Yes,454.0,No,583.0,1.0,318.0
+30.0,81.88987,No,No,No,100.0,No,No,0.0,White,Female,Experienced,No,Others,No,588.0,Yes,625.0,0.0,1154.0
+16.0,88.07659,Yes,No,No,100.0,No,Yes,122.0,Others,Female,Experienced,No,Others,Yes,559.0,No,412.0,1.0,890.0
+41.0,87.48593,No,No,Yes,80.0,No,Yes,1034.0,White,Male,Experienced,No,Others,No,300.0,No,1055.0,0.0,1137.0
+30.0,48.88213,No,Yes,No,100.0,No,Yes,1277.0,White,Male,Experienced,No,Others,No,409.0,Yes,639.0,0.0,848.0
+46.0,71.88053,No,No,No,100.0,No,Yes,980.0,White,Male,Experienced,No,ZDV only,No,200.0,Yes,519.0,1.0,1080.0
+43.0,75.34988,No,Yes,No,90.0,No,No,7.0,White,Male,Naive,Yes,ZDV only,Yes,331.0,Yes,692.0,0.0,972.0
+32.0,81.71121,No,Yes,No,90.0,No,Yes,1078.0,White,Male,Experienced,No,ZDV only,No,254.0,Yes,1275.0,0.0,541.0
+43.0,85.3746,No,No,Yes,80.0,No,Yes,133.0,Others,Male,Experienced,No,ZDV only,Yes,257.0,Yes,1338.0,1.0,1101.0
+30.0,95.31664,No,Yes,No,100.0,No,Yes,432.0,Others,Male,Experienced,No,Others,No,381.0,Yes,891.0,0.0,1231.0
+37.0,67.11194,No,No,No,90.0,No,Yes,229.0,White,Female,Experienced,No,ZDV only,Yes,152.0,Yes,241.0,1.0,959.0
+50.0,81.06494,Yes,No,No,100.0,No,Yes,794.0,White,Female,Experienced,No,Others,No,186.0,Yes,755.0,0.0,953.0
+25.0,49.68441,Yes,Yes,No,90.0,No,Yes,918.0,Others,Female,Naive,No,Others,Yes,380.0,Yes,911.0,1.0,831.0
+27.0,78.83342,No,No,Yes,90.0,No,No,0.0,White,Male,Naive,No,Others,Yes,270.0,No,2562.0,0.0,137.0
+24.0,53.60203,No,No,No,90.0,No,No,48.0,Others,Male,Naive,No,ZDV only,Yes,341.0,No,651.0,1.0,1093.0
+26.0,83.26724,Yes,No,No,80.0,No,Yes,795.0,White,Male,Experienced,No,Others,Yes,273.0,Yes,1421.0,0.0,1201.0
+35.0,95.09146,No,No,No,90.0,No,Yes,1656.0,White,Male,Experienced,Yes,ZDV only,Yes,440.0,Yes,968.0,1.0,775.0
+26.0,53.29546,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,Yes,ZDV only,Yes,675.0,No,861.0,1.0,346.0
+35.0,103.28263,No,No,No,100.0,No,Yes,1117.0,White,Male,Naive,No,Others,Yes,272.0,Yes,1243.0,0.0,1231.0
+23.0,65.43926,No,Yes,No,100.0,No,No,12.0,White,Male,Naive,No,Others,No,290.0,Yes,179.0,0.0,1164.0
+36.0,82.4117,No,No,Yes,100.0,No,Yes,606.0,Others,Female,Experienced,No,Others,No,216.0,No,989.0,0.0,1188.0
+28.0,68.62833,Yes,No,No,70.0,No,Yes,2208.0,Others,Male,Experienced,No,Others,No,231.0,No,367.0,0.0,963.0
+34.0,75.80378,No,Yes,No,100.0,No,Yes,0.0,White,Male,Experienced,Yes,Others,Yes,539.0,No,456.0,0.0,1036.0
+29.0,86.8397,No,No,No,100.0,No,Yes,293.0,White,Female,Naive,No,ZDV only,Yes,415.0,No,721.0,0.0,1100.0
+27.0,86.09045,No,No,No,100.0,No,No,15.0,White,Female,Experienced,No,Others,No,295.0,Yes,517.0,1.0,1141.0
+50.0,128.16022,No,No,No,100.0,No,No,0.0,White,Male,Naive,No,Others,Yes,697.0,Yes,207.0,0.0,767.0
+30.0,92.74807,No,No,Yes,80.0,No,Yes,815.0,White,Male,Experienced,No,ZDV only,No,425.0,Yes,774.0,0.0,721.0
+31.0,68.07039,No,Yes,No,90.0,No,No,878.0,White,Male,Naive,Yes,Others,No,240.0,Yes,1231.0,0.0,1009.0
+36.0,91.15159,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,Yes,Others,Yes,450.0,No,352.0,0.0,1012.0
+37.0,98.05374,No,Yes,Yes,100.0,No,No,0.0,White,Male,Naive,Yes,ZDV only,Yes,296.0,No,1646.0,1.0,1111.0
+15.0,43.29693,No,No,No,90.0,No,Yes,1405.0,White,Female,Experienced,No,Others,No,305.0,Yes,605.0,0.0,1103.0
+28.0,73.90405,No,No,No,90.0,No,Yes,1228.0,White,Male,Experienced,No,Others,No,322.0,Yes,1776.0,1.0,1215.0
+31.0,60.47146,Yes,No,Yes,90.0,No,Yes,36.0,Others,Female,Experienced,No,Others,No,273.0,Yes,725.0,0.0,1112.0
+21.0,73.67596,No,No,Yes,100.0,No,Yes,227.0,Others,Female,Experienced,No,Others,No,223.0,Yes,105.0,0.0,997.0
+29.0,90.47789,No,Yes,No,90.0,No,Yes,670.0,White,Male,Experienced,No,Others,Yes,255.0,No,464.0,1.0,953.0
+30.0,70.24658,Yes,No,Yes,100.0,No,Yes,1407.0,Others,Female,Experienced,No,Others,Yes,252.0,Yes,105.0,0.0,846.0
+31.0,43.35764,No,No,No,80.0,No,No,12.0,Others,Male,Naive,No,ZDV only,Yes,301.0,No,1034.0,1.0,993.0
+29.0,123.7031,No,Yes,No,100.0,No,No,62.0,White,Male,Naive,Yes,Others,No,470.0,Yes,283.0,0.0,1010.0
+28.0,77.50713,No,Yes,No,80.0,Yes,Yes,727.0,White,Male,Experienced,No,ZDV only,No,405.0,Yes,1797.0,0.0,879.0
+49.0,67.07232,No,Yes,No,100.0,No,Yes,803.0,White,Male,Experienced,Yes,ZDV only,No,431.0,Yes,1076.0,0.0,999.0
+36.0,53.7069,No,Yes,No,100.0,No,No,27.0,White,Male,Naive,Yes,Others,No,171.0,Yes,659.0,0.0,1110.0
+40.0,54.35772,No,Yes,No,100.0,No,Yes,233.0,White,Male,Experienced,No,ZDV only,Yes,285.0,Yes,271.0,0.0,1063.0
+30.0,69.48155,No,No,No,90.0,No,No,28.0,White,Male,Naive,Yes,ZDV only,Yes,188.0,Yes,1791.0,0.0,555.0
+36.0,56.99122,No,No,No,80.0,No,Yes,1064.0,White,Male,Experienced,No,ZDV only,Yes,291.0,No,293.0,0.0,35.0
+25.0,63.22525,No,Yes,No,90.0,No,Yes,1022.0,White,Male,Experienced,Yes,Others,No,424.0,Yes,547.0,0.0,1149.0
+26.0,60.10327,Yes,No,Yes,90.0,No,No,1571.0,Others,Female,Naive,No,Others,No,412.0,Yes,497.0,0.0,1082.0
+34.0,56.38215,No,No,No,90.0,No,Yes,1341.0,White,Male,Experienced,No,Others,No,309.0,Yes,1227.0,0.0,1164.0
+36.0,83.39192,Yes,No,No,100.0,No,Yes,328.0,White,Male,Experienced,No,ZDV only,No,449.0,Yes,167.0,0.0,1132.0
+42.0,73.39185,No,Yes,No,90.0,No,No,4.0,White,Male,Naive,No,ZDV only,Yes,214.0,Yes,1050.0,1.0,629.0
+31.0,53.31616,No,No,No,100.0,No,Yes,1624.0,Others,Female,Experienced,No,ZDV only,No,312.0,Yes,476.0,0.0,1146.0
+41.0,83.40221,No,Yes,No,100.0,No,Yes,65.0,White,Female,Experienced,No,Others,No,246.0,Yes,1049.0,1.0,944.0
+32.0,69.1973,Yes,No,No,90.0,No,No,41.0,White,Male,Naive,No,Others,No,522.0,Yes,477.0,0.0,997.0
+26.0,65.69377,No,No,No,90.0,No,Yes,2149.0,White,Male,Experienced,Yes,ZDV only,Yes,314.0,No,501.0,1.0,599.0
+30.0,76.53995,No,Yes,No,90.0,No,Yes,903.0,White,Female,Experienced,No,ZDV only,Yes,516.0,No,234.0,0.0,721.0
+26.0,75.24526,No,No,No,100.0,No,Yes,116.0,Others,Male,Experienced,No,ZDV only,No,335.0,No,1633.0,1.0,1091.0
+39.0,92.6762,No,No,No,100.0,No,Yes,0.0,White,Male,Experienced,No,Others,No,505.0,Yes,973.0,0.0,1150.0
+13.0,41.7906,No,Yes,No,100.0,No,Yes,1311.0,Others,Female,Experienced,No,ZDV only,No,547.0,Yes,1557.0,1.0,1187.0
+12.0,102.77414,Yes,No,Yes,100.0,No,Yes,1010.0,Others,Male,Experienced,No,Others,No,644.0,Yes,595.0,0.0,1231.0
+40.0,37.12012,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,No,Others,No,472.0,Yes,962.0,0.0,1231.0
+48.0,93.20595,No,Yes,No,100.0,No,No,402.0,White,Male,Naive,Yes,Others,No,160.0,Yes,728.0,0.0,1133.0
+30.0,82.28353,No,Yes,No,90.0,No,No,17.0,White,Male,Naive,Yes,ZDV only,Yes,186.0,No,1059.0,1.0,635.0
+24.0,65.01039,No,Yes,No,100.0,No,No,0.0,White,Female,Experienced,No,Others,No,334.0,Yes,894.0,0.0,1226.0
+45.0,112.82041,No,No,Yes,90.0,No,No,9.0,Others,Female,Naive,No,ZDV only,Yes,223.0,No,476.0,0.0,1162.0
+35.0,82.45227,No,Yes,No,90.0,No,Yes,1296.0,White,Male,Experienced,Yes,ZDV only,Yes,176.0,No,1614.0,1.0,1231.0
+26.0,54.79475,No,Yes,No,100.0,No,Yes,1173.0,White,Male,Naive,Yes,Others,Yes,731.0,No,1048.0,0.0,1088.0
+39.0,83.29149,No,Yes,No,100.0,No,Yes,1320.0,White,Male,Experienced,No,Others,No,439.0,Yes,591.0,0.0,1187.0
+44.0,77.30873,Yes,No,No,90.0,No,Yes,1416.0,White,Male,Experienced,No,ZDV only,No,416.0,No,116.0,1.0,992.0
+24.0,66.86496,No,Yes,No,100.0,No,No,49.0,White,Female,Naive,No,ZDV only,Yes,299.0,No,546.0,0.0,1053.0
+38.0,79.93893,Yes,No,No,90.0,No,Yes,901.0,White,Male,Experienced,Yes,ZDV only,Yes,312.0,Yes,948.0,0.0,1178.0
+18.0,55.51007,No,No,No,100.0,No,No,50.0,White,Female,Naive,No,Others,No,464.0,Yes,246.0,0.0,1143.0
+51.0,83.37467,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,No,ZDV only,Yes,192.0,No,732.0,1.0,154.0
+47.0,73.79221,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,Yes,Others,Yes,189.0,Yes,1987.0,1.0,345.0
+38.0,87.83213,No,Yes,No,90.0,No,Yes,220.0,White,Male,Experienced,No,ZDV only,Yes,182.0,No,648.0,1.0,637.0
+30.0,82.79483,No,Yes,No,90.0,No,No,1585.0,White,Male,Experienced,No,ZDV only,No,467.0,Yes,994.0,0.0,1190.0
+36.0,90.37692,No,Yes,No,100.0,No,Yes,616.0,White,Male,Experienced,Yes,ZDV only,Yes,279.0,Yes,861.0,1.0,1191.0
+43.0,53.82497,No,No,Yes,100.0,Yes,No,0.0,Others,Female,Naive,No,ZDV only,Yes,622.0,No,574.0,1.0,250.0
+31.0,97.71427,No,No,Yes,100.0,No,Yes,424.0,White,Male,Experienced,No,ZDV only,Yes,499.0,No,1234.0,0.0,961.0
+37.0,84.93719,No,No,No,80.0,No,Yes,1167.0,White,Male,Experienced,No,Others,Yes,591.0,Yes,713.0,1.0,250.0
+56.0,83.72671,No,Yes,No,90.0,No,Yes,1008.0,White,Male,Experienced,No,ZDV only,No,204.0,Yes,2033.0,1.0,364.0
+47.0,76.64362,No,Yes,No,100.0,No,Yes,1058.0,Others,Male,Naive,No,Others,No,198.0,Yes,688.0,0.0,1173.0
+29.0,71.46401,No,No,Yes,100.0,No,Yes,1077.0,Others,Female,Experienced,No,Others,Yes,366.0,Yes,1106.0,0.0,486.0
+46.0,52.19788,No,Yes,No,100.0,No,No,18.0,White,Male,Naive,No,ZDV only,Yes,239.0,Yes,1078.0,0.0,1118.0
+35.0,78.93914,No,Yes,No,90.0,No,Yes,66.0,White,Male,Experienced,Yes,ZDV only,Yes,444.0,No,1006.0,1.0,560.0
+59.0,80.55759,No,No,No,100.0,No,No,0.0,Others,Female,Naive,No,Others,No,490.0,Yes,565.0,0.0,1056.0
+27.0,83.2083,No,No,No,100.0,No,No,31.0,White,Male,Naive,No,Others,No,514.0,Yes,720.0,0.0,1162.0
+18.0,66.78424,No,Yes,No,90.0,No,Yes,729.0,White,Male,Experienced,No,ZDV only,Yes,239.0,No,2000.0,1.0,707.0
+26.0,82.94553,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,No,Others,No,605.0,Yes,1390.0,0.0,1152.0
+23.0,78.80537,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,No,Others,Yes,255.0,Yes,933.0,0.0,721.0
+36.0,123.06998,No,No,Yes,100.0,No,Yes,204.0,Others,Female,Experienced,No,Others,No,428.0,Yes,265.0,0.0,1231.0
+48.0,67.25202,No,Yes,No,90.0,No,Yes,12.0,White,Male,Experienced,No,Others,No,559.0,Yes,122.0,0.0,1004.0
+33.0,96.03179,No,No,Yes,90.0,No,No,9.0,White,Male,Experienced,No,Others,Yes,248.0,No,131.0,0.0,1207.0
+52.0,106.90605,No,Yes,No,100.0,No,Yes,249.0,White,Male,Naive,No,Others,Yes,369.0,No,429.0,1.0,1195.0
+29.0,69.90902,No,Yes,Yes,90.0,No,No,0.0,Others,Female,Naive,No,Others,Yes,187.0,No,645.0,1.0,1227.0
+49.0,112.58127,No,No,No,100.0,No,No,0.0,White,Male,Experienced,Yes,Others,Yes,415.0,No,1829.0,1.0,1110.0
+31.0,88.20078,No,Yes,No,100.0,No,Yes,36.0,White,Male,Naive,No,Others,No,415.0,Yes,865.0,0.0,1024.0
+40.0,105.38156,No,Yes,No,90.0,No,Yes,612.0,White,Male,Experienced,Yes,Others,No,309.0,Yes,1455.0,0.0,1012.0
+43.0,74.66012,No,Yes,No,90.0,No,Yes,912.0,White,Male,Experienced,No,ZDV only,No,389.0,Yes,931.0,0.0,1038.0
+51.0,134.0342,No,Yes,No,90.0,No,Yes,463.0,White,Male,Experienced,Yes,ZDV only,Yes,448.0,No,784.0,1.0,527.0
+40.0,101.55555,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,No,ZDV only,No,243.0,Yes,948.0,0.0,1097.0
+43.0,66.53714,No,No,No,100.0,No,Yes,1543.0,Others,Male,Experienced,No,Others,No,445.0,Yes,410.0,0.0,1019.0
+25.0,82.11734,No,Yes,Yes,90.0,No,Yes,581.0,White,Male,Experienced,Yes,Others,Yes,420.0,Yes,380.0,1.0,588.0
+21.0,58.24379,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,Yes,ZDV only,Yes,370.0,No,1189.0,1.0,1047.0
+39.0,64.51698,No,No,No,100.0,No,Yes,755.0,Others,Male,Experienced,Yes,Others,Yes,558.0,No,645.0,0.0,627.0
+43.0,92.17997,No,Yes,No,90.0,No,Yes,1009.0,White,Male,Experienced,No,Others,Yes,233.0,No,614.0,1.0,1203.0
+20.0,64.98175,No,Yes,No,90.0,No,No,0.0,White,Female,Naive,No,Others,Yes,339.0,No,2243.0,1.0,1231.0
+39.0,62.04444,No,Yes,Yes,100.0,No,Yes,721.0,White,Male,Experienced,No,Others,Yes,229.0,No,1005.0,0.0,1153.0
+34.0,77.75651,No,Yes,No,100.0,No,No,42.0,White,Male,Naive,No,Others,No,436.0,Yes,255.0,0.0,964.0
+39.0,88.72328,Yes,Yes,No,100.0,No,Yes,785.0,White,Female,Experienced,No,Others,No,656.0,Yes,508.0,0.0,796.0
+36.0,96.32606,No,No,Yes,100.0,No,Yes,612.0,Others,Female,Experienced,No,Others,Yes,201.0,No,598.0,0.0,1219.0
+50.0,95.02518,No,Yes,No,100.0,No,No,36.0,White,Male,Naive,No,Others,No,141.0,Yes,485.0,0.0,1202.0
+39.0,84.69141,No,No,Yes,90.0,No,No,25.0,Others,Female,Naive,No,ZDV only,No,196.0,Yes,1013.0,0.0,1040.0
+31.0,68.30982,No,No,No,90.0,No,Yes,1146.0,White,Male,Experienced,No,Others,Yes,253.0,Yes,319.0,0.0,1167.0
+36.0,75.62593,Yes,No,Yes,90.0,No,Yes,1012.0,White,Male,Experienced,No,Others,Yes,332.0,No,373.0,0.0,228.0
+29.0,77.81396,No,Yes,No,80.0,No,Yes,1686.0,White,Male,Experienced,No,Others,No,287.0,Yes,602.0,0.0,1074.0
+65.0,78.98938,No,Yes,No,100.0,No,No,212.0,White,Male,Experienced,No,ZDV only,Yes,175.0,No,1647.0,0.0,1168.0
+41.0,79.21456,No,No,No,90.0,No,No,33.0,White,Male,Naive,Yes,ZDV only,Yes,213.0,No,145.0,0.0,971.0
+25.0,94.77529,Yes,No,No,90.0,No,Yes,714.0,Others,Female,Experienced,No,Others,No,485.0,Yes,600.0,0.0,781.0
+38.0,58.72492,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,No,Others,No,496.0,Yes,1272.0,0.0,1157.0
+24.0,64.5757,No,No,Yes,100.0,No,Yes,669.0,Others,Female,Experienced,No,Others,No,364.0,No,276.0,0.0,1009.0
+23.0,68.38743,No,No,Yes,90.0,No,Yes,148.0,Others,Female,Experienced,No,Others,No,376.0,Yes,869.0,0.0,1212.0
+33.0,135.96142,No,No,Yes,90.0,No,No,16.0,Others,Male,Naive,No,ZDV only,Yes,396.0,No,393.0,0.0,791.0
+59.0,73.1595,No,No,Yes,90.0,No,No,0.0,White,Male,Naive,No,ZDV only,Yes,305.0,No,622.0,1.0,595.0
+36.0,77.64983,No,No,Yes,90.0,No,Yes,716.0,Others,Male,Experienced,No,ZDV only,No,373.0,No,293.0,1.0,1215.0
+41.0,58.50569,Yes,No,Yes,100.0,No,Yes,212.0,White,Male,Experienced,No,Others,Yes,405.0,No,723.0,1.0,948.0
+38.0,91.66788,No,Yes,No,90.0,No,Yes,884.0,White,Male,Experienced,Yes,ZDV only,Yes,199.0,No,811.0,1.0,463.0
+16.0,72.30197,No,No,Yes,100.0,No,No,7.0,Others,Male,Naive,Yes,Others,Yes,300.0,No,833.0,0.0,332.0
+41.0,88.65567,Yes,Yes,Yes,100.0,No,Yes,713.0,White,Male,Experienced,No,Others,No,290.0,Yes,536.0,0.0,1156.0
+33.0,108.74194,No,Yes,No,90.0,No,No,176.0,White,Male,Experienced,No,ZDV only,Yes,415.0,Yes,1121.0,1.0,1046.0
+44.0,65.43819,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,No,Others,No,530.0,Yes,133.0,0.0,1123.0
+34.0,99.02347,No,No,No,100.0,No,Yes,1059.0,Others,Male,Experienced,No,ZDV only,No,441.0,Yes,610.0,0.0,1231.0
+48.0,122.44137,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,Yes,Others,No,438.0,Yes,481.0,0.0,1165.0
+26.0,71.86339,No,No,No,100.0,No,No,17.0,White,Male,Naive,Yes,Others,No,496.0,Yes,1343.0,0.0,649.0
+31.0,73.07009,No,Yes,Yes,90.0,No,Yes,328.0,White,Male,Experienced,No,Others,No,433.0,Yes,1425.0,1.0,986.0
+32.0,48.94033,No,No,No,90.0,No,Yes,1251.0,White,Male,Experienced,Yes,Others,Yes,217.0,No,1236.0,1.0,473.0
+70.0,72.0716,No,Yes,No,90.0,No,Yes,914.0,White,Male,Experienced,No,ZDV only,Yes,341.0,No,604.0,1.0,376.0
+49.0,119.23389,No,No,No,100.0,No,Yes,942.0,Others,Female,Experienced,No,Others,No,577.0,Yes,813.0,0.0,1114.0
+29.0,74.71622,No,Yes,No,90.0,No,Yes,799.0,White,Male,Experienced,No,Others,Yes,176.0,Yes,1319.0,0.0,1061.0
+33.0,86.57879,No,Yes,No,90.0,No,Yes,1490.0,White,Male,Experienced,No,ZDV only,Yes,118.0,No,466.0,1.0,595.0
+38.0,103.49892,No,Yes,No,90.0,No,Yes,1035.0,Others,Male,Experienced,No,ZDV only,Yes,318.0,Yes,1234.0,0.0,197.0
+20.0,71.20452,Yes,No,Yes,100.0,No,Yes,0.0,Others,Female,Experienced,No,Others,Yes,230.0,No,638.0,0.0,797.0
+31.0,74.20482,No,Yes,No,90.0,No,No,22.0,White,Male,Naive,Yes,Others,Yes,308.0,No,763.0,1.0,898.0
+38.0,57.52703,No,No,No,90.0,Yes,Yes,985.0,White,Male,Experienced,No,ZDV only,No,170.0,Yes,1202.0,0.0,1173.0
+41.0,100.51418,No,Yes,No,90.0,No,Yes,45.0,White,Male,Experienced,Yes,ZDV only,Yes,322.0,No,497.0,1.0,223.0
+35.0,79.03563,Yes,No,No,100.0,No,Yes,786.0,White,Male,Experienced,No,Others,No,363.0,Yes,708.0,0.0,1031.0
+33.0,71.68701,No,No,No,100.0,No,No,2.0,White,Male,Naive,No,Others,Yes,283.0,No,959.0,0.0,867.0
+51.0,91.62661,No,Yes,No,100.0,No,Yes,1894.0,White,Male,Experienced,No,ZDV only,No,269.0,Yes,273.0,0.0,520.0
+34.0,86.76699,No,No,Yes,80.0,No,Yes,836.0,White,Male,Experienced,No,Others,Yes,273.0,Yes,297.0,0.0,1123.0
+47.0,68.11559,No,No,No,90.0,No,No,0.0,White,Male,Naive,No,ZDV only,No,493.0,Yes,2413.0,0.0,1070.0
+34.0,66.90095,No,Yes,No,100.0,No,No,11.0,White,Male,Naive,No,ZDV only,No,302.0,Yes,929.0,0.0,1023.0
+29.0,53.0843,No,No,Yes,90.0,No,No,0.0,Others,Female,Naive,No,Others,Yes,566.0,Yes,856.0,0.0,1052.0
+29.0,78.27579,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,No,ZDV only,No,746.0,Yes,345.0,1.0,1107.0
+39.0,64.82924,No,Yes,No,80.0,No,Yes,1629.0,White,Male,Experienced,Yes,Others,Yes,353.0,No,635.0,0.0,947.0
+31.0,113.27385,Yes,No,No,100.0,No,No,2.0,White,Female,Naive,No,Others,Yes,330.0,Yes,302.0,0.0,551.0
+60.0,93.25761,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,No,Others,Yes,238.0,Yes,2103.0,0.0,978.0
+44.0,107.67573,No,Yes,No,90.0,No,No,16.0,White,Female,Experienced,No,ZDV only,No,226.0,Yes,654.0,1.0,1088.0
+46.0,93.02125,No,Yes,No,90.0,No,Yes,1045.0,White,Male,Experienced,No,ZDV only,Yes,335.0,Yes,269.0,1.0,199.0
+22.0,68.98969,No,Yes,No,100.0,No,No,1.0,White,Male,Naive,No,Others,No,549.0,Yes,1678.0,0.0,1083.0
+21.0,66.5421,No,No,No,90.0,No,Yes,1970.0,White,Male,Experienced,Yes,ZDV only,Yes,237.0,No,851.0,0.0,375.0
+34.0,68.37598,No,No,Yes,100.0,No,No,1.0,White,Male,Naive,No,Others,No,418.0,Yes,657.0,0.0,1110.0
+40.0,47.54708,No,Yes,No,100.0,No,Yes,1801.0,White,Male,Experienced,No,Others,No,270.0,Yes,479.0,0.0,1094.0
+40.0,88.60645,No,No,Yes,100.0,No,No,57.0,White,Female,Naive,No,ZDV only,Yes,208.0,No,542.0,1.0,860.0
+41.0,81.62824,No,Yes,No,80.0,No,Yes,712.0,White,Male,Experienced,No,Others,No,294.0,Yes,761.0,0.0,1231.0
+42.0,78.91512,No,Yes,No,100.0,No,Yes,1800.0,White,Female,Experienced,No,ZDV only,No,308.0,Yes,468.0,0.0,1231.0
+48.0,83.14597,No,Yes,Yes,80.0,Yes,Yes,512.0,White,Male,Experienced,No,ZDV only,Yes,225.0,No,1872.0,1.0,213.0
+46.0,86.51654,Yes,No,Yes,100.0,No,No,0.0,White,Male,Naive,No,Others,No,449.0,Yes,467.0,0.0,931.0
+39.0,72.3683,Yes,No,No,70.0,No,Yes,0.0,White,Female,Experienced,No,Others,No,351.0,No,240.0,0.0,1055.0
+65.0,82.45176,No,No,No,90.0,No,Yes,1731.0,White,Male,Experienced,No,Others,No,308.0,Yes,296.0,0.0,1061.0
+36.0,86.8038,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,No,Others,Yes,263.0,No,727.0,1.0,951.0
+31.0,46.39068,No,Yes,No,90.0,No,No,0.0,Others,Male,Naive,No,Others,No,452.0,No,1244.0,0.0,1151.0
+30.0,53.22571,Yes,Yes,No,100.0,No,Yes,19.0,White,Male,Experienced,No,Others,No,334.0,Yes,304.0,0.0,843.0
+20.0,64.82141,No,Yes,Yes,90.0,No,Yes,971.0,White,Male,Experienced,No,ZDV only,Yes,289.0,No,1234.0,1.0,1059.0
+44.0,87.05012,No,No,No,100.0,No,Yes,306.0,White,Male,Experienced,No,Others,No,309.0,No,348.0,1.0,918.0
+25.0,73.83641,Yes,No,Yes,100.0,No,Yes,626.0,Others,Female,Experienced,No,ZDV only,No,414.0,Yes,1963.0,0.0,1231.0
+41.0,85.41394,No,No,No,90.0,No,Yes,741.0,White,Male,Experienced,No,Others,Yes,260.0,Yes,756.0,0.0,196.0
+53.0,78.44828,No,Yes,No,80.0,No,Yes,1679.0,White,Male,Experienced,No,ZDV only,No,232.0,Yes,651.0,0.0,1005.0
+56.0,50.32657,No,No,Yes,90.0,No,No,9.0,Others,Male,Naive,No,Others,Yes,205.0,No,304.0,0.0,1052.0
+29.0,90.0017,No,Yes,No,90.0,No,Yes,576.0,White,Male,Experienced,No,ZDV only,Yes,359.0,No,1241.0,1.0,1227.0
+41.0,68.13539,No,No,No,100.0,No,No,27.0,Others,Male,Naive,No,ZDV only,No,512.0,Yes,273.0,0.0,1125.0
+33.0,71.58074,No,No,No,90.0,No,No,70.0,Others,Male,Naive,No,ZDV only,No,271.0,Yes,170.0,0.0,922.0
+20.0,74.40418,No,No,No,100.0,No,No,57.0,Others,Male,Naive,No,Others,Yes,391.0,Yes,1920.0,0.0,1132.0
+22.0,50.74716,No,No,No,100.0,No,No,1645.0,Others,Male,Experienced,Yes,Others,No,301.0,Yes,221.0,0.0,1063.0
+37.0,58.36684,No,Yes,No,100.0,No,Yes,970.0,White,Female,Experienced,Yes,ZDV only,No,270.0,No,1219.0,1.0,1024.0
+22.0,90.03917,No,No,Yes,100.0,No,Yes,154.0,Others,Female,Experienced,No,Others,No,404.0,Yes,448.0,0.0,1203.0
+19.0,61.88654,No,Yes,No,100.0,No,Yes,252.0,White,Female,Experienced,No,Others,No,603.0,Yes,818.0,0.0,1116.0
+26.0,60.76966,No,Yes,No,100.0,No,No,756.0,White,Male,Experienced,No,Others,No,295.0,Yes,411.0,0.0,1118.0
+23.0,91.83509,No,Yes,No,100.0,No,No,1327.0,White,Male,Experienced,No,Others,No,369.0,Yes,1342.0,0.0,1056.0
+32.0,85.75387,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,No,ZDV only,Yes,517.0,Yes,1238.0,0.0,886.0
+23.0,66.37248,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,No,Others,No,396.0,Yes,926.0,0.0,1009.0
+42.0,99.29407,No,Yes,No,90.0,No,No,46.0,White,Male,Naive,No,Others,Yes,394.0,Yes,667.0,0.0,1072.0
+28.0,102.15314,No,Yes,Yes,100.0,No,Yes,219.0,White,Male,Experienced,No,Others,No,307.0,No,648.0,0.0,1052.0
+41.0,72.28516,No,No,No,80.0,No,Yes,130.0,White,Male,Experienced,Yes,ZDV only,Yes,132.0,No,739.0,0.0,1173.0
+29.0,72.35884,No,Yes,No,90.0,No,No,17.0,White,Male,Naive,No,ZDV only,Yes,407.0,No,470.0,1.0,486.0
+29.0,71.70653,No,No,No,90.0,No,Yes,1787.0,Others,Male,Experienced,No,ZDV only,No,193.0,Yes,2671.0,0.0,1193.0
+56.0,71.32756,No,No,No,90.0,No,Yes,2.0,Others,Female,Naive,No,Others,No,448.0,Yes,225.0,1.0,66.0
+49.0,46.95412,No,No,Yes,100.0,No,Yes,222.0,Others,Female,Experienced,No,Others,Yes,264.0,No,558.0,0.0,1180.0
+37.0,75.60385,No,No,No,100.0,No,No,0.0,Others,Female,Naive,No,Others,Yes,480.0,Yes,1624.0,0.0,1184.0
+36.0,84.51152,No,Yes,No,90.0,Yes,Yes,993.0,White,Male,Experienced,No,ZDV only,Yes,252.0,No,665.0,1.0,704.0
+27.0,69.62142,No,No,No,100.0,No,No,27.0,Others,Male,Naive,No,Others,No,235.0,Yes,412.0,0.0,1135.0
+20.0,101.37258,No,No,Yes,100.0,No,No,19.0,Others,Male,Naive,No,ZDV only,Yes,543.0,Yes,479.0,0.0,1082.0
+24.0,66.83625,No,No,No,100.0,No,Yes,43.0,White,Male,Naive,Yes,ZDV only,No,607.0,Yes,243.0,0.0,1011.0
+35.0,58.57993,No,Yes,No,100.0,No,No,40.0,White,Male,Naive,Yes,Others,No,255.0,Yes,398.0,0.0,962.0
+26.0,112.94976,No,No,No,90.0,No,Yes,713.0,White,Male,Experienced,No,Others,No,418.0,Yes,297.0,0.0,1117.0
+41.0,83.83462,Yes,No,No,80.0,No,Yes,942.0,Others,Male,Experienced,No,Others,Yes,494.0,Yes,816.0,0.0,1141.0
+12.0,62.90358,No,No,No,100.0,No,No,17.0,Others,Male,Experienced,No,ZDV only,No,416.0,Yes,899.0,0.0,1222.0
+32.0,110.59007,No,No,Yes,100.0,No,Yes,760.0,White,Female,Experienced,Yes,Others,Yes,337.0,No,891.0,0.0,1041.0
+29.0,129.515,No,Yes,Yes,90.0,No,Yes,0.0,Others,Male,Naive,Yes,ZDV only,Yes,250.0,Yes,353.0,0.0,477.0
+41.0,62.3846,No,Yes,No,90.0,No,No,7.0,White,Male,Naive,No,ZDV only,Yes,233.0,No,606.0,1.0,684.0
+29.0,74.64649,No,Yes,No,100.0,Yes,Yes,11.0,White,Male,Experienced,No,ZDV only,No,263.0,Yes,782.0,0.0,1126.0
+25.0,45.31231,No,Yes,No,100.0,No,No,7.0,White,Male,Experienced,No,ZDV only,Yes,306.0,Yes,896.0,0.0,1136.0
+20.0,76.75293,No,Yes,No,100.0,No,Yes,825.0,White,Male,Experienced,No,Others,No,506.0,Yes,711.0,0.0,1130.0
+33.0,79.17335,No,No,No,70.0,No,Yes,172.0,White,Male,Naive,No,ZDV only,Yes,383.0,No,1260.0,0.0,664.0
+43.0,58.25695,No,No,No,100.0,No,Yes,848.0,White,Male,Experienced,No,Others,No,108.0,Yes,1451.0,0.0,1035.0
+17.0,80.75615,No,No,No,100.0,No,Yes,646.0,White,Male,Experienced,No,Others,Yes,406.0,Yes,1190.0,0.0,1160.0
+39.0,87.96026,No,Yes,No,90.0,No,Yes,1.0,White,Male,Experienced,No,Others,No,301.0,Yes,2293.0,1.0,990.0
+38.0,96.85378,No,Yes,No,90.0,No,Yes,245.0,White,Male,Experienced,Yes,ZDV only,Yes,314.0,Yes,1132.0,1.0,1152.0
+26.0,76.3391,No,No,No,100.0,No,No,128.0,White,Female,Experienced,No,Others,No,299.0,Yes,1858.0,0.0,932.0
+27.0,73.02026,No,No,No,100.0,No,Yes,417.0,White,Male,Experienced,Yes,Others,Yes,248.0,No,702.0,0.0,328.0
+41.0,84.9226,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,Yes,Others,Yes,355.0,Yes,249.0,0.0,721.0
+40.0,77.06292,No,Yes,No,90.0,No,No,10.0,White,Male,Naive,No,ZDV only,Yes,349.0,No,452.0,1.0,932.0
+41.0,91.4318,Yes,No,No,80.0,No,Yes,278.0,White,Male,Experienced,No,ZDV only,Yes,241.0,No,1192.0,0.0,1231.0
+17.0,70.288,No,No,No,90.0,No,No,0.0,Others,Female,Naive,No,Others,No,403.0,Yes,267.0,0.0,1003.0
+36.0,93.19607,No,Yes,No,90.0,No,No,7.0,White,Male,Naive,No,ZDV only,No,370.0,Yes,519.0,0.0,665.0
+50.0,64.71253,No,Yes,No,90.0,No,No,19.0,Others,Male,Naive,No,ZDV only,Yes,209.0,No,953.0,1.0,260.0
+26.0,73.50096,No,Yes,No,100.0,No,No,132.0,Others,Male,Experienced,No,Others,No,316.0,Yes,1225.0,0.0,891.0
+33.0,66.8389,No,Yes,No,90.0,Yes,Yes,875.0,White,Male,Experienced,No,ZDV only,Yes,347.0,Yes,1696.0,1.0,1130.0
+23.0,65.36371,No,No,Yes,90.0,No,Yes,685.0,White,Female,Experienced,No,Others,Yes,241.0,No,255.0,0.0,1153.0
+41.0,130.73125,No,Yes,No,100.0,No,Yes,465.0,White,Male,Experienced,Yes,Others,No,333.0,Yes,882.0,0.0,1133.0
+34.0,53.27606,No,No,Yes,100.0,No,No,2.0,White,Male,Naive,Yes,Others,Yes,415.0,No,543.0,1.0,641.0
+21.0,71.64933,No,No,No,100.0,No,No,0.0,Others,Male,Naive,No,ZDV only,No,472.0,Yes,1020.0,0.0,1101.0
+40.0,88.91472,No,No,Yes,100.0,No,Yes,43.0,White,Male,Experienced,No,ZDV only,Yes,207.0,No,598.0,0.0,1217.0
+36.0,79.29144,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,No,Others,No,369.0,Yes,1282.0,1.0,1183.0
+26.0,48.69463,No,Yes,No,80.0,No,No,1143.0,White,Male,Naive,No,ZDV only,No,227.0,Yes,1670.0,1.0,1136.0
+28.0,69.54146,No,Yes,No,90.0,No,No,1065.0,Others,Male,Experienced,Yes,ZDV only,Yes,275.0,No,1213.0,1.0,482.0
+35.0,81.80791,No,No,No,100.0,No,No,0.0,White,Male,Naive,No,ZDV only,Yes,853.0,Yes,774.0,1.0,1024.0
+12.0,37.76419,No,No,No,100.0,No,Yes,713.0,White,Male,Experienced,No,ZDV only,No,389.0,Yes,275.0,1.0,910.0
+20.0,76.15829,No,Yes,No,100.0,No,Yes,1241.0,White,Male,Experienced,No,Others,No,372.0,Yes,1378.0,0.0,695.0
+42.0,62.0779,No,No,No,80.0,No,Yes,298.0,White,Male,Experienced,Yes,ZDV only,No,448.0,Yes,1213.0,1.0,922.0
+30.0,64.47579,No,No,Yes,100.0,No,Yes,1832.0,Others,Female,Experienced,No,Others,No,454.0,Yes,863.0,0.0,1212.0
+31.0,55.60192,No,Yes,No,100.0,No,Yes,532.0,White,Male,Experienced,Yes,ZDV only,No,276.0,Yes,980.0,1.0,1194.0
+39.0,67.02974,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,No,ZDV only,Yes,232.0,Yes,2079.0,0.0,67.0
+38.0,84.83866,No,No,Yes,100.0,No,Yes,172.0,Others,Female,Experienced,No,Others,Yes,383.0,No,505.0,0.0,1196.0
+33.0,54.21762,Yes,Yes,Yes,90.0,Yes,Yes,892.0,Others,Male,Experienced,No,ZDV only,Yes,216.0,No,1262.0,0.0,1105.0
+46.0,93.60985,No,Yes,No,100.0,No,Yes,1034.0,White,Male,Experienced,No,ZDV only,No,217.0,Yes,1008.0,1.0,1159.0
+24.0,47.28939,No,Yes,Yes,90.0,No,No,0.0,Others,Female,Naive,No,ZDV only,Yes,261.0,No,314.0,0.0,853.0
+24.0,71.53052,Yes,No,No,100.0,No,Yes,1387.0,White,Male,Experienced,No,Others,No,147.0,Yes,425.0,0.0,1174.0
+27.0,68.96724,No,No,Yes,100.0,No,No,0.0,White,Male,Naive,No,Others,No,520.0,Yes,531.0,0.0,1089.0
+36.0,97.6599,No,Yes,No,90.0,No,No,7.0,White,Male,Naive,No,ZDV only,No,376.0,Yes,1150.0,1.0,497.0
+35.0,66.98693,No,Yes,No,90.0,No,No,35.0,White,Male,Naive,No,ZDV only,No,197.0,Yes,899.0,0.0,1161.0
+45.0,67.59375,Yes,Yes,No,100.0,No,Yes,226.0,Others,Male,Experienced,No,Others,Yes,310.0,Yes,976.0,0.0,1117.0
+46.0,81.40461,No,Yes,No,100.0,No,Yes,1255.0,White,Male,Experienced,No,Others,No,144.0,Yes,492.0,0.0,1133.0
+35.0,59.22648,No,Yes,Yes,90.0,No,Yes,755.0,White,Male,Experienced,No,ZDV only,Yes,250.0,No,1736.0,1.0,384.0
+37.0,95.46555,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,No,Others,No,206.0,Yes,508.0,0.0,1020.0
+31.0,58.59253,Yes,Yes,Yes,100.0,No,Yes,1999.0,White,Male,Experienced,No,Others,No,229.0,Yes,1168.0,0.0,1167.0
+31.0,79.96039,Yes,No,No,100.0,No,Yes,782.0,White,Male,Experienced,No,Others,No,209.0,Yes,1596.0,0.0,1231.0
+48.0,67.69047,No,Yes,No,100.0,No,Yes,1116.0,White,Male,Experienced,No,Others,No,243.0,Yes,684.0,0.0,956.0
+39.0,85.36221,No,No,No,100.0,No,Yes,1005.0,White,Male,Experienced,No,Others,No,254.0,Yes,561.0,0.0,974.0
+32.0,83.21198,No,Yes,Yes,80.0,No,Yes,436.0,White,Male,Experienced,No,Others,No,275.0,Yes,318.0,1.0,988.0
+38.0,80.73899,No,Yes,No,100.0,No,No,13.0,White,Male,Naive,Yes,Others,Yes,128.0,Yes,770.0,0.0,1051.0
+35.0,98.09374,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,No,Others,No,375.0,Yes,910.0,0.0,1119.0
+33.0,69.99936,No,Yes,Yes,90.0,No,No,0.0,White,Male,Naive,No,Others,Yes,446.0,Yes,827.0,0.0,1165.0
+55.0,95.85894,No,Yes,No,90.0,No,No,276.0,White,Male,Naive,Yes,Others,Yes,287.0,Yes,716.0,0.0,1224.0
+27.0,77.57768,No,No,No,90.0,No,Yes,941.0,White,Female,Experienced,Yes,Others,Yes,563.0,No,288.0,0.0,1226.0
+35.0,92.44663,No,Yes,No,90.0,No,No,29.0,White,Male,Naive,Yes,Others,Yes,214.0,No,877.0,0.0,829.0
+44.0,88.31645,No,Yes,No,90.0,No,No,439.0,White,Male,Experienced,No,ZDV only,Yes,227.0,No,280.0,0.0,221.0
+52.0,69.30748,No,Yes,No,90.0,No,Yes,1666.0,White,Male,Experienced,Yes,ZDV only,Yes,210.0,No,1107.0,1.0,719.0
+17.0,58.20712,No,Yes,No,100.0,No,No,967.0,Others,Male,Experienced,No,ZDV only,Yes,527.0,Yes,2917.0,0.0,253.0
+27.0,58.19867,No,No,No,100.0,No,No,3.0,Others,Female,Naive,No,ZDV only,No,464.0,Yes,164.0,0.0,1148.0
+47.0,73.23688,No,No,No,90.0,No,Yes,1006.0,White,Male,Experienced,No,Others,No,199.0,Yes,1380.0,0.0,1083.0
+38.0,78.01584,No,No,Yes,90.0,No,No,482.0,White,Female,Experienced,No,ZDV only,Yes,235.0,Yes,1031.0,0.0,1164.0
+34.0,74.47825,Yes,Yes,No,100.0,No,Yes,840.0,White,Male,Experienced,No,Others,No,465.0,Yes,1406.0,0.0,1231.0
+28.0,53.34658,Yes,No,No,100.0,No,Yes,1586.0,Others,Female,Experienced,No,Others,Yes,261.0,No,1308.0,0.0,572.0
+26.0,82.95096,No,No,Yes,100.0,No,No,85.0,Others,Female,Naive,No,ZDV only,Yes,550.0,No,909.0,1.0,34.0
+50.0,59.67198,No,No,No,100.0,No,Yes,305.0,White,Female,Experienced,No,Others,No,475.0,Yes,522.0,0.0,1030.0
+37.0,106.50052,No,Yes,No,90.0,No,Yes,1153.0,White,Male,Experienced,Yes,ZDV only,Yes,278.0,No,475.0,1.0,793.0
+17.0,70.49739,No,No,No,90.0,No,No,313.0,Others,Female,Experienced,No,ZDV only,Yes,389.0,No,1192.0,0.0,1158.0
+37.0,94.02711,No,No,Yes,100.0,No,No,289.0,White,Male,Experienced,No,Others,Yes,621.0,No,999.0,0.0,133.0
+34.0,77.54254,No,No,Yes,90.0,No,Yes,950.0,Others,Male,Experienced,No,Others,No,376.0,No,350.0,1.0,682.0
+48.0,96.66519,No,Yes,No,100.0,No,No,843.0,White,Male,Naive,No,ZDV only,No,436.0,Yes,929.0,0.0,914.0
+48.0,73.68516,No,No,Yes,100.0,No,Yes,558.0,Others,Male,Experienced,No,ZDV only,Yes,591.0,No,1340.0,1.0,436.0
+52.0,82.10824,No,Yes,No,90.0,No,Yes,1446.0,White,Male,Experienced,No,ZDV only,No,179.0,Yes,628.0,0.0,1231.0
+38.0,80.95035,No,Yes,No,90.0,No,No,0.0,White,Male,Experienced,No,Others,Yes,405.0,Yes,484.0,0.0,1072.0
+30.0,58.90434,No,No,No,90.0,No,Yes,38.0,Others,Male,Naive,Yes,ZDV only,Yes,323.0,No,1475.0,1.0,423.0
+38.0,88.18476,Yes,No,Yes,100.0,No,Yes,392.0,White,Male,Experienced,No,Others,Yes,406.0,Yes,270.0,0.0,981.0
+47.0,86.0164,No,No,Yes,100.0,No,No,0.0,Others,Female,Naive,No,Others,No,195.0,Yes,687.0,0.0,1045.0
+63.0,121.54171,No,Yes,No,100.0,No,Yes,604.0,White,Male,Naive,No,ZDV only,No,727.0,Yes,863.0,0.0,1108.0
+34.0,56.97452,No,No,No,90.0,No,No,5.0,Others,Female,Naive,No,ZDV only,No,228.0,Yes,994.0,1.0,805.0
+37.0,61.03061,No,Yes,Yes,90.0,No,Yes,0.0,White,Male,Naive,No,ZDV only,Yes,243.0,Yes,1178.0,0.0,1023.0
+36.0,70.94153,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,No,ZDV only,No,434.0,Yes,1770.0,1.0,1172.0
+48.0,77.23402,No,No,No,100.0,No,Yes,167.0,White,Female,Experienced,No,Others,No,239.0,Yes,723.0,0.0,1193.0
+36.0,85.56868,No,Yes,No,90.0,No,No,96.0,White,Male,Naive,No,Others,No,296.0,Yes,1261.0,0.0,1122.0
+25.0,79.90963,No,No,No,100.0,No,No,13.0,Others,Male,Naive,No,Others,No,443.0,Yes,395.0,0.0,881.0
+44.0,77.59591,No,Yes,No,90.0,No,No,36.0,White,Male,Naive,Yes,ZDV only,Yes,146.0,No,810.0,1.0,324.0
+49.0,97.83554,No,Yes,No,90.0,No,No,22.0,White,Male,Naive,No,ZDV only,Yes,310.0,Yes,1338.0,0.0,1231.0
+27.0,47.24787,Yes,No,No,100.0,No,No,16.0,Others,Male,Naive,No,ZDV only,No,519.0,No,674.0,0.0,953.0
+50.0,58.74263,No,Yes,No,100.0,No,Yes,444.0,White,Male,Experienced,No,Others,No,483.0,Yes,904.0,0.0,1062.0
+29.0,98.16652,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,No,ZDV only,No,599.0,Yes,763.0,0.0,1164.0
+37.0,106.30544,No,Yes,No,100.0,Yes,No,0.0,White,Male,Naive,No,ZDV only,Yes,304.0,No,1401.0,1.0,1118.0
+36.0,54.80794,No,No,Yes,100.0,No,Yes,815.0,Others,Female,Experienced,Yes,ZDV only,Yes,356.0,No,754.0,0.0,1125.0
+42.0,111.16846,No,No,Yes,100.0,No,Yes,257.0,Others,Female,Experienced,No,ZDV only,No,370.0,No,848.0,0.0,885.0
+48.0,59.5777,No,Yes,No,100.0,No,Yes,191.0,White,Male,Experienced,No,ZDV only,No,490.0,Yes,1266.0,0.0,1063.0
+41.0,121.78996,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,No,Others,No,621.0,Yes,556.0,0.0,1190.0
+34.0,90.78137,No,No,No,90.0,No,No,0.0,White,Male,Naive,Yes,ZDV only,Yes,190.0,No,2900.0,1.0,577.0
+31.0,108.14888,No,No,No,90.0,No,Yes,1157.0,White,Male,Experienced,No,Others,No,217.0,No,477.0,1.0,1149.0
+38.0,91.91456,No,Yes,No,100.0,No,Yes,447.0,White,Male,Experienced,Yes,Others,Yes,293.0,Yes,259.0,0.0,935.0
+39.0,47.26908,No,Yes,No,90.0,Yes,Yes,461.0,White,Male,Experienced,Yes,ZDV only,No,152.0,No,906.0,1.0,1151.0
+34.0,74.3603,No,No,No,90.0,No,No,0.0,White,Male,Naive,No,Others,Yes,280.0,Yes,521.0,0.0,439.0
+23.0,62.15731,No,No,No,100.0,No,Yes,382.0,White,Male,Experienced,No,Others,No,339.0,Yes,784.0,1.0,338.0
+43.0,97.34151,No,Yes,No,80.0,No,Yes,1615.0,White,Male,Experienced,Yes,Others,Yes,314.0,Yes,932.0,0.0,1078.0
+31.0,80.65064,No,No,Yes,100.0,No,Yes,584.0,Others,Female,Experienced,No,Others,Yes,168.0,No,1921.0,1.0,1090.0
+49.0,73.71277,No,Yes,No,90.0,No,No,53.0,White,Male,Naive,No,Others,No,424.0,Yes,370.0,0.0,1165.0
+45.0,72.4209,No,Yes,No,90.0,No,Yes,896.0,White,Female,Experienced,Yes,Others,Yes,267.0,No,1729.0,1.0,1090.0
+29.0,89.56508,No,Yes,No,90.0,No,No,355.0,White,Male,Experienced,No,ZDV only,Yes,429.0,No,219.0,1.0,33.0
+28.0,67.39575,No,No,No,90.0,No,Yes,21.0,White,Male,Naive,No,Others,Yes,223.0,No,476.0,1.0,1005.0
+29.0,59.28827,No,No,No,80.0,No,Yes,782.0,Others,Female,Experienced,No,ZDV only,Yes,143.0,No,347.0,0.0,1201.0
+46.0,92.53113,No,Yes,No,80.0,No,Yes,256.0,White,Male,Experienced,No,Others,Yes,161.0,No,732.0,1.0,171.0
+45.0,75.32018,No,Yes,No,100.0,No,Yes,1780.0,White,Male,Experienced,Yes,ZDV only,No,381.0,Yes,485.0,0.0,1074.0
+29.0,75.59531,No,No,No,90.0,No,Yes,1108.0,Others,Male,Experienced,No,ZDV only,Yes,450.0,Yes,290.0,0.0,1047.0
+42.0,79.13065,No,Yes,Yes,90.0,No,No,8.0,Others,Male,Naive,Yes,ZDV only,Yes,61.0,No,706.0,0.0,313.0
+39.0,62.59161,No,No,Yes,100.0,No,No,0.0,Others,Male,Naive,Yes,ZDV only,Yes,339.0,No,2050.0,0.0,825.0
+33.0,65.5218,No,Yes,No,100.0,No,No,972.0,Others,Male,Naive,No,Others,No,243.0,Yes,916.0,0.0,988.0
+43.0,98.62204,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,No,ZDV only,Yes,418.0,Yes,898.0,0.0,825.0
+47.0,71.59587,No,No,No,90.0,No,Yes,1632.0,White,Male,Experienced,No,Others,No,224.0,Yes,436.0,0.0,869.0
+19.0,109.8893,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,Yes,ZDV only,Yes,165.0,No,1063.0,0.0,262.0
+33.0,89.11514,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,No,Others,Yes,463.0,Yes,2207.0,0.0,458.0
+68.0,95.35596,No,Yes,No,90.0,Yes,No,0.0,White,Male,Naive,Yes,ZDV only,No,560.0,Yes,756.0,0.0,1025.0
+44.0,71.61172,No,No,No,90.0,No,No,1002.0,White,Male,Naive,No,Others,Yes,371.0,Yes,2876.0,0.0,284.0
+36.0,76.35297,No,No,Yes,90.0,No,No,8.0,White,Male,Naive,No,ZDV only,Yes,239.0,No,691.0,1.0,207.0
+46.0,36.81473,No,Yes,No,100.0,No,No,13.0,Others,Male,Naive,No,Others,No,114.0,Yes,1468.0,0.0,1122.0
+26.0,67.44074,No,Yes,No,100.0,No,No,29.0,White,Male,Naive,No,Others,No,491.0,Yes,112.0,0.0,836.0
+43.0,93.84412,No,Yes,No,90.0,No,Yes,1044.0,White,Male,Experienced,No,ZDV only,Yes,398.0,No,1728.0,1.0,1037.0
+32.0,86.75773,No,Yes,No,90.0,No,No,9.0,White,Male,Naive,No,Others,No,418.0,Yes,514.0,0.0,1231.0
+15.0,54.52917,No,No,No,90.0,No,No,15.0,White,Female,Naive,No,Others,No,319.0,No,105.0,0.0,1110.0
+49.0,89.28559,Yes,No,Yes,90.0,No,Yes,237.0,Others,Male,Experienced,Yes,ZDV only,No,182.0,Yes,403.0,0.0,283.0
+36.0,86.38545,No,No,No,100.0,No,No,0.0,White,Male,Naive,No,Others,No,202.0,Yes,105.0,0.0,925.0
+23.0,69.50131,No,Yes,No,100.0,No,Yes,699.0,White,Male,Experienced,No,Others,No,603.0,Yes,699.0,0.0,1064.0
+46.0,84.2141,No,Yes,No,100.0,No,No,25.0,White,Male,Naive,No,Others,No,395.0,Yes,105.0,0.0,1039.0
+35.0,73.23855,No,No,No,100.0,No,Yes,474.0,White,Male,Experienced,No,Others,No,499.0,Yes,1623.0,0.0,1105.0
+42.0,87.85618,No,Yes,No,90.0,No,No,1955.0,White,Male,Experienced,Yes,Others,No,372.0,No,1376.0,0.0,1231.0
+46.0,83.45844,No,Yes,No,90.0,No,No,2042.0,White,Male,Experienced,No,ZDV only,Yes,344.0,Yes,3144.0,1.0,1120.0
+23.0,64.9482,No,No,Yes,100.0,No,Yes,350.0,Others,Female,Experienced,No,Others,No,320.0,Yes,110.0,0.0,1109.0
+24.0,50.83068,No,Yes,No,90.0,No,No,13.0,White,Male,Naive,No,ZDV only,Yes,519.0,Yes,1324.0,0.0,738.0
+18.0,61.47984,No,No,No,100.0,No,No,0.0,Others,Male,Naive,No,Others,No,197.0,Yes,644.0,0.0,1231.0
+41.0,81.3293,No,No,Yes,100.0,No,Yes,739.0,White,Male,Experienced,No,Others,Yes,242.0,Yes,1078.0,0.0,1139.0
+24.0,77.96568,No,Yes,Yes,100.0,No,No,19.0,White,Male,Naive,No,ZDV only,Yes,448.0,No,1350.0,0.0,1037.0
+40.0,72.64074,No,Yes,No,90.0,No,Yes,357.0,White,Male,Experienced,No,Others,Yes,462.0,Yes,414.0,0.0,1155.0
+37.0,68.60807,No,No,Yes,90.0,No,No,0.0,White,Male,Naive,No,Others,No,370.0,Yes,4853.0,0.0,1172.0
+50.0,67.95914,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,No,Others,No,403.0,Yes,622.0,0.0,1055.0
+22.0,88.87987,Yes,No,Yes,100.0,No,Yes,922.0,Others,Female,Experienced,No,Others,No,489.0,Yes,1799.0,0.0,1150.0
+33.0,68.88978,No,Yes,No,90.0,No,Yes,1154.0,White,Female,Experienced,No,ZDV only,No,72.0,Yes,290.0,0.0,1213.0
+29.0,47.43532,Yes,No,Yes,100.0,No,Yes,846.0,Others,Female,Experienced,No,Others,No,441.0,Yes,620.0,0.0,1047.0
+26.0,66.2201,No,Yes,No,100.0,No,No,5.0,White,Male,Naive,Yes,ZDV only,Yes,594.0,Yes,797.0,0.0,1022.0
+24.0,88.32808,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,Yes,Others,No,580.0,Yes,534.0,0.0,1096.0
+32.0,85.90466,No,Yes,No,90.0,No,No,20.0,White,Male,Naive,No,Others,Yes,165.0,No,599.0,0.0,1178.0
+33.0,65.38779,No,No,No,100.0,No,Yes,116.0,Others,Male,Experienced,No,Others,No,217.0,Yes,813.0,0.0,1113.0
+35.0,72.3451,No,Yes,No,100.0,No,Yes,10.0,White,Male,Experienced,No,Others,No,301.0,Yes,2422.0,1.0,1102.0
+39.0,72.85974,No,No,No,100.0,No,Yes,465.0,White,Male,Experienced,No,Others,No,356.0,Yes,498.0,0.0,1071.0
+37.0,155.61663,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,No,ZDV only,Yes,621.0,No,1807.0,1.0,69.0
+44.0,64.92319,No,Yes,No,80.0,No,Yes,1142.0,White,Male,Naive,No,ZDV only,Yes,210.0,No,1207.0,1.0,455.0
+38.0,83.32612,No,No,No,100.0,No,Yes,1871.0,White,Female,Experienced,No,Others,No,431.0,Yes,105.0,0.0,1099.0
+32.0,94.18142,No,Yes,No,90.0,No,Yes,1029.0,White,Male,Experienced,No,Others,No,231.0,Yes,369.0,0.0,1205.0
+48.0,103.28144,No,Yes,No,90.0,No,No,32.0,White,Male,Naive,No,ZDV only,Yes,420.0,Yes,606.0,1.0,1103.0
+24.0,52.22059,No,Yes,No,90.0,No,No,35.0,White,Male,Naive,No,Others,Yes,591.0,No,1253.0,0.0,1224.0
+20.0,78.33403,Yes,No,Yes,90.0,No,No,7.0,Others,Female,Naive,No,Others,Yes,279.0,No,363.0,0.0,1075.0
+32.0,62.0562,No,Yes,No,100.0,No,No,7.0,White,Male,Naive,No,ZDV only,No,395.0,No,775.0,0.0,1056.0
+25.0,56.16898,No,Yes,No,100.0,No,Yes,992.0,White,Male,Experienced,Yes,Others,Yes,523.0,No,621.0,1.0,333.0
+20.0,61.66099,No,Yes,Yes,90.0,Yes,No,0.0,Others,Male,Naive,No,ZDV only,Yes,333.0,No,712.0,0.0,402.0
+33.0,50.98304,Yes,No,Yes,100.0,No,Yes,1875.0,Others,Female,Experienced,No,Others,No,324.0,Yes,530.0,0.0,1001.0
+26.0,61.12552,No,Yes,Yes,90.0,No,No,24.0,White,Male,Naive,Yes,ZDV only,Yes,122.0,No,594.0,1.0,998.0
+37.0,93.29208,No,Yes,No,90.0,No,Yes,180.0,White,Male,Experienced,No,Others,Yes,131.0,Yes,690.0,0.0,1037.0
+47.0,102.43196,No,Yes,Yes,90.0,No,Yes,1126.0,White,Male,Experienced,No,Others,No,236.0,Yes,322.0,0.0,1231.0
+51.0,81.85791,No,Yes,No,100.0,No,Yes,846.0,White,Male,Experienced,Yes,ZDV only,No,401.0,Yes,1347.0,1.0,33.0
+21.0,81.20613,No,No,No,100.0,No,No,45.0,Others,Female,Naive,No,ZDV only,Yes,458.0,No,960.0,1.0,321.0
+29.0,90.57253,No,No,Yes,100.0,No,Yes,674.0,White,Male,Experienced,No,ZDV only,Yes,372.0,No,416.0,1.0,249.0
+34.0,90.40569,No,No,No,90.0,No,Yes,418.0,Others,Male,Experienced,No,ZDV only,Yes,342.0,No,632.0,0.0,757.0
+27.0,63.66553,No,No,Yes,100.0,No,Yes,1133.0,White,Female,Experienced,No,Others,No,434.0,Yes,543.0,0.0,1214.0
+21.0,90.61238,No,Yes,No,90.0,No,No,7.0,White,Male,Naive,No,ZDV only,No,816.0,Yes,306.0,0.0,1126.0
+19.0,72.57644,No,Yes,No,100.0,No,Yes,51.0,White,Male,Experienced,No,ZDV only,Yes,440.0,Yes,891.0,0.0,502.0
+42.0,91.05958,Yes,No,No,100.0,No,No,0.0,Others,Female,Naive,No,ZDV only,No,706.0,No,836.0,0.0,415.0
+35.0,71.37078,No,Yes,No,80.0,No,Yes,23.0,White,Male,Experienced,No,Others,No,433.0,Yes,348.0,0.0,907.0
+45.0,77.24566,No,Yes,Yes,100.0,No,No,0.0,White,Male,Naive,Yes,ZDV only,Yes,487.0,Yes,522.0,1.0,672.0
+48.0,106.66976,No,Yes,No,100.0,No,Yes,0.0,White,Male,Naive,No,Others,No,383.0,Yes,730.0,0.0,1021.0
+39.0,77.31033,No,No,No,90.0,No,Yes,1038.0,White,Male,Experienced,No,ZDV only,No,655.0,No,457.0,0.0,997.0
+33.0,69.25975,No,No,No,100.0,No,Yes,771.0,Others,Male,Experienced,No,ZDV only,Yes,350.0,No,559.0,1.0,479.0
+37.0,82.21548,No,No,No,80.0,No,No,0.0,White,Male,Naive,No,Others,No,427.0,Yes,1408.0,0.0,628.0
+30.0,78.75816,No,No,Yes,100.0,No,No,25.0,Others,Female,Naive,No,Others,Yes,150.0,No,297.0,0.0,883.0
+20.0,58.15761,No,No,No,100.0,No,Yes,325.0,Others,Male,Experienced,No,Others,No,668.0,Yes,1060.0,0.0,1094.0
+57.0,74.34244,No,No,Yes,100.0,No,No,577.0,White,Male,Experienced,No,ZDV only,No,235.0,Yes,357.0,0.0,1203.0
+50.0,86.30535,Yes,No,No,90.0,No,Yes,800.0,White,Female,Experienced,Yes,Others,No,343.0,No,865.0,1.0,1139.0
+35.0,89.07539,No,No,No,100.0,No,No,2.0,White,Male,Naive,No,ZDV only,No,405.0,Yes,824.0,0.0,1124.0
+29.0,63.05537,No,Yes,No,90.0,No,Yes,489.0,White,Male,Naive,Yes,Others,No,398.0,Yes,926.0,0.0,1083.0
+32.0,71.68136,No,Yes,Yes,100.0,No,Yes,1062.0,White,Female,Experienced,No,Others,No,432.0,Yes,421.0,1.0,1091.0
+36.0,86.24757,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,No,Others,No,425.0,Yes,720.0,0.0,1221.0
+36.0,102.69087,No,No,No,100.0,No,No,36.0,Others,Female,Naive,No,ZDV only,Yes,408.0,No,206.0,0.0,1135.0
+55.0,94.63609,No,Yes,No,100.0,No,Yes,1759.0,White,Male,Experienced,Yes,Others,No,565.0,Yes,105.0,0.0,1068.0
+39.0,90.74925,No,No,No,100.0,No,Yes,568.0,White,Male,Experienced,Yes,ZDV only,No,437.0,Yes,1218.0,0.0,1108.0
+44.0,78.28007,No,Yes,No,90.0,No,Yes,1249.0,White,Male,Experienced,No,Others,No,319.0,Yes,1169.0,0.0,1018.0
+37.0,75.18429,No,Yes,No,100.0,No,Yes,1043.0,White,Male,Experienced,No,ZDV only,Yes,215.0,No,348.0,1.0,93.0
+36.0,79.84478,No,No,No,100.0,No,Yes,548.0,White,Male,Experienced,No,ZDV only,No,404.0,Yes,1372.0,1.0,1057.0
+70.0,78.92695,Yes,No,No,100.0,No,Yes,63.0,White,Male,Experienced,No,ZDV only,Yes,220.0,No,381.0,1.0,486.0
+55.0,72.71134,No,Yes,No,100.0,No,Yes,294.0,Others,Male,Experienced,No,Others,No,320.0,Yes,1006.0,0.0,1167.0
+31.0,53.0621,Yes,Yes,No,100.0,No,Yes,719.0,White,Male,Naive,No,Others,Yes,378.0,Yes,670.0,0.0,1022.0
+26.0,67.99141,No,Yes,No,90.0,No,Yes,1082.0,White,Male,Experienced,No,ZDV only,Yes,439.0,No,545.0,1.0,50.0
+35.0,83.06514,Yes,No,Yes,100.0,No,Yes,954.0,Others,Male,Experienced,No,Others,No,299.0,No,409.0,0.0,1219.0
+24.0,51.62397,No,Yes,Yes,70.0,No,No,0.0,White,Male,Experienced,No,ZDV only,No,296.0,No,835.0,1.0,1160.0
+19.0,68.96824,No,Yes,No,100.0,No,No,806.0,White,Male,Experienced,No,Others,No,285.0,Yes,1015.0,0.0,1087.0
+40.0,106.92619,No,Yes,Yes,90.0,No,No,0.0,Others,Male,Naive,No,ZDV only,No,278.0,Yes,980.0,0.0,1107.0
+47.0,79.00183,No,No,No,90.0,No,Yes,196.0,White,Male,Naive,No,Others,Yes,346.0,No,533.0,1.0,243.0
+27.0,71.99483,No,No,Yes,90.0,No,No,0.0,White,Female,Experienced,No,ZDV only,No,470.0,Yes,1022.0,0.0,1068.0
+34.0,71.59721,No,Yes,No,80.0,No,Yes,14.0,White,Female,Experienced,No,ZDV only,No,242.0,Yes,1571.0,0.0,1231.0
+27.0,66.82534,No,No,No,100.0,No,Yes,1926.0,White,Male,Experienced,No,ZDV only,Yes,421.0,No,1623.0,1.0,404.0
+20.0,103.90499,No,Yes,No,90.0,No,No,49.0,Others,Male,Naive,No,ZDV only,Yes,470.0,Yes,1112.0,0.0,835.0
+62.0,67.02569,No,No,Yes,100.0,No,No,0.0,Others,Male,Naive,No,Others,No,350.0,Yes,1006.0,0.0,1150.0
+23.0,72.4349,No,No,Yes,80.0,No,Yes,260.0,Others,Female,Experienced,No,ZDV only,Yes,612.0,No,501.0,1.0,1207.0
+29.0,77.65458,No,Yes,No,80.0,No,Yes,560.0,Others,Male,Experienced,Yes,Others,Yes,228.0,Yes,432.0,0.0,1217.0
+33.0,50.47407,No,No,Yes,100.0,No,Yes,135.0,Others,Female,Experienced,No,Others,Yes,246.0,Yes,997.0,0.0,933.0
+19.0,59.01047,No,Yes,No,100.0,No,No,9.0,Others,Male,Naive,Yes,ZDV only,Yes,333.0,Yes,628.0,0.0,793.0
+23.0,46.11712,No,Yes,No,100.0,No,Yes,819.0,White,Male,Experienced,No,ZDV only,Yes,339.0,Yes,2438.0,0.0,1215.0
+37.0,58.9607,No,Yes,No,100.0,No,No,21.0,White,Male,Naive,No,ZDV only,Yes,331.0,Yes,1811.0,0.0,964.0
+54.0,80.71126,No,No,Yes,100.0,No,Yes,284.0,White,Female,Experienced,No,ZDV only,Yes,141.0,Yes,704.0,1.0,974.0
+32.0,75.92392,No,Yes,No,100.0,No,No,19.0,White,Male,Naive,No,Others,No,288.0,Yes,164.0,0.0,1121.0
+52.0,80.0771,No,Yes,Yes,90.0,No,No,70.0,White,Male,Naive,Yes,ZDV only,Yes,338.0,No,292.0,1.0,564.0
+28.0,100.18048,No,No,Yes,100.0,No,Yes,197.0,White,Male,Experienced,No,Others,No,545.0,Yes,1377.0,0.0,1231.0
+41.0,71.50175,No,Yes,Yes,100.0,No,Yes,1002.0,Others,Male,Experienced,No,ZDV only,No,288.0,No,369.0,1.0,813.0
+40.0,108.65757,No,Yes,No,100.0,No,No,0.0,Others,Male,Naive,No,ZDV only,No,398.0,Yes,499.0,0.0,991.0
+39.0,89.9698,No,Yes,No,90.0,No,Yes,601.0,White,Male,Experienced,No,Others,No,492.0,Yes,685.0,0.0,1090.0
+33.0,86.73971,No,No,No,100.0,No,Yes,173.0,Others,Male,Experienced,No,Others,No,371.0,Yes,765.0,0.0,1051.0
+34.0,125.18498,No,No,Yes,100.0,No,No,219.0,Others,Female,Experienced,No,Others,Yes,139.0,Yes,573.0,1.0,1231.0
+29.0,81.02303,Yes,No,No,100.0,No,No,49.0,Others,Female,Naive,No,Others,No,245.0,Yes,1418.0,0.0,1231.0
+47.0,103.797,No,No,No,100.0,No,No,25.0,White,Female,Naive,No,Others,No,416.0,Yes,693.0,0.0,1011.0
+29.0,67.55289,No,Yes,No,100.0,No,Yes,1168.0,Others,Male,Experienced,No,Others,No,270.0,Yes,1667.0,1.0,1231.0
+22.0,81.29162,No,No,No,100.0,No,No,306.0,Others,Female,Naive,Yes,ZDV only,Yes,303.0,No,355.0,0.0,70.0
+45.0,107.51176,No,Yes,No,90.0,No,No,1515.0,White,Male,Experienced,No,Others,No,495.0,Yes,353.0,0.0,1121.0
+31.0,56.80982,No,No,No,90.0,No,Yes,740.0,Others,Female,Experienced,No,Others,No,450.0,Yes,245.0,0.0,1042.0
+25.0,59.77606,No,No,Yes,90.0,No,No,0.0,Others,Male,Naive,No,ZDV only,Yes,658.0,No,1482.0,1.0,33.0
+45.0,93.57351,No,Yes,No,100.0,No,Yes,932.0,White,Male,Experienced,No,Others,No,332.0,Yes,1108.0,0.0,1053.0
+36.0,92.69514,No,No,No,90.0,No,No,15.0,Others,Male,Naive,No,ZDV only,Yes,217.0,No,688.0,0.0,1204.0
+22.0,64.98736,No,Yes,No,100.0,No,No,4.0,White,Male,Experienced,No,ZDV only,Yes,253.0,No,631.0,1.0,503.0
+35.0,71.9414,No,Yes,No,100.0,No,Yes,1025.0,White,Male,Experienced,No,Others,No,341.0,Yes,519.0,1.0,1123.0
+38.0,85.39671,No,No,No,100.0,No,Yes,746.0,White,Male,Experienced,No,Others,No,311.0,Yes,1286.0,0.0,1158.0
+35.0,93.90765,No,No,Yes,100.0,No,No,0.0,White,Male,Naive,No,Others,No,392.0,Yes,827.0,0.0,1050.0
+39.0,72.26143,No,No,No,100.0,No,No,7.0,White,Male,Experienced,No,Others,No,615.0,Yes,504.0,0.0,1151.0
+44.0,86.89047,No,Yes,No,100.0,No,Yes,989.0,White,Male,Experienced,No,ZDV only,No,521.0,Yes,714.0,1.0,1061.0
+37.0,68.27344,No,No,Yes,100.0,No,Yes,1143.0,Others,Female,Experienced,No,ZDV only,Yes,199.0,Yes,887.0,0.0,1222.0
+16.0,40.29828,No,No,No,100.0,No,No,17.0,Others,Male,Naive,No,ZDV only,Yes,230.0,No,676.0,1.0,476.0
+25.0,85.43223,Yes,Yes,No,90.0,No,No,140.0,White,Male,Experienced,No,Others,No,568.0,Yes,771.0,1.0,1132.0
+31.0,91.99801,No,No,Yes,100.0,No,No,16.0,Others,Female,Naive,No,Others,Yes,305.0,Yes,341.0,0.0,1129.0
+44.0,56.27413,No,Yes,No,100.0,No,Yes,697.0,White,Male,Experienced,Yes,Others,No,305.0,No,564.0,0.0,1143.0
+34.0,85.83821,No,Yes,No,100.0,No,Yes,955.0,Others,Male,Experienced,No,Others,No,515.0,No,627.0,0.0,1156.0
+30.0,95.82739,No,Yes,No,90.0,No,No,0.0,White,Male,Naive,Yes,Others,No,232.0,Yes,596.0,0.0,472.0
+47.0,92.55937,No,Yes,Yes,80.0,Yes,Yes,805.0,White,Male,Experienced,No,Others,Yes,270.0,Yes,716.0,0.0,1024.0
+33.0,90.91423,No,No,No,90.0,No,No,17.0,White,Male,Naive,No,Others,Yes,478.0,No,560.0,0.0,921.0
+40.0,118.45694,No,No,No,100.0,No,Yes,27.0,Others,Male,Experienced,No,ZDV only,Yes,271.0,No,1771.0,0.0,637.0
+32.0,70.4097,No,Yes,No,100.0,No,Yes,735.0,White,Male,Experienced,No,Others,No,243.0,Yes,786.0,1.0,1113.0
+26.0,65.49323,No,Yes,No,90.0,No,Yes,1018.0,Others,Male,Experienced,No,ZDV only,Yes,312.0,No,782.0,0.0,1073.0
+31.0,83.19339,No,Yes,No,90.0,No,Yes,955.0,White,Male,Experienced,No,ZDV only,No,267.0,Yes,1283.0,1.0,1021.0
+39.0,112.93851,No,Yes,No,100.0,No,No,581.0,White,Male,Experienced,No,ZDV only,No,409.0,Yes,2210.0,1.0,1010.0
+36.0,72.6594,No,Yes,No,90.0,No,No,2.0,White,Male,Naive,Yes,Others,Yes,251.0,Yes,510.0,0.0,936.0
+54.0,87.37307,No,Yes,No,100.0,No,No,15.0,White,Male,Naive,Yes,Others,No,368.0,Yes,931.0,0.0,1012.0
+38.0,61.28469,No,No,No,90.0,No,Yes,1575.0,White,Female,Experienced,No,Others,No,303.0,Yes,437.0,0.0,871.0
+34.0,52.37027,Yes,No,Yes,90.0,No,No,0.0,Others,Male,Naive,No,ZDV only,Yes,420.0,No,620.0,0.0,1118.0
+40.0,90.17809,No,No,No,100.0,No,No,20.0,Others,Male,Naive,No,ZDV only,Yes,255.0,Yes,319.0,0.0,1056.0
+43.0,66.07064,No,Yes,No,80.0,No,No,63.0,White,Male,Naive,Yes,Others,Yes,335.0,No,334.0,0.0,307.0
+33.0,87.6308,No,Yes,No,90.0,No,Yes,546.0,Others,Male,Experienced,No,Others,Yes,640.0,No,105.0,0.0,1208.0
+33.0,53.91415,No,Yes,No,90.0,No,Yes,1473.0,White,Male,Experienced,Yes,ZDV only,Yes,370.0,Yes,700.0,0.0,973.0
+38.0,81.36641,No,Yes,No,100.0,No,Yes,864.0,White,Male,Experienced,No,Others,Yes,307.0,No,699.0,1.0,379.0
+21.0,66.25901,No,No,Yes,90.0,No,Yes,798.0,Others,Male,Experienced,No,Others,Yes,407.0,No,648.0,1.0,1085.0
+45.0,71.89194,No,Yes,No,100.0,No,Yes,1348.0,White,Male,Experienced,No,Others,No,410.0,Yes,1967.0,1.0,996.0
+29.0,142.73181,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,No,ZDV only,Yes,488.0,No,262.0,1.0,612.0
+35.0,65.51494,Yes,No,No,100.0,No,Yes,205.0,Others,Female,Experienced,No,Others,Yes,272.0,Yes,649.0,0.0,1200.0
+38.0,90.63149,No,Yes,No,100.0,No,No,12.0,White,Male,Naive,No,ZDV only,No,231.0,Yes,952.0,0.0,1037.0
+59.0,74.374,No,No,No,100.0,No,No,29.0,Others,Male,Naive,No,ZDV only,Yes,392.0,No,230.0,0.0,1081.0
+29.0,65.44458,No,Yes,No,80.0,No,No,39.0,Others,Male,Experienced,No,ZDV only,Yes,506.0,Yes,1274.0,1.0,485.0
+32.0,89.31352,No,No,Yes,90.0,No,Yes,224.0,Others,Female,Experienced,No,Others,No,249.0,No,761.0,0.0,1211.0
+40.0,94.35098,No,Yes,No,90.0,No,No,4.0,White,Male,Naive,No,ZDV only,Yes,566.0,No,394.0,0.0,792.0
+31.0,80.58453,Yes,No,No,100.0,No,Yes,914.0,White,Male,Experienced,No,Others,No,402.0,Yes,472.0,0.0,1085.0
+29.0,81.26531,Yes,Yes,Yes,100.0,No,Yes,1898.0,White,Male,Experienced,No,Others,Yes,367.0,No,3547.0,0.0,1231.0
+34.0,100.38139,No,No,Yes,90.0,No,No,22.0,Others,Female,Naive,Yes,Others,Yes,184.0,Yes,1843.0,0.0,1087.0
+46.0,81.69073,No,Yes,No,90.0,No,Yes,452.0,White,Male,Experienced,No,ZDV only,No,189.0,Yes,1006.0,0.0,1055.0
+21.0,65.95955,No,No,No,100.0,No,No,39.0,Others,Male,Naive,No,ZDV only,No,431.0,No,306.0,0.0,1106.0
+30.0,61.89027,No,Yes,No,100.0,No,Yes,887.0,White,Male,Experienced,No,Others,No,423.0,Yes,651.0,1.0,280.0
+44.0,103.19461,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,No,Others,No,308.0,Yes,940.0,0.0,1083.0
+54.0,77.96948,No,Yes,No,90.0,No,No,19.0,White,Male,Experienced,No,ZDV only,Yes,302.0,No,1430.0,0.0,878.0
+33.0,87.71769,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,No,ZDV only,No,579.0,Yes,204.0,0.0,1067.0
+35.0,101.2586,No,No,No,100.0,No,No,952.0,Others,Female,Experienced,No,ZDV only,Yes,390.0,No,754.0,0.0,1062.0
+51.0,93.78672,Yes,No,No,90.0,No,Yes,480.0,White,Male,Experienced,No,Others,Yes,413.0,Yes,392.0,0.0,602.0
+28.0,93.74421,No,No,Yes,100.0,No,Yes,641.0,Others,Female,Experienced,No,Others,No,366.0,Yes,551.0,1.0,1201.0
+41.0,90.75933,Yes,Yes,Yes,100.0,No,No,42.0,White,Male,Experienced,Yes,Others,No,538.0,Yes,235.0,0.0,996.0
+37.0,92.42881,Yes,No,No,100.0,No,Yes,129.0,White,Male,Experienced,No,Others,No,366.0,Yes,345.0,0.0,1231.0
+30.0,70.04188,No,No,Yes,100.0,No,Yes,825.0,White,Female,Experienced,No,Others,No,329.0,Yes,533.0,0.0,1099.0
+41.0,74.27554,No,Yes,No,100.0,No,Yes,1393.0,White,Male,Experienced,No,Others,No,573.0,Yes,972.0,0.0,1231.0
+31.0,72.18572,Yes,Yes,No,90.0,No,Yes,1079.0,White,Male,Experienced,Yes,ZDV only,Yes,264.0,No,1371.0,1.0,744.0
+49.0,92.88419,No,Yes,No,100.0,No,No,30.0,White,Male,Naive,No,Others,No,164.0,Yes,1198.0,1.0,703.0
+39.0,89.50122,No,No,No,100.0,No,Yes,22.0,Others,Male,Experienced,No,Others,No,579.0,Yes,424.0,0.0,576.0
+38.0,81.3415,No,Yes,No,90.0,No,Yes,1094.0,White,Male,Experienced,Yes,ZDV only,No,277.0,Yes,862.0,0.0,1122.0
+35.0,53.44669,No,No,Yes,100.0,No,Yes,1139.0,Others,Female,Experienced,No,ZDV only,No,347.0,Yes,487.0,0.0,1123.0
+33.0,90.3134,No,No,No,80.0,No,No,0.0,Others,Female,Naive,No,ZDV only,No,330.0,Yes,129.0,0.0,859.0
+49.0,85.14357,No,No,Yes,90.0,No,Yes,0.0,White,Male,Naive,Yes,Others,Yes,326.0,No,857.0,0.0,815.0
+29.0,83.93788,No,Yes,No,90.0,No,Yes,966.0,White,Male,Experienced,No,ZDV only,Yes,311.0,No,847.0,1.0,33.0
+24.0,107.6207,No,Yes,Yes,80.0,No,Yes,952.0,White,Male,Experienced,No,Others,Yes,361.0,No,1384.0,0.0,841.0
+31.0,88.72749,No,Yes,No,100.0,No,Yes,2099.0,White,Male,Experienced,No,ZDV only,No,291.0,Yes,2477.0,1.0,1131.0
+33.0,58.34503,No,No,Yes,90.0,No,Yes,4.0,White,Female,Experienced,No,ZDV only,Yes,258.0,No,678.0,0.0,916.0
+23.0,75.63318,No,No,No,90.0,No,Yes,216.0,Others,Female,Experienced,Yes,ZDV only,Yes,309.0,No,796.0,1.0,547.0
+27.0,58.42627,No,Yes,No,100.0,No,No,20.0,White,Male,Naive,No,Others,Yes,194.0,Yes,468.0,0.0,1165.0
+42.0,95.16805,Yes,No,Yes,100.0,No,Yes,410.0,Others,Female,Experienced,No,ZDV only,Yes,298.0,No,186.0,0.0,917.0
+26.0,84.13495,No,Yes,No,90.0,No,Yes,929.0,White,Male,Experienced,Yes,ZDV only,Yes,469.0,No,951.0,1.0,851.0
+28.0,83.08657,No,No,No,80.0,No,Yes,0.0,White,Male,Experienced,No,Others,Yes,302.0,No,435.0,0.0,429.0
+24.0,55.18805,No,No,No,90.0,No,Yes,25.0,Others,Female,Naive,No,ZDV only,No,278.0,No,580.0,0.0,1089.0
+39.0,90.85889,No,No,No,100.0,No,No,54.0,Others,Male,Naive,No,ZDV only,Yes,89.0,No,630.0,1.0,774.0
+41.0,72.6131,No,No,No,90.0,No,Yes,509.0,Others,Male,Experienced,No,Others,Yes,220.0,No,992.0,0.0,729.0
+25.0,64.71404,No,Yes,No,100.0,No,Yes,870.0,White,Male,Experienced,No,Others,No,325.0,Yes,1183.0,0.0,1226.0
+44.0,102.89192,No,No,No,100.0,No,No,0.0,White,Male,Naive,No,Others,No,495.0,Yes,310.0,0.0,1127.0
+48.0,112.40178,Yes,No,Yes,100.0,No,Yes,568.0,Others,Female,Experienced,No,Others,No,122.0,No,666.0,0.0,1077.0
+33.0,55.3285,No,Yes,No,100.0,No,Yes,1038.0,White,Male,Experienced,No,ZDV only,No,218.0,Yes,972.0,0.0,584.0
+28.0,82.18948,No,Yes,Yes,100.0,Yes,No,0.0,White,Female,Naive,No,ZDV only,Yes,325.0,Yes,722.0,0.0,946.0
+70.0,100.5192,No,Yes,No,100.0,No,Yes,726.0,White,Male,Naive,No,Others,No,309.0,Yes,821.0,0.0,940.0
+32.0,59.54769,No,No,No,90.0,No,Yes,934.0,White,Female,Experienced,No,Others,Yes,164.0,Yes,1300.0,0.0,252.0
+35.0,71.69745,No,No,No,90.0,No,No,18.0,White,Male,Naive,Yes,ZDV only,Yes,437.0,No,660.0,1.0,314.0
+28.0,70.80745,No,No,No,100.0,No,No,22.0,Others,Female,Naive,No,Others,No,358.0,Yes,607.0,0.0,1029.0
+57.0,73.33272,No,Yes,No,100.0,No,Yes,0.0,White,Male,Experienced,No,ZDV only,Yes,201.0,No,1139.0,1.0,159.0
+58.0,97.84453,No,Yes,No,90.0,Yes,Yes,457.0,White,Male,Experienced,Yes,Others,No,128.0,Yes,788.0,1.0,565.0
+33.0,101.83519,No,No,No,100.0,No,Yes,253.0,Others,Male,Experienced,No,ZDV only,Yes,269.0,Yes,428.0,0.0,848.0
+42.0,66.25644,No,Yes,No,100.0,No,No,0.0,Others,Male,Naive,No,Others,Yes,196.0,Yes,1176.0,0.0,1197.0
+32.0,92.95365,No,Yes,Yes,90.0,No,Yes,2332.0,White,Male,Experienced,Yes,ZDV only,Yes,266.0,Yes,979.0,1.0,1023.0
+19.0,94.86699,No,Yes,No,90.0,No,No,21.0,White,Male,Naive,No,ZDV only,Yes,755.0,No,1041.0,1.0,1038.0
+39.0,61.58824,No,Yes,Yes,80.0,No,Yes,1026.0,White,Male,Experienced,No,ZDV only,No,311.0,Yes,617.0,0.0,1119.0
+47.0,80.06748,No,Yes,No,100.0,No,No,0.0,White,Male,Naive,Yes,ZDV only,Yes,345.0,No,1636.0,1.0,525.0
+33.0,73.51869,No,No,Yes,100.0,No,Yes,943.0,Others,Female,Experienced,No,Others,No,406.0,Yes,1342.0,0.0,1142.0
+41.0,77.41722,No,Yes,Yes,90.0,No,No,0.0,Others,Male,Naive,No,Others,No,351.0,Yes,105.0,0.0,1103.0
+47.0,104.91324,No,No,No,100.0,No,Yes,30.0,White,Female,Naive,No,ZDV only,Yes,209.0,Yes,1399.0,1.0,931.0
+27.0,37.85692,No,Yes,No,100.0,No,Yes,326.0,Others,Male,Experienced,No,Others,No,156.0,Yes,1244.0,0.0,1194.0
+26.0,71.02282,No,No,Yes,100.0,No,Yes,417.0,White,Male,Experienced,No,ZDV only,No,325.0,Yes,418.0,0.0,460.0
+37.0,60.50723,No,No,No,100.0,No,Yes,26.0,Others,Female,Experienced,No,ZDV only,Yes,205.0,No,1041.0,1.0,614.0
+43.0,74.92849,No,No,Yes,100.0,No,Yes,846.0,White,Male,Experienced,Yes,Others,No,298.0,Yes,520.0,0.0,1178.0
+52.0,90.27622,No,Yes,No,100.0,No,No,16.0,White,Male,Naive,No,Others,No,354.0,Yes,331.0,0.0,792.0
+29.0,73.31633,No,Yes,No,90.0,No,Yes,1362.0,Others,Female,Experienced,No,Others,No,236.0,No,1491.0,1.0,147.0
+33.0,90.819,No,Yes,Yes,100.0,No,Yes,631.0,Others,Female,Experienced,No,Others,No,341.0,Yes,792.0,0.0,884.0
+33.0,59.63924,No,Yes,No,90.0,No,Yes,1638.0,White,Male,Experienced,Yes,Others,No,226.0,Yes,768.0,1.0,1036.0
+23.0,50.27723,No,No,No,90.0,No,No,0.0,White,Male,Naive,Yes,Others,Yes,288.0,No,2651.0,0.0,882.0
+39.0,87.11024,Yes,No,Yes,100.0,No,Yes,1023.0,Others,Female,Experienced,No,Others,No,555.0,Yes,150.0,0.0,1045.0
+33.0,95.78241,No,No,Yes,90.0,No,No,0.0,White,Male,Experienced,No,ZDV only,Yes,266.0,Yes,163.0,1.0,387.0
