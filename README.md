@@ -12,7 +12,7 @@ The repository is designed to run the analysis workflow in a highly automated ma
 
 2.  **Download and place all datasets** in the `data/` folder. the real REIN registry dataset are not included in the repository due to privacy.
 
-3.  **Run the scripts sequentially** from `0_functions.R` to `7_Figures.R`.\
+3.  **Run the scripts sequentially** from `0_Methods_and_metrics_functions.R` to `6_REIN_Mortality_Score_Validation_Across_Synthesis_Methods.R`.\
     Each script depends on outputs from the previous one, so maintaining this order is essential.
 
 ---
@@ -70,6 +70,8 @@ CHIMERA is evaluated using nine complementary metrics covering three dimensions.
 | Record-matching risk | T7 — MIR-RM | Mean Gower distance: real to nearest synthetic record | → 1 |
 | Holdout membership inference | T8 — MIR-Holdout | P(synthetic closer to training than to holdout) | → 0.5 |
 | Attribute inference risk | T9 — AIR (F1) | F1 score of a 1-NN attribute reconstruction attack | → 0 |
+| Distance to the Closest Record | T10 - (DCR)| the proximity of synthetic records to real records by comparing the synthetic-to-real distance (SRD) with
+the real-to-real distance (RRD)  | → 1 |
 
 ---
 
