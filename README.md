@@ -77,3 +77,36 @@ CHIMERA is compared with five alternative synthesis methods across three dataset
 The representative synthetic dataset is selected using a best-of-M procedure based on a composite loss function. The loss combines fidelity, utility, and privacy components with equal weights. Metrics T1–T9 are used for selection, whereas T10–T13 provide additional privacy assessments.
 
 ---
+
+## Evaluation Framework
+
+Thirteen complementary metrics assess the fidelity, analytical utility, and privacy of synthetic datasets.
+
+#### Fidelity
+
+| Metric | Symbol | Description | Optimal value |
+|---|---|---|---|
+| Jensen–Shannon divergence | T1 — JSD | Marginal distributional differences | → 0 |
+| Correlation Frobenius distance | T2 — CFD | Differences in bivariate dependence structures | → 0 |
+| Discriminative performance | T3 — DiscPred | AUC of a real-versus-synthetic classifier | → 0.5 |
+
+#### Utility
+
+| Metric | Symbol | Description | Optimal value |
+|---|---|---|---|
+| Standardized effect difference | T4 — SDiff | Differences in regression effect estimates | → 0 |
+| Train on Synthetic, Test on Real | T5 — TSTR | Predictive performance gap between synthetic-trained and real-trained models | → 0 |
+| Train on Synthetic and Real, Test on Real | T6 — TSRTR | Predictive performance gap for combined-data and real-data training | → 0 |
+
+
+#### Privacy
+
+| Metric | Symbol | Description | Optimal value |
+|---|---|---|---|
+| Record-matching risk | T7 — MIR-RM | Mean Gower distance between real records and their nearest synthetic neighbours | → 1 |
+| Holdout membership inference | T8 — MIR-Holdout | Probability that synthetic records are closer to training than holdout records | → 0.5 |
+| Attribute inference risk | T9 — AIR | F1 score of a 1-nearest-neighbour attribute reconstruction attack | → 0 |
+| Distance to Closest Record | T10 — DCR | Proximity of synthetic records to real records | → 1 |
+| Nearest Neighbour Distance Ratio | T11 — NNDR | Relative proximity of the nearest and second-nearest neighbours | → 1 |
+| Linkability attack strength | T12 — *s* | Linkability success above the random-matching baseline | → 0 |
+| Signed specific linkability risk | T13 — *R* | Normalized excess linkability success in the reference condition relative to control | → 0 |
