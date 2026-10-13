@@ -1,6 +1,6 @@
 # CHIMERA: Synthetic Health Data Generation with Balanced Fidelity, Utility, and Privacy
 
-This repository contains the code and analysis workflow for the paper **"CHIMERA generates synthetic health data with balanced fidelity, utility and privacy"** by Amadou Tidiane Niang (University of Lille, France).
+This repository contains the code and analysis workflow for the paper "CHIMERA generates synthetic health data with balanced fidelity, utility and privacy" by Amadou Tidiane Niang (University of Lille, France).
 
 CHIMERA is an imputation-based framework for generating fully synthetic tabular health data while jointly addressing statistical fidelity, analytical utility, and privacy protection.
 
