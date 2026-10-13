@@ -157,3 +157,22 @@ The analyses were conducted using the following software versions.
 | synthpop | 1.9-2 |
 | mice | 3.19.0 |
 | MatchIt | 4.7.2 |
+
+
+For R-based generation, a master random seed (set.seed(123)) is used to derive 50 replicate-specific seeds. The same seed sequence is shared across R-based methods where applicable.
+The methods, evaluation metrics, best-of-M selection procedure, and prognostic validation workflow are described in the accompanying manuscript and supplementary materials.
+
+---
+
+## Data availability
+
+PIMA is publicly available. AIDS data availability depends on the terms of access to the original ACTG study data. REIN registry data are restricted and are not included in this repository but the synthetic data is avalaible.
+
+---
+
+## Contact
+
+**Amadou Tidiane Niang**
+University of Lille · CHU Lille · ULR 2694 – METRICS
+F-59000 Lille, France
+Email: amadou-tidiane.niang@univ-lille.fr
