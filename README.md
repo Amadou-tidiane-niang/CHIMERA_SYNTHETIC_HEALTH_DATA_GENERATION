@@ -55,3 +55,25 @@ The main workflow covers preprocessing, synthetic data generation, evaluation, c
     ├── 4_Comprehensive_Synthetic_Data_Evaluation.R
     ├── 5_CHIMERA_Ablation_Study_And_Sensitivity_Analysis.R
     └── 6_REIN_Mortality_Score_Validation_Across_Synthesis_Methods.R
+```
+
+All scripts should be executed from the project root. Input and output paths are managed by the workflow.
+
+---
+
+## Benchmark Design
+
+CHIMERA is compared with five alternative synthesis methods across three datasets.
+
+| Component | Description |
+|---|---|
+| Synthesis methods | CHIMERA, SYNTHPOP, CTGAN, Gaussian Copula, TVAE, and TabDiff |
+| Benchmark datasets | PIMA, AIDS, and REIN |
+| Replicates | 50 synthetic datasets per method and dataset |
+| Statistical settings | Logistic regression for PIMA; Cox regression for AIDS and REIN |
+| Evaluation | Fidelity, analytical utility, and privacy |
+| Additional analyses | Ablation study, masking-rate sensitivity, and prognostic score validation |
+
+The representative synthetic dataset is selected using a best-of-M procedure based on a composite loss function. The loss combines fidelity, utility, and privacy components with equal weights. Metrics T1–T9 are used for selection, whereas T10–T13 provide additional privacy assessments.
+
+---
