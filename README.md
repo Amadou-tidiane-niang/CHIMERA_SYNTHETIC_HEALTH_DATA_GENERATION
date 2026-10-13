@@ -72,8 +72,8 @@ CHIMERA is evaluated using nine complementary metrics covering three dimensions.
 | Attribute inference risk | T9 — AIR (F1) | F1 score of a 1-NN attribute reconstruction attack | → 0 |
 | Distance to the Closest Record | T10 - (DCR)| The proximity of synthetic records to real records | → 1 |
 | Nearest Neighbor Distance Ratio | T11 - (NNDR)| Measures the relative proximity of an observation to its first and second nearest neighbors | → 1 |
-| Linkability Attack Strength | T12 — \(s\) | Difference between the reference linkability success rate and the naive random-matching baseline: \(s = r_{\mathrm{ref}} - r_{\mathrm{naive}}\) | → 0 |
-| Signed Specific Linkability Risk | T13 — \(R\) | Normalized excess linkability success rate in the reference condition relative to the control condition: \(R = \frac{r_{\mathrm{ref}} - r_{\mathrm{ctrl}}}{1-r_{\mathrm{ctrl}}}\) | → 0 |
+| Linkability Attack Strength | T12 — \(s\) | Difference between the reference linkability success rate and the naive random-matching baseline | → 0 |
+| Signed Specific Linkability Risk | T13 — \(R\) | Normalized excess linkability success rate in the reference condition relative to the control condition | → 0 |
 ---
 
 ## REIN Prognostic Workflow
