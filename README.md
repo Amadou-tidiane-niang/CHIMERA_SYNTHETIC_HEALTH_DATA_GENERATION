@@ -166,7 +166,7 @@ The methods, evaluation metrics, best-of-M selection procedure, and prognostic v
 
 ## Data availability
 
-PIMA is publicly available. AIDS data availability depends on the terms of access to the original ACTG study data. REIN registry data are restricted and are not included in this repository but the synthetic data is avalaible.
+PIMA is publicly available. AIDS data availability depends on the terms of access to the original ACTG study data. REIN registry data are restricted and are not included in this repository.
 
 ---
 
