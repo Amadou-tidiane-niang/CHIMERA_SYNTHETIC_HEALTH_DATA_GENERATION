@@ -68,13 +68,14 @@ seeds <- sample(1:1000, n_synth)
 
 # PIMA
 pima_synthetic_list_data_chimera <- vector("list", n_synth)
+pima_nb_iteration_chimera <- as.numeric(n_synth)
 execution_times <- numeric(n_synth)
 missing_rate <- runif(1, min = 0.10, max = 0.30)
 
 for (i in seq_len(n_synth)) {
   execution_times[i] <- system.time({
     message(sprintf("▶ Generating dataset %d / %d (seed = %d)", i, n_synth, seeds[i]))
-    synthetic_data <- CHIMERA_generate(
+    results <- CHIMERA_generate(
       df=PIMA_train,
       missing_rate = missing_rate,
       is_survival = FALSE,
@@ -88,8 +89,11 @@ for (i in seq_len(n_synth)) {
 
   })["elapsed"]
 
-  pima_synthetic_list_data_chimera[[i]] <- synthetic_data
+  pima_synthetic_list_data_chimera[[i]] <- results$synthetic_data
+  pima_nb_iteration_chimera[i] <- results$nb_iter
 }
+
+summary(pima_nb_iteration_chimera)
 
 # Execution time summary
 
@@ -128,7 +132,7 @@ execution_times <- numeric(n_synth)
 for (i in seq_len(n_synth)) {
   execution_times[i] <- system.time({
     message(sprintf("▶ Generating dataset %d / %d (seed = %d)", i, n_synth, seeds[i]))
-    synthetic_data <- CHIMERA_generate(
+    results <- CHIMERA_generate(
       df=PIMA_trn,
       missing_rate = missing_rate,
       is_survival = FALSE,
@@ -142,7 +146,7 @@ for (i in seq_len(n_synth)) {
 
   })["elapsed"]
 
-  pima_synthetic_list_data_chimera_trn[[i]] <- synthetic_data
+  pima_synthetic_list_data_chimera_trn[[i]] <- results$synthetic_data
 }
 
 
@@ -154,13 +158,14 @@ save(pima_synthetic_list_data_chimera_trn,
 
 # AIDS
 aids_synthetic_list_data_chimera <- vector("list", n_synth)
+aids_nb_iteration_chimera <- as.numeric(n_synth)
 execution_times <- numeric(n_synth)
 missing_rate <- runif(1, min = 0.10, max = 0.30)
 
 for (i in seq_len(n_synth)) {
   execution_times[i] <- system.time({
     message(sprintf("▶ Generating dataset %d / %d (seed = %d)", i, n_synth, seeds[i]))
-    synthetic_data <- CHIMERA_generate(
+    results <- CHIMERA_generate(
       df=AIDS_train,
       missing_rate = missing_rate,
       is_survival = TRUE,
@@ -173,8 +178,11 @@ for (i in seq_len(n_synth)) {
     )
   })["elapsed"]
 
-  aids_synthetic_list_data_chimera[[i]] <- synthetic_data
+  aids_synthetic_list_data_chimera[[i]] <- results$synthetic_data
+  aids_nb_iteration_chimera[i]  <- results$nb_iter
 }
+
+summary(aids_nb_iteration_chimera)
 
 # -----------------------------------------------------------------------------------------------
 # EXECUTION TIME SUMMARY
@@ -208,7 +216,7 @@ execution_times <- numeric(n_synth)
 for (i in seq_len(n_synth)) {
   execution_times[i] <- system.time({
     message(sprintf("▶ Generating dataset %d / %d (seed = %d)", i, n_synth, seeds[i]))
-    synthetic_data <- CHIMERA_generate(
+    results <- CHIMERA_generate(
       df=AIDS_trn,
       missing_rate = 0.15,
       is_survival = TRUE,
@@ -221,7 +229,7 @@ for (i in seq_len(n_synth)) {
     )
   })["elapsed"]
 
-  aids_synthetic_list_data_chimera_trn[[i]] <- synthetic_data
+  aids_synthetic_list_data_chimera_trn[[i]] <- results$synthetic_data
 }
 
 
@@ -233,15 +241,16 @@ save(aids_synthetic_list_data_chimera_trn,
 
 # REIN
 rein_synthetic_list_data_chimera <- vector("list", n_synth)
+rein_nb_iteration_chimera <- as.numeric(n_synth)
 execution_times <- numeric(n_synth)
 missing_rate <- runif(1, min = 0.10, max = 0.30)
 
 for (i in seq_len(n_synth)) {
   execution_times[i] <- system.time({
     message(sprintf("▶ Generating dataset %d / %d (seed = %d)", i, n_synth, seeds[i]))
-    synthetic_data <- CHIMERA_generate(
+    results <- CHIMERA_generate(
       df=REIN_train,
-      missing_rate = missing_rate,
+      missing_rate =missing_rate,
       is_survival = TRUE,
       timevar = "times",
       statusvar = "Censored",
@@ -252,9 +261,11 @@ for (i in seq_len(n_synth)) {
     )
   })["elapsed"]
 
-  rein_synthetic_list_data_chimera[[i]] <- synthetic_data
+  rein_synthetic_list_data_chimera[[i]] <- results$synthetic_data
+  rein_nb_iteration_chimera[i]  <- results$nb_iter
 }
 
+summary(rein_nb_iteration_chimera)
 
 # -----------------------------------------------------------------------------------------------
 # EXECUTION TIME SUMMARY
@@ -288,7 +299,7 @@ execution_times <- numeric(n_synth)
 for (i in seq_len(n_synth)) {
   execution_times[i] <- system.time({
     message(sprintf("▶ Generating dataset %d / %d (seed = %d)", i, n_synth, seeds[i]))
-    synthetic_data <- CHIMERA_generate(
+    results <- CHIMERA_generate(
       df=REIN_trn,
       missing_rate = missing_rate,
       is_survival = TRUE,
@@ -301,7 +312,7 @@ for (i in seq_len(n_synth)) {
     )
   })["elapsed"]
 
-  rein_synthetic_list_data_chimera_trn[[i]] <- synthetic_data
+  rein_synthetic_list_data_chimera_trn[[i]] <- results$synthetic_data
 }
 
 
@@ -951,7 +962,7 @@ for (j in seq_along(missing_rates)) {
     # Measure execution time
     start_time <- Sys.time()
     
-    synthetic_data <- CHIMERA_generate(
+    results <- CHIMERA_generate(
       df = PIMA_train,
       missing_rate = missing_rate,
       is_survival = FALSE,
@@ -968,7 +979,7 @@ for (j in seq_along(missing_rates)) {
     )
     
     # Store the synthetic dataset
-    synthetic_list[[i]] <- synthetic_data
+    synthetic_list[[i]] <- results$synthetic_data
     
     message(
       sprintf(
@@ -1040,7 +1051,7 @@ for (j in seq_along(missing_rates)) {
     # Measure execution time
     start_time <- Sys.time()
     
-    synthetic_data <- CHIMERA_generate(
+    results <- CHIMERA_generate(
       df = PIMA_trn,
       missing_rate = missing_rate,
       is_survival = FALSE,
@@ -1057,7 +1068,7 @@ for (j in seq_along(missing_rates)) {
     )
     
     # Store the synthetic dataset
-    synthetic_list[[i]] <- synthetic_data
+    synthetic_list[[i]] <- results$synthetic_data
     
     message(
       sprintf(
@@ -1130,7 +1141,7 @@ for (j in seq_along(missing_rates)) {
     # Measure execution time
     start_time <- Sys.time()
     
-    synthetic_data <- CHIMERA_generate(
+    results <- CHIMERA_generate(
       df = AIDS_train,
       missing_rate = missing_rate,
       is_survival = TRUE,
@@ -1144,7 +1155,7 @@ for (j in seq_along(missing_rates)) {
     
     
     # Store the synthetic dataset
-    synthetic_list[[i]] <- synthetic_data
+    synthetic_list[[i]] <- results$synthetic_data
     
     message(
       sprintf(
@@ -1275,23 +1286,3 @@ save(
     "aids_synthetic_chimera_sensitivity_by_p_trn.Rdata"
   )
 )
-
-REIN <- read.csv(here(data_dir, "REIN.csv")) |> mutate_if(is.character, as.factor)
-na_indices_initial <- which(is.na(REIN), arr.ind = TRUE)
-synthetic_data <- CHIMERA_generate(
-  df=REIN,
-  missing_rate = 0.30,
-  is_survival = TRUE,
-  timevar = "times",
-  statusvar = "Censored",
-  nb_imput = 1,
-  nb_max_it = 5,
-  seed = 123,
-  verbose = TRUE
-)
-
-synthetic_data[na_indices_initial] <- NA
-REIN <- synthetic_data
-
-# Save dataset
-write.csv(REIN, here(data_dir, "REIN.csv"), row.names = FALSE)

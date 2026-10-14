@@ -567,8 +567,10 @@ CHIMERA_generate <-function(df,missing_rate = 0.10,is_survival = TRUE,timevar = 
   }
   
   # --- Return
-  return(df_syn)
-  
+  return(list(
+    synthetic_data = df_syn,
+    nb_iter = nb_iter
+  ))
   
   
 }
